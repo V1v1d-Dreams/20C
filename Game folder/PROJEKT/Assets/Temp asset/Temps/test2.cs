@@ -4,36 +4,68 @@ using UnityEngine;
 
 public class test2 : MonoBehaviour
 {
-    float ver1 = 3.71f;
-    public Animator sss;
-    bool S = false;
+    public Texture2D Normal;
+    public Texture2D Interactable;
+
+    private Animator animator;
+
+    private Vector2 innitialpos;
+    private bool locked;
+
+    [SerializeField]
+    private Transform Placepos;
+    private Vector2 mouseposition;
+    private float deltaX, deltaY;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
+        innitialpos = transform.position;
+        animator = gameObject.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void OnMouseEnter()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        Cursor.SetCursor(Interactable, Vector2.zero, CursorMode.ForceSoftware);
+    }
+
+    void OnMouseExit()
+    {
+        Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
+    }
+
+    void OnMouseDrag()
+    {
+        if(!locked)
         {
-            S = true;
+            mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
         }
-       
-        if (S && ver1 > -3.6f)
+    }
+
+    void OnMouseDown()
+    {
+       if (!locked)
         {
-            ver1 -= 0.05f;
+            deltaX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x;
+            deltaY = Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y;
         }
+    }
 
-        if (ver1 < 1.54)
+    void OnMouseUp()
+    {
+        if (Mathf.Abs(transform.position.x - Placepos.position.x) <= 0.5f &&
+            Mathf.Abs(transform.position.y - Placepos.position.y) <= 0.5f)
         {
-            sss.SetTrigger("process");
+            transform.position = new Vector2(Placepos.position.x, Placepos.position.y);
+            locked = true;
+            animator.SetTrigger("place");
         }
-
-
-
-        transform.position = new Vector3(transform.position.x, ver1, transform.position.z);
+        else
+        {
+            transform.position = new Vector2(innitialpos.x, innitialpos.y);
+        }
     }
 }

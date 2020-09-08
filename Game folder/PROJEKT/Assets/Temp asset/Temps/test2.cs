@@ -6,6 +6,7 @@ public class test2 : MonoBehaviour
 {
     public Texture2D Normal;
     public Texture2D Interactable;
+    public Texture2D hold;
 
     private Animator animator;
 
@@ -38,7 +39,8 @@ public class test2 : MonoBehaviour
 
     void OnMouseDrag()
     {
-        if(!locked)
+        Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
+        if (!locked)
         {
             mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
@@ -47,7 +49,9 @@ public class test2 : MonoBehaviour
 
     void OnMouseDown()
     {
-       if (!locked)
+        Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
+
+        if (!locked)
         {
             deltaX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x;
             deltaY = Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y;
@@ -56,6 +60,8 @@ public class test2 : MonoBehaviour
 
     void OnMouseUp()
     {
+        Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
+
         if (Mathf.Abs(transform.position.x - Placepos.position.x) <= 0.5f &&
             Mathf.Abs(transform.position.y - Placepos.position.y) <= 0.5f)
         {

@@ -19,7 +19,7 @@ public class test2 : MonoBehaviour
     private float deltaX, deltaY;
 
     // Start is called before the first frame update
-    void Start()
+    void Start()  //X 3.45- 7.83 Y -2.92 2.94
     {
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
         innitialpos = transform.position;
@@ -69,9 +69,29 @@ public class test2 : MonoBehaviour
             locked = true;
             animator.SetTrigger("place");
         }
+        else if (transform.position.x > 3.45 && transform.position.x < 7.83 &&
+            transform.position.y > -2.92 && transform.position.y < 2.94)
+        {
+            innitialpos = transform.position;
+        }
         else
         {
             transform.position = new Vector2(innitialpos.x, innitialpos.y);
         }
+        
+        
+        /*
+        if (Mathf.Abs(transform.position.x - Placepos.position.x) <= 0.5f &&
+            Mathf.Abs(transform.position.y - Placepos.position.y) <= 0.5f)
+        {
+            transform.position = new Vector2(Placepos.position.x, Placepos.position.y);
+            locked = true;
+            animator.SetTrigger("place");
+        }
+        else
+        {
+            transform.position = new Vector2(innitialpos.x, innitialpos.y);
+        }
+        */
     }
 }

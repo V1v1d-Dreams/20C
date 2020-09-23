@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/film.unity
+- path: Assets/Scenes/Before_redroom.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

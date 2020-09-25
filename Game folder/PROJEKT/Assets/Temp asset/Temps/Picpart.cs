@@ -14,7 +14,7 @@ public class Picpart : MonoBehaviour
 
     public void setlayer(int layer)
     {
-        this.GetComponent<SpriteRenderer>().sortingOrder = layer;
+        this.GetComponent<SpriteRenderer>().sortingOrder += layer;
     }
 
     public void returnlayer()

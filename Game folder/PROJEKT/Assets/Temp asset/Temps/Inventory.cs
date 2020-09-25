@@ -27,13 +27,13 @@ public class Inventory : MonoBehaviour
     {
         if (IsUp)
         {
-            transform.position = new Vector2(transform.position.x, -10.3f);
+            transform.position = new Vector3(transform.position.x, -4.04f, transform.position.z);
             IsUp = false;
             
         }
         else
         {
-            transform.position = new Vector2(transform.position.x, -4.11f);
+            transform.position = new Vector3(transform.position.x, -0.1f, transform.position.z);
             IsUp = true;
         }
         

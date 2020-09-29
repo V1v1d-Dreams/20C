@@ -76,6 +76,7 @@
     <Compile Include="Assets\Temp asset\Temps\Picture.cs" />
     <Compile Include="Assets\Temp asset\Temps\SmoLpic.cs" />
     <Compile Include="Assets\Temp asset\Temps\Test.cs" />
+    <Compile Include="Assets\mechinebutton.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

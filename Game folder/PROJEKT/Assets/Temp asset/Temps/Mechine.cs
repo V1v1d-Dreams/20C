@@ -12,6 +12,7 @@ public class Mechine : MonoBehaviour
     [SerializeField] public GameObject gaemhander;
     [SerializeField] public bool filmin = false;
     [SerializeField] public bool paperin = false;
+    [SerializeField] public bool ButtonP = false;
 
 
 
@@ -21,7 +22,7 @@ public class Mechine : MonoBehaviour
 
     void Update()
     {
-        if (filmin&&paperin&&!Opened)
+        if (filmin&&paperin&&!Opened&&ButtonP)
         {
             smolpic.SetActive(true);
             overlay.SetActive(true);

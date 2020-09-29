@@ -28,12 +28,14 @@ public class Inventory : MonoBehaviour
         if (IsUp)
         {
             transform.position = new Vector3(transform.position.x, -4.04f, transform.position.z);
+            GetComponent<SpriteRenderer>().sortingOrder -= 3;
             IsUp = false;
             
         }
         else
         {
             transform.position = new Vector3(transform.position.x, -0.1f, transform.position.z);
+            GetComponent<SpriteRenderer>().sortingOrder += 3;
             IsUp = true;
         }
         

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Picture : MonoBehaviour
 {
+    [SerializeField] private float offsetY = 0.7f;
+
     public Texture2D Normal;
     public Texture2D Interactable;
     public Texture2D hold;
@@ -40,12 +42,14 @@ public class Picture : MonoBehaviour
         innitialpos = transform.position;
         animator = gameObject.GetComponent<Animator>();
         gaemhander =  GameObject.Find("Event controller");
-        invent = GameObject.Find("inventory");
+        invent = GameObject.Find("Photo-inv");
         targetpos1 = GameObject.Find("Tray1").transform;
         targetpos2 = GameObject.Find("Tray2").transform;
         targetpos3 = GameObject.Find("Tray3").transform;
         targetpos4 = GameObject.Find("Hangspot1").transform;
         targetpos5 = GameObject.Find("Hangspot2").transform;
+
+
     }
 
 
@@ -111,7 +115,7 @@ public class Picture : MonoBehaviour
         else if ((Mathf.Abs(transform.position.x - targetpos4.position.x) <= 0.5f && Mathf.Abs(transform.position.y - targetpos4.position.y) <= 0.5f) && hangable) //hanger 1
         {
             print("lock");
-            transform.position = new Vector2(targetpos4.position.x, targetpos4.position.y);
+            transform.position = new Vector2(targetpos4.position.x, targetpos4.position.y - offsetY);
             locked = true;
             innitialpos = transform.position;
             gaemhander.GetComponent<Game_handler>().respawn();
@@ -119,7 +123,7 @@ public class Picture : MonoBehaviour
         else if ((Mathf.Abs(transform.position.x - targetpos5.position.x) <= 0.5f && Mathf.Abs(transform.position.y - targetpos5.position.y) <= 0.5f) && hangable) //hanger 2
         {
             print("lock");
-            transform.position = new Vector2(targetpos5.position.x, targetpos5.position.y);
+            transform.position = new Vector2(targetpos5.position.x, targetpos5.position.y - offsetY);
             locked = true;
             innitialpos = transform.position;
             gaemhander.GetComponent<Game_handler>().respawn();

@@ -8,16 +8,25 @@ public class Inventory_main : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D collision)
     {
-        gaemhander.GetComponent<Game_handler>().mouseonINV = true;
+        if (!(collision.gameObject.tag == "Inventory"))
+        {
+            gaemhander.GetComponent<Game_handler>().mouseonINV = true;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        gaemhander.GetComponent<Game_handler>().mouseonINV = true;
+        if (!(collision.gameObject.tag == "Inventory"))
+        {
+            gaemhander.GetComponent<Game_handler>().mouseonINV = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        gaemhander.GetComponent<Game_handler>().mouseonINV = false;
+        if (!(collision.gameObject.tag == "Inventory"))
+        {
+            gaemhander.GetComponent<Game_handler>().mouseonINV = false;
+        }
     }
 }

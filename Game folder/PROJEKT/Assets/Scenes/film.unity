@@ -4217,6 +4217,9 @@ MonoBehaviour:
   paper: {fileID: 2625487959425399378, guid: 2c9cc55512adb5c42aa3c9b13f01a93b, type: 3}
   filmpos: {fileID: 1379339290}
   paperpos: {fileID: 1558780218}
+  inv1: {fileID: 1817488545}
+  inv2: {fileID: 1971639537}
+  inv3: {fileID: 187991744}
 --- !u!4 &1946048782
 Transform:
   m_ObjectHideFlags: 0

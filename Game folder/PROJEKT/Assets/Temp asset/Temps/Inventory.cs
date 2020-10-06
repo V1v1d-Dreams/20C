@@ -40,4 +40,24 @@ public class Inventory : MonoBehaviour
         }
         
     }
+
+    public void Up()
+    {
+        if (!IsUp)
+        {
+            transform.position = new Vector3(transform.position.x, -0.1f, transform.position.z);
+            GetComponent<SpriteRenderer>().sortingOrder += 3;
+            IsUp = true;
+        }
+    }
+
+    public void Down()
+    {
+        if (IsUp)
+        {
+            transform.position = new Vector3(transform.position.x, -4.04f, transform.position.z);
+            GetComponent<SpriteRenderer>().sortingOrder -= 3;
+            IsUp = false;
+        }
+    }
 }

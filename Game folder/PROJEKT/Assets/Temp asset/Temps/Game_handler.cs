@@ -15,6 +15,9 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject paper;
     [SerializeField] Transform filmpos;
     [SerializeField] Transform paperpos;
+    [SerializeField] GameObject inv1;
+    [SerializeField] GameObject inv2;
+    [SerializeField] GameObject inv3;
     void Start()
     {
         cam_follow_pos = cam.transform.position;
@@ -26,6 +29,24 @@ public class Game_handler : MonoBehaviour
         dynamicmovespeed();
 
         movecam();
+
+        if(inv1.GetComponent<Inventory>().IsUp == true)
+        {
+            inv2.GetComponent<Inventory>().Down();
+            inv3.GetComponent<Inventory>().Down();
+        }
+
+        if (inv2.GetComponent<Inventory>().IsUp == true)
+        {
+            inv1.GetComponent<Inventory>().Down();
+            inv3.GetComponent<Inventory>().Down();
+        }
+
+        if (inv3.GetComponent<Inventory>().IsUp == true)
+        {
+            inv1.GetComponent<Inventory>().Down();
+            inv2.GetComponent<Inventory>().Down();
+        }
 
 
 

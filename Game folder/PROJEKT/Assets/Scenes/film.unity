@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 28922520}
   m_Layer: 0
   m_Name: inventoryhitbox
-  m_TagString: Untagged
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 187991746}
   m_Layer: 0
   m_Name: Tools-inv
-  m_TagString: Inventory
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -872,12 +872,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 187991744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7d524b1949669c4e8ece4373a12de1a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a7b5baa4d03ded47b263e8f37742c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
   Interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
   IsUp: 0
+  filminv: {fileID: 1971639537}
+  PhotoInv: {fileID: 1817488545}
+  cam: {fileID: 519420031}
 --- !u!61 &187991747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1860,7 +1863,7 @@ GameObject:
   - component: {fileID: 625506622}
   m_Layer: 0
   m_Name: inventoryhitbox
-  m_TagString: Untagged
+  m_TagString: ToolsINV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1920,7 +1923,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625506620}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3509,7 +3512,7 @@ GameObject:
   - component: {fileID: 1567721770}
   m_Layer: 0
   m_Name: inventoryhitbox
-  m_TagString: Untagged
+  m_TagString: FilmINV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3569,7 +3572,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567721768}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3881,7 +3884,7 @@ GameObject:
   - component: {fileID: 1817488546}
   m_Layer: 0
   m_Name: Photo-inv
-  m_TagString: Inventory
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3901,6 +3904,9 @@ MonoBehaviour:
   Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
   Interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
   IsUp: 0
+  filminv: {fileID: 1971639537}
+  Toolinv: {fileID: 187991744}
+  cam: {fileID: 519420031}
 --- !u!61 &1817488547
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4213,6 +4219,8 @@ MonoBehaviour:
   maxpos_X: {fileID: 1486735691}
   minpos_X: {fileID: 1999023196}
   mouseonINV: 0
+  mouseonfilmINV: 0
+  mouseontoolINV: 0
   film: {fileID: 2567888212606300828, guid: 20ae90d0945306141a694b436629bade, type: 3}
   paper: {fileID: 2625487959425399378, guid: 2c9cc55512adb5c42aa3c9b13f01a93b, type: 3}
   filmpos: {fileID: 1379339290}
@@ -4371,7 +4379,7 @@ GameObject:
   - component: {fileID: 1971639539}
   m_Layer: 0
   m_Name: Film-inv
-  m_TagString: Inventory
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4400,12 +4408,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1971639537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7d524b1949669c4e8ece4373a12de1a, type: 3}
+  m_Script: {fileID: 11500000, guid: a2250b915750d034bab2aebf0fba9211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
   Interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
   IsUp: 0
+  Photoinv: {fileID: 1817488545}
+  Toolinv: {fileID: 187991744}
+  cam: {fileID: 519420031}
 --- !u!61 &1971639540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4845,21 +4856,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8473226522318584133, guid: b7fe5c1260f567e479fc7d0a7866c0d3,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.18707255
-      objectReference: {fileID: 0}
-    - target: {fileID: 8473226522318584133, guid: b7fe5c1260f567e479fc7d0a7866c0d3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.18707255
-      objectReference: {fileID: 0}
-    - target: {fileID: 8473226522318584133, guid: b7fe5c1260f567e479fc7d0a7866c0d3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.18707255
       objectReference: {fileID: 0}
     - target: {fileID: 8473226522318584135, guid: b7fe5c1260f567e479fc7d0a7866c0d3,
         type: 3}

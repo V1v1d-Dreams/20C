@@ -35,6 +35,8 @@ public class Picture : MonoBehaviour
     bool oninv;
     Picpart[] Pics;
 
+    private float onhold = 0;
+
     // Start is called before the first frame update
     void Start()  //X 3.45- 7.83 Y -2.92 2.94
     {
@@ -184,12 +186,15 @@ public class Picture : MonoBehaviour
 
     void setlayer(int layer)
     {
-        int children = transform.childCount;
-        for (int i = 0; i < children; ++i)
+        if (onhold == 0)
         {
-            transform.GetChild(i).GetComponent<Picpart>().setlayer(layer);
+            int children = transform.childCount;
+            for (int i = 0; i < children; ++i)
+            {
+                transform.GetChild(i).GetComponent<Picpart>().setlayer(layer);
+            }
+            onhold = 1;
         }
-
     }
 
     void returelayer()
@@ -199,5 +204,6 @@ public class Picture : MonoBehaviour
         {
             transform.GetChild(i).GetComponent<Picpart>().returnlayer();
         }
+        onhold = 0;
     }
 }

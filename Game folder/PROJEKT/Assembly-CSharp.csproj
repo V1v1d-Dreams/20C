@@ -68,6 +68,8 @@
     <Compile Include="Assets\Temp asset\Temps\Film.cs" />
     <Compile Include="Assets\Temp asset\Temps\Game_handler.cs" />
     <Compile Include="Assets\Temp asset\Temps\Inventory.cs" />
+    <Compile Include="Assets\Temp asset\Temps\InventoryFlim.cs" />
+    <Compile Include="Assets\Temp asset\Temps\InventoryTools.cs" />
     <Compile Include="Assets\Temp asset\Temps\Inventory_main.cs" />
     <Compile Include="Assets\Temp asset\Temps\Levelloader.cs" />
     <Compile Include="Assets\Temp asset\Temps\Mechine.cs" />

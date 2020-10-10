@@ -11,6 +11,8 @@ public class Game_handler : MonoBehaviour
     [SerializeField] private Transform maxpos_X;
     [SerializeField] private Transform minpos_X;
     [SerializeField] public bool mouseonINV;
+    [SerializeField] public bool mouseonfilmINV;
+    [SerializeField] public bool mouseontoolINV;
     [SerializeField] GameObject film;
     [SerializeField] GameObject paper;
     [SerializeField] Transform filmpos;
@@ -18,6 +20,7 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject inv1;
     [SerializeField] GameObject inv2;
     [SerializeField] GameObject inv3;
+    RaycastHit2D[] raycast;
     void Start()
     {
         cam_follow_pos = cam.transform.position;
@@ -26,29 +29,11 @@ public class Game_handler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        raycasting();
+    
         dynamicmovespeed();
 
         movecam();
-
-        if(inv1.GetComponent<Inventory>().IsUp == true)
-        {
-            inv2.GetComponent<Inventory>().Down();
-            inv3.GetComponent<Inventory>().Down();
-        }
-
-        if (inv2.GetComponent<Inventory>().IsUp == true)
-        {
-            inv1.GetComponent<Inventory>().Down();
-            inv3.GetComponent<Inventory>().Down();
-        }
-
-        if (inv3.GetComponent<Inventory>().IsUp == true)
-        {
-            inv1.GetComponent<Inventory>().Down();
-            inv2.GetComponent<Inventory>().Down();
-        }
-
-
 
     }
 
@@ -113,5 +98,31 @@ public class Game_handler : MonoBehaviour
     {
         Instantiate(film,filmpos);
         Instantiate(paper, paperpos);
+    }
+
+    void raycasting()
+    {
+        mouseonINV = false;
+        mouseonfilmINV = false;
+        mouseontoolINV = false;
+        raycast = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition),transform.forward);
+        for (int i = 0; i < raycast.Length; i++)
+        {
+            if (raycast[i].collider.gameObject.CompareTag("Inventory"))
+            {
+                mouseonINV = true;
+                break;
+            }
+            else if (raycast[i].collider.gameObject.CompareTag("FilmINV"))
+            {
+                mouseonfilmINV = true;
+                break;
+            }
+            else if (raycast[i].collider.gameObject.CompareTag("ToolsINV"))
+            {
+                mouseontoolINV = true;
+                break;
+            }
+        }
     }
 }

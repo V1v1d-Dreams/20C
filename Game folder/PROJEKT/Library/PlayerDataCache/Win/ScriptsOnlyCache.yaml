@@ -6,6 +6,8 @@ ScriptsOnlyBuild:
     - Film
     - Game_handler
     - Inventory
+    - InventoryFlim
+    - InventoryTools
     - Inventory_main
     - Levelloader
     - Mechine
@@ -27,10 +29,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -66,17 +66,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11148}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 12182}
+      Script: {instanceID: 12186}
     - Class: 114
-      Script: {instanceID: 12888}
+      Script: {instanceID: 12892}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13658}
     - Class: 114
-      Script: {instanceID: 14270}
+      Script: {instanceID: 14276}
     - Class: 114
-      Script: {instanceID: 14352}
+      Script: {instanceID: 14358}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -125,35 +125,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11148}
     - Class: 114
-      Script: {instanceID: 11478}
+      Script: {instanceID: 11450}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11930}
+      Script: {instanceID: 11566}
     - Class: 114
-      Script: {instanceID: 11976}
+      Script: {instanceID: 11796}
     - Class: 114
-      Script: {instanceID: 12374}
+      Script: {instanceID: 11934}
     - Class: 114
-      Script: {instanceID: 12826}
+      Script: {instanceID: 11980}
     - Class: 114
-      Script: {instanceID: 13114}
+      Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 13634}
+      Script: {instanceID: 12830}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13118}
     - Class: 114
-      Script: {instanceID: 13870}
+      Script: {instanceID: 13320}
     - Class: 114
-      Script: {instanceID: 13936}
+      Script: {instanceID: 13640}
     - Class: 114
-      Script: {instanceID: 13990}
+      Script: {instanceID: 13658}
     - Class: 114
-      Script: {instanceID: 14352}
+      Script: {instanceID: 13876}
     - Class: 114
-      Script: {instanceID: 19264}
+      Script: {instanceID: 13942}
+    - Class: 114
+      Script: {instanceID: 13996}
+    - Class: 114
+      Script: {instanceID: 14358}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -223,6 +227,12 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: 393c8cc96c41828bd11a07d06ed91da5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InventoryFlim
+  - hash:
+      serializedVersion: 2
       Hash: aeb62f729c52c814dec86c47dcac1471
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -235,7 +245,7 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: baf806993a5bc14258da1fb49d8a308d
+      Hash: 4992fbca21cfe9d93df1ca80f6df3ad0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Inventory
@@ -269,6 +279,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: UnityEngine.U2D
     className: SpriteShapeController
+  - hash:
+      serializedVersion: 2
+      Hash: d8b036e7f187735712e844799e943a6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: mechinebutton
   - hash:
       serializedVersion: 2
       Hash: 234d407605354852c48e57df17c9a1c6
@@ -361,7 +377,7 @@ ScriptsOnlyBuild:
     className: PixelPerfectCamera
   - hash:
       serializedVersion: 2
-      Hash: 3ebfb3e10e3c88616f8da02df76b1258
+      Hash: e1817487ff0c81c68e4761461457f468
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game_handler
@@ -559,6 +575,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 12279dc6c5bb27c3759461fdae1e6f51
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InventoryTools
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -731,12 +753,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: d8b036e7f187735712e844799e943a6e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: mechinebutton
   platform: 5
   scenePathNames:
   - Assets/Scenes/Before_redroom.unity

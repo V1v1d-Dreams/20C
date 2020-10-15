@@ -26,7 +26,7 @@ public class Film : MonoBehaviour
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
         innitialpos = transform.position;
         gaemhander =  GameObject.Find("Event controller");
-        invent = GameObject.Find("Film-inv");
+        invent = GameObject.Find("Photo-inv");
         targetpos1 = GameObject.Find("filmhere").transform;
     }
 
@@ -95,7 +95,7 @@ public class Film : MonoBehaviour
     }
     void Update()
     {
-        oninv = gaemhander.GetComponent<Game_handler>().mouseonfilmINV;
+        oninv = gaemhander.GetComponent<Game_handler>().mouseonINV;
 
     }
 

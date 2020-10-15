@@ -5,8 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Inventory
-  - FilmINV
   - ToolsINV
+  - Hanger
+  - tray1
+  - tray2
+  - tray3
   layers:
   - Default
   - TransparentFX

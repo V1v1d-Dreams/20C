@@ -10,16 +10,22 @@ public class Game_handler : MonoBehaviour
     [SerializeField] private float edgesize;
     [SerializeField] private Transform maxpos_X;
     [SerializeField] private Transform minpos_X;
-    [SerializeField] public bool mouseonINV;
-    [SerializeField] public bool mouseonfilmINV;
-    [SerializeField] public bool mouseontoolINV;
     [SerializeField] GameObject film;
     [SerializeField] GameObject paper;
     [SerializeField] Transform filmpos;
     [SerializeField] Transform paperpos;
     [SerializeField] GameObject inv1;
     [SerializeField] GameObject inv2;
-    [SerializeField] GameObject inv3;
+    [SerializeField] public bool placable = false;
+    
+    [Header("MouseOnSomething")]
+    [SerializeField] public GameObject currentmouseon;
+    [SerializeField] public bool mouseonINV;
+    [SerializeField] public bool mouseontoolINV;
+    [SerializeField] public bool mouseonTray1;
+    [SerializeField] public bool mouseonTray2;
+    [SerializeField] public bool mouseonTray3;
+
     RaycastHit2D[] raycast;
     void Start()
     {
@@ -103,24 +109,56 @@ public class Game_handler : MonoBehaviour
     void raycasting()
     {
         mouseonINV = false;
-        mouseonfilmINV = false;
         mouseontoolINV = false;
+        placable = false;
+        mouseonTray1 = false;
+        mouseonTray2 = false;
+        mouseonTray3 = false;
         raycast = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition),transform.forward);
-        for (int i = 0; i < raycast.Length; i++)
+        for (int i = raycast.Length -1; i >= 0; i--)
         {
             if (raycast[i].collider.gameObject.CompareTag("Inventory"))
             {
+                currentmouseon = raycast[i].collider.gameObject;
                 mouseonINV = true;
-                break;
-            }
-            else if (raycast[i].collider.gameObject.CompareTag("FilmINV"))
-            {
-                mouseonfilmINV = true;
                 break;
             }
             else if (raycast[i].collider.gameObject.CompareTag("ToolsINV"))
             {
+                currentmouseon = raycast[i].collider.gameObject;
+                if (!raycast[i].collider.gameObject.GetComponent<slotInv>().slotted)
+                {
+                    placable = true;
+                }
                 mouseontoolINV = true;
+                break;
+            }
+            else if (raycast[i].collider.gameObject.CompareTag("Hanger"))
+            {
+                currentmouseon = raycast[i].collider.gameObject;
+
+                if (!raycast[i].collider.gameObject.GetComponent<hanger>().Locked)
+                {
+                    placable = true;
+                    break;
+                }
+            }
+            else if (raycast[i].collider.gameObject.CompareTag("tray1"))
+            {
+                currentmouseon = raycast[i].collider.gameObject;
+                mouseonTray1 = true;
+                break;
+            }
+            else if (raycast[i].collider.gameObject.CompareTag("tray2"))
+            {
+                currentmouseon = raycast[i].collider.gameObject;
+                mouseonTray2 = true;
+                break;
+            }
+            else if (raycast[i].collider.gameObject.CompareTag("tray3"))
+            {
+                currentmouseon = raycast[i].collider.gameObject;
+                mouseonTray3 = true;
                 break;
             }
         }

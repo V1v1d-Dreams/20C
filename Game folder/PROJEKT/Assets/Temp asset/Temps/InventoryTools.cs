@@ -7,7 +7,6 @@ public class InventoryTools : MonoBehaviour
     public Texture2D Normal;
     public Texture2D Interactable;
     public bool IsUp = false;
-    [SerializeField]GameObject filminv;
     [SerializeField]GameObject PhotoInv;
     RaycastHit2D[] raycast;
     [SerializeField]Camera cam;
@@ -39,7 +38,6 @@ public class InventoryTools : MonoBehaviour
                         GetComponent<SpriteRenderer>().sortingOrder += 3;
                         IsUp = true;
                         PhotoInv.GetComponent<Inventory>().Down();
-                        filminv.GetComponent<InventoryFlim>().Down();
                     }
 
                     break;

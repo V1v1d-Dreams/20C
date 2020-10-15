@@ -10,7 +10,14 @@ public class mechinebutton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (mechine.GetComponent<Mechine>().filmin && mechine.GetComponent<Mechine>().paperin && !mechine.GetComponent<Mechine>().Opened)
+        {
+            this.GetComponent<SpriteRenderer>().color = Color.green;
+        }
+        else
+        {
+            this.GetComponent<SpriteRenderer>().color = Color.red;
+        }
     }
 
     void OnMouseUp()

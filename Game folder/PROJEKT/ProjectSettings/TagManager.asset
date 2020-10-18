@@ -10,6 +10,7 @@ TagManager:
   - tray1
   - tray2
   - tray3
+  - letter
   layers:
   - Default
   - TransparentFX

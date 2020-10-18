@@ -10,6 +10,7 @@ public class Textmanager : MonoBehaviour
     [SerializeField] Texture2D charSheet;
     [SerializeField] int spritesize = 80;
     [SerializeField] int spriteheigh = 64;
+    [Range(0.0001F,0.01F)]
     [SerializeField] float charlength = 0.1f;
     [SerializeField] public float NewtextPos;
     

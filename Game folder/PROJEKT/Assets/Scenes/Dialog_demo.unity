@@ -277,9 +277,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - YO! WHATS UP
-  - I need to get this pic done
-  - ya up for the task?
+  - Dori me
+  - Interimo, adapare
+  - Dori me
   - I hope you dont ruin my picture here
   - I got to go for now
   Textstart: {fileID: 1531325351}

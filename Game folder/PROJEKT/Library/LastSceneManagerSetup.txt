@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Dialog_demo.unity
+- path: Assets/Scenes/Light2D_Testing.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

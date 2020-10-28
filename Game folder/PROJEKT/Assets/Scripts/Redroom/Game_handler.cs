@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Game_handler : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject inv1;
     [SerializeField] GameObject inv2;
     [SerializeField] public bool placable = false;
-    
+
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
     [SerializeField] public bool mouseonINV;
@@ -25,6 +26,15 @@ public class Game_handler : MonoBehaviour
     [SerializeField] public bool mouseonTray1;
     [SerializeField] public bool mouseonTray2;
     [SerializeField] public bool mouseonTray3;
+
+    [Header("Timer")]
+    [SerializeField] public float Times;
+    [SerializeField] public float currenttime;
+    [SerializeField] public Text textsss;
+
+    [Header("campos")]
+    [SerializeField] public int[] CamPosittion;
+    [SerializeField] public int CurrentCamPos = 1;
 
     RaycastHit2D[] raycast;
     void Start()
@@ -35,11 +45,13 @@ public class Game_handler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timer();
+
         raycasting();
     
-        dynamicmovespeed();
+        //dynamicmovespeed();
 
-        movecam();
+        //movecam();
 
     }
 
@@ -163,4 +175,49 @@ public class Game_handler : MonoBehaviour
             }
         }
     }
+
+    void timer()
+    {
+        textsss.text = currenttime + "/" + Times;
+        if (currenttime < Times)
+        {
+            currenttime += Time.deltaTime;
+        }
+        else
+        {
+            GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(3);
+        }
+    }
+
+    public void moveleft()
+    {
+        print("hit");
+        if ((CurrentCamPos-1) < 0)
+        {
+            cam.transform.position = new Vector3(CamPosittion.Length -1, cam.transform.position.y, cam.transform.position.z);
+            CurrentCamPos = CamPosittion.Length - 1;
+        }
+        else
+        {
+            cam.transform.position = new Vector3(CamPosittion[CurrentCamPos - 1], cam.transform.position.y, cam.transform.position.z);
+            CurrentCamPos -= 1;
+        }
+
+    }
+
+    public void moveright()
+    {
+        if ((CurrentCamPos + 1) == CamPosittion.Length)
+        {
+            cam.transform.position = new Vector3(CamPosittion[0], cam.transform.position.y, cam.transform.position.z);
+            CurrentCamPos = 0;
+
+        }
+        else
+        {
+            cam.transform.position = new Vector3(CamPosittion[CurrentCamPos + 1], cam.transform.position.y, cam.transform.position.z);
+            CurrentCamPos += 1;
+        }
+    }
+
 }

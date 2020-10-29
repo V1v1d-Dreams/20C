@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dialog_demo.unity
     guid: 1263b0806bfc64c498238f4fb1769812
+  - enabled: 1
+    path: Assets/Scenes/Light2D_Testing.unity
+    guid: dfde59d5bbeb32646b1297bcced0ba2b
   m_configObjects: {}

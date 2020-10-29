@@ -4644,6 +4644,11 @@ MonoBehaviour:
   mouseonTray1: 0
   mouseonTray2: 0
   mouseonTray3: 0
+  Times: 0
+  currenttime: 0
+  textsss: {fileID: 0}
+  CamPosittion: 
+  CurrentCamPos: 1
 --- !u!4 &1946048782
 Transform:
   m_ObjectHideFlags: 0

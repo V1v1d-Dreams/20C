@@ -55,7 +55,7 @@ public class SmoLpic : MonoBehaviour
         camleft.SetActive(true);
         camright.SetActive(true);
         GameObject.Find("mechine").GetComponent<Mechine>().Opened = false;
-        GameObject.Find("mechine").GetComponent<Mechine>().paperin = false;
-        GameObject.Find("mechine").GetComponent<Mechine>().filmin = false;
+        //GameObject.Find("mechine").GetComponent<Mechine>().paperin = false;
+        //GameObject.Find("mechine").GetComponent<Mechine>().filmin = false;
     }
 }

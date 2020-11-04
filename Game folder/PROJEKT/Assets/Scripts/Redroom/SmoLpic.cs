@@ -12,6 +12,8 @@ public class SmoLpic : MonoBehaviour
     [SerializeField] GameObject buttonL;
     [SerializeField] GameObject buttonR;
     [SerializeField] GameObject Overlay;
+    [SerializeField] GameObject camleft;
+    [SerializeField] GameObject camright;
     void Start()
     {
         this.GetComponent<SpriteRenderer>().sprite = Smol[0];
@@ -50,6 +52,8 @@ public class SmoLpic : MonoBehaviour
         buttonR.SetActive(false);
         Overlay.SetActive(false);
         gameObject.SetActive(false);
+        camleft.SetActive(true);
+        camright.SetActive(true);
         GameObject.Find("mechine").GetComponent<Mechine>().Opened = false;
         GameObject.Find("mechine").GetComponent<Mechine>().paperin = false;
         GameObject.Find("mechine").GetComponent<Mechine>().filmin = false;

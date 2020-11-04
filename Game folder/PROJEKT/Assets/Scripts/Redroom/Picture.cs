@@ -136,6 +136,7 @@ public class Picture : MonoBehaviour
         }
         else
         {
+            /*
             if (gaemhander.GetComponent<Game_handler>().placable)
             {
                 print("slotted");
@@ -147,9 +148,16 @@ public class Picture : MonoBehaviour
                 PastPos.GetComponent<hanger>().Locked = false;
                 gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<slotInv>().slotted = true;
                 locked = true;
+            }*/
+            if (oninv) //on inventory
+            {
+                setlayer(101);
+                innitialpos = transform.position;
+                transform.SetParent(invent.transform, true);
             }
             else
             {
+                transform.SetParent(invent.transform, true);
                 transform.position = new Vector2(innitialpos.x, innitialpos.y);
             }
         }

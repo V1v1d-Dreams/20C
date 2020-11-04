@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Textmanager : MonoBehaviour
@@ -113,5 +114,53 @@ public class Textmanager : MonoBehaviour
 
 
         return (NewtextPos);
+        
     }
+
+
+    /*
+
+    // fulltext = text
+    // C = current char
+    // j = C's index
+    protected void Checktag(string fulltext,char c, int j, ref bool intag)
+    {
+        if (c == '<')
+        {
+            intag = true;
+            char next = fulltext[j + 1];
+            if (next != '/')
+            {
+                switch (next)
+                {
+                    case 'red': 
+                }
+            }
+            else
+            {
+                //activeEffect = TextEffect.None;
+            }
+        }
+        else if (j > 0 && fulltext[j-1] == '>')
+        {
+            intag = false;
+        }
+    }
+
+    protected void DotextEffect()
+    {
+        foreach (GameObject Chardatas in fxchar (array) )
+        {
+            var effect = fxchar[chardatas];
+            var Transforms = chardatas.transform;
+
+            switch(effect)
+            {
+                case TextEffect.Wavy:
+                    transform.position += Vector3.up * Mathf.Sin(transform.position.x * 0.1f + 10 * Time.time) * 0.04f;
+                    break;
+            }
+        }
+    }
+    */
 }

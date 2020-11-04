@@ -8,6 +8,8 @@ public class Mechine : MonoBehaviour
     [SerializeField] GameObject buttonR;
     [SerializeField] GameObject buttonL;
     [SerializeField] GameObject overlay;
+    [SerializeField] GameObject camleft;
+    [SerializeField] GameObject camright;
     public bool Opened = false;
     [SerializeField] public GameObject gaemhander;
     [SerializeField] public bool filmin = false;
@@ -28,6 +30,8 @@ public class Mechine : MonoBehaviour
             overlay.SetActive(true);
             buttonR.SetActive(true);
             buttonL.SetActive(true);
+            camleft.SetActive(false);
+            camright.SetActive(false);
             Opened = true;
         }
     }

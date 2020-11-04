@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Light2D_Testing.unity
+- path: Assets/Scenes/Ourroom.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

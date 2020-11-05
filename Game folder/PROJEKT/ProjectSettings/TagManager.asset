@@ -11,6 +11,7 @@ TagManager:
   - tray2
   - tray3
   - letter
+  - Film
   layers:
   - Default
   - TransparentFX

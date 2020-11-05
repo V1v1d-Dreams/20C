@@ -33,4 +33,17 @@ public class Levelloader : MonoBehaviour
 
 
     }    
+
+    public void newday()
+    {
+        StartCoroutine(loadlevel(2));
+        staticDataHolder.currentTime = 0;
+    }
+
+    public void Done()
+    {
+        StartCoroutine(loadlevel(1));
+        staticDataHolder.currentTime = 0;
+        staticDataHolder.currentIndex = 0;
+    }
 }

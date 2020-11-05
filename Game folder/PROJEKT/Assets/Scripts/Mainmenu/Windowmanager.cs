@@ -56,7 +56,8 @@ public class Windowmanager : MonoBehaviour
     public void startGame()
     {
         closeAll();
-        SceneManager.LoadScene(scene);
+        GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(scene); //yeen's
+        //SceneManager.LoadScene(scene);
     }
 
     public void continueGame()

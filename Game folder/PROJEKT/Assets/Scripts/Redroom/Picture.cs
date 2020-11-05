@@ -33,6 +33,10 @@ public class Picture : MonoBehaviour
     [SerializeField] bool Hanged = false;
     [SerializeField] GameObject PastPos;
 
+    /*
+    [Header("Data")]
+    public Sprite Blur;
+    */
 
 
     void Start()  //X 3.45- 7.83 Y -2.92 2.94

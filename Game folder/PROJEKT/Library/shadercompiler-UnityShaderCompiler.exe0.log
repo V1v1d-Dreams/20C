@@ -1,10 +1,2 @@
-<<<<<<< HEAD
-Base path: 'C:/Program Files/Unity/2019.4.8f1/Editor/Data', plugins path 'C:/Program Files/Unity/2019.4.8f1/Editor/Data/PlaybackEngines'
-=======
 Base path: 'C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/PlaybackEngines'
->>>>>>> parent of b1c28f06... 20C [ 0.1.7.3.4]
 Cmd: initializeCompiler
-Cmd: preprocess
-  insize=1183 outsize=312 ok=1
-Cmd: preprocess
-  insize=1687 outsize=603 ok=1

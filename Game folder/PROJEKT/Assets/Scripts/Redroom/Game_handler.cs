@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Game_handler : MonoBehaviour
 {
-    [SerializeField] private Camera cam;
+    [SerializeField] public Camera cam;
     private Vector3 cam_follow_pos;
     [SerializeField] private float moveAmount;
     [SerializeField] private float edgesize;
@@ -185,7 +185,7 @@ public class Game_handler : MonoBehaviour
         }
         else
         {
-            GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(3);
+            GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(2);
         }
     }
 
@@ -218,6 +218,12 @@ public class Game_handler : MonoBehaviour
             cam.transform.position = new Vector3(CamPosittion[CurrentCamPos + 1], cam.transform.position.y, cam.transform.position.z);
             CurrentCamPos += 1;
         }
+    }
+
+    public void RedRoomexit()
+    {
+        GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(2);
+        staticDataHolder.currentTime++;
     }
 
 }

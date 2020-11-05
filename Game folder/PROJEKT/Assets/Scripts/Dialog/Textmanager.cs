@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Textmanager : MonoBehaviour
 {
-    [System.NonSerialized] public char[] chars = "!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]_`{|}~abcdefghijklmnopqrstuvwxyz ".ToCharArray();
+    //[System.NonSerialized] public char[] chars = "!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]_`{|}~abcdefghijklmnopqrstuvwxyz ".ToCharArray();
+    [SerializeField] public char[] chars = "!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]_`{|}~abcdefghijklmnopqrstuvwxyz ".ToCharArray();
     [SerializeField] Sprite[] charsprite;
     [SerializeField] Dictionary<char, Chardata> chardata;
     [SerializeField] Texture2D charSheet;
@@ -13,8 +14,8 @@ public class Textmanager : MonoBehaviour
     [SerializeField] int spriteheigh = 64;
     [SerializeField] float charlength = 0.1f;
     [SerializeField] public float NewtextPos;
-    
-
+    [SerializeField] Color32 Textcolor;
+    [SerializeField] Color32 Namecolor;
 
     void Start()
     {
@@ -103,19 +104,36 @@ public class Textmanager : MonoBehaviour
 
     public float DisplayDialog(char input, Transform textlocation,GameObject letter)
     {
-        print("go");
         GameObject newtext;
         NewtextPos = textlocation.position.x;
 
         newtext = Instantiate(letter);
         newtext.transform.position = new Vector3(textlocation.position.x,textlocation.position.y,textlocation.position.z);
         newtext.GetComponent<SpriteRenderer>().sprite = chardata[input].sprite;
+        newtext.GetComponent<SpriteRenderer>().color = Textcolor;
+
+        NewtextPos += (chardata[input].width * charlength);
+
+
+        return (NewtextPos); 
+    }
+
+    public float DisplayName(char input, Transform textlocation, GameObject letter)
+    {
+        GameObject newtext;
+        NewtextPos = textlocation.position.x;
+
+        newtext = Instantiate(letter);
+        newtext.transform.position = new Vector3(textlocation.position.x, textlocation.position.y, textlocation.position.z);
+        newtext.GetComponent<SpriteRenderer>().sprite = chardata[input].sprite;
+        newtext.GetComponent<SpriteRenderer>().color = Namecolor;
+
         NewtextPos += (chardata[input].width * charlength);
 
 
         return (NewtextPos);
-        
     }
+
 
 
     /*

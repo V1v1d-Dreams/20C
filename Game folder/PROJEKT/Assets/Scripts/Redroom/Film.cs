@@ -19,6 +19,13 @@ public class Film : MonoBehaviour
     [SerializeField] private GameObject invent;
     bool oninv;
 
+    [SerializeField] GameObject[] picturearray;
+    [SerializeField] Sprite[] BlurArray;
+
+    RaycastHit2D[] raycast;
+    private Camera cam;
+    [SerializeField] private bool mouseOnfilm;
+
 
     // Start is called before the first frame update
     void Start() 
@@ -28,6 +35,7 @@ public class Film : MonoBehaviour
         gaemhander =  GameObject.Find("Event controller");
         invent = GameObject.Find("Photo-inv");
         targetpos1 = GameObject.Find("filmhere").transform;
+        cam = GameObject.Find("Event controller").GetComponent<Game_handler>().cam;
     }
 
 
@@ -69,12 +77,13 @@ public class Film : MonoBehaviour
         returelayer();
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
 
-        if (Mathf.Abs(transform.position.x - targetpos1.position.x) <= 0.5f &&
-            Mathf.Abs(transform.position.y - targetpos1.position.y) <= 0.5f)
+        if (mouseOnfilm)
         {
             transform.position = new Vector2(targetpos1.position.x, targetpos1.position.y);
             innitialpos = transform.position;
             GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
+            GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = picturearray;
+            GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().Smol = BlurArray;
             Destroy(gameObject);
 
         }
@@ -97,6 +106,16 @@ public class Film : MonoBehaviour
     {
         oninv = gaemhander.GetComponent<Game_handler>().mouseonINV;
 
+        mouseOnfilm = false;
+        raycast = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
+        for (int i = raycast.Length - 1; i >= 0; i--)
+        {
+            if (raycast[i].collider.gameObject.CompareTag("Film"))
+            {
+                mouseOnfilm = true;
+                break;
+            }
+        }
     }
 
     void setlayer(int layer)

@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class SmoLpic : MonoBehaviour
 {
-    [SerializeField] Sprite[] Smol;
-    [SerializeField] GameObject[] pic;
+    [SerializeField] public Sprite[] Smol;
+    [SerializeField] public GameObject[] pic;
     int index = 0;
     [SerializeField] Transform spawnpt;
     [SerializeField] GameObject buttonL;

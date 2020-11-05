@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mechine : MonoBehaviour
 {
-    [SerializeField] GameObject smolpic;
+    [SerializeField] public GameObject smolpic;
     [SerializeField] GameObject buttonR;
     [SerializeField] GameObject buttonL;
     [SerializeField] GameObject overlay;
@@ -20,6 +20,7 @@ public class Mechine : MonoBehaviour
 
     void Start()
     {
+
     }
 
     void Update()

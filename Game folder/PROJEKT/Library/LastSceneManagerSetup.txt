@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/audio player test.unity
+=======
+- path: Assets/Scenes/redroom.unity
+>>>>>>> parent of b1c28f06... 20C [ 0.1.7.3.4]
   isLoaded: 1
   isActive: 1
   isSubScene: 0

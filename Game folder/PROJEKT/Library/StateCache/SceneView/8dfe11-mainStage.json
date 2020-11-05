@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":509.8654479980469,"y":397.64862060546877,"z":-982.6695556640625},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":1571.703125,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":-0.4052762985229492,"y":2.7225139141082765,"z":-6.9623589515686039},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":11.50881576538086,"orthographic":true}
+>>>>>>> parent of b1c28f06... 20C [ 0.1.7.3.4]

@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class Picture : MonoBehaviour
 {
-    [TextArea]
-    [Tooltip("Doesn't do anything. Just comments shown in inspector")]
-    public string Notes = "FILL IN THIS SHIT";
-
-    [Header("Value")]
-    [Tooltip("FUCKING PUT THIS IN OR ELSE THE GAME WILL BROKE")]
-    [SerializeField] public float Value;
-
     [Header("Cursor")]
     public Texture2D Normal;
     public Texture2D Interactable;
@@ -40,7 +32,6 @@ public class Picture : MonoBehaviour
     [SerializeField] private float onhold = 0; //holdingpic or not
     [SerializeField] bool Hanged = false;
     [SerializeField] GameObject PastPos;
-    [SerializeField] public bool isholding = false;
 
     /*
     [Header("Data")]
@@ -70,18 +61,15 @@ public class Picture : MonoBehaviour
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
     }
 
-    void Hold()
+    void OnMouseDrag()
     {
-        if (isholding)
+        Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
+        if (!locked)
         {
-            Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
-            if (!locked)
-            {
-                setlayer(200);
-                transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
-                mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
-            }
+            setlayer(200);
+            transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
+            mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
         }
     }
 
@@ -98,12 +86,11 @@ public class Picture : MonoBehaviour
 
     void OnMouseUp()
     {
-        isholding = false;
+        returelayer();
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
 
         if (!Hanged)
         {
-            returelayer();
             if (gaemhander.GetComponent<Game_handler>().mouseonTray1) //first tray
             {
                 transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
@@ -136,26 +123,20 @@ public class Picture : MonoBehaviour
 
             }
             //-------------------------placable
-
             /*else if (transform.position.x > 3.45 && transform.position.x < 7.83 && transform.position.y > -2.92 && transform.position.y < 2.94)
             {       
                 innitialpos = transform.position;
             }*/
-
             //-------------------------
-
-            /*else if (oninv) //on inventory
+            else if (oninv) //on inventory
             {
                 setlayer(101);
                 transform.SetParent(invent.transform, true);
-            }*/
-
-            //-------------------------
+            }
             else //go back to original pos
             {
                 transform.position = new Vector2(innitialpos.x, innitialpos.y);
             }
-
         }
         else
         {
@@ -177,7 +158,6 @@ public class Picture : MonoBehaviour
                 setlayer(101);
                 innitialpos = transform.position;
                 transform.SetParent(invent.transform, true);
-                PastPos.GetComponent<hanger>().Locked = false;
             }
             else
             {
@@ -188,8 +168,6 @@ public class Picture : MonoBehaviour
     }
     void Update()
     {
-        Hold();
-
         if (!FirstTray&& !secondtray && !thirdtray)
         {
             if (motiontime > 0f)

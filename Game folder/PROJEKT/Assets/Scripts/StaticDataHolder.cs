@@ -6,8 +6,6 @@ public class staticDataHolder : MonoBehaviour
 {
     private static int CurrentIndex = 0;
     private static int CurrentTime = 0;
-    private static int Daynumber = 0;
-    private static float CustomerValue = 0;
 
     public static int currentIndex
     {
@@ -30,30 +28,6 @@ public class staticDataHolder : MonoBehaviour
         set
         {
             CurrentTime = value;
-        }
-    }
-
-    public static int daynumber
-    {
-        get
-        {
-            return Daynumber;
-        }
-        set
-        {
-            Daynumber = value;
-        }
-    }
-
-    public static float customerValue
-    {
-        get
-        {
-            return CustomerValue;
-        }
-        set
-        {
-            CustomerValue = value;
         }
     }
 }

@@ -39,7 +39,14 @@ public class Progressmanager : MonoBehaviour
 
 	public void start()
     {
-		TimeInnDex[staticDataHolder.currentIndex].SetActive(true);
+		if (TimeInnDex[staticDataHolder.currentIndex] = null)
+		{
+			GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(5);
+		}
+		else
+		{
+			TimeInnDex[staticDataHolder.currentIndex].SetActive(true);
+		}
     }
 
 	public void End()
@@ -57,5 +64,4 @@ public class Progressmanager : MonoBehaviour
 		}
 
     }
-
 }

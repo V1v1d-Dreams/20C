@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -345,6 +345,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 4
 --- !u!1 &184500556
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +447,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 6
 --- !u!1 &204316732
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +756,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 1
 --- !u!1 &346357242
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +940,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 1
 --- !u!1 &547265519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,6 +1114,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 5
 --- !u!1 &617905126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,6 +1570,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 3
 --- !u!1 &988154387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,6 +1640,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 5
 --- !u!1 &1090597435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,6 +1904,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 4
 --- !u!1 &1316294840
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2039,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 2
 --- !u!1 &1479490536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2109,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 3
 --- !u!1 &1487627579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2265,6 +2275,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 6
 --- !u!4 &1747420579
 Transform:
   m_ObjectHideFlags: 0
@@ -2444,6 +2455,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
+  WhatDayisToday: 2
 --- !u!1 &2046586560
 GameObject:
   m_ObjectHideFlags: 0

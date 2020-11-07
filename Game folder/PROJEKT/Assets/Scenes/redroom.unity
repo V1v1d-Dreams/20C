@@ -3630,7 +3630,7 @@ PrefabInstance:
     - target: {fileID: 1738467718807094851, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1790608366638744611, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
@@ -3949,6 +3949,7 @@ MonoBehaviour:
   inv1: {fileID: 108600841}
   inv2: {fileID: 737680761}
   placable: 0
+  children: []
   currentmouseon: {fileID: 0}
   mouseonINV: 0
   mouseontoolINV: 0

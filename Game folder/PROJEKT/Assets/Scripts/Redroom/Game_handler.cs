@@ -18,6 +18,7 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject inv1;
     [SerializeField] GameObject inv2;
     [SerializeField] public bool placable = false;
+    [SerializeField] Transform[] children;
 
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
@@ -37,6 +38,7 @@ public class Game_handler : MonoBehaviour
     [SerializeField] public int CurrentCamPos = 1;
 
     RaycastHit2D[] raycast;
+    RaycastHit2D[] Click;
     void Start()
     {
         cam_follow_pos = cam.transform.position;
@@ -45,6 +47,12 @@ public class Game_handler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Click = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
+            Click[0].collider.gameObject.GetComponent<Picture>().isholding = true;
+        }
+
         timer();
 
         raycasting();
@@ -191,7 +199,6 @@ public class Game_handler : MonoBehaviour
 
     public void moveleft()
     {
-        print("hit");
         if ((CurrentCamPos-1) < 0)
         {
             cam.transform.position = new Vector3(CamPosittion.Length -1, cam.transform.position.y, cam.transform.position.z);
@@ -224,6 +231,7 @@ public class Game_handler : MonoBehaviour
     {
         GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(2);
         staticDataHolder.currentTime++;
+
     }
 
 }

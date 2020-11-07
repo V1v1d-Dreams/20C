@@ -26,6 +26,7 @@ public class TextField : MonoBehaviour
     [SerializeField] GameObject Pic;
     bool Stated = false;
     [SerializeField] int Timeindex;
+    [SerializeField] int WhatDayisToday;
 
     void Start()
     {
@@ -128,6 +129,7 @@ public class TextField : MonoBehaviour
             else
             {
                 GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+                staticDataHolder.daynumber = WhatDayisToday;
             }
         }
     }

@@ -79,13 +79,10 @@ public class Film : MonoBehaviour
 
         if (mouseOnfilm)
         {
-            transform.position = new Vector2(targetpos1.position.x, targetpos1.position.y);
-            innitialpos = transform.position;
+            transform.position = new Vector2(innitialpos.x, innitialpos.y);
             GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
             GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = picturearray;
             GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().Smol = BlurArray;
-            Destroy(gameObject);
-
         }
         else if (transform.position.x > 3.45 && transform.position.x < 7.83 && transform.position.y > -2.92 && transform.position.y < 2.94)
         {       

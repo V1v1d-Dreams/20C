@@ -274,7 +274,7 @@ Transform:
   - {fileID: 1531325351}
   - {fileID: 841974085}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &158550252
 GameObject:
@@ -655,7 +655,7 @@ Transform:
   m_LocalScale: {x: 7.0048504, y: 7.0048504, z: 7.0048504}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &268457739
 GameObject:
@@ -731,17 +731,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Test
-  - Its just a test Bratha
-  - This Also a test
+  - Here, your developed photos. Quite a \nnice view if I said so.
+  - Is there anything else I can help \nyou today?
+  - No, this seems to be all. Nice work \nas always.
+  - Compared with the people that I \nhave worked with back when I was \nin the force,
+    you are nice.
+  - We had a guy who did not work as \nhard as others but kept getting all \nthe
+    awards.
+  - Showing it off and such, said he was \nlooking at the right place and had \nsome
+    connection.
+  - I really hate those types of people \nyou know? All play, no work, and \nstill
+    get the rewards.
+  - Seems like you had a bad time \nbefore.
+  - Luckily that I work alone and I own \nthis place so I am the one in control \nhere.
+  - Lucky for you. But you also have a \nhard time as well, I saw it in your \neyes.
+  - I will not bother you anymore of \nyour time.
+  - I will be going then.
   Names:
-  - ELLE
-  - JOSEPH
-  - DARYL
+  - SHOP OWNER
+  - SHOP OWNER
+  - MERLE
+  - MERLE
+  - MERLE
+  - MERLE
+  - JESUS
+  - SHOP OWNER
+  - SHOP OWNER
+  - MERLE
+  - MERLE
+  - MERLE
   character:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -836,7 +867,7 @@ Transform:
   m_LocalScale: {x: 0.92757, y: 0.92757, z: 0.92757}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &526366032
 GameObject:
@@ -882,39 +913,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - 'Hello, it has been a while since I \ncame here. Your place is still \nholding
-    as alway. '
-  - Yeah, it has been sometime \nsince you came here Mr. Merle.
-  - I was wondering if something \nhappened to you or not. Well, it \nlooks like
-    you are alive and well.
-  - This old man ain't gonna die \nthat easily
-  - How old are you again \nMr. Merle?
-  - I'm 46 this year
-  - IS that old for you? Your shape \nstill looks good to me, I guess...
-  - I have lived for 46 years, if I'm \nnot old, when should I be old? \nAnyway,
-    today I have some \nphotos that I would like for \nyou to develop for me. \nThey
-    are quite important to me.
+  - Hello, it has been a while since I \ncame here.
+  - Your place is still holding as alway.
+  - Yeah, it has been sometime since \nyou came here Mr.Merle.
+  - I was wondering if something \nhappened to you or not.
+  - Well, it looks like you are alive \nand well.
+  - This old man ain't gonna die that \neasily.
+  - How old are you again Mr.Merle?
+  - I am 46 this year.
+  - Is that old for you?
+  - Your shape still looks good to me, \nI guess...
+  - I have lived for 46 years, if I am \nnot old, when should I be old?
+  - Anyway, today I have some photos \nthat I would like for you to develop \nfor
+    me. They are quite important \nto me.
   - These are some important memories \nto you huh?
-  - Yeah... These are taken during my \ntrip to Asia but just when I'm having \na
-    break, I got called back here. \nSome personal stuff that shouldn't \nhave happened.
-    \nAndddd my whole trip is ruined.
-  - Oh, sorry to bother you with that. \nYou can sit over there while waiting \nfor
-    me to develop your photos. \nThe remote is over there if you \nwant to watch
-    something while waiting. \nI'll be going inside and \ndeveloping your photos
-    now.
+  - Yeah... These are taken during my trip \nto Asia but just when I am having \na
+    break, I got called back here.
+  - Some personal stuff that should not \nhave happened.
+  - Andddd my whole trip is ruined.
+  - Oh, sorry to bother you with that.
+  - You can sit over there while waiting \nfor me to develop your photos.
+  - The remote is over there if you want \nto watch something while waiting.
+  - I will be going inside and develop \nyour photos now.
   Names:
   - MERLE
-  - PLAYER
-  - PLAYER
   - MERLE
-  - PLAYER
+  - SHOP OWNER
+  - SHOP OWNER
+  - SHOP OWNER
   - MERLE
-  - PLAYER
+  - SHOP OWNER
   - MERLE
-  - PLAYER
+  - SHOP OWNER
+  - SHOP OWNER
   - MERLE
-  - PLAYER
+  - MERLE
+  - SHOP OWNER
+  - MERLE
+  - MERLE
+  - MERLE
+  - SHOP OWNER
+  - SHOP OWNER
+  - SHOP OWNER
+  - SHOP OWNER
   character:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
@@ -1021,7 +1072,7 @@ PrefabInstance:
     - target: {fileID: 1790608366638744611, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1790608366638744611, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
@@ -1197,7 +1248,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &617905130
 MonoBehaviour:
@@ -1499,7 +1550,7 @@ Transform:
   m_LocalScale: {x: 0.92757, y: 0.92757, z: 0.92757}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &866101739
 GameObject:
@@ -1641,6 +1692,185 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 5
+--- !u!1001 &1020390438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 501518675441265326, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 501518676377106204, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 501518676537456310, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 501518676691109760, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 501518677358898898, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 501518677538220272, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575896332886626157, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575896333163294591, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575896333565814761, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575896333664977853, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575896334506097631, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633609179616250304, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas_Main
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286281182140161603, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 617905128}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60f17787a2e09294282267228267dba6, type: 3}
 --- !u!1 &1090597435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,7 +1935,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1171938517
 GameObject:
@@ -1936,7 +2166,7 @@ Transform:
   - {fileID: 683278693}
   - {fileID: 1171938518}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440315482
 GameObject:
@@ -2139,7 +2369,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1487627581
 MonoBehaviour:
@@ -2218,7 +2448,7 @@ Transform:
   - {fileID: 184500557}
   - {fileID: 1440315483}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1747420577
 GameObject:
@@ -2431,8 +2661,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - Day2 morning
-  - Its just a test Bratha
-  - This Also a test
+  - Dori me
+  - Interimo, adapare Dorime
   Names:
   - ELLE
   - JOSEPH
@@ -2517,7 +2747,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2114209486
 GameObject:
@@ -2589,5 +2819,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

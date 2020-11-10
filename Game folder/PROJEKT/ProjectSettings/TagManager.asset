@@ -12,6 +12,7 @@ TagManager:
   - tray3
   - letter
   - Film
+  - TextBox
   layers:
   - Default
   - TransparentFX

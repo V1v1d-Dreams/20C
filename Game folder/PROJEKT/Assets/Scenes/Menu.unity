@@ -6674,5 +6674,10 @@ PrefabInstance:
       propertyPath: musicClips.Array.data[5]
       value: 
       objectReference: {fileID: 8300000, guid: 12c10a343ab68704cba97d38f5dc40c4, type: 3}
+    - target: {fileID: 4896173536343860939, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6432621d330ddf441ac6a0c03663ff58, type: 3}

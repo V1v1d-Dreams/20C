@@ -21,12 +21,15 @@ public class Levelloader : MonoBehaviour
     public void loadLV(int lv)
     {
         StartCoroutine(loadlevel(lv));
+        //print("check");
     }
 
     IEnumerator loadlevel(int levelindex)
     {
-        transition.SetTrigger("Start");
+        Time.timeScale = 1;
 
+        transition.SetTrigger("Start");
+        
         yield return new WaitForSeconds(transitiontime);
 
         SceneManager.LoadScene(levelindex);

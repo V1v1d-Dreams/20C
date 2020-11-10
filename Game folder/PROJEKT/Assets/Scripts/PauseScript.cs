@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseScript : MonoBehaviour
 {
+    [Tooltip("GameIsPauseBool, Update ")]
     public static bool GameIsPause = false;  //*****IMPORTANT! PLEASE STATE THIS IN EVERY ACTIONS OF OTHER SCRIPT*****
     //public GameObject ingameCursor;
     [Header("Canvas")]
@@ -23,6 +24,11 @@ public class PauseScript : MonoBehaviour
    
     [Header("Scene")]
     [Range(0, 10)] public int menu;
+
+    [Header("GameObject")]
+    public GameObject RayTraceBlocker;
+    public GameObject Debugger;
+    [System.NonSerialized] bool DebugActive = false;
 
     GameObject player;
     //bool IsGamePaused = false;
@@ -45,13 +51,27 @@ public class PauseScript : MonoBehaviour
                     mainPauseMenu();
 
                     Resume();
+
+                    RayTraceBlocker.SetActive(false);
                 }
                 else
                 {
                     Pause();
+
+                    RayTraceBlocker.SetActive(true);
                 }
 
+            
         }
+
+        if (Input.GetKeyUp(KeyCode.F12))
+        {
+            DebugActive = !DebugActive; 
+            Debugger.SetActive(DebugActive);
+
+        }
+
+
     }
 
     public void mainPauseMenu()
@@ -106,6 +126,9 @@ public class PauseScript : MonoBehaviour
 
     public void menuLoad()
     {
-        SceneManager.LoadScene(menu);
+        GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(menu);
+        //SceneManager.LoadScene(menu);
     }
+
+
 }

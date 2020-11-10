@@ -4293,17 +4293,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - D2 Even
-  - Its just a test Bratha
-  - This Also a test
+  - Here you go.
+  - Let's see here.
+  - Thanks for the photos, the money \nis on the table, keep the change.
+  - Gotta go now. I gotta go pickup my \nstep-brother and bring him to that \nnew
+    Asian joint around the corner.
+  - That man will love it.
+  - Though getting him out of the house \nis a hassle - the guy does not like \nthe
+    chance or doing new things, you \nknow?
+  - I will get one of my friends to \ncheck the place with me and to \nconvince him
+    that it is a good place \nto visit.
+  - .........
   Names:
-  - ELLE
+  - SHOP OWNER
   - JOSEPH
-  - DARYL
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - SHOP OWNER
   character:
-  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
-  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
-  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -5584,17 +5602,83 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Good day, I would like you to develop my photos
-  - Dori me
-  - Interimo, adapare Dorime
+  - Good day, I would like you to \ndevelop my photos
+  - Sure thing, hand me your photos \nand I will get right into it \nMr.Joseph.
+  - Before that, let me have my food \nfirst. Do you want some of this \nfood?
+  - Um......  no thanks.
+  - I just had lunch before you came in.
+  - Ok, that is up to you but you are \nmissing out a lot. Good food will not \ncome
+    by easy in this part of town.
+  - By the way, Do you know that there \nis a new restaurant around this \ncorner?
+  - Is it Chinese, Vietnamese or Thai? \nAh whatever, as long as it is a food, \nthey
+    are all the same.
+  - But damn it is good to have something \nnew to eat and hella cheap too!
+  - Well, that looks interesting but this \nis a store about developing fims not
+    \na food restaurant.
+  - Or a bar in an alley that talks to \ncustomers or a coffee shop you know?
+  - Can I help you with something \nMr.Joseph?
+  - Oh almost forget about that, let's \nsee here. I got photos that I would \nlike
+    you to develop for me. Here \nthey are.
+  - Oh, finally.
+  - You can do the same as always \nMr.Joseph.
+  - Find somewhere to wait and do not \nmess the floor, I just cleaned that \nlast
+    night. I will be going inside
+  - Hello and welcome to latest LT NEWS.
+  - I am Johnson and in this is our \nlatest story.
+  - A female body were found alongside \nthe river once again, that make it \nthe
+    third times in this months that \na body were found
+  - Huh, another body found in this \narea.
+  - You heard anything related to this?
+  - Nah.
+  - ............
   Names:
   - JOSEPH
+  - SHOP OWNER
   - JOSEPH
-  - DARYL
+  - SHOP OWNER
+  - SHOP OWNER
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - SHOP OWNER
+  - SHOP OWNER
+  - SHOP OWNER
+  - JOSEPH
+  - SHOP OWNER
+  - SHOP OWNER
+  - SHOP OWNER
+  - NEWS REPORTER
+  - NEWS REPORTER
+  - NEWS REPORTER
+  - JOSEPH
+  - JOSEPH
+  - SHOP OWNER
+  - SHOP OWNER
   character:
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}

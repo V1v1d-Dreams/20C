@@ -61,63 +61,63 @@ public class Levelloader : MonoBehaviour
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 1;
+        staticDataHolder.currentIndex = 2;
     }
     public void Day3()
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 2;
+        staticDataHolder.currentIndex = 4;
     }
     public void Day4()
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 3;
+        staticDataHolder.currentIndex = 6;
     }
     public void Day5()
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 4;
+        staticDataHolder.currentIndex = 8;
     }
     public void Day6()
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 5;
+        staticDataHolder.currentIndex = 10;
     }
 
     public void Day1EVEN()
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 6;
+        staticDataHolder.currentIndex = 1;
     }
 
     public void Day2EVEN()
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 7;
+        staticDataHolder.currentIndex = 3;
     }
     public void Day3EVEN()
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 8;
+        staticDataHolder.currentIndex = 5;
     }
     public void Day4EVEN()
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 9;
+        staticDataHolder.currentIndex = 7;
     }
     public void Day5EVEN()
     {
         StartCoroutine(loadlevel(2));
         staticDataHolder.currentTime = 0;
-        staticDataHolder.currentIndex = 10;
+        staticDataHolder.currentIndex = 9;
     }
     public void Day6EVEN()
     {

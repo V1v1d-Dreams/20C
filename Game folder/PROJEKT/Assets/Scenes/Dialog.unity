@@ -320,17 +320,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Test
-  - Its just a test Bratha
-  - This Also a test
+  - Here are all of your photos.
+  - There is something weird about your \nphotos but it might be my \nimagination.
+  - Ok, let me see that......
+  - There is nothing wrong with my \nphotos.
+  - Phew, at first I thought the photos \nwere bad.
+  - Maybe you should get some rest. \nAll these weird things might just \ngo away.
+  - Thanks for the advice.
+  - I guess I will be going to bed early \ntoday.
+  - I will be going now, see you next \ntime.
   Names:
-  - ELLE
-  - JOSEPH
+  - SHOP OWNER
+  - SHOP OWNER
+  - DARYL
+  - DARYL
+  - DARYL
+  - DARYL
+  - SHOP OWNER
+  - SHOP OWNER
   - DARYL
   character:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -422,16 +440,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Test
-  - Its just a test Bratha
-  - This Also a test
+  - These films, develop them please.
+  - Ok, Mr. Daryl. Any particular reason \nthat you are so quiet today?
+  - Nothing in particular.
+  - Feel free to tell me if you have \nany problem.
+  - Meanwhile I will go back there to \nthe room.
   Names:
-  - ELLE
-  - JOSEPH
   - DARYL
+  - SHOP OWNER
+  - DARYL
+  - SHOP OWNER
+  - SHOP OWNER
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -1145,17 +1169,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Test
-  - Its just a test Bratha
-  - This Also a test
+  - Here are your films.
+  - Some of it is really messed up...
+  - You remember the restaurant that \nwe talked about last time?
+  - I went there and tried it already.
+  - The taste is really good, they sell \nmany Asian foods there, not just one \ncountry
+    but multiple.
+  - Anyway, let's get back to my \npictures.
+  - Some of your pictures were distorted, \nnot during the developing process.
+  - It looks like it came from the \ncamera.
+  - Well......
+  - The camera that I used is really old.
+  - I will probably buy a new camera \nsoon.
+  - I will be going now then. Thanks \nagain.
   Names:
-  - ELLE
+  - SHOP OWNER
+  - SHOP OWNER
   - JOSEPH
-  - DARYL
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - SHOP OWNER
+  - SHOP OWNER
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1628,16 +1680,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - D3 even
-  - Its just a test Bratha
-  - This Also a test
+  - Oh, you are done with the photos?
+  - About damn time, my bottle is half \nempty already.
+  - You are drunk Mr. Daryl.
+  - Please get a hold of yourself. \nHere are your developed photos.
+  - Here, have a shot.
+  - I do not drink while working \nMr. Daryl.
+  - Whatever, I will drink it on my own \nthen.
+  - Let me take a look at my photos......
+  - These damn things were so important \nback when I was still in the \nfield.
+  - It can even tell you the truth \nabout what has happened back \nthen if given
+    to the right people.
+  - If those politicians just stay quiet \nand do their own damn job properly, \nthere
+    wouldn't be a war going on.
+  - Money, Oil, whatever they want.
+  - Fuck them, I am retired and now \nI will drink whenever I want.
+  - But not in my shop! The alcohol \nsmell is too strong.
+  - You should pay me and get going now \nMr .Daryl or do I have to call your \nbrother?
+  - Well fuck you, here is your money. \nI will be going then.
+  - And don't forget your drink.
   Names:
-  - ELLE
-  - JOSEPH
   - DARYL
+  - DARYL
+  - SHOP OWNER
+  - SHOP OWNER
+  - DARYL
+  - SHOP OWNER
+  - DARYL
+  - DARYL
+  - DARYL
+  - DARYL
+  - DARYL
+  - DARYL
+  - DARYL
+  - SHOP OWNER
+  - DARYL
+  - DARYL
+  - SHOP OWNER
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -1698,17 +1794,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Test
-  - Its just a test Bratha
-  - This Also a test
+  - Good day, I would like you to \ndevelop photos again.
+  - You just came here 3 days ago \nyou know?
+  - Yeah, I know. I am a police officer \nyou know?
+  - I have been to many places and \nthat's why I have a lot of photos.
+  - 3 days ago, there was a report about \na body being found after I came \nout
+    of your store so I went there to \ninvestigate.
+  - The view there is really good so I \nwent there another day to capture \nthe
+    scene.
+  - Oops, sorry for this but could you \nforget what I just said.
+  - You spilled quite a lot but ok......
+  - Here is today's pictures
+  - Ok, this will take a while. Sit back \nand relax.
   Names:
-  - ELLE
   - JOSEPH
-  - DARYL
+  - SHOP OWNER
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - JOSEPH
+  - SHOP OWNER
+  - JOSEPH
+  - SHOP OWNER
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1739,7 +1858,7 @@ PrefabInstance:
     - target: {fileID: 51421544256049983, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Day5EVEN
+      value: Day3
       objectReference: {fileID: 0}
     - target: {fileID: 188262553965755344, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
@@ -1749,7 +1868,7 @@ PrefabInstance:
     - target: {fileID: 188262553965755344, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Day4
+      value: Day2EVEN
       objectReference: {fileID: 0}
     - target: {fileID: 501518675441265326, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
@@ -1934,7 +2053,7 @@ PrefabInstance:
     - target: {fileID: 1752340625024532027, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Day1EVEN
+      value: Day4
       objectReference: {fileID: 0}
     - target: {fileID: 2745890186030503729, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
@@ -1942,29 +2061,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1764493519}
     - target: {fileID: 2745890186030503729, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Day5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219610714064459023, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1764493519}
+    - target: {fileID: 4219610714064459023, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Day2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5012191125830740719, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1764493519}
+    - target: {fileID: 5012191125830740719, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Day3EVEN
-      objectReference: {fileID: 0}
-    - target: {fileID: 4219610714064459023, guid: 60f17787a2e09294282267228267dba6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1764493519}
-    - target: {fileID: 4219610714064459023, guid: 60f17787a2e09294282267228267dba6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Day3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5012191125830740719, guid: 60f17787a2e09294282267228267dba6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1764493519}
-    - target: {fileID: 5012191125830740719, guid: 60f17787a2e09294282267228267dba6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Day6
       objectReference: {fileID: 0}
     - target: {fileID: 6286281182140161603, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
@@ -1989,18 +2108,18 @@ PrefabInstance:
     - target: {fileID: 6901591656901236394, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Day5EVEN
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487236935525493991, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1764493519}
+    - target: {fileID: 7487236935525493991, guid: 60f17787a2e09294282267228267dba6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Day4EVEN
       objectReference: {fileID: 0}
-    - target: {fileID: 7487236935525493991, guid: 60f17787a2e09294282267228267dba6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1764493519}
-    - target: {fileID: 7487236935525493991, guid: 60f17787a2e09294282267228267dba6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Day2EVEN
-      objectReference: {fileID: 0}
     - target: {fileID: 7781509305237202482, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2009,7 +2128,7 @@ PrefabInstance:
     - target: {fileID: 7781509305237202482, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Day5EVEN
+      value: Day6
       objectReference: {fileID: 0}
     - target: {fileID: 8035053069793648783, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
@@ -2039,7 +2158,7 @@ PrefabInstance:
     - target: {fileID: 9192576489754274448, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Day2
+      value: Day1EVEN
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60f17787a2e09294282267228267dba6, type: 3}
@@ -2281,17 +2400,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Test
-  - Its just a test Bratha
-  - This Also a test
+  - Hello, we meet again.
+  - It looks like I am missing some \nphotos from the last time I came \nhere.
+  - It is not your fault don't worry, I \njust forgot to bring them here.
+  - Okay, so where are the photos now?
+  - Here, these are from my brother's \ncamera.
+  - I got yelled at after I told him \nabout this. What a tedious old man, \nalway
+    moody and drinking that damn \nwhisky.
+  - The last time we met, you said you \nare old too...
+  - Well he is older than me at least.
+  - So here are all of them. Please \ndevelop it.
+  - Ok, I will get right to it.
   Names:
-  - ELLE
-  - JOSEPH
-  - DARYL
+  - MERLE
+  - MERLE
+  - MERLE
+  - SHOP OWNER
+  - MERLE
+  - MERLE
+  - SHOP OWNER
+  - MERLE
+  - MERLE
+  - SHOP OWNER
   character:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2504,17 +2645,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - D3 morn
-  - Its just a test Bratha
-  - This Also a test
+  - I would like these photos to be \ndeveloped.
+  - Ok, Mr. Daryl. Relax over there \nwhile I am inside developing your \nphotos.
+  - Do I look like I am not relaxed?
+  - Please go do your job, I will be \nwaiting here.
+  - Okay...
   Names:
-  - ELLE
-  - JOSEPH
   - DARYL
+  - SHOP OWNER
+  - DARYL
+  - DARYL
+  - SHOP OWNER
   character:
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2676,16 +2823,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Test
-  - Its just a test Bratha
-  - This Also a test
+  - Here are your photos.....
+  - Do you remember her?
+  - ......
+  - This girl?
+  - ......
+  - She went missing half a year ago \nand was later found as a body \nwash upon
+    the shore.
+  - At the same beach that was on the \nnews a few days ago.
+  - And here is a picture of you right?
+  - At the same beach, a week ago.
+  - ......
+  - Why are you there???
+  - ..................
+  - TO BE CONTINUED
   Names:
-  - ELLE
-  - JOSEPH
+  - SHOP OWNER
   - DARYL
+  - SHOP OWNER
+  - DARYL
+  - SHOP OWNER
+  - DARYL
+  - DARYL
+  - DARYL
+  - DARYL
+  - SHOP OWNER
+  - DARYL
+  - SHOP OWNER
+  - THE END OF ENGINE PROOF BUILD
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -2995,13 +3173,13 @@ MonoBehaviour:
     you to develop for me. Here \nthey are.
   - Oh, finally.
   - You can do the same as always \nMr.Joseph.
-  - Find somewhere to wait and do not \nmess the floor, I just cleaned that \nlast
-    night. I will be going inside
-  - Hello and welcome to latest LT NEWS.
-  - I am Johnson and in this is our \nlatest story.
-  - A female body were found alongside \nthe river once again, that make it \nthe
-    third times in this months that \na body were found
-  - Huh, another body found in this \narea.
+  - Find somewhere to wait and do not \nmess up the floor, I just cleaned \nthat
+    last night. I will be going \ninside
+  - Hello and welcome to the latest \nLT NEWS.
+  - I am Johnson and this is our \nlatest story.
+  - A female body was found alongside \nthe river once again, that makes it \nthe
+    third time in this month that \na body was found
+  - Huh, another body found in this area.
   - You heard anything related to this?
   - Nah.
   - ............

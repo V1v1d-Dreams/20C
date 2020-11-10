@@ -1581,7 +1581,7 @@ PrefabInstance:
     - target: {fileID: 1738467718807094851, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1790608366638744611, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
@@ -5584,11 +5584,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Day2 morning
+  - Good day, I would like you to develop my photos
   - Dori me
   - Interimo, adapare Dorime
   Names:
-  - ELLE
+  - JOSEPH
   - JOSEPH
   - DARYL
   character:

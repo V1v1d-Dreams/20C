@@ -33,7 +33,10 @@ public class MusicPlayer : MonoBehaviour
 
         musicSource = GetComponent<AudioSource>();
 
+        DontDestroyOnLoad(this.gameObject);
+
         StartMusic();
+
     }
 
     #region Audio Playing

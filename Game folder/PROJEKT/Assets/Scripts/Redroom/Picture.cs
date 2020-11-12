@@ -144,11 +144,11 @@ public class Picture : MonoBehaviour
 
             //-------------------------
 
-            /*else if (oninv) //on inventory
+            else if (oninv) //on inventory
             {
                 setlayer(101);
                 transform.SetParent(invent.transform, true);
-            }*/
+            }
 
             //-------------------------
             else //go back to original pos
@@ -181,7 +181,7 @@ public class Picture : MonoBehaviour
             }
             else
             {
-                transform.SetParent(invent.transform, true);
+                //transform.SetParent(invent.transform, true);
                 transform.position = new Vector2(innitialpos.x, innitialpos.y);
             }
         }

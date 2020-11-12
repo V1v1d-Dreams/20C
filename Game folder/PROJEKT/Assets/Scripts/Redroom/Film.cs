@@ -8,10 +8,10 @@ public class Film : MonoBehaviour
     public Texture2D Interactable;
     public Texture2D hold;
 
-    private Vector2 innitialpos;
+    public Vector2 innitialpos;
     private bool locked;
 
-    [SerializeField] private Transform targetpos1;
+    //[SerializeField] private Transform targetpos1;
     private Vector2 mouseposition;
     private float deltaX, deltaY;
 
@@ -19,13 +19,16 @@ public class Film : MonoBehaviour
     [SerializeField] private GameObject invent;
     bool oninv;
 
-    [SerializeField] GameObject[] picturearray;
-    [SerializeField] Sprite[] BlurArray;
+    [SerializeField] public GameObject[] picturearray;
+    [SerializeField] public Sprite[] BlurArray;
 
     RaycastHit2D[] raycast;
     private Camera cam;
-    [SerializeField] private bool mouseOnfilm;
+    [SerializeField] public bool mouseOnfilm;
 
+    [SerializeField] public bool isholding = false;
+    [SerializeField] GameObject invSlot;
+    [SerializeField] private float onhold = 0; //holdingflim or not
 
     // Start is called before the first frame update
     void Start() 
@@ -34,7 +37,7 @@ public class Film : MonoBehaviour
         innitialpos = transform.position;
         gaemhander =  GameObject.Find("Event controller");
         invent = GameObject.Find("Photo-inv");
-        targetpos1 = GameObject.Find("filmhere").transform;
+        //targetpos1 = GameObject.Find("filmhere").transform;
         cam = GameObject.Find("Event controller").GetComponent<Game_handler>().cam;
     }
 
@@ -74,6 +77,8 @@ public class Film : MonoBehaviour
 
     void OnMouseUp()
     {
+        isholding = false;
+
         returelayer();
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
 
@@ -83,7 +88,7 @@ public class Film : MonoBehaviour
             GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
             GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = picturearray;
             GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().Smol = BlurArray;
-        }
+        }/*
         else if (transform.position.x > 3.45 && transform.position.x < 7.83 && transform.position.y > -2.92 && transform.position.y < 2.94)
         {       
             innitialpos = transform.position;
@@ -92,7 +97,7 @@ public class Film : MonoBehaviour
         {
             setlayer(101);
             transform.SetParent(invent.transform, true);
-        }
+        }*/
         else
         {
             transform.position = new Vector2(innitialpos.x, innitialpos.y);
@@ -101,27 +106,45 @@ public class Film : MonoBehaviour
     }
     void Update()
     {
-        oninv = gaemhander.GetComponent<Game_handler>().mouseonINV;
+        Hold();
+
+        innitialpos = invSlot.transform.position;
+
+        //oninv = gaemhander.GetComponent<Game_handler>().mouseonINV;
 
         mouseOnfilm = false;
-        raycast = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
-        for (int i = raycast.Length - 1; i >= 0; i--)
-        {
-            if (raycast[i].collider.gameObject.CompareTag("Film"))
-            {
-                mouseOnfilm = true;
-                break;
-            }
-        }
     }
 
     void setlayer(int layer)
     {
-        transform.GetComponent<Picpart>().setlayer(layer);
+        if (onhold == 0)
+        {
+            int children = transform.childCount;
+            for (int i = 0; i < children; ++i)
+            {
+                transform.GetChild(i).GetComponent<Picpart>().setlayer(layer);
+            }
+            onhold = 1;
+        }
     }
 
     void returelayer()
     {
         transform.GetComponent<Picpart>().returnlayer();
+    }
+
+    void Hold()
+    {
+        if (isholding)
+        {
+            Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
+            if (!locked)
+            {
+                setlayer(200);
+                //transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
+                mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
+            }
+        }
     }
 }

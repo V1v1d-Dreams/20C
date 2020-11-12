@@ -13,6 +13,11 @@ TagManager:
   - letter
   - Film
   - TextBox
+  - Paper
+  - Photo
+  - paperhere
+  - FilmItem
+  - Ignore
   layers:
   - Default
   - TransparentFX

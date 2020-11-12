@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2625487959425399383}
   m_Layer: 0
   m_Name: Untitled-1 1
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 3e2859aac66514c44a0228090d28c964, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e13b12201595eb43bccb78d1a717033, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,9 +99,12 @@ MonoBehaviour:
   Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
   Interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
   hold: {fileID: 2800000, guid: a088798552626754da252eb6dc0c73bf, type: 3}
+  innitialpos: {x: 0, y: 0}
   targetpos1: {fileID: 0}
   gaemhander: {fileID: 0}
-  invent: {fileID: 0}
+  isholding: 0
+  onhold: 0
+  mouseOnPaper: 0
 --- !u!114 &2625487959425399401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +135,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.69, y: 0.54}
+    oldSize: {x: 0.19, y: 0.19}
     newSize: {x: 4.54, y: 5.09}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

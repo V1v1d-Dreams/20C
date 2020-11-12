@@ -27,6 +27,8 @@ public class Mechine : MonoBehaviour
     {
         if (filmin&&paperin&&!Opened&&ButtonP)
         {
+            smolpic.GetComponent<SmoLpic>().nextclicktime = Time.time + smolpic.GetComponent<SmoLpic>().timer;
+
             smolpic.SetActive(true);
             overlay.SetActive(true);
             buttonR.SetActive(true);
@@ -34,6 +36,7 @@ public class Mechine : MonoBehaviour
             camleft.SetActive(false);
             camright.SetActive(false);
             Opened = true;
+            paperin = false;
         }
     }
 }

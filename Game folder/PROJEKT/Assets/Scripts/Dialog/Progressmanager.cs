@@ -44,14 +44,15 @@ public class Progressmanager : MonoBehaviour
 
 	public void End()
     {
+		//print(staticDataHolder.currentTime);
 		TimeInnDex[staticDataHolder.currentIndex].SetActive(false);
 		staticDataHolder.currentIndex++;
 		if (staticDataHolder.currentTime == 0)
         {
 			GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(3);
 			staticDataHolder.currentTime++;
-        }
-		if (staticDataHolder.currentTime == 2)
+		}//sometimes staticDataHolder.currentTime == 3 idk why (prob from redroom exit button spam)
+		else
         {
 			GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(4);
 		}

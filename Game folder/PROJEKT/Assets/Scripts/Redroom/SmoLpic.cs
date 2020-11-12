@@ -14,6 +14,8 @@ public class SmoLpic : MonoBehaviour
     [SerializeField] GameObject Overlay;
     [SerializeField] GameObject camleft;
     [SerializeField] GameObject camright;
+    [SerializeField] public float timer = 2;
+    [SerializeField] public float nextclicktime = 0;
     void Start()
     {
         this.GetComponent<SpriteRenderer>().sprite = Smol[0];
@@ -47,15 +49,21 @@ public class SmoLpic : MonoBehaviour
 
     void OnMouseUp()
     {
-        Instantiate(pic[index], spawnpt);
-        buttonL.SetActive(false);
-        buttonR.SetActive(false);
-        Overlay.SetActive(false);
-        gameObject.SetActive(false);
-        camleft.SetActive(true);
-        camright.SetActive(true);
-        GameObject.Find("mechine").GetComponent<Mechine>().Opened = false;
-        //GameObject.Find("mechine").GetComponent<Mechine>().paperin = false;
-        //GameObject.Find("mechine").GetComponent<Mechine>().filmin = false;
+        if (Time.time > nextclicktime)
+        {
+            print("instantiate");
+            Instantiate(pic[index], spawnpt);
+            buttonL.SetActive(false);
+            buttonR.SetActive(false);
+            Overlay.SetActive(false);
+            gameObject.SetActive(false);
+            camleft.SetActive(true);
+            camright.SetActive(true);
+            GameObject.Find("mechine").GetComponent<Mechine>().Opened = false;
+            //GameObject.Find("mechine").GetComponent<Mechine>().paperin = false;
+            //GameObject.Find("mechine").GetComponent<Mechine>().filmin = false;
+            nextclicktime = Time.time + timer;
+        }
+
     }
 }

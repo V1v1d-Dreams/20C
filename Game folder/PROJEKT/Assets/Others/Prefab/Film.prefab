@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9127718114185621036}
   m_Layer: 0
   m_Name: Film
-  m_TagString: Untagged
+  m_TagString: FilmItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 9127718114185621459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.66, y: -1.02, z: 24}
-  m_LocalScale: {x: 2.0615869, y: 2.0615869, z: 2.0615869}
+  m_LocalScale: {x: 8.290763, y: 8.290763, z: 8.290763}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: e8f790c7e7af5c9468404f55290f7488, type: 3}
+  m_SortingOrder: 106
+  m_Sprite: {fileID: 21300000, guid: 9b02ef456928ba44d9a8fd5b812bfc39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,18 +97,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011000678, y: -0.008772105}
+  m_Offset: {x: -0.00022162497, y: 0.00022959337}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.95, y: 0.97}
+    oldSize: {x: 0.19, y: 0.19}
     newSize: {x: 0.48, y: 0.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.92316926, y: 0.946485}
+  m_Size: {x: 0.2034865, y: 0.19728884}
   m_EdgeRadius: 0
 --- !u!114 &9127718114185621039
 MonoBehaviour:
@@ -125,12 +125,15 @@ MonoBehaviour:
   Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
   Interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
   hold: {fileID: 2800000, guid: a088798552626754da252eb6dc0c73bf, type: 3}
-  targetpos1: {fileID: 0}
+  innitialpos: {x: 0, y: 0}
   gaemhander: {fileID: 0}
   invent: {fileID: 0}
   picturearray: []
   BlurArray: []
   mouseOnfilm: 0
+  isholding: 0
+  invSlot: {fileID: 0}
+  onhold: 0
 --- !u!114 &9127718114185621036
 MonoBehaviour:
   m_ObjectHideFlags: 0

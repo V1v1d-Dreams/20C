@@ -24,6 +24,7 @@ ScriptsOnlyBuild:
     - PostProcess
     - Progressmanager
     - SmoLpic
+    - SoundManager
     - TextField
     - Textmanager
     - VolumeMixer
@@ -511,6 +512,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 65
@@ -611,6 +614,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16434}
     - Class: 114
       Script: {instanceID: 16484}
+    - Class: 114
+      Script: {instanceID: 23704}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1012,7 +1017,7 @@ ScriptsOnlyBuild:
     className: CheckPaper
   - hash:
       serializedVersion: 2
-      Hash: 4537f2337679b1a4697331ffb5e8a79c
+      Hash: 736d00bf364cabe380e5949950747639
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game_handler
@@ -1144,7 +1149,7 @@ ScriptsOnlyBuild:
     className: UniversalRenderPipelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 8fd46d678e7111a27f2e4cd2666893df
+      Hash: 5a2b010c5a7d71767f106adac86011a0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Textmanager
@@ -1790,6 +1795,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ButtonLCam
+  - hash:
+      serializedVersion: 2
+      Hash: 8b6e3d96842e0b46d6a69960905d8ac5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity

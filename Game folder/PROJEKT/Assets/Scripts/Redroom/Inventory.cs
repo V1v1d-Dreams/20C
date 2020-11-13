@@ -18,30 +18,17 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        raycast = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
+        for (int i = 0; i < raycast.Length; i++)
         {
-            raycast = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
-            for (int i = 0; i < raycast.Length; i++)
+            if (raycast[i].collider.gameObject.name == gameObject.name)
             {
-                if (raycast[i].collider.gameObject.name == gameObject.name)
-                {
-                    if (IsUp)
-                    {
-                        transform.position = new Vector3(transform.position.x, -4.04f, transform.position.z);
-                        GetComponent<SpriteRenderer>().sortingOrder -= 3;
-                        IsUp = false;
-
-                    }
-                    else
-                    {
-                        transform.position = new Vector3(transform.position.x, -0.1f, transform.position.z);
-                        GetComponent<SpriteRenderer>().sortingOrder += 3;
-                        IsUp = true;
-                        Toolinv.GetComponent<InventoryTools>().Down();
-                    }
-
-                    break;
-                }
+                Up();
+                break;
+            }
+            else
+            {
+                Down();
             }
         }
     }
@@ -49,11 +36,13 @@ public class Inventory : MonoBehaviour
     void OnMouseEnter()
     {
         Cursor.SetCursor(Interactable, Vector2.zero, CursorMode.ForceSoftware);
+        //Up();
     }
-
     void OnMouseExit()
     {
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
+        //Down();
+
     }
 
     public void Up()
@@ -75,4 +64,30 @@ public class Inventory : MonoBehaviour
             IsUp = false;
         }
     }
+
+    /*
+        raycast = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
+        for (int i = 0; i < raycast.Length; i++)
+        {
+            if (raycast[i].collider.gameObject.name == gameObject.name)
+            {
+                if (IsUp)
+                {
+                    transform.position = new Vector3(transform.position.x, -4.04f, transform.position.z);
+                    GetComponent<SpriteRenderer>().sortingOrder -= 3;
+                    IsUp = false;
+
+                }
+                else
+                {
+                    transform.position = new Vector3(transform.position.x, -0.1f, transform.position.z);
+                    GetComponent<SpriteRenderer>().sortingOrder += 3;
+                    IsUp = true;
+                    Toolinv.GetComponent<InventoryTools>().Down();
+                }
+
+                break;
+            }
+        }
+     */
 }

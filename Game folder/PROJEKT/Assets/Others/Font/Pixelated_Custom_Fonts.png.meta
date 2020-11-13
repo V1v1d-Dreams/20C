@@ -1,7 +1,577 @@
 fileFormatVersion: 2
 guid: d74c0632e9f119348bce304314e5dc20
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7115379854537009509
+    second: Pixelated_Custom_Fonts_0
+  - first:
+      213: 9032068541255211014
+    second: Pixelated_Custom_Fonts_1
+  - first:
+      213: 4725396458886532686
+    second: Pixelated_Custom_Fonts_2
+  - first:
+      213: -398888072537977290
+    second: Pixelated_Custom_Fonts_3
+  - first:
+      213: -7451866669446351601
+    second: Pixelated_Custom_Fonts_4
+  - first:
+      213: -6989535333663161786
+    second: Pixelated_Custom_Fonts_5
+  - first:
+      213: -3215915746689648296
+    second: Pixelated_Custom_Fonts_6
+  - first:
+      213: -781552422818694533
+    second: Pixelated_Custom_Fonts_7
+  - first:
+      213: -5316121756806571468
+    second: Pixelated_Custom_Fonts_8
+  - first:
+      213: -6823961991821487018
+    second: Pixelated_Custom_Fonts_9
+  - first:
+      213: 2052827489861192432
+    second: Pixelated_Custom_Fonts_10
+  - first:
+      213: -3580749966562480290
+    second: Pixelated_Custom_Fonts_11
+  - first:
+      213: 4214615452663545408
+    second: Pixelated_Custom_Fonts_12
+  - first:
+      213: 1244437646304475035
+    second: Pixelated_Custom_Fonts_13
+  - first:
+      213: -3454342975103459591
+    second: Pixelated_Custom_Fonts_14
+  - first:
+      213: -1599030612145632241
+    second: Pixelated_Custom_Fonts_15
+  - first:
+      213: -7095464618089256255
+    second: Pixelated_Custom_Fonts_16
+  - first:
+      213: -9077395576507885911
+    second: Pixelated_Custom_Fonts_17
+  - first:
+      213: 4815031447928531901
+    second: Pixelated_Custom_Fonts_18
+  - first:
+      213: -2686782900167511669
+    second: Pixelated_Custom_Fonts_19
+  - first:
+      213: 7710725368586567191
+    second: Pixelated_Custom_Fonts_20
+  - first:
+      213: 4149995483864438402
+    second: Pixelated_Custom_Fonts_21
+  - first:
+      213: -115645918532207506
+    second: Pixelated_Custom_Fonts_22
+  - first:
+      213: -3100024886202215263
+    second: Pixelated_Custom_Fonts_23
+  - first:
+      213: -7855683431287580098
+    second: Pixelated_Custom_Fonts_24
+  - first:
+      213: -8885905048062428095
+    second: Pixelated_Custom_Fonts_25
+  - first:
+      213: -1201825210601638108
+    second: Pixelated_Custom_Fonts_26
+  - first:
+      213: -6335767115000443701
+    second: Pixelated_Custom_Fonts_27
+  - first:
+      213: -4516314243865778991
+    second: Pixelated_Custom_Fonts_28
+  - first:
+      213: -8120867063477640874
+    second: Pixelated_Custom_Fonts_29
+  - first:
+      213: -7787280369269888277
+    second: Pixelated_Custom_Fonts_30
+  - first:
+      213: 7431913844644650036
+    second: Pixelated_Custom_Fonts_31
+  - first:
+      213: -4808857081283330142
+    second: Pixelated_Custom_Fonts_32
+  - first:
+      213: 1028362616895081433
+    second: Pixelated_Custom_Fonts_33
+  - first:
+      213: -2769097924221983865
+    second: Pixelated_Custom_Fonts_34
+  - first:
+      213: -2039661115821470278
+    second: Pixelated_Custom_Fonts_35
+  - first:
+      213: -7800126630707360231
+    second: Pixelated_Custom_Fonts_36
+  - first:
+      213: -1402490669980655748
+    second: Pixelated_Custom_Fonts_37
+  - first:
+      213: -6380368520816849531
+    second: Pixelated_Custom_Fonts_38
+  - first:
+      213: -4965030175517465751
+    second: Pixelated_Custom_Fonts_39
+  - first:
+      213: 7779028242478517415
+    second: Pixelated_Custom_Fonts_40
+  - first:
+      213: -2116770325146652607
+    second: Pixelated_Custom_Fonts_41
+  - first:
+      213: 3313174497563183972
+    second: Pixelated_Custom_Fonts_42
+  - first:
+      213: -7915943489090160098
+    second: Pixelated_Custom_Fonts_43
+  - first:
+      213: 6114723692563184655
+    second: Pixelated_Custom_Fonts_44
+  - first:
+      213: 605923847551467416
+    second: Pixelated_Custom_Fonts_45
+  - first:
+      213: 5748764235176883754
+    second: Pixelated_Custom_Fonts_46
+  - first:
+      213: 5622421108436411196
+    second: Pixelated_Custom_Fonts_47
+  - first:
+      213: -3924611163911495031
+    second: Pixelated_Custom_Fonts_48
+  - first:
+      213: -5587920647381984512
+    second: Pixelated_Custom_Fonts_49
+  - first:
+      213: -5857722973080069148
+    second: Pixelated_Custom_Fonts_50
+  - first:
+      213: 6312711712767781166
+    second: Pixelated_Custom_Fonts_51
+  - first:
+      213: -7153854150519550180
+    second: Pixelated_Custom_Fonts_52
+  - first:
+      213: -3991367187251602192
+    second: Pixelated_Custom_Fonts_53
+  - first:
+      213: 4315255097560971479
+    second: Pixelated_Custom_Fonts_54
+  - first:
+      213: -5048823265547152494
+    second: Pixelated_Custom_Fonts_55
+  - first:
+      213: -1088618937850787729
+    second: Pixelated_Custom_Fonts_56
+  - first:
+      213: -649033427601667347
+    second: Pixelated_Custom_Fonts_57
+  - first:
+      213: -8480124819254935294
+    second: Pixelated_Custom_Fonts_58
+  - first:
+      213: 9030556169780411741
+    second: Pixelated_Custom_Fonts_59
+  - first:
+      213: 7219581044126772639
+    second: Pixelated_Custom_Fonts_60
+  - first:
+      213: 2483764088791935045
+    second: Pixelated_Custom_Fonts_61
+  - first:
+      213: -8751341017546317440
+    second: Pixelated_Custom_Fonts_62
+  - first:
+      213: -1195604281454406975
+    second: Pixelated_Custom_Fonts_63
+  - first:
+      213: 6715997161276343398
+    second: Pixelated_Custom_Fonts_64
+  - first:
+      213: 3945396900140410587
+    second: Pixelated_Custom_Fonts_65
+  - first:
+      213: -3833635679498030274
+    second: Pixelated_Custom_Fonts_66
+  - first:
+      213: -8055875828902349659
+    second: Pixelated_Custom_Fonts_67
+  - first:
+      213: 5198100626443888219
+    second: Pixelated_Custom_Fonts_68
+  - first:
+      213: -708772137587475791
+    second: Pixelated_Custom_Fonts_69
+  - first:
+      213: -1275834541871856194
+    second: Pixelated_Custom_Fonts_70
+  - first:
+      213: 3837022637359267347
+    second: Pixelated_Custom_Fonts_71
+  - first:
+      213: 3350868528530862256
+    second: Pixelated_Custom_Fonts_72
+  - first:
+      213: -5037579404236090891
+    second: Pixelated_Custom_Fonts_73
+  - first:
+      213: 3972524929108310338
+    second: Pixelated_Custom_Fonts_74
+  - first:
+      213: -2550622913476950089
+    second: Pixelated_Custom_Fonts_75
+  - first:
+      213: 1072519712558889052
+    second: Pixelated_Custom_Fonts_76
+  - first:
+      213: -8811938504131644843
+    second: Pixelated_Custom_Fonts_77
+  - first:
+      213: -512109472786369223
+    second: Pixelated_Custom_Fonts_78
+  - first:
+      213: -5162241018382753329
+    second: Pixelated_Custom_Fonts_79
+  - first:
+      213: 4625980803465268740
+    second: Pixelated_Custom_Fonts_80
+  - first:
+      213: 8133548480972279301
+    second: Pixelated_Custom_Fonts_81
+  - first:
+      213: -6672022693628236226
+    second: Pixelated_Custom_Fonts_82
+  - first:
+      213: -6040746949565463659
+    second: Pixelated_Custom_Fonts_83
+  - first:
+      213: 1293627257863544490
+    second: Pixelated_Custom_Fonts_84
+  - first:
+      213: 1576560869141023756
+    second: Pixelated_Custom_Fonts_85
+  - first:
+      213: -1424771544603398353
+    second: Pixelated_Custom_Fonts_86
+  - first:
+      213: 8557478117756530970
+    second: Pixelated_Custom_Fonts_87
+  - first:
+      213: -742691955706801721
+    second: Pixelated_Custom_Fonts_88
+  - first:
+      213: -6991601334719236173
+    second: Pixelated_Custom_Fonts_89
+  - first:
+      213: 2575190545224943921
+    second: Pixelated_Custom_Fonts_90
+  - first:
+      213: 4916720153097878777
+    second: Pixelated_Custom_Fonts_91
+  - first:
+      213: -6653073191450971070
+    second: Pixelated_Custom_Fonts_92
+  - first:
+      213: 44384335458067169
+    second: Pixelated_Custom_Fonts_93
+  - first:
+      213: -5883931486229815302
+    second: Pixelated_Custom_Fonts_94
+  - first:
+      213: -5261440317666090278
+    second: Pixelated_Custom_Fonts_0
+  - first:
+      213: 1422215192711164447
+    second: Pixelated_Custom_Fonts_1
+  - first:
+      213: 7445743120675707659
+    second: Pixelated_Custom_Fonts_2
+  - first:
+      213: 1183759115598834576
+    second: Pixelated_Custom_Fonts_3
+  - first:
+      213: -2024319830590328029
+    second: Pixelated_Custom_Fonts_4
+  - first:
+      213: 3531593114476155788
+    second: Pixelated_Custom_Fonts_5
+  - first:
+      213: -2798676488085301124
+    second: Pixelated_Custom_Fonts_6
+  - first:
+      213: 8007391762904555269
+    second: Pixelated_Custom_Fonts_7
+  - first:
+      213: 436390045587904660
+    second: Pixelated_Custom_Fonts_8
+  - first:
+      213: 1738271057166069957
+    second: Pixelated_Custom_Fonts_9
+  - first:
+      213: 7974767978399247555
+    second: Pixelated_Custom_Fonts_10
+  - first:
+      213: 3656801498687704027
+    second: Pixelated_Custom_Fonts_11
+  - first:
+      213: 429728762082196781
+    second: Pixelated_Custom_Fonts_12
+  - first:
+      213: 8184051900093359224
+    second: Pixelated_Custom_Fonts_13
+  - first:
+      213: -5840770588955345988
+    second: Pixelated_Custom_Fonts_14
+  - first:
+      213: -4606735318500302849
+    second: Pixelated_Custom_Fonts_15
+  - first:
+      213: 9160907672109392006
+    second: Pixelated_Custom_Fonts_16
+  - first:
+      213: 7311933677358118093
+    second: Pixelated_Custom_Fonts_17
+  - first:
+      213: 8478631261771430864
+    second: Pixelated_Custom_Fonts_18
+  - first:
+      213: 1240105274838683553
+    second: Pixelated_Custom_Fonts_19
+  - first:
+      213: 3702892170218307717
+    second: Pixelated_Custom_Fonts_20
+  - first:
+      213: 8645870993244278963
+    second: Pixelated_Custom_Fonts_21
+  - first:
+      213: 5750427717583180178
+    second: Pixelated_Custom_Fonts_22
+  - first:
+      213: 5852481860198817977
+    second: Pixelated_Custom_Fonts_23
+  - first:
+      213: -8405310965609010828
+    second: Pixelated_Custom_Fonts_24
+  - first:
+      213: -3594246157618226183
+    second: Pixelated_Custom_Fonts_25
+  - first:
+      213: 7069111507792587946
+    second: Pixelated_Custom_Fonts_26
+  - first:
+      213: 5532710162801062587
+    second: Pixelated_Custom_Fonts_27
+  - first:
+      213: 7060569628347541215
+    second: Pixelated_Custom_Fonts_28
+  - first:
+      213: 1677696443786452620
+    second: Pixelated_Custom_Fonts_29
+  - first:
+      213: -8635325983716955190
+    second: Pixelated_Custom_Fonts_30
+  - first:
+      213: -2773325095533112134
+    second: Pixelated_Custom_Fonts_31
+  - first:
+      213: -9100824248046810207
+    second: Pixelated_Custom_Fonts_32
+  - first:
+      213: -1249387082778638791
+    second: Pixelated_Custom_Fonts_33
+  - first:
+      213: -2569280350970726604
+    second: Pixelated_Custom_Fonts_34
+  - first:
+      213: 7257098251760985371
+    second: Pixelated_Custom_Fonts_35
+  - first:
+      213: 7361194070224864895
+    second: Pixelated_Custom_Fonts_36
+  - first:
+      213: -7368126209472191532
+    second: Pixelated_Custom_Fonts_37
+  - first:
+      213: 1254738734299050367
+    second: Pixelated_Custom_Fonts_38
+  - first:
+      213: -3477141085682510819
+    second: Pixelated_Custom_Fonts_39
+  - first:
+      213: 5476890107678694508
+    second: Pixelated_Custom_Fonts_40
+  - first:
+      213: 8497410713617560585
+    second: Pixelated_Custom_Fonts_41
+  - first:
+      213: 3358762655976136132
+    second: Pixelated_Custom_Fonts_42
+  - first:
+      213: -5202002215000360664
+    second: Pixelated_Custom_Fonts_43
+  - first:
+      213: 6143385786464758674
+    second: Pixelated_Custom_Fonts_44
+  - first:
+      213: 2341956452083666781
+    second: Pixelated_Custom_Fonts_45
+  - first:
+      213: -3073344082705132884
+    second: Pixelated_Custom_Fonts_46
+  - first:
+      213: -2779949172136014478
+    second: Pixelated_Custom_Fonts_47
+  - first:
+      213: 6498933220147145012
+    second: Pixelated_Custom_Fonts_48
+  - first:
+      213: 4303962433118266951
+    second: Pixelated_Custom_Fonts_49
+  - first:
+      213: -8844783932163894239
+    second: Pixelated_Custom_Fonts_50
+  - first:
+      213: -5301602544244370074
+    second: Pixelated_Custom_Fonts_51
+  - first:
+      213: 7315704389030153302
+    second: Pixelated_Custom_Fonts_52
+  - first:
+      213: 8596428474009993768
+    second: Pixelated_Custom_Fonts_53
+  - first:
+      213: 3565130988293476190
+    second: Pixelated_Custom_Fonts_54
+  - first:
+      213: 1727081743838091270
+    second: Pixelated_Custom_Fonts_55
+  - first:
+      213: 3156215778163216894
+    second: Pixelated_Custom_Fonts_56
+  - first:
+      213: 8967735185425130607
+    second: Pixelated_Custom_Fonts_57
+  - first:
+      213: -8226332139330521726
+    second: Pixelated_Custom_Fonts_58
+  - first:
+      213: -8581049611607842457
+    second: Pixelated_Custom_Fonts_59
+  - first:
+      213: -6499342496294854194
+    second: Pixelated_Custom_Fonts_60
+  - first:
+      213: 4578210437275083614
+    second: Pixelated_Custom_Fonts_61
+  - first:
+      213: 146537223827510214
+    second: Pixelated_Custom_Fonts_62
+  - first:
+      213: 4322929202266182288
+    second: Pixelated_Custom_Fonts_63
+  - first:
+      213: -9162603711632896768
+    second: Pixelated_Custom_Fonts_64
+  - first:
+      213: -1680471759620629479
+    second: Pixelated_Custom_Fonts_65
+  - first:
+      213: -758487951734912375
+    second: Pixelated_Custom_Fonts_66
+  - first:
+      213: -377822924304458032
+    second: Pixelated_Custom_Fonts_67
+  - first:
+      213: -2275061930400765484
+    second: Pixelated_Custom_Fonts_68
+  - first:
+      213: -1710677341730967556
+    second: Pixelated_Custom_Fonts_69
+  - first:
+      213: 5936586416821042975
+    second: Pixelated_Custom_Fonts_70
+  - first:
+      213: -2768888235049879729
+    second: Pixelated_Custom_Fonts_71
+  - first:
+      213: 5998953816687787824
+    second: Pixelated_Custom_Fonts_72
+  - first:
+      213: 8056454966434089520
+    second: Pixelated_Custom_Fonts_73
+  - first:
+      213: -1486050315450443664
+    second: Pixelated_Custom_Fonts_74
+  - first:
+      213: 8926682647547985976
+    second: Pixelated_Custom_Fonts_75
+  - first:
+      213: 1283958042292438577
+    second: Pixelated_Custom_Fonts_76
+  - first:
+      213: -1628342805219347683
+    second: Pixelated_Custom_Fonts_77
+  - first:
+      213: 2299479667353297271
+    second: Pixelated_Custom_Fonts_78
+  - first:
+      213: -1645223748708977077
+    second: Pixelated_Custom_Fonts_79
+  - first:
+      213: 8856737682571409573
+    second: Pixelated_Custom_Fonts_80
+  - first:
+      213: 3430837527921869082
+    second: Pixelated_Custom_Fonts_81
+  - first:
+      213: -6718102569430923130
+    second: Pixelated_Custom_Fonts_82
+  - first:
+      213: 7805401611926493997
+    second: Pixelated_Custom_Fonts_83
+  - first:
+      213: 3099925613269431387
+    second: Pixelated_Custom_Fonts_84
+  - first:
+      213: 114572592504441511
+    second: Pixelated_Custom_Fonts_85
+  - first:
+      213: -3453523369850242523
+    second: Pixelated_Custom_Fonts_86
+  - first:
+      213: -3366756972052483368
+    second: Pixelated_Custom_Fonts_87
+  - first:
+      213: -619856584944173602
+    second: Pixelated_Custom_Fonts_88
+  - first:
+      213: 421909978291837870
+    second: Pixelated_Custom_Fonts_89
+  - first:
+      213: -5244239831542999405
+    second: Pixelated_Custom_Fonts_90
+  - first:
+      213: -987029403247070142
+    second: Pixelated_Custom_Fonts_91
+  - first:
+      213: 8922000908696877845
+    second: Pixelated_Custom_Fonts_92
+  - first:
+      213: 2154894682414296084
+    second: Pixelated_Custom_Fonts_93
+  - first:
+      213: -6753527866551871500
+    second: Pixelated_Custom_Fonts_94
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -20,7 +590,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -40,7 +610,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -85,7 +655,2002 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2289a48eb9bf6b0800000000000000
+      internalID: -5261440317666090278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1276bbbe29bcb310800000000000000
+      internalID: 1422215192711164447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b1fa44be7945760800000000000000
+      internalID: 7445743120675707659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b26e0d4ae8d6010800000000000000
+      internalID: 1183759115598834576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32372e1e6db28e3e0800000000000000
+      internalID: -2024319830590328029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c831197f93db20130800000000000000
+      internalID: 3531593114476155788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c781076ef8a1929d0800000000000000
+      internalID: -2798676488085301124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_7
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f90552268ff1f60800000000000000
+      internalID: 8007391762904555269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49898c23f6e5e0600800000000000000
+      internalID: 436390045587904660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0f9b511549f1810800000000000000
+      internalID: 1738271057166069957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cca5a669311cae60800000000000000
+      internalID: 7974767978399247555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb8567a6919fb230800000000000000
+      internalID: 3656801498687704027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_12
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d7da54804b6f500800000000000000
+      internalID: 429728762082196781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_13
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874ec6897d7939170800000000000000
+      internalID: 8184051900093359224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_14
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb74c6581a61fea0800000000000000
+      internalID: -5840770588955345988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_15
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff1b86a2a69110c0800000000000000
+      internalID: -4606735318500302849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_16
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6802b30cdf4122f70800000000000000
+      internalID: 9160907672109392006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4752470f4397560800000000000000
+      internalID: 7311933677358118093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db786bf5362aa570800000000000000
+      internalID: 8478631261771430864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_19
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 56
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af09d65d2db53110800000000000000
+      internalID: 1240105274838683553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_20
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 56
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580007f5fc0536330800000000000000
+      internalID: 3702892170218307717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_21
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 56
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0dd2e4cdd4cf770800000000000000
+      internalID: 8645870993244278963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 56
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2911b15ca8f9dcf40800000000000000
+      internalID: 5750427717583180178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_23
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 56
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0619b7e31383150800000000000000
+      internalID: 5852481860198817977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_24
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 56
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479ed24c5365a5b80800000000000000
+      internalID: -8405310965609010828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_25
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 56
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb5adba92cae1ec0800000000000000
+      internalID: -3594246157618226183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 56
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac6a9b66778a1260800000000000000
+      internalID: 7069111507792587946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb273fa549228cc40800000000000000
+      internalID: 5532710162801062587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_28
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd621912bae2cf160800000000000000
+      internalID: 7060569628347541215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_29
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ed3dcd600684710800000000000000
+      internalID: 1677696443786452620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_30
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acba9dc05c8292880800000000000000
+      internalID: -8635325983716955190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_31
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab49212f48b2389d0800000000000000
+      internalID: -2773325095533112134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_32
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab88eb809063b180800000000000000
+      internalID: -9100824248046810207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_33
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9368408511949aee0800000000000000
+      internalID: -1249387082778638791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_34
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437bff72225185cd0800000000000000
+      internalID: -2569280350970726604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_35
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 49
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b156254096466b460800000000000000
+      internalID: 7257098251760985371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 42
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76077e6107382660800000000000000
+      internalID: 7361194070224864895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_37
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 42
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d32a2020482fb990800000000000000
+      internalID: -7368126209472191532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_38
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 42
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7171df1b3ab96110800000000000000
+      internalID: 1254738734299050367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_39
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 42
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d145af1fa96bebfc0800000000000000
+      internalID: -3477141085682510819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 42
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c1a0ef882d10c40800000000000000
+      internalID: 5476890107678694508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_41
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 42
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904f5c7d50edce570800000000000000
+      internalID: 8497410713617560585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_42
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 42
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd1e4217d8bc9e20800000000000000
+      internalID: 3358762655976136132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_43
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 42
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829bb1efb86cec7b0800000000000000
+      internalID: -5202002215000360664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_44
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 42
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b6a60e2d0b14550800000000000000
+      internalID: 6143385786464758674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f81e52cfc408020800000000000000
+      internalID: 2341956452083666781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_46
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2dfcd07d94955d0800000000000000
+      internalID: -3073344082705132884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_47
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d013de4f2ab69d0800000000000000
+      internalID: -2779949172136014478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_48
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4392bd5b459d03a50800000000000000
+      internalID: 6498933220147145012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_49
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746e3a0970fbabb30800000000000000
+      internalID: 4303962433118266951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_50
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124d94810e3014580800000000000000
+      internalID: -8844783932163894239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_51
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665d10a339cec66b0800000000000000
+      internalID: -5301602544244370074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_52
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c88eda16a968560800000000000000
+      internalID: 7315704389030153302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_53
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8224b6ab626ac4770800000000000000
+      internalID: 8596428474009993768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f48f6beb3e97130800000000000000
+      internalID: 3565130988293476190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_55
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 28
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608188f02b3d7f710800000000000000
+      internalID: 1727081743838091270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_56
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 28
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1d6e327812dcb20800000000000000
+      internalID: 3156215778163216894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_57
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 28
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64690753abc37c70800000000000000
+      internalID: 8967735185425130607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_58
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 28
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28533d6118236dd80800000000000000
+      internalID: -8226332139330521726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_59
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 28
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7616c14b7dcf9e880800000000000000
+      internalID: -8581049611607842457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_60
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 28
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1aeb24f62bdc5a0800000000000000
+      internalID: -6499342496294854194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_61
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 28
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5364c4e222198f30800000000000000
+      internalID: 4578210437275083614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_62
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 28
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c35c9424da980200800000000000000
+      internalID: 146537223827510214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0921d32a4312efb30800000000000000
+      internalID: 4322929202266182288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_64
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d02764874e7d080800000000000000
+      internalID: -9162603711632896768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_65
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c9cb096d3cda8e0800000000000000
+      internalID: -1680471759620629479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_66
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a4d6ef93f4975f0800000000000000
+      internalID: -758487951734912375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_67
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de55d85d04b1caf0800000000000000
+      internalID: -377822924304458032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_68
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9a2746a3b5d60e0800000000000000
+      internalID: -2275061930400765484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_69
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffe0d075047248e0800000000000000
+      internalID: -1710677341730967556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_70
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ff60984edf26250800000000000000
+      internalID: 5936586416821042975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_71
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47f71702dee299d0800000000000000
+      internalID: -2768888235049879729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f36a366b0904350800000000000000
+      internalID: 5998953816687787824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_73
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a4c376b174ecf60800000000000000
+      internalID: 8056454966434089520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_74
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078183d8c1d706be0800000000000000
+      internalID: -1486050315450443664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_75
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830cdb58292f1eb70800000000000000
+      internalID: 8926682647547985976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_76
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136c859690981d110800000000000000
+      internalID: 1283958042292438577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_77
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13765298d6f669e0800000000000000
+      internalID: -1628342805219347683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_78
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771a3d4039469ef10800000000000000
+      internalID: 2299479667353297271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_79
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b463a22a7bdfa29e0800000000000000
+      internalID: -1645223748708977077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_80
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a83c7e4ff379ea70800000000000000
+      internalID: 8856737682571409573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11ccd5ed88cc9f20800000000000000
+      internalID: 3430837527921869082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_82
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6884e60ae4184c2a0800000000000000
+      internalID: -6718102569430923130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_83
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bd328496b525c60800000000000000
+      internalID: 7805401611926493997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_84
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b543f01dbe5250b20800000000000000
+      internalID: 3099925613269431387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_85
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa09357a2b079100800000000000000
+      internalID: 114572592504441511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_86
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52af09ceace9210d0800000000000000
+      internalID: -3453523369850242523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_87
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2fdbb2f50e641d0800000000000000
+      internalID: -3366756972052483368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_88
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd37ba58b3d567f0800000000000000
+      internalID: -619856584944173602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_89
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab174fc3ecead500800000000000000
+      internalID: 421909978291837870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396dceb88a7b837b0800000000000000
+      internalID: -5244239831542999405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_91
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244b79cbcfd5d42f0800000000000000
+      internalID: -987029403247070142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_92
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bf6904e8051db70800000000000000
+      internalID: 8922000908696877845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_93
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41caea9eb49b7ed10800000000000000
+      internalID: 2154894682414296084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixelated_Custom_Fonts_94
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f75975ef26a642a0800000000000000
+      internalID: -6753527866551871500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

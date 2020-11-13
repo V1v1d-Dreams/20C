@@ -110,12 +110,14 @@ public class Picture : MonoBehaviour
                 animator.SetTrigger("place");
                 FirstTray = true;
                 innitialpos = transform.position;
+                gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
             }
             else if (gaemhander.GetComponent<Game_handler>().mouseonTray2 && FirstTray) //second tray
             {
                 transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
                 secondtray = true;
                 innitialpos = transform.position;
+                gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
             }
             else if (gaemhander.GetComponent<Game_handler>().mouseonTray3 && secondtray) //third tray
             {
@@ -123,6 +125,7 @@ public class Picture : MonoBehaviour
                 thirdtray = true;
                 innitialpos = transform.position;
                 hangable = true;
+                gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
             }
             else if (hangable && gaemhander.GetComponent<Game_handler>().placable) //Hanger
             {
@@ -131,6 +134,7 @@ public class Picture : MonoBehaviour
                 PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
                 PastPos.GetComponent<hanger>().Locked = true;
                 innitialpos = transform.position;
+                gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(3);
 
                 //gaemhander.GetComponent<Game_handler>().respawn();
 

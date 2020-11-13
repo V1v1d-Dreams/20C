@@ -19,6 +19,7 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject inv2;
     [SerializeField] public bool placable = false;
     [SerializeField] Transform[] children;
+    [SerializeField] public GameObject SoundManager;
 
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
@@ -63,6 +64,13 @@ public class Game_handler : MonoBehaviour
             {
                 Click[0].collider.gameObject.GetComponent<Film>().isholding = true;
             }
+            else
+            {
+                if (Click[1].collider.gameObject.CompareTag("Photo"))
+                {
+                    Click[1].collider.gameObject.GetComponent<Picture>().isholding = true;
+                }
+            }
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -71,6 +79,7 @@ public class Game_handler : MonoBehaviour
             {
                 Click[0].collider.gameObject.GetComponent<Paper>().isholding = false;
                 Click[0].collider.gameObject.GetComponent<Paper>().transform.position = new Vector2(Click[0].collider.gameObject.GetComponent<Paper>().innitialpos.x, Click[0].collider.gameObject.GetComponent<Paper>().innitialpos.y);
+                SoundManager.GetComponent<SoundManager>().PlayFX(2);
             }
             else if (Click[0].collider.gameObject.CompareTag("FilmItem"))
             {
@@ -226,6 +235,7 @@ public class Game_handler : MonoBehaviour
                     GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
                     GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = Click[0].collider.gameObject.GetComponent<Film>().picturearray;
                     GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().Smol = Click[0].collider.gameObject.GetComponent<Film>().BlurArray;
+                    SoundManager.GetComponent<SoundManager>().PlayFX(1);
                 }
                 break;
             }

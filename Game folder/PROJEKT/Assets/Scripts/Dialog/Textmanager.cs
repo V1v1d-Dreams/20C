@@ -6,7 +6,8 @@ using UnityEngine;
 public class Textmanager : MonoBehaviour
 {
     //[System.NonSerialized] public char[] chars = "!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]_`{|}~abcdefghijklmnopqrstuvwxyz ".ToCharArray();
-    [SerializeField] public char[] chars = "!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]_`{|}~abcdefghijklmnopqrstuvwxyz ".ToCharArray();
+    [SerializeField] public char[] chars;
+    [SerializeField] public Sprite SpaceBar;
     [SerializeField] Sprite[] charsprite;
     [SerializeField] Dictionary<char, Chardata> chardata;
     [SerializeField] Texture2D charSheet;
@@ -21,6 +22,8 @@ public class Textmanager : MonoBehaviour
     {
         //GetSubSprites();
         GetspriteWidths();
+        char[] space = " ".ToCharArray();
+        chardata.Add(space[0], new Chardata(2, SpaceBar));
     }
 
     /*public void GetSubSprites()
@@ -83,6 +86,7 @@ public class Textmanager : MonoBehaviour
                     char c = chars[charIndex];
                     Sprite Charsprite = charsprite[charIndex];
                     chardata.Add(c, new Chardata(charwidth, Charsprite));
+                    print(c + " "+ charwidth);
                 }
                 ++charIndex;
             }

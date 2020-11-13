@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\Redroom\Picpart.cs" />
     <Compile Include="Assets\Scripts\Redroom\Picture.cs" />
     <Compile Include="Assets\Scripts\Redroom\SmoLpic.cs" />
+    <Compile Include="Assets\Scripts\Redroom\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Redroom\hanger.cs" />
     <Compile Include="Assets\Scripts\Redroom\mechinebutton.cs" />
     <Compile Include="Assets\Scripts\Redroom\slotInv.cs" />

@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Shit, I accdently delete this. -Yeen
+  - Hello, it has been a while since I came here.
   - Your place is still holding as alway.
   - Yeah, it has been sometime since \nyou came here Mr.Merle.
   - I was wondering if something \nhappened to you or not.
@@ -1093,12 +1093,12 @@ MonoBehaviour:
   - SHOP OWNER
   - SHOP OWNER
   character:
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 public class MusicPlayer : MonoBehaviour
 {
 
@@ -25,17 +26,52 @@ public class MusicPlayer : MonoBehaviour
 
     private AudioSource musicSource;
 
+    private static bool loaded = false; //(so the object won't be spawn again after enter the menu)
+
+    private static bool musicPlay = false;
+
+    Scene currentScene;
+    string sceneName;
+
+
     #endregion
 
     void Start()
     {
-        musicQueue = new MusicQueue(musicClips);
+        musicPlay = false;
+        if (loaded == false)
+        {
+            loaded = true;
+            currentScene = SceneManager.GetActiveScene();
+            sceneName = currentScene.name;
 
-        musicSource = GetComponent<AudioSource>();
+            musicQueue = new MusicQueue(musicClips);
 
-        DontDestroyOnLoad(this.gameObject);
+            musicSource = GetComponent<AudioSource>();
 
-        StartMusic();
+            DontDestroyOnLoad(this.gameObject);
+
+            StartMusic();
+        }
+    }
+
+    private void Update()
+    {
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+        if (sceneName != "Menu")
+        {
+            musicPlay = true;
+            musicSource.Stop();
+        }
+        if (sceneName == "Menu")
+        {
+            if (musicPlay == false)
+            {
+                musicSource.Play();
+                musicPlay = true;
+            }
+        }
 
     }
 
@@ -53,7 +89,7 @@ public class MusicPlayer : MonoBehaviour
         if (musicLoop != null)
             StopCoroutine(musicLoop);
 
-        music.Stop();
+        musicSource.Stop();
     }
 
     public void StartMusic()

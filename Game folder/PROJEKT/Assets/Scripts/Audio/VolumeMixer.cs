@@ -36,7 +36,12 @@ public class VolumeMixer : MonoBehaviour
     {
         //soundEffectTester.SetActive(false);
         //slider.value = PlayerPrefs.GetFloat(Exposer, 1.00f);
+        //**********************************************************
+
+        //print(audioMixer.name + slider.value);
         slider.value = PlayerPrefs.GetFloat(Exposer);
+        SetVolume(slider.value);
+        //print(audioMixer.name + slider.value);
     }
     public void SetVolume (float sliderValue)
     {  

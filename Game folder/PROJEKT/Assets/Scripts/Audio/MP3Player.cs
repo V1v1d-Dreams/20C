@@ -17,16 +17,19 @@ public class MP3Player : MonoBehaviour
     private float newclip;
     public AudioSource source;
 
+    int songcap;
     bool pausing = true;
     bool nextsong;
     int clipNum;
     int i = 0;
+    int prevday = 0;
     int songindex;
     // Start is called before the first frame update
     void Start()
     {
+        clips = new AudioClip[6];
         source = GetComponent<AudioSource>();
-        listconvert();
+        
     }
     public void listconvert()
     {
@@ -62,6 +65,20 @@ public class MP3Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(staticDataHolder.daynumber != prevday)
+        {
+            clips = new AudioClip[6];
+            source = GetComponent<AudioSource>();
+            prevday = staticDataHolder.daynumber;
+            
+            for (i = 0; i < 6; i++)
+            {
+                clips[i] = GetComponent<Dailyplaylist>().Datdaysong[i];
+                print("song get =" + i);
+            }
+            listconvert();
+            print("Im done running u idiot!");
+        }
         timer += Time.deltaTime;
 
         if(timer >= newclip +1)

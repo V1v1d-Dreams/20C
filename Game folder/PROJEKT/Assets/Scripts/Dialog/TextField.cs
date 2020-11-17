@@ -43,6 +43,7 @@ public class TextField : MonoBehaviour
     {
         if (Stated == false)
         {
+            staticDataHolder.daynumber = WhatDayisToday;
             textlocation.position = new Vector3(Textstart.position.x, Textstart.position.y, textlocation.position.z);
             Namelocation.position = new Vector3(Namestart.position.x, Namestart.position.y, Namestart.position.z);
             if (i < Dialog.Length)
@@ -150,7 +151,6 @@ public class TextField : MonoBehaviour
         else
         {
             GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
-            staticDataHolder.daynumber = WhatDayisToday;
         }
     }
 }

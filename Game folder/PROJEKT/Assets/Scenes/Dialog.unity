@@ -476,6 +476,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 4
+  Film: {fileID: 0}
 --- !u!1 &184500556
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +585,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 6
+  Film: {fileID: 9127718114185621459, guid: 5f603092210ad0d4294824feba87ab1a, type: 3}
 --- !u!1 &239171115
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +798,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 1
+  Film: {fileID: 0}
 --- !u!1 &346357242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,6 +1003,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 1
+  Film: {fileID: 9127718114185621459, guid: 20ae90d0945306141a694b436629bade, type: 3}
 --- !u!1 &547265519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1211,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 5
+  Film: {fileID: 0}
 --- !u!1 &617905126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,90 +1611,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 3
---- !u!1001 &889805184
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1011038012727953013, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3616198795402559560, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860932, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_Name
-      value: MusicPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860932, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.007406
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.62289596
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.06175232
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6432621d330ddf441ac6a0c03663ff58, type: 3}
+  Film: {fileID: 0}
 --- !u!1 &983499407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,6 +1786,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 5
+  Film: {fileID: 9127718114185621459, guid: 6b35574dcad24d74b93cd0e958bc818c, type: 3}
 --- !u!1001 &1020390438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2469,6 +2392,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 4
+  Film: {fileID: 9127718114185621459, guid: f895f926c87f4ec43a6cda9eac62bca3, type: 3}
 --- !u!1 &1316294840
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,6 +2625,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 2
+  Film: {fileID: 0}
 --- !u!1 &1479490536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,6 +2702,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 3
+  Film: {fileID: 9127718114185621459, guid: 0070c26db4d5df94eb42198ef99b568e, type: 3}
 --- !u!1 &1487627579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +2747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Manager: {fileID: 0}
+  MucikPlayer: {fileID: 0}
 --- !u!1 &1531325350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3142,6 +3069,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 6
+  Film: {fileID: 0}
 --- !u!4 &1747420579
 Transform:
   m_ObjectHideFlags: 0
@@ -3872,6 +3800,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 2
+  Film: {fileID: 9127718114185621459, guid: db6cdf33953a60b43a7f93a52febec70, type: 3}
 --- !u!1 &2046586560
 GameObject:
   m_ObjectHideFlags: 0

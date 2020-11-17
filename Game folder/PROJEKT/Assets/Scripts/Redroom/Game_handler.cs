@@ -101,7 +101,7 @@ public class Game_handler : MonoBehaviour
 
         }
 
-        timer();
+        //timer();
 
         raycasting();
     
@@ -251,6 +251,7 @@ public class Game_handler : MonoBehaviour
                 }
                 break;
             }
+            //Change to switch
         }
     }
 

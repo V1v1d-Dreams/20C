@@ -27,6 +27,7 @@ public class TextField : MonoBehaviour
     bool Stated = false;
     [SerializeField] int Timeindex;
     [SerializeField] int WhatDayisToday;
+    [SerializeField] GameObject Film;
 
     RaycastHit2D[] Click;
     Camera cam;
@@ -154,6 +155,7 @@ public class TextField : MonoBehaviour
         }
         else
         {
+            staticDataHolder.Todaysfilm = Film;
             GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
         }
     }

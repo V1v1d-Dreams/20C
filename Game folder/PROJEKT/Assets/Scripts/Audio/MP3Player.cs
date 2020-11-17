@@ -33,6 +33,9 @@ public class MP3Player : MonoBehaviour
     }
     public void listconvert()
     {
+        songname.Clear();
+        songlistdrop.value = 0;
+
         for (i = 0; i < clips.Length; i++)
         {
            // print("im running");
@@ -44,7 +47,15 @@ public class MP3Player : MonoBehaviour
     }
     void populate()
     {
+        print("Songcount" + songlistdrop.options.Count);
+        for (i = songlistdrop.options.Count-1; i >= 0; i--)
+        {
+            songlistdrop.options.RemoveAt(i);
+            print(i);
+        }
+
         songlistdrop.AddOptions(songname);
+        next();
     }
     public void Dropdown_IndexChanged(int Index = 0)
     {
@@ -66,6 +77,14 @@ public class MP3Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F11))
+        {
+            for (i = 0; i < songname.Count; i++)
+            {
+                print(songname[i]);
+            }
+        }
+
         if (GetComponent<Dailyplaylist>().Loaded)
         {
             if (staticDataHolder.daynumber != prevday)

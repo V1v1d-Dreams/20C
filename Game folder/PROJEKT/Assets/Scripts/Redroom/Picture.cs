@@ -41,7 +41,7 @@ public class Picture : MonoBehaviour
     [SerializeField] bool Hanged = false;
     [SerializeField] GameObject PastPos;
     [SerializeField] public bool isholding = false;
-
+    GameObject imagepre;
     /*
     [Header("Data")]
     public Sprite Blur;
@@ -55,7 +55,7 @@ public class Picture : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         gaemhander =  GameObject.Find("Event controller");
         invent = GameObject.Find("Photo-inv");
-
+        imagepre = GameObject.Find("ImagePreview");
 
     }
 
@@ -231,6 +231,19 @@ public class Picture : MonoBehaviour
 
     }
 
+    void OnMouseOver()
+    {
+        if (Input.GetKey(KeyCode.LeftAlt))
+        {
+            imagepre.GetComponent<SpriteRenderer>().sprite = gameObject.transform.Find("75134282_p0_master1200_2").GetComponent<SpriteRenderer>().sprite;
+            imagepre.GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f,1f);
+        }
+        else
+        {
+            imagepre.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+        }
+    }
+
     void setlayer(int layer)
     {
         if (onhold == 0)
@@ -253,4 +266,6 @@ public class Picture : MonoBehaviour
         }
         onhold = 0;
     }
+
+
 }

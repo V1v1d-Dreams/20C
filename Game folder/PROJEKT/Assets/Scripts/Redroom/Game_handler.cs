@@ -51,18 +51,25 @@ public class Game_handler : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Click = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
-            print(Click[0].collider.gameObject.name);
-            if (Click[0].collider.gameObject.CompareTag("Paper"))
+            
+            if (!Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward))
+            {
+
+            }
+            else if (Click[0].collider.gameObject.CompareTag("Paper"))
             {
                 Click[0].collider.gameObject.GetComponent<Paper>().isholding = true;
+                print(Click[0].collider.gameObject.name);
             }
             else if (Click[0].collider.gameObject.CompareTag("Photo"))
             {
                 Click[0].collider.gameObject.GetComponent<Picture>().isholding = true;
+                print(Click[0].collider.gameObject.name);
             }
             else if (Click[0].collider.gameObject.CompareTag("FilmItem"))
             {
                 Click[0].collider.gameObject.GetComponent<Film>().isholding = true;
+                print(Click[0].collider.gameObject.name);
             }
             else
             {
@@ -70,12 +77,17 @@ public class Game_handler : MonoBehaviour
                 {
                     Click[1].collider.gameObject.GetComponent<Picture>().isholding = true;
                 }
+                print(Click[0].collider.gameObject.name);
             }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            if (Click[0].collider.gameObject.CompareTag("Paper"))
+            if (!Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward))
+            {
+
+            }
+            else if (Click[0].collider.gameObject.CompareTag("Paper"))
             {
                 Click[0].collider.gameObject.GetComponent<Paper>().isholding = false;
                 Click[0].collider.gameObject.GetComponent<Paper>().transform.position = new Vector2(Click[0].collider.gameObject.GetComponent<Paper>().innitialpos.x, Click[0].collider.gameObject.GetComponent<Paper>().innitialpos.y);

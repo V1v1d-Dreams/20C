@@ -92,8 +92,12 @@ public class TextField : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             Click = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
-            
-            if (Click[0].collider.gameObject.CompareTag("TextBox"))
+
+            if (!Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition),transform.forward))
+            {
+                
+            }
+            else if (Click[0].collider.gameObject.CompareTag("TextBox"))
             {
                 DialogS();
             }

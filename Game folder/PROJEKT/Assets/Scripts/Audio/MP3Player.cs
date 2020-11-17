@@ -29,7 +29,7 @@ public class MP3Player : MonoBehaviour
     {
         clips = new AudioClip[6];
         source = GetComponent<AudioSource>();
-        
+        //StartCoroutine(Latestart(0.35f));
     }
     public void listconvert()
     {
@@ -51,6 +51,7 @@ public class MP3Player : MonoBehaviour
         songindex = Index;
         source.Stop();
         songchange();
+
     }
 
     void songchange()
@@ -65,27 +66,28 @@ public class MP3Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(staticDataHolder.daynumber != prevday)
+        if (GetComponent<Dailyplaylist>().Loaded)
         {
-            clips = new AudioClip[6];
-            source = GetComponent<AudioSource>();
-            prevday = staticDataHolder.daynumber;
-            
-            for (i = 0; i < 6; i++)
+            if (staticDataHolder.daynumber != prevday)
             {
-                clips[i] = GetComponent<Dailyplaylist>().Datdaysong[i];
-                print("song get =" + i);
-            }
-            listconvert();
-            print("Im done running u idiot!");
-        }
-        timer += Time.deltaTime;
+                clips = new AudioClip[6];
+                source = GetComponent<AudioSource>();
+                prevday = staticDataHolder.daynumber;
 
-        if(timer >= newclip +1)
-        {
-            prevtrack = curtrack;
-            newsong();
-            timer = 0;
+                for (i = 0; i < 6; i++)
+                {
+                    clips[i] = GetComponent<Dailyplaylist>().Datdaysong[i];
+                }
+                listconvert();
+            }
+            timer += Time.deltaTime;
+
+            if (timer >= newclip + 1)
+            {
+                prevtrack = curtrack;
+                newsong();
+                timer = 0;
+            }
         }
 
     }
@@ -175,4 +177,11 @@ public class MP3Player : MonoBehaviour
         }
         
     }
+
+    IEnumerator Latestart(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+
+    }
 }
+

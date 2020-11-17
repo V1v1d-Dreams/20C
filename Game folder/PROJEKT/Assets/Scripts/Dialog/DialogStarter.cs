@@ -10,7 +10,7 @@ public class DialogStarter : MonoBehaviour
     {
         Manager = GameObject.Find("GameProgressManager");
 
-        StartCoroutine(Latestart(1));
+        StartCoroutine(Latestart(0.25f));
     }
 
     IEnumerator Latestart(float waitTime)

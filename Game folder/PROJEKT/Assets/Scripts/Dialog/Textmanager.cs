@@ -86,7 +86,7 @@ public class Textmanager : MonoBehaviour
                     char c = chars[charIndex];
                     Sprite Charsprite = charsprite[charIndex];
                     chardata.Add(c, new Chardata(charwidth, Charsprite));
-                    print(c + " "+ charwidth);
+                    //print(c + " "+ charwidth);
                 }
                 ++charIndex;
             }

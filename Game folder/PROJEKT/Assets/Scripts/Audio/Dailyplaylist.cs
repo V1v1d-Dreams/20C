@@ -44,17 +44,17 @@ public class Dailyplaylist : MonoBehaviour
                 print("Assign 1");
                 break;
             case 2://
-                Datdaysong[0] = allsong[6];
-                Datdaysong[1] = allsong[7];
-                Datdaysong[2] = allsong[8];
-                Datdaysong[3] = allsong[9];
-                Datdaysong[4] = allsong[10];
+                Datdaysong[0] = allsong[0];
+                Datdaysong[1] = allsong[1];
+                Datdaysong[2] = allsong[2];
+                Datdaysong[3] = allsong[3];
+                Datdaysong[4] = allsong[4];
                 Datdaysong[5] = allsong[5];
                 Loaded = true;
                 print("Assign 2");
                 break;
             case 3://
-                Datdaysong[0] = allsong[0];
+                Datdaysong[0] = allsong[6];
                 Datdaysong[1] = allsong[1];
                 Datdaysong[2] = allsong[2];
                 Datdaysong[3] = allsong[3];
@@ -64,8 +64,8 @@ public class Dailyplaylist : MonoBehaviour
                 print("Assign 3");
                 break;
             case 4://
-                Datdaysong[0] = allsong[0];
-                Datdaysong[1] = allsong[1];
+                Datdaysong[0] = allsong[6];
+                Datdaysong[1] = allsong[7];
                 Datdaysong[2] = allsong[2];
                 Datdaysong[3] = allsong[3];
                 Datdaysong[4] = allsong[4];
@@ -74,9 +74,9 @@ public class Dailyplaylist : MonoBehaviour
                 print("Assign 4");
                 break;
             case 5://
-                Datdaysong[0] = allsong[0];
-                Datdaysong[1] = allsong[1];
-                Datdaysong[2] = allsong[2];
+                Datdaysong[0] = allsong[6];
+                Datdaysong[1] = allsong[7];
+                Datdaysong[2] = allsong[8];
                 Datdaysong[3] = allsong[3];
                 Datdaysong[4] = allsong[4];
                 Datdaysong[5] = allsong[5];
@@ -84,22 +84,22 @@ public class Dailyplaylist : MonoBehaviour
                 print("Assign 5");
                 break;
             case 6://
-                Datdaysong[0] = allsong[0];
-                Datdaysong[1] = allsong[1];
-                Datdaysong[2] = allsong[2];
-                Datdaysong[3] = allsong[3];
+                Datdaysong[0] = allsong[6];
+                Datdaysong[1] = allsong[7];
+                Datdaysong[2] = allsong[8];
+                Datdaysong[3] = allsong[9];
                 Datdaysong[4] = allsong[4];
                 Datdaysong[5] = allsong[5];
                 Loaded = true;
                 print("Assign 6");
                 break;
              default:
-                Datdaysong[0] = allsong[0];
-                Datdaysong[1] = allsong[1];
-                Datdaysong[2] = allsong[2];
-                Datdaysong[3] = allsong[3];
-                Datdaysong[4] = allsong[4];
-                Datdaysong[5] = allsong[5];
+                Datdaysong[0] = allsong[6];
+                Datdaysong[1] = allsong[7];
+                Datdaysong[2] = allsong[8];
+                Datdaysong[3] = allsong[9];
+                Datdaysong[4] = allsong[10];
+                Datdaysong[5] = allsong[1];
                 Loaded = true;
                 print("Defult song list");
                 break;

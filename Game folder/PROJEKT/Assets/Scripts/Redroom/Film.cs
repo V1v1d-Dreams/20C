@@ -27,7 +27,8 @@ public class Film : MonoBehaviour
     [SerializeField] public bool mouseOnfilm;
 
     [SerializeField] public bool isholding = false;
-    [SerializeField] GameObject invSlot;
+    //[SerializeField] GameObject invSlot;
+    [SerializeField] GameObject Filmslot;
     [SerializeField] private float onhold = 0; //holdingflim or not
 
     // Start is called before the first frame update
@@ -108,7 +109,7 @@ public class Film : MonoBehaviour
     {
         Hold();
 
-        innitialpos = invSlot.transform.position;
+        innitialpos = Filmslot.transform.position;
 
         //oninv = gaemhander.GetComponent<Game_handler>().mouseonINV;
 

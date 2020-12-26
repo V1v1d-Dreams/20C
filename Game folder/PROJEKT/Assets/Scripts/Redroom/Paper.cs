@@ -20,6 +20,7 @@ public class Paper : MonoBehaviour
     [SerializeField] public bool isholding = false;
     [SerializeField] private float onhold = 0; //holdingpaper or not
     [SerializeField] public bool mouseOnPaper;
+    [SerializeField] public GameObject Innitilpos;
     RaycastHit2D[] raycast;
     Camera cam;
 
@@ -28,7 +29,7 @@ public class Paper : MonoBehaviour
     void Start() 
     {
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
-        innitialpos = GameObject.Find("inventoryhitbox (0)").transform.position;
+        innitialpos = new Vector2(transform.position.x, transform.position.y);
         gaemhander = GameObject.Find("Event controller");
         //transform.SetParent(GameObject.Find("inventoryhitbox (0)").transform, true);
 
@@ -105,7 +106,7 @@ public class Paper : MonoBehaviour
     }
     void Update()
     {
-        innitialpos = GameObject.Find("inventoryhitbox (0)").transform.position;
+        innitialpos = Innitilpos.transform.position;
         //oninv = gaemhander.GetComponent<Game_handler>().mouseonINV;
         Hold();
 

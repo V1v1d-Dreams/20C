@@ -14,25 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dialog.unity
     guid: 1263b0806bfc64c498238f4fb1769812
-  - enabled: 0
-    path: Assets/Scenes/Before_redroom.unity
-    guid: 8cb0910db792f5e47b62662019dc3f4b
   - enabled: 1
     path: Assets/Scenes/redroom.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/Light2D_Testing.unity
-    guid: dfde59d5bbeb32646b1297bcced0ba2b
-  - enabled: 0
-    path: Assets/Scenes/Light3D_Testing.unity
-    guid: 1b6c3cba839de6a4ab698cfe0e23e7d3
   - enabled: 1
     path: Assets/Scenes/NextDay.unity
     guid: d451f792eebed0147b4f045287c80a35
   - enabled: 1
     path: Assets/Scenes/ToBeCon.unity
     guid: 94568f05ded0dd8449aa9344c0efb732
-  - enabled: 0
-    path: Assets/Scenes/Redroom layout test.unity
-    guid: 3470d583cc0da2348a51557c9b9dec07
+  - enabled: 1
+    path: Assets/Scenes/Menu_Version2.unity
+    guid: 83f907de02493a941b8055bc4c05f238
   m_configObjects: {}

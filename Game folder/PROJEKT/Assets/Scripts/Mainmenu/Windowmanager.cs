@@ -28,6 +28,8 @@ public class Windowmanager : MonoBehaviour
     {
         //confirmation.gameObject.SetActive(false);
         //setting.gameObject.SetActive(false);
+        //Reset default     Screen.SetResolution(1920, 1080, false); //enter res
+
 
         resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray();
 

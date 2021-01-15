@@ -142,7 +142,12 @@ public class Paper : MonoBehaviour
                 //transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
                 mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
+                GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
             }
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = new Color32(0, 0, 0, 0);
         }
     }
 }

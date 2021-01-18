@@ -77,7 +77,7 @@ public class TextField : MonoBehaviour
                     }
                     else
                     {
-                        textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
+                        textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex+1]), textlocation.position.y, textlocation.position.z);
                     }
                 }
                 i++;
@@ -148,7 +148,7 @@ public class TextField : MonoBehaviour
                 }
                 else
                 {
-                    textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
+                    textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex+1]), textlocation.position.y, textlocation.position.z);
                 }
             }
             i++;

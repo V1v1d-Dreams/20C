@@ -23,7 +23,7 @@ public class Textmanager : MonoBehaviour
         //GetSubSprites();
         GetspriteWidths();
         char[] space = " ".ToCharArray();
-        chardata.Add(space[0], new Chardata(2, SpaceBar));
+        chardata.Add(space[0], new Chardata(60, SpaceBar));
     }
 
     /*public void GetSubSprites()
@@ -42,8 +42,14 @@ public class Textmanager : MonoBehaviour
 
         for (int texCoordY = height; texCoordY > 0; texCoordY -= spriteheigh) //(i = 0; i < 5; i++) up to down
         {
+            
             for (int texCoordX = 0; texCoordX < width; texCoordX += spritesize) // left to right
             {
+                if (charIndex > chars.Length + 1)
+                {
+                    break;
+                }
+
                 //print(charIndex);
                 int x = 0;
                 int y = 0;
@@ -88,7 +94,14 @@ public class Textmanager : MonoBehaviour
                     chardata.Add(c, new Chardata(charwidth, Charsprite));
                     //print(c + " "+ charwidth);
                 }
+
+                if (charIndex < 98)
+                {
+                    print(charIndex + " " + charwidth + " " + chars[charIndex]);
+                }
+
                 ++charIndex;
+
             }
 
         }
@@ -106,7 +119,7 @@ public class Textmanager : MonoBehaviour
         }
     }
 
-    public float DisplayDialog(char input, Transform textlocation,GameObject letter)
+    public float DisplayDialog(char input, Transform textlocation,GameObject letter, char nextinput)
     {
         GameObject newtext;
         NewtextPos = textlocation.position.x;
@@ -116,7 +129,7 @@ public class Textmanager : MonoBehaviour
         newtext.GetComponent<SpriteRenderer>().sprite = chardata[input].sprite;
         newtext.GetComponent<SpriteRenderer>().color = Textcolor;
 
-        NewtextPos += (chardata[input].width * charlength);
+        NewtextPos += (((chardata[input].width/2) + (chardata[nextinput].width/2)) * charlength);
 
 
         return (NewtextPos); 

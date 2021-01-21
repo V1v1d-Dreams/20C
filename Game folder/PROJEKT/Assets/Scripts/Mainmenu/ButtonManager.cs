@@ -58,6 +58,7 @@ public class ButtonManager : MonoBehaviour
     public void Play_To_Main()
     {
         MainCamera.SetInteger("AnimationNumber", -1);
+        GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(0);
     }
     public void Settings()
     {

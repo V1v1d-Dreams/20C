@@ -63,7 +63,14 @@ public class TextField : MonoBehaviour
                 Chararray = Names[i].ToCharArray();
                 for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
                 {
-                    Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name), Namelocation.position.y, Namelocation.position.z);
+                    if (iNdex + 1 < Chararray.Length)
+                    {
+                        Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name, Chararray[iNdex + 1]), Namelocation.position.y, Namelocation.position.z);
+                    }
+                    else
+                    {
+                        Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name), Namelocation.position.y, Namelocation.position.z);
+                    }
                 }
                 //---------------------------Name--------------------------
 
@@ -77,7 +84,14 @@ public class TextField : MonoBehaviour
                     }
                     else
                     {
-                        textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex+1]), textlocation.position.y, textlocation.position.z);
+                        if (iNdex + 1 < Chararray.Length)
+                        {
+                            textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex + 1]), textlocation.position.y, textlocation.position.z);
+                        }
+                        else
+                        {
+                            textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
+                        }
                     }
                 }
                 i++;
@@ -130,7 +144,14 @@ public class TextField : MonoBehaviour
             Chararray = Names[i].ToCharArray();
             for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
             {
-                Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name), Namelocation.position.y, Namelocation.position.z);
+                if (iNdex + 1 < Chararray.Length)
+                {
+                    Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name, Chararray[iNdex + 1]), Namelocation.position.y, Namelocation.position.z);
+                }
+                else
+                {
+                    Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name), Namelocation.position.y, Namelocation.position.z);
+                }
             }
             //---------------------------Name--------------------------
 
@@ -148,7 +169,14 @@ public class TextField : MonoBehaviour
                 }
                 else
                 {
-                    textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex+1]), textlocation.position.y, textlocation.position.z);
+                    if (iNdex + 1 < Chararray.Length)
+                    {
+                        textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex + 1]), textlocation.position.y, textlocation.position.z);
+                    }
+                    else
+                    {
+                        textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
+                    }
                 }
             }
             i++;

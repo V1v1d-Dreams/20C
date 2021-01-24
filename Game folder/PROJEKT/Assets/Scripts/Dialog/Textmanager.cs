@@ -14,6 +14,7 @@ public class Textmanager : MonoBehaviour
     [SerializeField] int spritesize = 80;
     [SerializeField] int spriteheigh = 64;
     [SerializeField] float charlength = 0.1f;
+    [SerializeField] float charspace = 0.1f;
     [SerializeField] public float NewtextPos;
     [SerializeField] Color32 Textcolor;
     [SerializeField] Color32 Namecolor;
@@ -23,7 +24,7 @@ public class Textmanager : MonoBehaviour
         //GetSubSprites();
         GetspriteWidths();
         char[] space = " ".ToCharArray();
-        chardata.Add(space[0], new Chardata(60, SpaceBar));
+        chardata.Add(space[0], new Chardata(15, SpaceBar));
     }
 
     /*public void GetSubSprites()
@@ -95,11 +96,6 @@ public class Textmanager : MonoBehaviour
                     //print(c + " "+ charwidth);
                 }
 
-                if (charIndex < 98)
-                {
-                    print(charIndex + " " + charwidth + " " + chars[charIndex]);
-                }
-
                 ++charIndex;
 
             }
@@ -119,20 +115,51 @@ public class Textmanager : MonoBehaviour
         }
     }
 
-    public float DisplayDialog(char input, Transform textlocation,GameObject letter, char nextinput)
+    public float DisplayDialog(char input, Transform textlocation,GameObject letter, char next)
     {
         GameObject newtext;
         NewtextPos = textlocation.position.x;
 
         newtext = Instantiate(letter);
         newtext.transform.position = new Vector3(textlocation.position.x,textlocation.position.y,textlocation.position.z);
-        newtext.GetComponent<SpriteRenderer>().sprite = chardata[input].sprite;
-        newtext.GetComponent<SpriteRenderer>().color = Textcolor;
+        newtext.GetComponentInChildren<SpriteRenderer>().sprite = chardata[input].sprite;
+        newtext.GetComponentInChildren<SpriteRenderer>().color = Textcolor;
 
-        NewtextPos += (((chardata[input].width/2) + (chardata[nextinput].width/2)) * charlength);
+        NewtextPos += ((chardata[input].width/2 + chardata[next].width/2 + charspace) * charlength);
 
 
         return (NewtextPos); 
+    }
+
+    public float DisplayDialog(char input, Transform textlocation, GameObject letter)
+    {
+        GameObject newtext;
+        NewtextPos = textlocation.position.x;
+
+        newtext = Instantiate(letter);
+        newtext.transform.position = new Vector3(textlocation.position.x, textlocation.position.y, textlocation.position.z);
+        newtext.GetComponentInChildren<SpriteRenderer>().sprite = chardata[input].sprite;
+        newtext.GetComponentInChildren<SpriteRenderer>().color = Textcolor;
+
+        NewtextPos += (chardata[input].width/2 + charspace);
+
+
+        return (NewtextPos);
+    }
+
+    public float DisplayName(char input, Transform textlocation, GameObject letter, char next)
+    {
+        GameObject newtext;
+        NewtextPos = textlocation.position.x;
+
+        newtext = Instantiate(letter);
+        newtext.transform.position = new Vector3(textlocation.position.x, textlocation.position.y, textlocation.position.z);
+        newtext.GetComponentInChildren<SpriteRenderer>().sprite = chardata[input].sprite;
+        newtext.GetComponentInChildren<SpriteRenderer>().color = Namecolor;
+
+        NewtextPos += ((chardata[input].width / 2 + chardata[next].width / 2 + charspace) * charlength);
+
+        return (NewtextPos);
     }
 
     public float DisplayName(char input, Transform textlocation, GameObject letter)
@@ -142,11 +169,10 @@ public class Textmanager : MonoBehaviour
 
         newtext = Instantiate(letter);
         newtext.transform.position = new Vector3(textlocation.position.x, textlocation.position.y, textlocation.position.z);
-        newtext.GetComponent<SpriteRenderer>().sprite = chardata[input].sprite;
-        newtext.GetComponent<SpriteRenderer>().color = Namecolor;
+        newtext.GetComponentInChildren<SpriteRenderer>().sprite = chardata[input].sprite;
+        newtext.GetComponentInChildren<SpriteRenderer>().color = Namecolor;
 
-        NewtextPos += (chardata[input].width * charlength);
-
+        NewtextPos += (chardata[input].width / 2 + charspace);
 
         return (NewtextPos);
     }

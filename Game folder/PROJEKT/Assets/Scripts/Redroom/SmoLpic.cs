@@ -5,65 +5,55 @@ using UnityEngine.UI;
 
 public class SmoLpic : MonoBehaviour
 {
-    [SerializeField] public Sprite[] Smol;
+    [SerializeField] public Sprite Smol;
     [SerializeField] public GameObject[] pic;
-    int index = 0;
     [SerializeField] Transform spawnpt;
-    [SerializeField] GameObject buttonL;
-    [SerializeField] GameObject buttonR;
     [SerializeField] GameObject Overlay;
-    [SerializeField] GameObject camleft;
-    [SerializeField] GameObject camright;
-    [SerializeField] public float timer = 2;
-    [SerializeField] public float nextclicktime = 0;
+    [SerializeField] public bool CorrectPos = false;
+    [SerializeField] public bool Press = false;
+    [SerializeField] int picnumber = 0;
     void Start()
     {
-        this.GetComponent<SpriteRenderer>().sprite = Smol[0];
+
     }
 
-    public void goleft()
+    void Update()
     {
-        if ((index -1) < 0)
-        {
-            index = Smol.Length - 1;
-        }
-        else
-        {
-            index -= 1;
-        }
-        this.GetComponent<SpriteRenderer>().sprite = Smol[index];
-    }
+        CorrectPos = GameObject.Find("mechine").GetComponent<Mechine>().CanPress;
+        double val = GameObject.Find("mechine").GetComponent<Mechine>().valuePercent;
 
-    public void goright()
-    {
-        if ((index + 1) >= Smol.Length)
+        if (val > 8.2 && val < 12.2)
         {
-            index = 0;
+            picnumber = 0;
         }
-        else
+        if (val > 27.5 && val < 31.5)
         {
-            index += 1;
+            picnumber = 1;
         }
-        this.GetComponent<SpriteRenderer>().sprite = Smol[index];
-    }
+        if (val > 46.7 && val < 50.7)
+        {
+            picnumber = 2;
+        }
+        if (val > 66.3 && val < 70.3)
+        {
+            picnumber = 3;
+        }
+        if (val > 85.2 && val < 89.8)
+        {
+            picnumber = 4;
+        }
 
-    void OnMouseUp()
-    {
-        if (Time.time > nextclicktime)
+
+
+
+        if (CorrectPos && Press)
         {
             print("instantiate");
-            Instantiate(pic[index], spawnpt);
-            buttonL.SetActive(false);
-            buttonR.SetActive(false);
+            Instantiate(pic[picnumber], spawnpt);
             Overlay.SetActive(false);
             gameObject.SetActive(false);
-            camleft.SetActive(true);
-            camright.SetActive(true);
             GameObject.Find("mechine").GetComponent<Mechine>().Opened = false;
-            //GameObject.Find("mechine").GetComponent<Mechine>().paperin = false;
-            //GameObject.Find("mechine").GetComponent<Mechine>().filmin = false;
-            nextclicktime = Time.time + timer;
+            GameObject.Find("Event controller").GetComponent<Game_handler>().overlay = false;
         }
-
     }
 }

@@ -13,6 +13,6 @@ public class ButtonR : MonoBehaviour
 
     void OnMouseUp()
     {
-        smolpic.GetComponent<SmoLpic>().goright();
+        //smolpic.GetComponent<SmoLpic>().goright();
     }
 }

@@ -6,11 +6,6 @@ using UnityEngine.UI;
 public class Game_handler : MonoBehaviour
 {
     [SerializeField] public Camera cam;
-    private Vector3 cam_follow_pos;
-    [SerializeField] private float moveAmount;
-    [SerializeField] private float edgesize;
-    [SerializeField] private Transform maxpos_X;
-    [SerializeField] private Transform minpos_X;
     [SerializeField] GameObject film;
     [SerializeField] GameObject paper;
     [SerializeField] Transform filmpos;
@@ -20,6 +15,7 @@ public class Game_handler : MonoBehaviour
     [SerializeField] public bool placable = false;
     [SerializeField] Transform[] children;
     [SerializeField] public GameObject SoundManager;
+    [SerializeField] public int Magnifier_Lv = 1;
 
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
@@ -38,79 +34,85 @@ public class Game_handler : MonoBehaviour
     [SerializeField] public int[] CamPosittion;
     [SerializeField] public int CurrentCamPos = 1;
 
+    [Header("Bool")]
+    [SerializeField] public bool overlay = false;
+
     RaycastHit2D[] raycast;
     RaycastHit2D[] Click;
     void Start()
     {
-        cam_follow_pos = cam.transform.position;
+        //cam_follow_pos = cam.transform.position;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyUp(KeyCode.O))
         {
-            Click = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
-            
-            if (!Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward))
-            {
+            Magnifier_Lv += 1;
+        }
 
-            }
-            else if (Click[0].collider.gameObject.CompareTag("Paper"))
+        if (!overlay)
+        {
+            if (Input.GetMouseButtonDown(0))
             {
-                Click[0].collider.gameObject.GetComponent<Paper>().isholding = true;
-                print(Click[0].collider.gameObject.name);
-            }
-            else if (Click[0].collider.gameObject.CompareTag("Photo"))
-            {
-                Click[0].collider.gameObject.GetComponent<Picture>().isholding = true;
-                print(Click[0].collider.gameObject.name);
-            }
-            else if (Click[0].collider.gameObject.CompareTag("FilmItem"))
-            {
-                Click[0].collider.gameObject.GetComponent<Film>().isholding = true;
-                print(Click[0].collider.gameObject.name);
-            }
-            else
-            {
-                if (Click[1].collider.gameObject.CompareTag("Photo"))
+                Click = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
+
+                if (!Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward))
                 {
-                    Click[1].collider.gameObject.GetComponent<Picture>().isholding = true;
+
                 }
-                print(Click[0].collider.gameObject.name);
+                else if (Click[0].collider.gameObject.CompareTag("Paper"))
+                {
+                    Click[0].collider.gameObject.GetComponent<Paper>().isholding = true;
+                    print(Click[0].collider.gameObject.name);
+                }
+                else if (Click[0].collider.gameObject.CompareTag("Photo"))
+                {
+                    Click[0].collider.gameObject.GetComponent<Picture>().isholding = true;
+                    print(Click[0].collider.gameObject.name);
+                }
+                else if (Click[0].collider.gameObject.CompareTag("FilmItem"))
+                {
+                    Click[0].collider.gameObject.GetComponent<Film>().isholding = true;
+                    print(Click[0].collider.gameObject.name);
+                }
+                else
+                {
+                    if (Click[1].collider.gameObject.CompareTag("Photo"))
+                    {
+                        Click[1].collider.gameObject.GetComponent<Picture>().isholding = true;
+                    }
+                    print(Click[0].collider.gameObject.name);
+                }
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                if (!Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward))
+                {
+
+                }
+                else if (Click[0].collider.gameObject.CompareTag("Paper"))
+                {
+                    Click[0].collider.gameObject.GetComponent<Paper>().isholding = false;
+                    Click[0].collider.gameObject.GetComponent<Paper>().transform.position = new Vector2(Click[0].collider.gameObject.GetComponent<Paper>().innitialpos.x, Click[0].collider.gameObject.GetComponent<Paper>().innitialpos.y);
+                    SoundManager.GetComponent<SoundManager>().PlayFX(2);
+                }
+                else if (Click[0].collider.gameObject.CompareTag("FilmItem"))
+                {
+                    Click[0].collider.gameObject.GetComponent<Film>().isholding = false;
+                    Click[0].collider.gameObject.GetComponent<Film>().transform.position = new Vector2(Click[0].collider.gameObject.GetComponent<Film>().innitialpos.x, Click[0].collider.gameObject.GetComponent<Film>().innitialpos.y);
+                }
+
             }
         }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (!Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward))
-            {
-
-            }
-            else if (Click[0].collider.gameObject.CompareTag("Paper"))
-            {
-                Click[0].collider.gameObject.GetComponent<Paper>().isholding = false;
-                Click[0].collider.gameObject.GetComponent<Paper>().transform.position = new Vector2(Click[0].collider.gameObject.GetComponent<Paper>().innitialpos.x, Click[0].collider.gameObject.GetComponent<Paper>().innitialpos.y);
-                SoundManager.GetComponent<SoundManager>().PlayFX(2);
-            }
-            else if (Click[0].collider.gameObject.CompareTag("FilmItem"))
-            {
-                Click[0].collider.gameObject.GetComponent<Film>().isholding = false;
-                Click[0].collider.gameObject.GetComponent<Film>().transform.position = new Vector2(Click[0].collider.gameObject.GetComponent<Film>().innitialpos.x, Click[0].collider.gameObject.GetComponent<Film>().innitialpos.y);
-            }
-
-        }
-
-        //timer();
 
         raycasting();
-    
-        //dynamicmovespeed();
-
-        //movecam();
 
     }
-
+    /*
     void dynamicmovespeed()
     {
         float maxspeed = 10f;
@@ -173,7 +175,7 @@ public class Game_handler : MonoBehaviour
         Instantiate(film,filmpos);
         Instantiate(paper, paperpos);
     }
-
+    */
     void raycasting()
     {
         mouseonINV = false;
@@ -245,8 +247,8 @@ public class Game_handler : MonoBehaviour
                 {
                     //transform.position = new Vector2(innitialpos.x, innitialpos.y);
                     GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
-                    GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = Click[0].collider.gameObject.GetComponent<Film>().picturearray;
-                    GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().Smol = Click[0].collider.gameObject.GetComponent<Film>().BlurArray;
+                    //GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = Click[0].collider.gameObject.GetComponent<Film>().picturearray;
+                    //GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().Smol = Click[0].collider.gameObject.GetComponent<Film>().BlurArray;
                     SoundManager.GetComponent<SoundManager>().PlayFX(1);
                 }
                 break;

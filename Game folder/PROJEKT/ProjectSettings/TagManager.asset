@@ -61,6 +61,9 @@ TagManager:
   - name: items
     uniqueID: 634563559
     locked: 0
+  - name: shadows
+    uniqueID: 102572447
+    locked: 0
   - name: items2
     uniqueID: 2688373323
     locked: 0

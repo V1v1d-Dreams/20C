@@ -305,7 +305,7 @@ public class Game_handler : MonoBehaviour
         GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(2);
         staticDataHolder.currentTime++;
 
-        int children = GameObject.Find("Photo-inv").transform.childCount;
+        /*int children = GameObject.Find("Photo-inv").transform.childCount;
         for (int i = 0; i < children; ++i)
         {
             if (GameObject.Find("Photo-inv").transform.GetChild(i).GetComponent<Picture>() == null)
@@ -318,6 +318,7 @@ public class Game_handler : MonoBehaviour
             }
         }
         print(staticDataHolder.customerValue);
+        */
 
     }
 

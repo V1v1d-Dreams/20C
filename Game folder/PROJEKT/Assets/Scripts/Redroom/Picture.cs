@@ -9,8 +9,14 @@ public class Picture : MonoBehaviour
     public string Notes = "FILL IN THIS SHIT";
 
     [Header("Value")]
-    [Tooltip("FUCKING PUT THIS IN OR ELSE THE GAME WILL BROKE")]
-    [SerializeField] public float Value;
+    [Tooltip("THE GAME IS ALREADY BROKEN")]
+    [SerializeField] public float Timer;
+    //[Range(0, 10)]
+    int time = 5;
+    [SerializeField] public double percent1;
+    [SerializeField] public double percent2;
+    [SerializeField] public double percent3;
+    [SerializeField] public int value;
 
     [Header("Cursor")]
     public Texture2D Normal;
@@ -104,35 +110,78 @@ public class Picture : MonoBehaviour
         if (!Hanged)
         {
             returelayer();
-            if (gaemhander.GetComponent<Game_handler>().mouseonTray1) //first tray
+            if (gaemhander.GetComponent<Game_handler>().mouseonTray1 && gaemhander.GetComponent<Game_handler>().placable) //first tray
             {
+
                 transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
                 animator.SetTrigger("place");
                 FirstTray = true;
+                gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<Item_with_slot>().ObjectIN = this.gameObject; //THIS
+
+                PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
+                PastPos.GetComponent<Item_with_slot>().Locked = true;
+
                 innitialpos = transform.position;
                 gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
             }
-            else if (gaemhander.GetComponent<Game_handler>().mouseonTray2 && FirstTray) //second tray
+            else if (gaemhander.GetComponent<Game_handler>().mouseonTray2 && FirstTray && gaemhander.GetComponent<Game_handler>().placable) //second tray
             {
+                if (PastPos.TryGetComponent(out Item_with_slot Tray))
+                {
+                    Tray.Locked = false;
+                }
+
+                if (!secondtray)
+                {
+                    Timer = 0;
+                }
+
                 transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
                 secondtray = true;
+                gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<Item_with_slot>().ObjectIN = this.gameObject; //THIS
+
+                PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
+                PastPos.GetComponent<Item_with_slot>().Locked = true;
+
                 innitialpos = transform.position;
                 gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
             }
-            else if (gaemhander.GetComponent<Game_handler>().mouseonTray3 && secondtray) //third tray
+            else if (gaemhander.GetComponent<Game_handler>().mouseonTray3 && secondtray && gaemhander.GetComponent<Game_handler>().placable) //third tray
             {
+                if (PastPos.TryGetComponent(out Item_with_slot Tray))
+                {
+                    Tray.Locked = false;
+                }
+
+                if (!thirdtray)
+                {
+                    Timer = 0;
+                }
+
                 transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
                 thirdtray = true;
+                gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<Item_with_slot>().ObjectIN = this.gameObject; //THis
+
+                PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
+                PastPos.GetComponent<Item_with_slot>().Locked = true;
+
                 innitialpos = transform.position;
                 hangable = true;
                 gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
             }
             else if (hangable && gaemhander.GetComponent<Game_handler>().placable) //Hanger
             {
+
+                if (PastPos.TryGetComponent(out Item_with_slot Tray))
+                {
+                    Tray.Locked = false;
+                }
+
                 transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y - offsetY);
+                value = (int)(percent1 + percent2 + percent3) / 3;
                 Hanged = true;
                 PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
-                PastPos.GetComponent<hanger>().Locked = true;
+                PastPos.GetComponent<Item_with_slot>().Locked = true;
                 innitialpos = transform.position;
                 gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(3);
 
@@ -181,7 +230,7 @@ public class Picture : MonoBehaviour
                 setlayer(101);
                 innitialpos = transform.position;
                 transform.SetParent(invent.transform, true);
-                PastPos.GetComponent<hanger>().Locked = false;
+                PastPos.GetComponent<Item_with_slot>().Locked = false;
             }
             else
             {
@@ -193,7 +242,10 @@ public class Picture : MonoBehaviour
     void Update()
     {
         Hold();
+        timerUpdate();
 
+
+        /*
         if (!FirstTray&& !secondtray && !thirdtray)
         {
             if (motiontime > 0f)
@@ -224,6 +276,8 @@ public class Picture : MonoBehaviour
         }
 
         motiontime += Time.deltaTime/10;
+        */
+        motiontime = (float)((percent1 + percent2 + percent3) / 300);
         animator.SetFloat("progress", motiontime);
 
         //----------------------------------
@@ -267,5 +321,31 @@ public class Picture : MonoBehaviour
         onhold = 0;
     }
 
+    void timerUpdate()
+    {
+        //Need to reset the value when enter new tray
+        if (!Hanged &&!isholding)
+        {
+            float seconds = Timer % 60;
+
+            if (thirdtray)
+            {
+                Timer += Time.deltaTime;
+                percent3 = (seconds / time) * 100;
+            }
+            else if (secondtray)
+            {
+                Timer += Time.deltaTime;
+                percent2 = (seconds / time) * 100;
+            }
+            else if (FirstTray)
+            {
+                Timer += Time.deltaTime;
+                percent1 = (seconds / time)*100;
+            }
+
+        }
+
+    }
 
 }

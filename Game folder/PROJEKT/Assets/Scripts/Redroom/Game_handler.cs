@@ -30,9 +30,9 @@ public class Game_handler : MonoBehaviour
     [SerializeField] public float currenttime;
     [SerializeField] public Text textsss;
 
-    [Header("campos")]
-    [SerializeField] public int[] CamPosittion;
-    [SerializeField] public int CurrentCamPos = 1;
+    //[Header("campos")]
+    //[SerializeField] public int[] CamPosittion;
+    //[SerializeField] public int CurrentCamPos = 1;
 
     [Header("Bool")]
     [SerializeField] public bool overlay = false;
@@ -90,6 +90,15 @@ public class Game_handler : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
+                raycast = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
+                for (int i = raycast.Length - 1; i >= 0; i--)
+                {
+                    if (raycast[i].collider.gameObject.CompareTag("bin") && Click[0].collider.CompareTag("Photo"))
+                    {
+                        Destroy(Click[0].collider.gameObject);
+                    }
+                }
+
                 if (!Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward))
                 {
 
@@ -105,7 +114,7 @@ public class Game_handler : MonoBehaviour
                     Click[0].collider.gameObject.GetComponent<Film>().isholding = false;
                     Click[0].collider.gameObject.GetComponent<Film>().transform.position = new Vector2(Click[0].collider.gameObject.GetComponent<Film>().innitialpos.x, Click[0].collider.gameObject.GetComponent<Film>().innitialpos.y);
                 }
-
+                
             }
         }
 
@@ -193,21 +202,11 @@ public class Game_handler : MonoBehaviour
                 mouseonINV = true;
                 break;
             }
-            else if (raycast[i].collider.gameObject.CompareTag("ToolsINV"))
-            {
-                currentmouseon = raycast[i].collider.gameObject;
-                if (!raycast[i].collider.gameObject.GetComponent<slotInv>().slotted)
-                {
-                    placable = true;
-                }
-                mouseontoolINV = true;
-                break;
-            }
             else if (raycast[i].collider.gameObject.CompareTag("Hanger"))
             {
                 currentmouseon = raycast[i].collider.gameObject;
 
-                if (!raycast[i].collider.gameObject.GetComponent<hanger>().Locked)
+                if (!raycast[i].collider.gameObject.GetComponent<Item_with_slot>().Locked)
                 {
                     placable = true;
                     break;
@@ -216,18 +215,36 @@ public class Game_handler : MonoBehaviour
             else if (raycast[i].collider.gameObject.CompareTag("tray1"))
             {
                 currentmouseon = raycast[i].collider.gameObject;
+
+                if (!raycast[i].collider.gameObject.GetComponent<Item_with_slot>().Locked)
+                {
+                    placable = true;
+                }
+
                 mouseonTray1 = true;
                 break;
             }
             else if (raycast[i].collider.gameObject.CompareTag("tray2"))
             {
                 currentmouseon = raycast[i].collider.gameObject;
+
+                if (!raycast[i].collider.gameObject.GetComponent<Item_with_slot>().Locked)
+                {
+                    placable = true;
+                }
+
                 mouseonTray2 = true;
                 break;
             }
             else if (raycast[i].collider.gameObject.CompareTag("tray3"))
             {
                 currentmouseon = raycast[i].collider.gameObject;
+
+                if (!raycast[i].collider.gameObject.GetComponent<Item_with_slot>().Locked)
+                {
+                    placable = true;
+                }
+
                 mouseonTray3 = true;
                 break;
             }
@@ -270,6 +287,7 @@ public class Game_handler : MonoBehaviour
         }
     }
 
+    /*
     public void moveleft()
     {
         if ((CurrentCamPos-1) < 0)
@@ -299,6 +317,7 @@ public class Game_handler : MonoBehaviour
             CurrentCamPos += 1;
         }
     }
+    */
 
     public void RedRoomexit()
     {

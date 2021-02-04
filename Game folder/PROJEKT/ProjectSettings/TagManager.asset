@@ -18,6 +18,7 @@ TagManager:
   - paperhere
   - FilmItem
   - Ignore
+  - bin
   layers:
   - Default
   - TransparentFX

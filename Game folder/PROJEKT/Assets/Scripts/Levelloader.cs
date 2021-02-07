@@ -11,7 +11,7 @@ public class Levelloader : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     public void loadnextLV()
@@ -30,13 +30,13 @@ public class Levelloader : MonoBehaviour
         Time.timeScale = 1;
 
         transition.SetTrigger("Start");
-        
+
         yield return new WaitForSeconds(transitiontime);
 
         SceneManager.LoadScene(levelindex);
 
 
-    }    
+    }
 
     public void newday()
     {
@@ -130,7 +130,7 @@ public class Levelloader : MonoBehaviour
     public void LoadGame(int slot)
     {
 
-        if (System.IO.File.Exists(Application.persistentDataPath +"/Savedata_" + slot + ".json"))
+        if (System.IO.File.Exists(Application.persistentDataPath + "/Savedata_" + slot + ".json"))
         {
             string jsonstring = File.ReadAllText(Application.persistentDataPath + "/Savedata_" + slot + ".json");
             SaveData save = JsonUtility.FromJson<SaveData>(jsonstring);
@@ -140,7 +140,7 @@ public class Levelloader : MonoBehaviour
         }
         else
         {
-            SaveData save = new SaveData(0,1,0,slot);
+            SaveData save = new SaveData(0, 1, 0, slot);
             staticDataHolder.Save_ = save;
             save.SaveIntoJson(save);
             Debug.Log("create " + "Savedata_" + slot);
@@ -148,5 +148,18 @@ public class Levelloader : MonoBehaviour
         }
     }
 
+    IEnumerator delayedLoad(int levelindex, int transitiontime)
+    {
+        yield return new WaitForSeconds(transitiontime);
+
+        StartCoroutine(loadlevel(levelindex));
+
+    }
+
+    public void DelayedLoad(int buildindex,int delayedtime)
+    {
+        StartCoroutine(delayedLoad(buildindex,delayedtime));
+    }
 
 }
+

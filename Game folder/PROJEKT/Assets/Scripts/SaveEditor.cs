@@ -3,9 +3,9 @@ using UnityEditor;
 using System.IO;
 using UnityEngine.SceneManagement;
 
-
+/*
 public class SaveEditor : EditorWindow
-{
+{/
     string buttontext;
     string jsonstring;
     string string1 = "String1";
@@ -103,5 +103,6 @@ public class SaveEditor : EditorWindow
         }
 
     }
-
+    
 }
+*/

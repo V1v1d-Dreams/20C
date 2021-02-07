@@ -5,15 +5,21 @@ using UnityEngine.UI;
 
 public class SmoLpic : MonoBehaviour
 {
-    [SerializeField] public Sprite Smol;
+    //[SerializeField] public Sprite FilmSprite;
     [SerializeField] public GameObject[] pic;
     [SerializeField] Transform spawnpt;
     [SerializeField] GameObject Overlay;
     [SerializeField] public bool CorrectPos = false;
     [SerializeField] public bool Press = false;
     [SerializeField] int picnumber = 0;
-    void Start()
+    
+    void Awake()
     {
+        if (staticDataHolder.Todaysfilm.TryGetComponent(out Film Films))
+        {
+            gameObject.transform.Find("Photo preview").GetComponent<SpriteRenderer>().sprite = Films.FilmSprite;
+            pic = Films.picturearray;
+        }
 
     }
 

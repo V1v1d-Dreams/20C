@@ -18,6 +18,8 @@ public class Game_handler : MonoBehaviour
     [SerializeField] public int Magnifier_Lv = 1;
     [SerializeField] Transform[] countingArray;
     [SerializeField] List<Transform> Piclist;
+    [SerializeField] GameObject ResultOverlay;
+    [SerializeField] Text ResiltText;
 
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
@@ -323,6 +325,8 @@ public class Game_handler : MonoBehaviour
 
     public void RedRoomexit()
     {
+        GameObject.Find("exit_Button").SetActive(false);
+
         double result = 0;
         GameObject photoinv = GameObject.Find("Photo-inv");
         foreach (Transform GameOBJ in photoinv.transform)
@@ -367,9 +371,12 @@ public class Game_handler : MonoBehaviour
         result = result / GameObject.Find("Film (1)").GetComponent<Film>().Picnumber;
 
         print(result);
-        
 
-        GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(2);
+        ResultOverlay.SetActive(true);
+        ResiltText.text = result.ToString();
+
+        //delay this
+        GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2,2);
         staticDataHolder.currentTime++;
     }
 

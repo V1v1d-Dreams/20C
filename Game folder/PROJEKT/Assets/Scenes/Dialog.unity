@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -746,45 +746,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Here, your developed photos. Quite a \nnice view if I said so.
-  - Is there anything else I can help \nyou today?
-  - No, this seems to be all. Nice work \nas always.
-  - Compared with the people that I \nhave worked with back when I was \nin the force,
-    you are nice.
-  - We had a guy who did not work as \nhard as others but kept getting all \nthe
-    awards.
-  - Showing it off and such, said he was \nlooking at the right place and had \nsome
-    connection.
-  - I really hate those types of people \nyou know? All play, no work, and \nstill
-    get the rewards.
-  - Seems like you had a bad time \nbefore.
-  - Luckily that I work alone and I own \nthis place so I am the one in control \nhere.
-  - Lucky for you. But you also have a \nhard time as well, I saw it in your \neyes.
-  - I will not bother you anymore of \nyour time.
-  - I will be going then.
+  - "Ummm... You didn\u2019t see anything weird in my pictures, right?"
+  - ' . . . . . .'
+  - "I\u2019ll take that as a no then. Here is your money plus some extra."
   Names:
-  - SHOP OWNER
-  - SHOP OWNER
-  - MERLE
-  - MERLE
-  - MERLE
-  - MERLE
-  - JESUS
-  - SHOP OWNER
-  - SHOP OWNER
-  - MERLE
-  - MERLE
-  - MERLE
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
@@ -929,65 +898,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hello, it has been a while since I came here.
-  - Your place is still holding as alway.
-  - Yeah, it has been sometime since \nyou came here Mr.Merle.
-  - I was wondering if something \nhappened to you or not.
-  - Well, it looks like you are alive \nand well.
-  - This old man ain't gonna die that \neasily.
-  - How old are you again Mr.Merle?
-  - I am 46 this year.
-  - Is that old for you?
-  - Your shape still looks good to me, \nI guess...
-  - I have lived for 46 years, if I am \nnot old, when should I be old?
-  - Anyway, today I have some photos \nthat I would like for you to develop \nfor
-    me. They are quite important \nto me.
-  - These are some important memories \nto you huh?
-  - Yeah... These are taken during my trip \nto Asia but just when I am having \na
-    break, I got called back here.
-  - Some personal stuff that should not \nhave happened.
-  - Andddd my whole trip is ruined.
-  - Oh, sorry to bother you with that.
-  - You can sit over there while waiting \nfor me to develop your photos.
-  - The remote is over there if you want \nto watch something while waiting.
-  - I will be going inside and develop \nyour photos now.
+  - Hello, this old man wants his pictures developed.
+  - ' . . . . . .'
+  - "You\u2019re quite a quiet person, aren\u2019t you?"
+  - ' . . . . . .'
+  - Nevermind. Just do the job.
   Names:
-  - MERLE
-  - MERLE
-  - SHOP OWNER
-  - SHOP OWNER
-  - SHOP OWNER
-  - MERLE
-  - SHOP OWNER
-  - MERLE
-  - SHOP OWNER
-  - SHOP OWNER
-  - MERLE
-  - MERLE
-  - SHOP OWNER
-  - MERLE
-  - MERLE
-  - MERLE
-  - SHOP OWNER
-  - SHOP OWNER
-  - SHOP OWNER
-  - SHOP OWNER
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
@@ -1008,7 +930,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 1
-  Film: {fileID: 9127718114185621459, guid: 20ae90d0945306141a694b436629bade, type: 3}
+  Film: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
 --- !u!1 &547265519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,61 +1468,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Oh, you are done with the photos?
-  - About damn time, my bottle is half \nempty already.
-  - You are drunk Mr. Daryl.
-  - Please get a hold of yourself. \nHere are your developed photos.
-  - Here, have a shot.
-  - I do not drink while working \nMr. Daryl.
-  - Whatever, I will drink it on my own \nthen.
-  - Let me take a look at my photos......
-  - These damn things were so important \nback when I was still in the \nfield.
-  - It can even tell you the truth \nabout what has happened back \nthen if given
-    to the right people.
-  - If those politicians just stay quiet \nand do their own damn job properly, \nthere
-    wouldn't be a war going on.
-  - Money, Oil, whatever they want.
-  - Fuck them, I am retired and now \nI will drink whenever I want.
-  - But not in my shop! The alcohol \nsmell is too strong.
-  - You should pay me and get going now \nMr .Daryl or do I have to call your \nbrother?
-  - Well fuck you, here is your money. \nI will be going then.
-  - And don't forget your drink.
+  - ' . . . . . '
+  - O...oh, finally. Thank you.
+  - ' . . . . . '
   Names:
-  - DARYL
-  - DARYL
-  - SHOP OWNER
-  - SHOP OWNER
-  - DARYL
-  - SHOP OWNER
-  - DARYL
-  - DARYL
-  - DARYL
-  - DARYL
-  - DARYL
-  - DARYL
-  - DARYL
-  - SHOP OWNER
-  - DARYL
-  - DARYL
-  - SHOP OWNER
+  - You
+  - Asian man
+  - You
   character:
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2349,39 +2227,98 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hello, we meet again.
-  - It looks like I am missing some \nphotos from the last time I came \nhere.
-  - It is not your fault don't worry, I \njust forgot to bring them here.
-  - Okay, so where are the photos now?
-  - Here, these are from my brother's \ncamera.
-  - I got yelled at after I told him \nabout this. What a tedious old man, \nalway
-    moody and drinking that damn \nwhisky.
-  - The last time we met, you said you \nare old too...
-  - Well he is older than me at least.
-  - So here are all of them. Please \ndevelop it.
-  - Ok, I will get right to it.
+  - Hello, we finally meet
+  - I know you want more but.....
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
+  - This is the end of this version
   Names:
-  - MERLE
-  - MERLE
-  - MERLE
-  - SHOP OWNER
-  - MERLE
-  - MERLE
-  - SHOP OWNER
-  - MERLE
-  - MERLE
-  - SHOP OWNER
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
+  - Developer
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2586,32 +2523,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Here you go.
-  - Let's see here.
-  - Thanks for the photos, the money \nis on the table, keep the change.
-  - Gotta go now. I gotta go pickup my \nstep-brother and bring him to that \nnew
-    Asian joint around the corner.
-  - That man will love it.
-  - Though getting him out of the house \nis a hassle - the guy does not like \nthe
-    chance or doing new things, you \nknow?
-  - I will get one of my friends to \ncheck the place with me and to \nconvince him
-    that it is a good place \nto visit.
-  - .........
+  - . . . . . .
+  - "Let\u2019s see here. Thanks, the money is on the table, keep the change."
+  - ' . . . . . .'
   Names:
-  - SHOP OWNER
-  - JOSEPH
-  - JOSEPH
-  - JOSEPH
-  - JOSEPH
-  - JOSEPH
-  - JOSEPH
-  - SHOP OWNER
+  - You
+  - Chubby Cigarette man
+  - You
   character:
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
@@ -2675,23 +2594,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - I would like these photos to be \ndeveloped.
-  - Ok, Mr. Daryl. Relax over there \nwhile I am inside developing your \nphotos.
-  - Do I look like I am not relaxed?
-  - Please go do your job, I will be \nwaiting here.
-  - Okay...
+  - H...hey... Here is what I want you to develop. Please be extra careful with them.
+  - ' . . . . . '
   Names:
-  - DARYL
-  - SHOP OWNER
-  - DARYL
-  - DARYL
-  - SHOP OWNER
+  - Asian man
+  - You
   character:
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2707,7 +2617,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 3
-  Film: {fileID: 9127718114185621459, guid: 0070c26db4d5df94eb42198ef99b568e, type: 3}
+  Film: {fileID: 9127718114185621459, guid: 8476f38f7f2b6a449a59e532f9c7e602, type: 3}
 --- !u!1 &1487627579
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,78 +3706,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - Good day, I would like you to \ndevelop my photos
-  - Sure thing, hand me your photos \nand I will get right into it \nMr.Joseph.
-  - Before that, let me have my food \nfirst. Do you want some of this \nfood?
-  - Um......  no thanks.
-  - I just had lunch before you came in.
-  - Ok, that is up to you but you are \nmissing out a lot. Good food will not \ncome
-    by easy in this part of town.
-  - By the way, Do you know that there \nis a new restaurant around this \ncorner?
-  - Is it Chinese, Vietnamese or Thai? \nAh whatever, as long as it is a food, \nthey
-    are all the same.
-  - But damn it is good to have something \nnew to eat and hella cheap too!
-  - Well, that looks interesting but this \nis a store about developing fims not
-    \na food restaurant.
-  - Or a bar in an alley that talks to \ncustomers or a coffee shop you know?
-  - Can I help you with something \nMr.Joseph?
-  - Oh almost forget about that, let's \nsee here. I got photos that I would \nlike
-    you to develop for me. Here \nthey are.
-  - Oh, finally.
-  - You can do the same as always \nMr.Joseph.
-  - Find somewhere to wait and do not \nmess up the floor, I just cleaned \nthat
-    last night. I will be going \ninside
-  - Hello and welcome to the latest \nLT NEWS.
-  - I am Johnson and this is our \nlatest story.
-  - A female body was found alongside \nthe river once again, that makes it \nthe
-    third time in this month that \na body was found
-  - Huh, another body found in this area.
-  - You heard anything related to this?
-  - Nah.
-  - ............
+  - . . . . . .
+  - Have we met before? Your face looks familiar.
+  - . . . . . .
   Names:
-  - JOSEPH
-  - SHOP OWNER
-  - JOSEPH
-  - SHOP OWNER
-  - SHOP OWNER
-  - JOSEPH
-  - JOSEPH
-  - JOSEPH
-  - JOSEPH
-  - SHOP OWNER
-  - SHOP OWNER
-  - SHOP OWNER
-  - JOSEPH
-  - SHOP OWNER
-  - SHOP OWNER
-  - SHOP OWNER
-  - NEWS REPORTER
-  - NEWS REPORTER
-  - NEWS REPORTER
-  - JOSEPH
-  - JOSEPH
-  - SHOP OWNER
-  - SHOP OWNER
+  - Chubby Cigarette man
+  - You
+  - Chubby Cigarette man
+  - You
   character:
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
@@ -3887,7 +3734,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 2
-  Film: {fileID: 9127718114185621459, guid: db6cdf33953a60b43a7f93a52febec70, type: 3}
+  Film: {fileID: 9127718114185621459, guid: b71a9b3896031f342a74cecffbb0834f, type: 3}
 --- !u!1 &2046586560
 GameObject:
   m_ObjectHideFlags: 0

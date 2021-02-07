@@ -8,6 +8,7 @@ public class Picture : MonoBehaviour
     [Tooltip("Doesn't do anything. Just comments shown in inspector")]
     public string Notes = "FILL IN THIS SHIT";
     [SerializeField] public int PhotoID = 0;
+    [SerializeField] Sprite Fullpic;
 
     [Header("Value")]
     [Tooltip("THE GAME IS ALREADY BROKEN")]
@@ -290,7 +291,7 @@ public class Picture : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftAlt))
         {
-            imagepre.GetComponent<SpriteRenderer>().sprite = gameObject.transform.Find("75134282_p0_master1200_2").GetComponent<SpriteRenderer>().sprite;
+            imagepre.GetComponent<SpriteRenderer>().sprite = Fullpic;
             imagepre.GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f,1f);
         }
         else

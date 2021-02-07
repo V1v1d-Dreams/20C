@@ -28,7 +28,7 @@ public class Mechine : MonoBehaviour
 
     void Update()
     {
-        print(delayed);
+        //print(delayed);
         
         if(delayed > 0 && Opened)
         {

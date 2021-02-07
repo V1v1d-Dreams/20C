@@ -5,10 +5,17 @@ using UnityEngine;
 public class Replacer : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        GetComponent<Film>().picturearray = staticDataHolder.Todaysfilm.GetComponent<Film>().picturearray;
-        GetComponent<Film>().BlurArray = staticDataHolder.Todaysfilm.GetComponent<Film>().BlurArray;
+        if (staticDataHolder.Todaysfilm.TryGetComponent(out Film films))
+        {
+            GetComponent<Film>().picturearray = films.picturearray;
+
+        }
+
+
+        //GetComponent<Film>().picturearray = staticDataHolder.Todaysfilm.GetComponent<Film>().picturearray;
+        //GetComponent<Film>().BlurArray = staticDataHolder.Todaysfilm.GetComponent<Film>().BlurArray;
 
     }
 

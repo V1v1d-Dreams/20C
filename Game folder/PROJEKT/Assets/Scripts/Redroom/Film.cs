@@ -5,6 +5,7 @@ using UnityEngine;
 public class Film : MonoBehaviour
 {
     [SerializeField] public int Picnumber;
+    [SerializeField] public Sprite FilmSprite;
 
     public Texture2D Normal;
     public Texture2D Interactable;

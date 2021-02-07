@@ -9,6 +9,7 @@ public class staticDataHolder : MonoBehaviour
     private static int Daynumber = 0;
     private static float CustomerValue = 0;
     private static GameObject TodaysFilm;
+    private static SaveData save_;
 
     public static int currentIndex
     {
@@ -67,6 +68,18 @@ public class staticDataHolder : MonoBehaviour
         set
         {
             TodaysFilm = value;
+        }
+    }
+
+    public static SaveData Save_
+    {
+        get
+        {
+            return save_;
+        }
+        set
+        {
+            save_ = value;
         }
     }
 }

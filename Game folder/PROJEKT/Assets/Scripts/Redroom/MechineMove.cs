@@ -35,7 +35,7 @@ public class MechineMove : MonoBehaviour
                 }
             }
 
-            else if (hit.collider.transform.gameObject.name == "FinishButton" && Input.GetMouseButtonUp(0))
+            else if (hit.collider.transform.gameObject.name == "FinishButton" && Input.GetMouseButtonUp(0) && mechine.GetComponent<Mechine>().delayed <= 0)
             {
                 this.GetComponent<SmoLpic>().Press = true;
                 print("Press");

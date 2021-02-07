@@ -174,8 +174,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1606593973
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f33cf9e1daedd4044a2d85cef95928c4, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -1187,8 +1187,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1606593973
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f33cf9e1daedd4044a2d85cef95928c4, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -2892,6 +2892,7 @@ MonoBehaviour:
   value: 0.08
   valuePercent: 50
   CanPress: 0
+  delayed: 2
 --- !u!212 &398187322
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4901,7 +4902,7 @@ PrefabInstance:
     - target: {fileID: 1738467718807094851, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1790608366638744611, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
@@ -5269,6 +5270,8 @@ MonoBehaviour:
   children: []
   SoundManager: {fileID: 182495806}
   Magnifier_Lv: 1
+  countingArray: []
+  Piclist: []
   currentmouseon: {fileID: 0}
   mouseonINV: 0
   mouseontoolINV: 0
@@ -8792,8 +8795,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1606593973
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f33cf9e1daedd4044a2d85cef95928c4, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -11465,6 +11468,11 @@ PrefabInstance:
       propertyPath: Filmslot
       value: 
       objectReference: {fileID: 2124292274}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: Picnumber
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6955669494799684889, guid: 816ac0e062ccdf042890c7ba647b6929,
         type: 3}
       propertyPath: m_Name
@@ -11479,6 +11487,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955669494799684891, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816ac0e062ccdf042890c7ba647b6929, type: 3}

@@ -44,8 +44,6 @@ public class SmoLpic : MonoBehaviour
         }
 
 
-
-
         if (CorrectPos && Press)
         {
             print("instantiate");

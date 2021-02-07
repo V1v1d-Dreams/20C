@@ -17,6 +17,7 @@ public class Mechine : MonoBehaviour
     [Range(0f,100f)]
     [SerializeField] public float valuePercent;
     [SerializeField] public bool CanPress;
+    [SerializeField] public float delayed = 10;
 
 
 
@@ -27,6 +28,13 @@ public class Mechine : MonoBehaviour
 
     void Update()
     {
+        print(delayed);
+        
+        if(delayed > 0 && Opened)
+        {
+            delayed -= Time.deltaTime;
+        }
+
         value = ((valuePercent / 100) * 5.7f) - 2.7f; //FIX THIS
         if (filmin&&paperin&&!Opened&&ButtonP)
         {

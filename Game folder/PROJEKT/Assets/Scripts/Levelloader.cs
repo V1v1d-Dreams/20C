@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class Levelloader : MonoBehaviour
 {
@@ -125,4 +126,27 @@ public class Levelloader : MonoBehaviour
         staticDataHolder.currentTime = 0;
         staticDataHolder.currentIndex = 11;
     }
+
+    public void LoadGame(int slot)
+    {
+
+        if (System.IO.File.Exists(Application.persistentDataPath +"/Savedata_" + slot + ".json"))
+        {
+            string jsonstring = File.ReadAllText(Application.persistentDataPath + "/Savedata_" + slot + ".json");
+            SaveData save = JsonUtility.FromJson<SaveData>(jsonstring);
+            staticDataHolder.Save_ = save;
+            Debug.Log("load " + "Savedata_" + slot);
+            loadLV(2);
+        }
+        else
+        {
+            SaveData save = new SaveData(0,1,0,slot);
+            staticDataHolder.Save_ = save;
+            save.SaveIntoJson(save);
+            Debug.Log("create " + "Savedata_" + slot);
+            loadLV(2);
+        }
+    }
+
+
 }

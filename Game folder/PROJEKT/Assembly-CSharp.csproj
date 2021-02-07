@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Audio\MP3Player.cs" />
     <Compile Include="Assets\Scripts\Audio\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Audio\VolumeMixer.cs" />
+    <Compile Include="Assets\Scripts\ClassScript.cs" />
     <Compile Include="Assets\Scripts\Dialog\DialogStarter.cs" />
     <Compile Include="Assets\Scripts\Dialog\Progressmanager.cs" />
     <Compile Include="Assets\Scripts\Dialog\TextField.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\Scripts\Mainmenu\CircleSlider.cs" />
     <Compile Include="Assets\Scripts\Mainmenu\Menudisable.cs" />
     <Compile Include="Assets\Scripts\Mainmenu\ResponsiveMenu.cs" />
+    <Compile Include="Assets\Scripts\Mainmenu\SaveInfoLoader.cs" />
     <Compile Include="Assets\Scripts\Mainmenu\Windowmanager.cs" />
     <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\PixelatedFont.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="Assets\Scripts\Redroom\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Redroom\mechinebutton.cs" />
     <Compile Include="Assets\Scripts\Redroom\slotInv.cs" />
+    <Compile Include="Assets\Scripts\SaveEditor.cs" />
     <Compile Include="Assets\Scripts\StaticDataHolder.cs" />
     <Compile Include="Assets\visual\Shader\PostProcess.cs" />
     <None Include="Assets\visual\Shader\InvertColor\InvertColorEffect.shader" />

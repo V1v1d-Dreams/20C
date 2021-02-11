@@ -9,6 +9,8 @@ public class TextField : MonoBehaviour
     [SerializeField] string[] Dialog;
     [SerializeField] string[] Names;
     [SerializeField] Sprite[] character;
+    [SerializeField] bool ShopAfterThis = false;
+    [SerializeField] GameObject shopOverlay;
     char[] Chararray;
     [Header("System Data")]
     [SerializeField] Transform Textstart;
@@ -183,8 +185,16 @@ public class TextField : MonoBehaviour
         }
         else
         {
-            staticDataHolder.Todaysfilm = Film;
-            GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+            if (ShopAfterThis)
+            {
+                staticDataHolder.Todaysfilm = Film;
+                shopOverlay.SetActive(true);
+            }
+            else
+            {
+                staticDataHolder.Todaysfilm = Film;
+                GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+            }
         }
     }
 }

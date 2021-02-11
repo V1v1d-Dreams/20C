@@ -46,6 +46,7 @@ public class Game_handler : MonoBehaviour
     void Start()
     {
         //cam_follow_pos = cam.transform.position;
+        Magnifier_Lv = staticDataHolder.mechinelv;
 
     }
 

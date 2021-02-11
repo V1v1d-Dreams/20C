@@ -7,6 +7,9 @@ public class Mechine : MonoBehaviour
     [SerializeField] GameObject MechineUI1;
     [SerializeField] GameObject MechineUI2;
     [SerializeField] GameObject MechineUI3;
+    [SerializeField] Sprite mechinelv1;
+    [SerializeField] Sprite mechinelv2;
+    [SerializeField] Sprite mechinelv3;
     public bool Opened = false;
     [SerializeField] public GameObject gaemhander;
     [SerializeField] public bool filmin = false;
@@ -43,16 +46,19 @@ public class Mechine : MonoBehaviour
 
             if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 1)
             {
+                GetComponent<SpriteRenderer>().sprite = mechinelv1;
                 MechineUI1.SetActive(true);
                 PhotoPreView = GameObject.Find("Photo preview");
             }
             else if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 2)
             {
+                GetComponent<SpriteRenderer>().sprite = mechinelv2;
                 MechineUI2.SetActive(true);
                 PhotoPreView = GameObject.Find("Photo preview2");
             }
             else
             {
+                GetComponent<SpriteRenderer>().sprite = mechinelv3;
                 MechineUI3.SetActive(true);
                 PhotoPreView = GameObject.Find("Photo preview3");
             }

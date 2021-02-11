@@ -27,6 +27,7 @@ ScriptsOnlyBuild:
     - Progressmanager
     - Replacer
     - SaveInfoLoader
+    - Shop
     - SmoLpic
     - SoundManager
     - TextField
@@ -196,6 +197,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16398}
     - Class: 114
       Script: {instanceID: 16454}
+    - Class: 114
+      Script: {instanceID: 24320}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1357,7 +1360,7 @@ ScriptsOnlyBuild:
     className: UniversalAdditionalLightData
   - hash:
       serializedVersion: 2
-      Hash: 706612253a114da16e22685ddd5c31e5
+      Hash: d15dd158364beada93e0a213159645ee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TextField
@@ -1633,7 +1636,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 7e4b3e68499428f4f5209f234ed7fd5b
+      Hash: 464ad0e3c8ec60fb3cd26aa13a186c7a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Mechine
@@ -1877,6 +1880,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: f2056b9e3c7e2a0e59d6fb5a47199d3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Shop
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu_Version2.unity
@@ -1884,4 +1893,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Dialog.unity
   - Assets/Scenes/Redroom layout test.unity
   - Assets/Scenes/NextDay.unity
-  playerPath: C:/Users/yeen/Desktop/Build/20C.exe
+  playerPath: C:/Users/yeen/Desktop/build/20C.exe

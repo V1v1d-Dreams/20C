@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2882,6 +2882,9 @@ MonoBehaviour:
   MechineUI1: {fileID: 830682089}
   MechineUI2: {fileID: 1059192062}
   MechineUI3: {fileID: 117498416}
+  mechinelv1: {fileID: 21300000, guid: 638fec0e59dee404babe1b9ffe565ed1, type: 3}
+  mechinelv2: {fileID: 21300000, guid: 328595e1bd1c48f4cafb8356c3977957, type: 3}
+  mechinelv3: {fileID: 21300000, guid: fdfb27140c2dcff4e92530112ef669ae, type: 3}
   Opened: 0
   gaemhander: {fileID: 883475799}
   filmin: 0

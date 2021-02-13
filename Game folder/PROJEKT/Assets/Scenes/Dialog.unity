@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -295,6 +295,52 @@ MonoBehaviour:
   mechinelv: 0
   price1: 0
   price2: 0
+--- !u!1 &111181001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 111181003}
+  - component: {fileID: 111181002}
+  m_Layer: 0
+  m_Name: TestOBJ
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &111181002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111181001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80052911a36e994bb74017d2cac3b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effect: 0
+  WaveFrequency: 0.02
+  WaveAmplitude: 0.5
+--- !u!4 &111181003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111181001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.167982, y: -0.7338718, z: -8.13243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &120615823
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6858ce0610df29943b5a69260ddfc722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TypeWriterSpeed: 0.02
   chars: 2100220023002400250026002700280029002a002b002c002d002e002f0030003100320033003400350036003700380039003a003b003c003d003e003f0040004100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a005b005c005d00c4025f00c5026100620063006400650066006700680069006a006b006c006d006e006f0070007100720073007400750076007700780079007a007b007c007d001220182019201c201d20
   SpaceBar: {fileID: 2085997408663045210, guid: b7d0990cd49b2374892076e0bfd9a020,
     type: 3}
@@ -438,6 +485,7 @@ MonoBehaviour:
   Namecolor:
     serializedVersion: 2
     rgba: 4278234879
+  effect: 0
 --- !u!4 &120615825
 Transform:
   m_ObjectHideFlags: 0
@@ -540,8 +588,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -651,8 +698,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -913,8 +959,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -1045,7 +1090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hello, this old man wants his pictures developed.
+  - Hello, \wthis\w old man wants his pictures \ndeveloped.
   - ' . . . . . .'
   - "You\u2019re quite a quiet person, aren\u2019t you?"
   - ' . . . . . .'
@@ -1073,8 +1118,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -1283,8 +1327,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -1845,8 +1888,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -2022,8 +2064,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -2818,8 +2859,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -3113,8 +3153,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -3183,8 +3222,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -3553,8 +3591,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
@@ -4032,7 +4069,6 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
   nextline: 0.3
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
@@ -4387,8 +4423,7 @@ MonoBehaviour:
   i: 0
   CharsObj: []
   compare1: 92
-  compare2: 110
-  nextline: 0.3
+  nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0

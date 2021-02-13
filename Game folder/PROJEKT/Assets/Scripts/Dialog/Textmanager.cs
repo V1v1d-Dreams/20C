@@ -6,6 +6,7 @@ using UnityEngine;
 public class Textmanager : MonoBehaviour
 {
     //[System.NonSerialized] public char[] chars = "!#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]_`{|}~abcdefghijklmnopqrstuvwxyz ".ToCharArray();
+    [SerializeField] public float TypeWriterSpeed = 0.175f;
     [SerializeField] public char[] chars;
     [SerializeField] public Sprite SpaceBar;
     [SerializeField] Sprite[] charsprite;
@@ -18,6 +19,10 @@ public class Textmanager : MonoBehaviour
     [SerializeField] public float NewtextPos;
     [SerializeField] Color32 Textcolor;
     [SerializeField] Color32 Namecolor;
+
+    public enum Effects { None, Wave, chromatic }
+
+    public Effects effect;
 
     void Start()
     {
@@ -117,6 +122,7 @@ public class Textmanager : MonoBehaviour
 
     public float DisplayDialog(char input, Transform textlocation,GameObject letter, char next)
     {
+        
         GameObject newtext;
         NewtextPos = textlocation.position.x;
 
@@ -124,6 +130,7 @@ public class Textmanager : MonoBehaviour
         newtext.transform.position = new Vector3(textlocation.position.x,textlocation.position.y,textlocation.position.z);
         newtext.GetComponentInChildren<SpriteRenderer>().sprite = chardata[input].sprite;
         newtext.GetComponentInChildren<SpriteRenderer>().color = Textcolor;
+        texteffect(newtext);
 
         NewtextPos += ((chardata[input].width/2 + chardata[next].width/2 + charspace) * charlength);
 
@@ -133,6 +140,7 @@ public class Textmanager : MonoBehaviour
 
     public float DisplayDialog(char input, Transform textlocation, GameObject letter)
     {
+        
         GameObject newtext;
         NewtextPos = textlocation.position.x;
 
@@ -140,6 +148,8 @@ public class Textmanager : MonoBehaviour
         newtext.transform.position = new Vector3(textlocation.position.x, textlocation.position.y, textlocation.position.z);
         newtext.GetComponentInChildren<SpriteRenderer>().sprite = chardata[input].sprite;
         newtext.GetComponentInChildren<SpriteRenderer>().color = Textcolor;
+        texteffect(newtext);
+
 
         NewtextPos += (chardata[input].width/2 + charspace);
 
@@ -177,7 +187,17 @@ public class Textmanager : MonoBehaviour
         return (NewtextPos);
     }
 
-
+    void texteffect(GameObject Obj)
+    {
+        if (effect == Effects.Wave)
+        {
+            Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.Wave;
+        }
+        else
+        {
+            Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.None;
+        }
+    }
 
     /*
 

@@ -13,6 +13,7 @@ public class TextField : MonoBehaviour
     [SerializeField] GameObject shopOverlay;
     char[] Chararray;
     [Header("System Data")]
+    float speed;
     [SerializeField] Transform Textstart;
     [SerializeField] Transform textlocation;
     [SerializeField] Transform Namestart;
@@ -22,14 +23,14 @@ public class TextField : MonoBehaviour
     [SerializeField] int i = 0;
     [SerializeField] GameObject[] CharsObj;
     [SerializeField] char compare1;
-    [SerializeField] char compare2;
     [SerializeField] float nextline;
     [SerializeField] GameObject textmanager;
     [SerializeField] GameObject Pic;
-    bool Stated = false;
+    //bool Stated = false;
     [SerializeField] int Timeindex;
     [SerializeField] int WhatDayisToday;
     [SerializeField] GameObject Film;
+    bool wave = false;
 
     RaycastHit2D[] Click;
     Camera cam;
@@ -38,72 +39,26 @@ public class TextField : MonoBehaviour
     {
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
         textmanager = GameObject.Find("Textmanager");
+        speed = textmanager.GetComponent<Textmanager>().TypeWriterSpeed;
         Pic = GameObject.Find("character");
         Pic.GetComponent<SpriteRenderer>().sprite = character[i];
+
+
+        staticDataHolder.daynumber = WhatDayisToday;
+        textlocation.position = new Vector3(Textstart.position.x, Textstart.position.y, textlocation.position.z);
+        Namelocation.position = new Vector3(Namestart.position.x, Namestart.position.y, Namestart.position.z);
+        StartCoroutine(Typewritter(speed));
     }
 
     void Update()
     {
-        if (Stated == false)
+        if (wave)
         {
-            staticDataHolder.daynumber = WhatDayisToday;
-            textlocation.position = new Vector3(Textstart.position.x, Textstart.position.y, textlocation.position.z);
-            Namelocation.position = new Vector3(Namestart.position.x, Namestart.position.y, Namestart.position.z);
-            if (i < Dialog.Length)
-            {
-
-                textmanager.GetComponent<Textmanager>().NewtextPos = 0;
-
-                //find all letter and for loop delete
-                CharsObj = GameObject.FindGameObjectsWithTag("letter");
-                for (int A = 0; A < CharsObj.Length; A++)
-                {
-                    Destroy(CharsObj[A]);
-                }
-
-                //---------------------------Name--------------------------
-                Chararray = Names[i].ToCharArray();
-                for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
-                {
-                    if (iNdex + 1 < Chararray.Length)
-                    {
-                        Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name, Chararray[iNdex + 1]), Namelocation.position.y, Namelocation.position.z);
-                    }
-                    else
-                    {
-                        Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name), Namelocation.position.y, Namelocation.position.z);
-                    }
-                }
-                //---------------------------Name--------------------------
-
-                Chararray = Dialog[i].ToCharArray();
-                for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
-                {
-                    if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == compare2)
-                    {
-                        textlocation.position = new Vector3(Textstart.position.x, textlocation.position.y - nextline, textlocation.position.z);
-                        iNdex += 1;
-                    }
-                    else
-                    {
-                        if (iNdex + 1 < Chararray.Length)
-                        {
-                            textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex + 1]), textlocation.position.y, textlocation.position.z);
-                        }
-                        else
-                        {
-                            textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
-                        }
-                    }
-                }
-                i++;
-            }
-            else
-            {
-                GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(3);
-            }
-
-            Stated = true;
+            textmanager.GetComponent<Textmanager>().effect = Textmanager.Effects.Wave;
+        }
+        else
+        {
+            textmanager.GetComponent<Textmanager>().effect = Textmanager.Effects.None;
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -116,18 +71,20 @@ public class TextField : MonoBehaviour
             }
             else if (Click[0].collider.gameObject.CompareTag("TextBox"))
             {
-                DialogS();
+                //DialogS();
+                StartCoroutine(Typewritter(speed));
             }
         }
         else if(Input.GetKeyUp(KeyCode.Space) && !PauseScript.GameIsPause)
         {
-            DialogS();
+            //DialogS();
+            StartCoroutine(Typewritter(speed));
         }    
     }
 
-
-    void DialogS()
+    IEnumerator Typewritter(float TypewriterSpeed)
     {
+        WaitForSeconds wait = new WaitForSeconds(TypewriterSpeed);
         textlocation.position = new Vector3(Textstart.position.x, Textstart.position.y, textlocation.position.z);
         Namelocation.position = new Vector3(Namestart.position.x, Namestart.position.y, Namestart.position.z);
         if (i < Dialog.Length)
@@ -164,10 +121,17 @@ public class TextField : MonoBehaviour
             Chararray = Dialog[i].ToCharArray();
             for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
             {
-                if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == compare2)
+                if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'n')
                 {
                     textlocation.position = new Vector3(Textstart.position.x, textlocation.position.y - nextline, textlocation.position.z);
                     iNdex += 1;
+                    yield return wait;
+                }
+                else if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'w')
+                {
+                    wave = !wave;
+                    iNdex += 1;
+                    yield return wait;
                 }
                 else
                 {
@@ -179,6 +143,7 @@ public class TextField : MonoBehaviour
                     {
                         textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
                     }
+                    yield return wait;
                 }
             }
             i++;

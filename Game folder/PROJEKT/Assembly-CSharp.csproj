@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Dialog\DialogStarter.cs" />
     <Compile Include="Assets\Scripts\Dialog\Progressmanager.cs" />
     <Compile Include="Assets\Scripts\Dialog\Shop.cs" />
+    <Compile Include="Assets\Scripts\Dialog\TextEffect.cs" />
     <Compile Include="Assets\Scripts\Dialog\TextField.cs" />
     <Compile Include="Assets\Scripts\Dialog\Textmanager.cs" />
     <Compile Include="Assets\Scripts\Levelloader.cs" />

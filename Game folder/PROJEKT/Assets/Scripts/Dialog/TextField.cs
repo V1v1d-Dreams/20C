@@ -10,6 +10,10 @@ public class TextField : MonoBehaviour
     [SerializeField] string[] Names;
     [SerializeField] Sprite[] character;
     [SerializeField] bool ShopAfterThis = false;
+    [SerializeField] bool Satisfied;
+    [SerializeField] string[] DialogUnsat;
+    [SerializeField] string[] NameUnsat;
+    [SerializeField] Sprite[] characterUnsat;
     [SerializeField] GameObject shopOverlay;
     char[] Chararray;
     [Header("System Data")]
@@ -31,6 +35,7 @@ public class TextField : MonoBehaviour
     [SerializeField] int WhatDayisToday;
     [SerializeField] GameObject Film;
     bool wave = false;
+    bool chrome = false;
 
     RaycastHit2D[] Click;
     Camera cam;
@@ -41,7 +46,14 @@ public class TextField : MonoBehaviour
         textmanager = GameObject.Find("Textmanager");
         speed = textmanager.GetComponent<Textmanager>().TypeWriterSpeed;
         Pic = GameObject.Find("character");
-        Pic.GetComponent<SpriteRenderer>().sprite = character[i];
+        if (Satisfied)
+        {
+            Pic.GetComponent<SpriteRenderer>().sprite = character[i];
+        }
+        else
+        {
+            Pic.GetComponent<SpriteRenderer>().sprite = characterUnsat[i];
+        }
 
 
         staticDataHolder.daynumber = WhatDayisToday;
@@ -55,6 +67,10 @@ public class TextField : MonoBehaviour
         if (wave)
         {
             textmanager.GetComponent<Textmanager>().effect = Textmanager.Effects.Wave;
+        }
+        else if(chrome)
+        {
+            textmanager.GetComponent<Textmanager>().effect = Textmanager.Effects.chromatic;
         }
         else
         {
@@ -87,78 +103,170 @@ public class TextField : MonoBehaviour
         WaitForSeconds wait = new WaitForSeconds(TypewriterSpeed);
         textlocation.position = new Vector3(Textstart.position.x, Textstart.position.y, textlocation.position.z);
         Namelocation.position = new Vector3(Namestart.position.x, Namestart.position.y, Namestart.position.z);
-        if (i < Dialog.Length)
+        if (Satisfied)
         {
-
-            textmanager.GetComponent<Textmanager>().NewtextPos = 0;
-
-            //find all letter and for loop delete
-            CharsObj = GameObject.FindGameObjectsWithTag("letter");
-            for (int A = 0; A < CharsObj.Length; A++)
+            if (i < Dialog.Length)
             {
-                Destroy(CharsObj[A]);
-            }
 
-            //---------------------------Name--------------------------
-            Chararray = Names[i].ToCharArray();
-            for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
-            {
-                if (iNdex + 1 < Chararray.Length)
-                {
-                    Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name, Chararray[iNdex + 1]), Namelocation.position.y, Namelocation.position.z);
-                }
-                else
-                {
-                    Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name), Namelocation.position.y, Namelocation.position.z);
-                }
-            }
-            //---------------------------Name--------------------------
+                textmanager.GetComponent<Textmanager>().NewtextPos = 0;
 
-            //---------------------------Sprite------------------------
-            Pic.GetComponent<SpriteRenderer>().sprite = character[i];
-            //---------------------------Sprite------------------------
+                //find all letter and for loop delete
+                CharsObj = GameObject.FindGameObjectsWithTag("letter");
+                for (int A = 0; A < CharsObj.Length; A++)
+                {
+                    Destroy(CharsObj[A]);
+                }
 
-            Chararray = Dialog[i].ToCharArray();
-            for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
-            {
-                if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'n')
-                {
-                    textlocation.position = new Vector3(Textstart.position.x, textlocation.position.y - nextline, textlocation.position.z);
-                    iNdex += 1;
-                    yield return wait;
-                }
-                else if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'w')
-                {
-                    wave = !wave;
-                    iNdex += 1;
-                    yield return wait;
-                }
-                else
+                //---------------------------Name--------------------------
+                Chararray = Names[i].ToCharArray();
+                for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
                 {
                     if (iNdex + 1 < Chararray.Length)
                     {
-                        textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex + 1]), textlocation.position.y, textlocation.position.z);
+                        Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name, Chararray[iNdex + 1]), Namelocation.position.y, Namelocation.position.z);
                     }
                     else
                     {
-                        textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
+                        Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name), Namelocation.position.y, Namelocation.position.z);
                     }
-                    yield return wait;
                 }
-            }
-            i++;
-        }
-        else
-        {
-            if (ShopAfterThis)
-            {
-                staticDataHolder.Todaysfilm = Film;
-                shopOverlay.SetActive(true);
+                //---------------------------Name--------------------------
+
+                //---------------------------Sprite------------------------
+                Pic.GetComponent<SpriteRenderer>().sprite = character[i];
+                //---------------------------Sprite------------------------
+
+                Chararray = Dialog[i].ToCharArray();
+                for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
+                {
+                    if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'n')
+                    {
+                        textlocation.position = new Vector3(Textstart.position.x, textlocation.position.y - nextline, textlocation.position.z);
+                        iNdex += 1;
+                        yield return wait;
+                    }
+                    else if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'w')
+                    {
+                        wave = !wave;
+                        iNdex += 1;
+                        yield return wait;
+                    }
+                    else if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'c')
+                    {
+                        chrome = !chrome;
+                        iNdex += 1;
+                        yield return wait;
+                    }
+                    else
+                    {
+                        if (iNdex + 1 < Chararray.Length)
+                        {
+                            textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex + 1]), textlocation.position.y, textlocation.position.z);
+                        }
+                        else
+                        {
+                            textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
+                        }
+                        yield return wait;
+                    }
+                }
+                i++;
             }
             else
             {
-                staticDataHolder.Todaysfilm = Film;
-                GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+                if (ShopAfterThis)
+                {
+                    staticDataHolder.Todaysfilm = Film;
+                    shopOverlay.SetActive(true);
+                }
+                else
+                {
+                    staticDataHolder.Todaysfilm = Film;
+                    GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+                }
+            }
+        }
+        else
+        {
+            if (i < DialogUnsat.Length)
+            {
+
+                textmanager.GetComponent<Textmanager>().NewtextPos = 0;
+
+                //find all letter and for loop delete
+                CharsObj = GameObject.FindGameObjectsWithTag("letter");
+                for (int A = 0; A < CharsObj.Length; A++)
+                {
+                    Destroy(CharsObj[A]);
+                }
+
+                //---------------------------Name--------------------------
+                Chararray = NameUnsat[i].ToCharArray();
+                for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
+                {
+                    if (iNdex + 1 < Chararray.Length)
+                    {
+                        Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name, Chararray[iNdex + 1]), Namelocation.position.y, Namelocation.position.z);
+                    }
+                    else
+                    {
+                        Namelocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayName(Chararray[iNdex], Namelocation, Name), Namelocation.position.y, Namelocation.position.z);
+                    }
+                }
+                //---------------------------Name--------------------------
+
+                //---------------------------Sprite------------------------
+                Pic.GetComponent<SpriteRenderer>().sprite = characterUnsat[i];
+                //---------------------------Sprite------------------------
+
+                Chararray = DialogUnsat[i].ToCharArray();
+                for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
+                {
+                    if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'n')
+                    {
+                        textlocation.position = new Vector3(Textstart.position.x, textlocation.position.y - nextline, textlocation.position.z);
+                        iNdex += 1;
+                        yield return wait;
+                    }
+                    else if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'w')
+                    {
+                        wave = !wave;
+                        iNdex += 1;
+                        yield return wait;
+                    }
+                    else if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'c')
+                    {
+                        chrome = !chrome;
+                        iNdex += 1;
+                        yield return wait;
+                    }
+                    else
+                    {
+                        if (iNdex + 1 < Chararray.Length)
+                        {
+                            textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex + 1]), textlocation.position.y, textlocation.position.z);
+                        }
+                        else
+                        {
+                            textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
+                        }
+                        yield return wait;
+                    }
+                }
+                i++;
+            }
+            else
+            {
+                if (ShopAfterThis)
+                {
+                    staticDataHolder.Todaysfilm = Film;
+                    shopOverlay.SetActive(true);
+                }
+                else
+                {
+                    staticDataHolder.Todaysfilm = Film;
+                    GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+                }
             }
         }
     }

@@ -193,6 +193,10 @@ public class Textmanager : MonoBehaviour
         {
             Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.Wave;
         }
+        else if (effect == Effects.chromatic)
+        {
+            Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.chromatic;
+        }
         else
         {
             Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.None;

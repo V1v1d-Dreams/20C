@@ -129,3 +129,6 @@ MonoBehaviour:
   effect: 0
   WaveFrequency: 0.02
   WaveAmplitude: 0.002
+  SpriteRen: {fileID: 3630697311712468542}
+  ColorChangeTime: 0.1
+  ColorTimer: 0.1

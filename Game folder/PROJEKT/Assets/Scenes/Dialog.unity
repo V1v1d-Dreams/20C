@@ -327,6 +327,9 @@ MonoBehaviour:
   effect: 0
   WaveFrequency: 0.02
   WaveAmplitude: 0.5
+  SpriteRen: {fileID: 0}
+  ColorChangeTime: 0
+  ColorTimer: 0
 --- !u!4 &111181003
 Transform:
   m_ObjectHideFlags: 0
@@ -578,6 +581,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -688,6 +695,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -949,6 +960,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -1090,9 +1105,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hello, \wthis\w old man wants his pictures \ndeveloped.
-  - ' . . . . . .'
-  - "You\u2019re quite a quiet person, aren\u2019t you?"
+  - Hello, \wthis\w old \cman\c wants his pictures \ndeveloped.
+  - \c . . . . . .\c
+  - "You\u2019re quite a \\cquiet\\c person, aren\u2019t you?"
   - ' . . . . . .'
   - Nevermind. Just do the job.
   Names:
@@ -1108,6 +1123,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat:
+  - u fucking moron, u ruined my pic
+  - fuck you
+  NameUnsat:
+  - Unsatified Man
+  - Unsatified Man
+  characterUnsat:
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -1317,6 +1342,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -1878,6 +1907,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -2054,6 +2087,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -2849,6 +2886,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
   - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -3143,6 +3184,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -3212,6 +3257,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -3581,6 +3630,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -4059,6 +4112,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -4413,6 +4470,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   ShopAfterThis: 1
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
   shopOverlay: {fileID: 110584103}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}

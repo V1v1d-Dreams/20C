@@ -56,6 +56,7 @@ public class Game_handler : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.O))
         {
             Magnifier_Lv += 1;
+            staticDataHolder.mechinelv += 1;
         }
 
         if (!overlay)

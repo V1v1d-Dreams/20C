@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -960,7 +960,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -1123,7 +1123,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat:
   - u fucking moron, u ruined my pic
   - fuck you
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -3184,7 +3184,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -3257,7 +3257,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -4470,7 +4470,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   ShopAfterThis: 1
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []

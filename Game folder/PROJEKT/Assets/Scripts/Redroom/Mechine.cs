@@ -39,6 +39,7 @@ public class Mechine : MonoBehaviour
         }
 
         value = ((valuePercent / 100) * 5.7f) - 2.7f; //FIX THIS
+
         if (filmin&&paperin&&!Opened&&ButtonP)
         {
             //smolpic.GetComponent<SmoLpic>().nextclicktime = Time.time + smolpic.GetComponent<SmoLpic>().timer;

@@ -40,9 +40,9 @@ public class Picture : MonoBehaviour
     private float deltaX, deltaY;
     private float motiontime;
 
-    bool FirstTray = false;
-    bool secondtray = false;
-    bool thirdtray = false;
+    [SerializeField] bool FirstTray = false;
+    [SerializeField] bool secondtray = false;
+    [SerializeField] bool thirdtray = false;
     [SerializeField] bool hangable = false;
     bool oninv;
     [SerializeField] private float onhold = 0; //holdingpic or not
@@ -89,6 +89,30 @@ public class Picture : MonoBehaviour
                 transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
                 mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
+
+                FindObjectOfType<Mechine>().holdingitem = true;
+
+                if (!FirstTray)
+                {
+                    FindObjectOfType<Navigator>().Enable("Tray1",true);
+                }
+                else if (!secondtray)
+                {
+                    FindObjectOfType<Navigator>().Enable("Tray2", true);
+                }
+                else if (!thirdtray)
+                {
+                    FindObjectOfType<Navigator>().Enable("Tray3", true);
+                }
+                else if (hangable && !Hanged)
+                {
+                    FindObjectOfType<Navigator>().Enable("Hang", true);
+                }
+                else if (Hanged)
+                {
+                    FindObjectOfType<Navigator>().Enable("Place", true);
+                }
+                    
             }
         }
     }
@@ -112,7 +136,7 @@ public class Picture : MonoBehaviour
         if (!Hanged)
         {
             returelayer();
-            if (gaemhander.GetComponent<Game_handler>().mouseonTray1 && gaemhander.GetComponent<Game_handler>().placable) //first tray
+            if (gaemhander.GetComponent<Game_handler>().mouseonTray1 && gaemhander.GetComponent<Game_handler>().placable && !secondtray && !thirdtray && !hangable) //first tray
             {
 
                 transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
@@ -126,7 +150,7 @@ public class Picture : MonoBehaviour
                 innitialpos = transform.position;
                 gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
             }
-            else if (gaemhander.GetComponent<Game_handler>().mouseonTray2 && FirstTray && gaemhander.GetComponent<Game_handler>().placable) //second tray
+            else if (gaemhander.GetComponent<Game_handler>().mouseonTray2 && FirstTray && gaemhander.GetComponent<Game_handler>().placable && !thirdtray && !secondtray && !hangable) //second tray
             {
                 if (PastPos.TryGetComponent(out Item_with_slot Tray))
                 {
@@ -148,7 +172,7 @@ public class Picture : MonoBehaviour
                 innitialpos = transform.position;
                 gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
             }
-            else if (gaemhander.GetComponent<Game_handler>().mouseonTray3 && secondtray && gaemhander.GetComponent<Game_handler>().placable) //third tray
+            else if (gaemhander.GetComponent<Game_handler>().mouseonTray3 && secondtray && gaemhander.GetComponent<Game_handler>().placable && !hangable) //third tray
             {
                 if (PastPos.TryGetComponent(out Item_with_slot Tray))
                 {
@@ -171,7 +195,7 @@ public class Picture : MonoBehaviour
                 hangable = true;
                 gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
             }
-            else if (hangable && gaemhander.GetComponent<Game_handler>().placable) //Hanger
+            else if (hangable && gaemhander.GetComponent<Game_handler>().placable && gaemhander.GetComponent<Game_handler>().currentmouseon.CompareTag("Hanger")) //Hanger
             {
 
                 if (PastPos.TryGetComponent(out Item_with_slot Tray))
@@ -199,7 +223,7 @@ public class Picture : MonoBehaviour
 
             //-------------------------
 
-            else if (oninv) //on inventory
+            else if (oninv && Hanged) //on inventory
             {
                 setlayer(101);
                 transform.SetParent(invent.transform, true);
@@ -208,6 +232,14 @@ public class Picture : MonoBehaviour
             //-------------------------
             else //go back to original pos
             {
+                if (PastPos != null)
+                {
+                   if (PastPos.TryGetComponent(out Item_with_slot ite))
+                   {
+                        ite.ObjectIN = this.gameObject;
+                        ite.Locked = true;
+                   }
+                }
                 transform.position = new Vector2(innitialpos.x, innitialpos.y);
             }
 
@@ -240,6 +272,13 @@ public class Picture : MonoBehaviour
                 transform.position = new Vector2(innitialpos.x, innitialpos.y);
             }
         }
+
+        FindObjectOfType<Navigator>().Enable("Tray1", false);
+        FindObjectOfType<Navigator>().Enable("Tray2", false);
+        FindObjectOfType<Navigator>().Enable("Tray3", false);
+        FindObjectOfType<Navigator>().Enable("Hang", false);
+        FindObjectOfType<Navigator>().Enable("Place", false);
+        FindObjectOfType<Mechine>().holdingitem = false;
     }
     void Update()
     {

@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6955669494799684889}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.048, y: 0.005, z: -8.92}
   m_LocalScale: {x: 8.290763, y: 8.290763, z: 8.290763}
   m_Children: []
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1053053051
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 106
   m_Sprite: {fileID: 21300000, guid: 9b02ef456928ba44d9a8fd5b812bfc39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -123,6 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b838d56ce9ab143996ef146dddeefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Picnumber: 5
+  FilmSprite: {fileID: 0}
   Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
   Interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
   hold: {fileID: 2800000, guid: a088798552626754da252eb6dc0c73bf, type: 3}
@@ -141,8 +143,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6d2eba0a27a04647b792b7f95323aff, type: 3}
   mouseOnfilm: 0
   isholding: 0
-  invSlot: {fileID: 0}
+  Filmslot: {fileID: 0}
   onhold: 0
+  Circer: {fileID: 0}
 --- !u!114 &175336537139470690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +153,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6955669494799684889}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 084d90eb70d693d4daf0c18accd0eadf, type: 3}
   m_Name: 

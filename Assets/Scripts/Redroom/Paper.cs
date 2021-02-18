@@ -102,7 +102,10 @@ public class Paper : MonoBehaviour
         {
             transform.position = new Vector2(innitialpos.x, innitialpos.y);
         }
-        
+
+        FindObjectOfType<Navigator>().Enable("Paper", false);
+        FindObjectOfType<Mechine>().holdingitem = false;
+
     }
     void Update()
     {
@@ -143,6 +146,11 @@ public class Paper : MonoBehaviour
                 mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
                 GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+                if (!FindObjectOfType<Mechine>().paperin)
+                {
+                    FindObjectOfType<Navigator>().Enable("Paper", true);
+                    FindObjectOfType<Mechine>().holdingitem = true;
+                }
             }
         }
         else

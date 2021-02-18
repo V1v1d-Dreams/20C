@@ -33,13 +33,30 @@ public class Bar : MonoBehaviour
                 }
 
                 float scale;
-                scale =  (float)(value/100 * 0.31);
-                transform.localScale = new Vector3(scale, transform.localScale.y, transform.localScale.z);
+                if (value <= 100)
+                {
+                    scale = (float)(value / 100 * 0.31);
+                    transform.localScale = new Vector3(scale, transform.localScale.y, transform.localScale.z);
+                }
             }
             else
             {
                 bar.GetComponent<SpriteRenderer>().enabled = false;
                 GetComponent<SpriteRenderer>().enabled = false;
+            }
+
+            if (value > 100 && value < 130 && GetComponent<SpriteRenderer>().color.g > 0)
+            {
+                float temp = GetComponent<SpriteRenderer>().color.g - 0.002f;
+                GetComponent<SpriteRenderer>().color = new Color(1, temp, 0);
+            }
+            else if (value > 130)
+            {
+                Destroy(Slot.ObjectIN);
+            }
+            else if (value < 100)
+            {
+                GetComponent<SpriteRenderer>().color = new Color(1, 0.739108f, 0);
             }
         }
     }

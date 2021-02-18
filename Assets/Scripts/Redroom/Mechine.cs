@@ -21,6 +21,7 @@ public class Mechine : MonoBehaviour
     [SerializeField] public float valuePercent;
     [SerializeField] public bool CanPress;
     [SerializeField] public float delayed = 10;
+    [HideInInspector] public bool holdingitem = false;
 
 
 
@@ -31,9 +32,38 @@ public class Mechine : MonoBehaviour
 
     void Update()
     {
-        //print(delayed);
-        
-        if(delayed > 0 && Opened)
+        if (!filmin && !holdingitem)
+        {
+            FindObjectOfType<Navigator>().Enable("Getfilm", true);
+        }
+        else
+        {
+            FindObjectOfType<Navigator>().Enable("Getfilm", false);
+        }
+
+        if (!paperin && !holdingitem)
+        {
+            FindObjectOfType<Navigator>().Enable("Getpaper", true);
+        }
+        else
+        {
+            FindObjectOfType<Navigator>().Enable("Getpaper", false);
+        }
+
+        if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 1)
+        {
+            GetComponent<SpriteRenderer>().sprite = mechinelv1;
+        }
+        else if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 2)
+        {
+            GetComponent<SpriteRenderer>().sprite = mechinelv2;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = mechinelv3;
+        }
+
+        if (delayed > 0 && Opened)
         {
             delayed -= Time.deltaTime;
         }
@@ -84,7 +114,10 @@ public class Mechine : MonoBehaviour
 
     IEnumerator Randomize()
     {
-        valuePercent = Random.Range(0f, 100f);
+        while ((valuePercent > 8.2 && valuePercent < 12.2)|| (valuePercent > 27.5 && valuePercent < 31.5) || (valuePercent > 46.7 && valuePercent < 50.7) || (valuePercent > 66.3 && valuePercent < 70.3) || (valuePercent > 85.2 && valuePercent < 89.8))
+        {
+            valuePercent = Random.Range(0f, 100f);
+        }
         yield break;
     }
 }

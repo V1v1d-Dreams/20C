@@ -15,6 +15,7 @@ public class TextField : MonoBehaviour
     [SerializeField] string[] NameUnsat;
     [SerializeField] Sprite[] characterUnsat;
     [SerializeField] GameObject shopOverlay;
+    [SerializeField] Sprite News;
     char[] Chararray;
     [Header("System Data")]
     float speed;
@@ -34,8 +35,11 @@ public class TextField : MonoBehaviour
     [SerializeField] int Timeindex;
     [SerializeField] int WhatDayisToday;
     [SerializeField] GameObject Film;
+    [SerializeField] SpriteRenderer NewsOverlay;
+    bool news = false;
     bool wave = false;
     bool chrome = false;
+    bool finish = true;
 
     RaycastHit2D[] Click;
     Camera cam;
@@ -46,6 +50,7 @@ public class TextField : MonoBehaviour
         textmanager = GameObject.Find("Textmanager");
         speed = textmanager.GetComponent<Textmanager>().TypeWriterSpeed;
         Pic = GameObject.Find("character");
+
         if (Satisfied)
         {
             Pic.GetComponent<SpriteRenderer>().sprite = character[i];
@@ -55,11 +60,21 @@ public class TextField : MonoBehaviour
             Pic.GetComponent<SpriteRenderer>().sprite = characterUnsat[i];
         }
 
-
         staticDataHolder.daynumber = WhatDayisToday;
         textlocation.position = new Vector3(Textstart.position.x, Textstart.position.y, textlocation.position.z);
         Namelocation.position = new Vector3(Namestart.position.x, Namestart.position.y, Namestart.position.z);
-        StartCoroutine(Typewritter(speed));
+        
+        if (News == null)
+        {
+            StartCoroutine(Typewritter(speed));
+        }
+        else
+        {
+            Debug.Log("foundNews");
+            NewsOverlay.enabled = true;
+            news = true;
+            NewsOverlay.sprite = News;
+        }
     }
 
     void Update()
@@ -79,6 +94,13 @@ public class TextField : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
+            if (news)
+            {
+                StartCoroutine(Typewritter(speed));
+                NewsOverlay.enabled = false;
+                news = false;
+            }
+
             Click = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
 
             if (!Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition),transform.forward))
@@ -88,7 +110,10 @@ public class TextField : MonoBehaviour
             else if (Click[0].collider.gameObject.CompareTag("TextBox"))
             {
                 //DialogS();
-                StartCoroutine(Typewritter(speed));
+                if (finish)
+                {
+                    StartCoroutine(Typewritter(speed));
+                }
             }
         }
         else if(Input.GetKeyUp(KeyCode.Space) && !PauseScript.GameIsPause)
@@ -107,7 +132,6 @@ public class TextField : MonoBehaviour
         {
             if (i < Dialog.Length)
             {
-
                 textmanager.GetComponent<Textmanager>().NewtextPos = 0;
 
                 //find all letter and for loop delete
@@ -137,6 +161,7 @@ public class TextField : MonoBehaviour
                 //---------------------------Sprite------------------------
 
                 Chararray = Dialog[i].ToCharArray();
+                finish = false;
                 for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
                 {
                     if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'n')
@@ -171,6 +196,8 @@ public class TextField : MonoBehaviour
                     }
                 }
                 i++;
+                finish = true;
+
             }
             else
             {
@@ -220,6 +247,7 @@ public class TextField : MonoBehaviour
                 //---------------------------Sprite------------------------
 
                 Chararray = DialogUnsat[i].ToCharArray();
+                finish = false;
                 for (int iNdex = 0; iNdex < Chararray.Length; iNdex++)
                 {
                     if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'n')
@@ -254,6 +282,7 @@ public class TextField : MonoBehaviour
                     }
                 }
                 i++;
+                finish = true;
             }
             else
             {

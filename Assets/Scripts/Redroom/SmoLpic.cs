@@ -12,6 +12,7 @@ public class SmoLpic : MonoBehaviour
     [SerializeField] public bool CorrectPos = false;
     [SerializeField] public bool Press = false;
     [SerializeField] int picnumber = 0;
+    [SerializeField] GameObject Light;
     
     void Awake()
     {
@@ -61,6 +62,14 @@ public class SmoLpic : MonoBehaviour
             picnumber = 4;
         }
 
+        if (CorrectPos)
+        {
+            Light.SetActive(true);
+        }
+        else
+        {
+            Light.SetActive(false);
+        }
 
         if (CorrectPos && Press)
         {

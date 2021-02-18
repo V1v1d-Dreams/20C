@@ -106,7 +106,9 @@ public class Film : MonoBehaviour
         {
             transform.position = new Vector2(innitialpos.x, innitialpos.y);
         }
-        
+
+        FindObjectOfType<Navigator>().Enable("Mechine", false);
+        FindObjectOfType<Mechine>().holdingitem = false;
     }
     void Update()
     {
@@ -123,12 +125,7 @@ public class Film : MonoBehaviour
     {
         if (onhold == 0)
         {
-            int children = transform.childCount;
-            for (int i = 0; i < children; ++i)
-            {
-                transform.GetChild(i).GetComponent<Picpart>().setlayer(layer);
-            }
-            onhold = 1;
+            GetComponent<Picpart>().setlayer(layer);
         }
     }
 
@@ -149,6 +146,11 @@ public class Film : MonoBehaviour
                 mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
                 GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+                if (!FindObjectOfType<Mechine>().filmin)
+                {
+                    FindObjectOfType<Mechine>().holdingitem = true;
+                    FindObjectOfType<Navigator>().Enable("Mechine", true);
+                }
             }
         }
         else

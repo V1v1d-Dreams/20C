@@ -50,6 +50,7 @@ public class Picture : MonoBehaviour
     [SerializeField] GameObject PastPos;
     [SerializeField] public bool isholding = false;
     GameObject imagepre;
+    public bool Trash = false;
     /*
     [Header("Data")]
     public Sprite Blur;
@@ -92,7 +93,11 @@ public class Picture : MonoBehaviour
 
                 FindObjectOfType<Mechine>().holdingitem = true;
 
-                if (!FirstTray)
+                if (Trash)
+                {
+                    FindObjectOfType<Navigator>().Enable("Trash", true);
+                }
+                else if (!FirstTray)
                 {
                     FindObjectOfType<Navigator>().Enable("Tray1",true);
                 }
@@ -132,8 +137,7 @@ public class Picture : MonoBehaviour
     {
         isholding = false;
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
-
-        if (!Hanged)
+        if (!Hanged && !Trash)
         {
             returelayer();
             if (gaemhander.GetComponent<Game_handler>().mouseonTray1 && gaemhander.GetComponent<Game_handler>().placable && !secondtray && !thirdtray && !hangable) //first tray
@@ -234,11 +238,11 @@ public class Picture : MonoBehaviour
             {
                 if (PastPos != null)
                 {
-                   if (PastPos.TryGetComponent(out Item_with_slot ite))
-                   {
+                    if (PastPos.TryGetComponent(out Item_with_slot ite))
+                    {
                         ite.ObjectIN = this.gameObject;
                         ite.Locked = true;
-                   }
+                    }
                 }
                 transform.position = new Vector2(innitialpos.x, innitialpos.y);
             }
@@ -259,7 +263,7 @@ public class Picture : MonoBehaviour
                 gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<slotInv>().slotted = true;
                 locked = true;
             }*/
-            if (oninv) //on inventory
+            if (oninv && !Trash) //on inventory
             {
                 setlayer(101);
                 innitialpos = transform.position;
@@ -271,20 +275,27 @@ public class Picture : MonoBehaviour
                 //transform.SetParent(invent.transform, true);
                 transform.position = new Vector2(innitialpos.x, innitialpos.y);
             }
+            
         }
-
+        FindObjectOfType<Navigator>().Enable("Trash", false);
         FindObjectOfType<Navigator>().Enable("Tray1", false);
         FindObjectOfType<Navigator>().Enable("Tray2", false);
         FindObjectOfType<Navigator>().Enable("Tray3", false);
         FindObjectOfType<Navigator>().Enable("Hang", false);
         FindObjectOfType<Navigator>().Enable("Place", false);
         FindObjectOfType<Mechine>().holdingitem = false;
+
     }
     void Update()
     {
         Hold();
         timerUpdate();
 
+        if (Trash)
+        {
+            animator.SetFloat("progress", 1);
+            transform.Find("75134282_p0_master1200_2").GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
+        }
 
         /*
         if (!FirstTray&& !secondtray && !thirdtray)
@@ -331,7 +342,7 @@ public class Picture : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftAlt))
         {
             imagepre.GetComponent<SpriteRenderer>().sprite = Fullpic;
-            imagepre.GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f,1f);
+            imagepre.GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f, transform.Find("75134282_p0_master1200_2").GetComponent<SpriteRenderer>().color.a);
         }
         else
         {
@@ -365,7 +376,7 @@ public class Picture : MonoBehaviour
     void timerUpdate()
     {
         //Need to reset the value when enter new tray
-        if (!Hanged &&!isholding)
+        if (!Hanged &&!isholding && !Trash)
         {
             float seconds = Timer % 60;
 

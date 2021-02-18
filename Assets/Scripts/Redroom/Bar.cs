@@ -52,7 +52,8 @@ public class Bar : MonoBehaviour
             }
             else if (value > 130)
             {
-                Destroy(Slot.ObjectIN);
+                //Destroy(Slot.ObjectIN);
+                Slot.ObjectIN.GetComponent<Picture>().Trash = true;
             }
             else if (value < 100)
             {

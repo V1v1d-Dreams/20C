@@ -81,7 +81,10 @@ public class Game_handler : MonoBehaviour
                 }
                 else if (Click[0].collider.gameObject.CompareTag("Photo"))
                 {
-                    Click[0].collider.gameObject.GetComponent<Picture>().isholding = true;
+                    if (!Click[0].collider.gameObject.GetComponent<Picture>().locked)
+                    {
+                        Click[0].collider.gameObject.GetComponent<Picture>().isholding = true;
+                    }
                     print(Click[0].collider.gameObject.name);
                 }
                 else if (Click[0].collider.gameObject.CompareTag("FilmItem"))
@@ -93,7 +96,10 @@ public class Game_handler : MonoBehaviour
                 {
                     if (Click[1].collider.gameObject.CompareTag("Photo"))
                     {
-                        Click[1].collider.gameObject.GetComponent<Picture>().isholding = true;
+                        if (!Click[0].collider.gameObject.GetComponent<Picture>().locked)
+                        {
+                            Click[1].collider.gameObject.GetComponent<Picture>().isholding = true;
+                        }
                     }
                     print(Click[0].collider.gameObject.name);
                 }

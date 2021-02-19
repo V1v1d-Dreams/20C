@@ -15,9 +15,11 @@ public class Picture : MonoBehaviour
     [SerializeField] public float Timer;
     //[Range(0, 10)]
     int time = 5;
+    int time2 = 5;
     [SerializeField] public double percent1;
     [SerializeField] public double percent2;
     [SerializeField] public double percent3;
+    [SerializeField] public double percent4;
     [SerializeField] public int value;
 
     [Header("Cursor")]
@@ -35,7 +37,7 @@ public class Picture : MonoBehaviour
     [SerializeField] private float offsetY = 0.7f;
 
     [Header("UpdateIngame")]
-    [SerializeField] private bool locked;
+    [SerializeField] public bool locked;
     private Vector2 mouseposition;
     private float deltaX, deltaY;
     private float motiontime;
@@ -135,157 +137,159 @@ public class Picture : MonoBehaviour
 
     void OnMouseUp()
     {
-        isholding = false;
-        Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
-        if (!Hanged && !Trash)
+        if (!locked)
         {
-            returelayer();
-            if (gaemhander.GetComponent<Game_handler>().mouseonTray1 && gaemhander.GetComponent<Game_handler>().placable && !secondtray && !thirdtray && !hangable) //first tray
+            isholding = false;
+            Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
+            if (!Hanged && !Trash)
             {
-
-                transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
-                animator.SetTrigger("place");
-                FirstTray = true;
-                gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<Item_with_slot>().ObjectIN = this.gameObject; //THIS
-
-                PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
-                PastPos.GetComponent<Item_with_slot>().Locked = true;
-
-                innitialpos = transform.position;
-                gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
-            }
-            else if (gaemhander.GetComponent<Game_handler>().mouseonTray2 && FirstTray && gaemhander.GetComponent<Game_handler>().placable && !thirdtray && !secondtray && !hangable) //second tray
-            {
-                if (PastPos.TryGetComponent(out Item_with_slot Tray))
+                returelayer();
+                if (gaemhander.GetComponent<Game_handler>().mouseonTray1 && gaemhander.GetComponent<Game_handler>().placable && !secondtray && !thirdtray && !hangable) //first tray
                 {
-                    Tray.Locked = false;
+
+                    transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
+                    animator.SetTrigger("place");
+                    FirstTray = true;
+                    gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<Item_with_slot>().ObjectIN = this.gameObject; //THIS
+
+                    PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
+                    PastPos.GetComponent<Item_with_slot>().Locked = true;
+
+                    innitialpos = transform.position;
+                    gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
                 }
-
-                if (!secondtray)
+                else if (gaemhander.GetComponent<Game_handler>().mouseonTray2 && FirstTray && gaemhander.GetComponent<Game_handler>().placable && !thirdtray && !secondtray && !hangable) //second tray
                 {
-                    Timer = 0;
-                }
-
-                transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
-                secondtray = true;
-                gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<Item_with_slot>().ObjectIN = this.gameObject; //THIS
-
-                PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
-                PastPos.GetComponent<Item_with_slot>().Locked = true;
-
-                innitialpos = transform.position;
-                gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
-            }
-            else if (gaemhander.GetComponent<Game_handler>().mouseonTray3 && secondtray && gaemhander.GetComponent<Game_handler>().placable && !hangable) //third tray
-            {
-                if (PastPos.TryGetComponent(out Item_with_slot Tray))
-                {
-                    Tray.Locked = false;
-                }
-
-                if (!thirdtray)
-                {
-                    Timer = 0;
-                }
-
-                transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
-                thirdtray = true;
-                gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<Item_with_slot>().ObjectIN = this.gameObject; //THis
-
-                PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
-                PastPos.GetComponent<Item_with_slot>().Locked = true;
-
-                innitialpos = transform.position;
-                hangable = true;
-                gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
-            }
-            else if (hangable && gaemhander.GetComponent<Game_handler>().placable && gaemhander.GetComponent<Game_handler>().currentmouseon.CompareTag("Hanger")) //Hanger
-            {
-
-                if (PastPos.TryGetComponent(out Item_with_slot Tray))
-                {
-                    Tray.Locked = false;
-                }
-
-                transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y - offsetY);
-                value = (int)(percent1 + percent2 + percent3) / 3;
-                Hanged = true;
-                PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
-                PastPos.GetComponent<Item_with_slot>().ObjectIN = this.gameObject;
-                PastPos.GetComponent<Item_with_slot>().Locked = true;
-                innitialpos = transform.position;
-                gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(3);
-
-                //gaemhander.GetComponent<Game_handler>().respawn();
-
-            }
-            //-------------------------placable
-
-            /*else if (transform.position.x > 3.45 && transform.position.x < 7.83 && transform.position.y > -2.92 && transform.position.y < 2.94)
-            {       
-                innitialpos = transform.position;
-            }*/
-
-            //-------------------------
-
-            else if (oninv && Hanged) //on inventory
-            {
-                setlayer(101);
-                transform.SetParent(invent.transform, true);
-            }
-
-            //-------------------------
-            else //go back to original pos
-            {
-                if (PastPos != null)
-                {
-                    if (PastPos.TryGetComponent(out Item_with_slot ite))
+                    if (PastPos.TryGetComponent(out Item_with_slot Tray))
                     {
-                        ite.ObjectIN = this.gameObject;
-                        ite.Locked = true;
+                        Tray.Locked = false;
                     }
+
+                    if (!secondtray)
+                    {
+                        Timer = 0;
+                    }
+
+                    transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
+                    secondtray = true;
+                    gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<Item_with_slot>().ObjectIN = this.gameObject; //THIS
+
+                    PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
+                    PastPos.GetComponent<Item_with_slot>().Locked = true;
+
+                    innitialpos = transform.position;
+                    gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
                 }
-                transform.position = new Vector2(innitialpos.x, innitialpos.y);
-            }
+                else if (gaemhander.GetComponent<Game_handler>().mouseonTray3 && secondtray && gaemhander.GetComponent<Game_handler>().placable && !hangable) //third tray
+                {
+                    if (PastPos.TryGetComponent(out Item_with_slot Tray))
+                    {
+                        Tray.Locked = false;
+                    }
 
-        }
-        else
-        {
-            /*
-            if (gaemhander.GetComponent<Game_handler>().placable)
-            {
-                print("slotted");
-                setlayer(103);
-                invent = gaemhander.GetComponent<Game_handler>().currentmouseon;
-                transform.SetParent(invent.transform, true);
-                transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
+                    if (!thirdtray)
+                    {
+                        Timer = 0;
+                    }
 
-                PastPos.GetComponent<hanger>().Locked = false;
-                gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<slotInv>().slotted = true;
-                locked = true;
-            }*/
-            if (oninv && !Trash) //on inventory
-            {
-                setlayer(101);
-                innitialpos = transform.position;
-                transform.SetParent(invent.transform, true);
-                PastPos.GetComponent<Item_with_slot>().Locked = false;
+                    transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
+                    thirdtray = true;
+                    gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<Item_with_slot>().ObjectIN = this.gameObject; //THis
+
+                    PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
+                    PastPos.GetComponent<Item_with_slot>().Locked = true;
+
+                    innitialpos = transform.position;
+                    hangable = true;
+                    gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(0);
+                }
+                else if (hangable && gaemhander.GetComponent<Game_handler>().placable && gaemhander.GetComponent<Game_handler>().currentmouseon.CompareTag("Hanger")) //Hanger
+                {
+
+                    if (PastPos.TryGetComponent(out Item_with_slot Tray))
+                    {
+                        Tray.Locked = false;
+                    }
+
+                    transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y - offsetY);
+                    value = (int)(percent1 + percent2 + percent3) / 3;
+                    Hanged = true;
+                    PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
+                    PastPos.GetComponent<Item_with_slot>().ObjectIN = this.gameObject;
+                    PastPos.GetComponent<Item_with_slot>().Locked = true;
+                    innitialpos = transform.position;
+                    gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(3);
+
+                    //gaemhander.GetComponent<Game_handler>().respawn();
+
+                }
+                //-------------------------placable
+
+                /*else if (transform.position.x > 3.45 && transform.position.x < 7.83 && transform.position.y > -2.92 && transform.position.y < 2.94)
+                {       
+                    innitialpos = transform.position;
+                }*/
+
+                //-------------------------
+
+                else if (oninv && Hanged) //on inventory
+                {
+                    setlayer(101);
+                    transform.SetParent(invent.transform, true);
+                }
+
+                //-------------------------
+                else //go back to original pos
+                {
+                    if (PastPos != null)
+                    {
+                        if (PastPos.TryGetComponent(out Item_with_slot ite))
+                        {
+                            ite.ObjectIN = this.gameObject;
+                            ite.Locked = true;
+                        }
+                    }
+                    transform.position = new Vector2(innitialpos.x, innitialpos.y);
+                }
+
             }
             else
             {
-                //transform.SetParent(invent.transform, true);
-                transform.position = new Vector2(innitialpos.x, innitialpos.y);
-            }
-            
-        }
-        FindObjectOfType<Navigator>().Enable("Trash", false);
-        FindObjectOfType<Navigator>().Enable("Tray1", false);
-        FindObjectOfType<Navigator>().Enable("Tray2", false);
-        FindObjectOfType<Navigator>().Enable("Tray3", false);
-        FindObjectOfType<Navigator>().Enable("Hang", false);
-        FindObjectOfType<Navigator>().Enable("Place", false);
-        FindObjectOfType<Mechine>().holdingitem = false;
+                /*
+                if (gaemhander.GetComponent<Game_handler>().placable)
+                {
+                    print("slotted");
+                    setlayer(103);
+                    invent = gaemhander.GetComponent<Game_handler>().currentmouseon;
+                    transform.SetParent(invent.transform, true);
+                    transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y);
 
+                    PastPos.GetComponent<hanger>().Locked = false;
+                    gaemhander.GetComponent<Game_handler>().currentmouseon.GetComponent<slotInv>().slotted = true;
+                    locked = true;
+                }*/
+                if (oninv && !Trash) //on inventory
+                {
+                    setlayer(101);
+                    innitialpos = transform.position;
+                    transform.SetParent(invent.transform, true);
+                    PastPos.GetComponent<Item_with_slot>().Locked = false;
+                }
+                else
+                {
+                    //transform.SetParent(invent.transform, true);
+                    transform.position = new Vector2(innitialpos.x, innitialpos.y);
+                }
+
+            }
+            FindObjectOfType<Navigator>().Enable("Trash", false);
+            FindObjectOfType<Navigator>().Enable("Tray1", false);
+            FindObjectOfType<Navigator>().Enable("Tray2", false);
+            FindObjectOfType<Navigator>().Enable("Tray3", false);
+            FindObjectOfType<Navigator>().Enable("Hang", false);
+            FindObjectOfType<Navigator>().Enable("Place", false);
+            FindObjectOfType<Mechine>().holdingitem = false;
+        }
     }
     void Update()
     {
@@ -397,6 +401,20 @@ public class Picture : MonoBehaviour
                 percent1 = (seconds / time)*100;
             }
 
+        }
+        else if (Hanged)
+        {
+            float seconds = Timer % 60;
+            Timer += Time.deltaTime;
+            percent4 = (seconds / time2) * 100;
+            if (percent4 < 100)
+            {
+                locked = true;
+            }
+            else
+            {
+                locked = false;
+            }
         }
 
     }

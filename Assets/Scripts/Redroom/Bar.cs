@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bar : MonoBehaviour
 {
+    public enum Type { Tray, Hanger }
+
+    public Type type;
     [SerializeField] public GameObject tray;
     [SerializeField] public GameObject bar;
     [SerializeField] double value;
@@ -19,17 +22,23 @@ public class Bar : MonoBehaviour
             {
                 bar.GetComponent<SpriteRenderer>().enabled = true;
                 GetComponent<SpriteRenderer>().enabled = true;
-                if (BarNumber == 1)
+
+                switch (BarNumber)
                 {
-                    value = Slot.ObjectIN.GetComponent<Picture>().percent1;
-                }
-                else if (BarNumber == 2)
-                {
-                    value = Slot.ObjectIN.GetComponent<Picture>().percent2;
-                }
-                else if (BarNumber == 3)
-                {
-                    value = Slot.ObjectIN.GetComponent<Picture>().percent3;
+                    case 1:
+                        value = Slot.ObjectIN.GetComponent<Picture>().percent1;
+                        break;
+                    case 2:
+                        value = Slot.ObjectIN.GetComponent<Picture>().percent2;
+                        break;
+                    case 3:
+                        value = Slot.ObjectIN.GetComponent<Picture>().percent3;
+                        break;
+                    case 4:
+                        value = Slot.ObjectIN.GetComponent<Picture>().percent4;
+                        break;
+
+
                 }
 
                 float scale;
@@ -45,19 +54,22 @@ public class Bar : MonoBehaviour
                 GetComponent<SpriteRenderer>().enabled = false;
             }
 
-            if (value > 100 && value < 130 && GetComponent<SpriteRenderer>().color.g > 0)
+            if (type == Type.Tray)
             {
-                float temp = GetComponent<SpriteRenderer>().color.g - 0.002f;
-                GetComponent<SpriteRenderer>().color = new Color(1, temp, 0);
-            }
-            else if (value > 130)
-            {
-                //Destroy(Slot.ObjectIN);
-                Slot.ObjectIN.GetComponent<Picture>().Trash = true;
-            }
-            else if (value < 100)
-            {
-                GetComponent<SpriteRenderer>().color = new Color(1, 0.739108f, 0);
+                if (value > 100 && value < 130 && GetComponent<SpriteRenderer>().color.g > 0)
+                {
+                    float temp = GetComponent<SpriteRenderer>().color.g - 0.002f;
+                    GetComponent<SpriteRenderer>().color = new Color(1, temp, 0);
+                }
+                else if (value > 130)
+                {
+                    //Destroy(Slot.ObjectIN);
+                    Slot.ObjectIN.GetComponent<Picture>().Trash = true;
+                }
+                else if (value < 100)
+                {
+                    GetComponent<SpriteRenderer>().color = new Color(1, 0.739108f, 0);
+                }
             }
         }
     }

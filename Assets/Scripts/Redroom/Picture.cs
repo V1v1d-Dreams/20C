@@ -211,6 +211,7 @@ public class Picture : MonoBehaviour
                 value = (int)(percent1 + percent2 + percent3) / 3;
                 Hanged = true;
                 PastPos = gaemhander.GetComponent<Game_handler>().currentmouseon;
+                PastPos.GetComponent<Item_with_slot>().ObjectIN = this.gameObject;
                 PastPos.GetComponent<Item_with_slot>().Locked = true;
                 innitialpos = transform.position;
                 gaemhander.GetComponent<Game_handler>().SoundManager.GetComponent<SoundManager>().PlayFX(3);

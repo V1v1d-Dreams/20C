@@ -11,6 +11,12 @@ public class staticDataHolder : MonoBehaviour
     private static GameObject TodaysFilm;
     private static SaveData save_;
     private static int MechineLv = 1;
+    private static int HangerLv = 1; 
+    private static int PaperNumber = 1; //number of paper
+    private static bool Chem1 = false; //chemical free
+    private static bool Chem2 = false; //Fast chem
+    private static bool Chem3 = false; //Perfect
+    private static bool Tray = false; //6 Trays
 
     public static int currentIndex
     {
@@ -93,6 +99,18 @@ public class staticDataHolder : MonoBehaviour
         set
         {
             MechineLv = value;
+        }
+    }
+
+    public static int hangerLv
+    {
+        get
+        {
+            return HangerLv;
+        }
+        set
+        {
+            HangerLv = value;
         }
     }
 }

@@ -16,10 +16,14 @@ public class Game_handler : MonoBehaviour
     [SerializeField] Transform[] children;
     [SerializeField] public GameObject SoundManager;
     [SerializeField] public int Magnifier_Lv = 1;
+    [SerializeField] public int Hanger_Lv = 1;
     [SerializeField] Transform[] countingArray;
     [SerializeField] List<Transform> Piclist;
     [SerializeField] GameObject ResultOverlay;
     [SerializeField] Text ResiltText;
+    [SerializeField] GameObject Hanger1;
+    [SerializeField] GameObject Hanger2;
+    [SerializeField] GameObject Hanger3;
 
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
@@ -47,6 +51,7 @@ public class Game_handler : MonoBehaviour
     {
         //cam_follow_pos = cam.transform.position;
         Magnifier_Lv = staticDataHolder.mechinelv;
+        Hanger_Lv = staticDataHolder.hangerLv;
 
     }
 

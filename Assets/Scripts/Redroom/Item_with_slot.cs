@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Item_with_slot : MonoBehaviour
 {
+    public enum Type { Tray, Hanger };
+    [SerializeField] public Type type = Type.Tray;
     [SerializeField] public bool Locked = false;
     [SerializeField] public GameObject ObjectIN;
 
@@ -19,11 +21,21 @@ public class Item_with_slot : MonoBehaviour
                     ObjectIN = null;
                 }
             }
+
+            if (type == Type.Hanger)
+            {
+                GetComponent<SpriteRenderer>().enabled = true;
+            }
         }
         else
         {
             Locked = false;
+            if (type == Type.Hanger)
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
+
 
     }
 }

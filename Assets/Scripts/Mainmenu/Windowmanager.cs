@@ -24,34 +24,12 @@ public class Windowmanager : MonoBehaviour
     [Header("Scene")]
     [Range(0,10)]public int scene;
 
-    void Start()
+    List<int> widths = new List<int>() { 640, 800, 854, 1280, 1366, 1600, 1920, 2560, 3200, 3840 };
+    List<int> heights = new List<int>() { 360, 450, 480, 720, 768, 900, 1080, 1440, 1800, 2160 };
+
+    void Awake()
     {
-        //confirmation.gameObject.SetActive(false);
-        //setting.gameObject.SetActive(false);
-        //Reset default     Screen.SetResolution(1920, 1080, false); //enter res
-
-
-        resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray();
-
-        resolutionDropdown.ClearOptions();
-
-        List<string> options = new List<string>();
-
-        int currentResolutionIndex = 0;
-        for (int i=0; i< resolutions.Length; i++)
-        {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
-            options.Add(option);
-
-            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
-            {
-                currentResolutionIndex = i;
-            }
-        }
-
-        resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue();
+        currentResolution();
     }
 
 
@@ -104,5 +82,56 @@ public class Windowmanager : MonoBehaviour
         setting.gameObject.SetActive(false);
         confirmation.gameObject.SetActive(false);
     }
+    void resolutionsetting()
+    {
+        resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray();
 
+        resolutionDropdown.ClearOptions();
+
+        List<string> options = new List<string>();
+
+        int currentResolutionIndex = 0;
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            string option = resolutions[i].width + " x " + resolutions[i].height;
+            options.Add(option);
+
+            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
+            {
+                currentResolutionIndex = i;
+            }
+        }
+
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.RefreshShownValue();
+    }
+    void currentResolution()
+    {
+        for (int x = 0; x < widths.Count; x++)
+        {
+            if (Screen.width == widths[x])
+            {
+                for (int y = 0; y < heights.Count; y++)
+                {
+                    if (Screen.height == heights[y])
+                    {
+                        if (x == y)
+                        {
+                            resolutionDropdown.value = x;
+                            return;
+                        }
+                        return;
+                    }
+                }
+            }
+        }
+    }
+    public void reworkResolution(int index)
+    {
+        bool fullscreen = Screen.fullScreen;
+        int width = widths[index];
+        int height = heights[index];
+        Screen.SetResolution(width, height, fullscreen);
+    }
 }

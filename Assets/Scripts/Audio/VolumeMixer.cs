@@ -15,6 +15,7 @@ using UnityEngine.UI;
 //}
 //}
 
+[RequireComponent(typeof(Toggle))]
 public class VolumeMixer : MonoBehaviour
 {
     public static VolumeMixer soundForce;
@@ -27,6 +28,7 @@ public class VolumeMixer : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip onSoundTest;
 
+    Toggle audioToggle;
     void Awake()
     {
         soundForce = this;
@@ -37,10 +39,17 @@ public class VolumeMixer : MonoBehaviour
         //soundEffectTester.SetActive(false);
         //slider.value = PlayerPrefs.GetFloat(Exposer, 1.00f);
         //**********************************************************
-
+        audioToggle = GetComponent<Toggle>();
+        if (AudioListener.volume ==0 )
+        {
+            audioToggle.isOn = false;
+        }
         //print(audioMixer.name + slider.value);
-        slider.value = PlayerPrefs.GetFloat(Exposer);
-        SetVolume(slider.value);
+        if (slider != null)
+        {
+            slider.value = PlayerPrefs.GetFloat(Exposer);
+            SetVolume(slider.value);
+        }
         //print(audioMixer.name + slider.value);
     }
     public void SetVolume (float sliderValue)
@@ -53,6 +62,18 @@ public class VolumeMixer : MonoBehaviour
         if (soundCheck == true)
         {
             audioSource.PlayOneShot(onSoundTest);
+        }
+    }
+
+    public void toggleAudioOnvalueChange(bool audioIn)
+    {
+        if(audioIn)
+        {
+            AudioListener.volume = 1;
+        }
+        else
+        {
+            AudioListener.volume = 0;
         }
     }
 }

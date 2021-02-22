@@ -211,6 +211,8 @@ public class Picture : MonoBehaviour
                         Tray.Locked = false;
                     }
 
+                    Timer = 0;
+
                     transform.position = new Vector2(gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.x, gaemhander.GetComponent<Game_handler>().currentmouseon.transform.position.y - offsetY);
                     value = (int)(percent1 + percent2 + percent3) / 3;
                     Hanged = true;

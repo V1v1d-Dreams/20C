@@ -193,12 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d37444b01d99c74f9c67e10015b7330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: c7a003f132b279a45a5de79567c5ff22, type: 2}
-  slider: {fileID: 0}
-  Exposer: BGM
-  soundCheck: 0
-  audioSource: {fileID: 0}
-  onSoundTest: {fileID: 0}
 --- !u!1 &24324483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,7 +2385,7 @@ PrefabInstance:
     - target: {fileID: 1738467718807094851, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1790608366638744611, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
@@ -2572,12 +2566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8863169541490469fc97e3075bb94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolutionDropdown: {fileID: 0}
-  playButton: {fileID: 1784290440}
-  settingButton: {fileID: 566235738}
-  setting: {fileID: 0}
-  confirmation: {fileID: 0}
-  scene: 0
 --- !u!114 &407865557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2590,9 +2578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478b36f49b3d8404abcae136bbb9a7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolutionDropdown: {fileID: 0}
-  MainCamera: {fileID: 24324489}
-  PlayScene: 1
 --- !u!1 &421022619
 GameObject:
   m_ObjectHideFlags: 0
@@ -6021,7 +6006,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1662629402
 GameObject:
@@ -6261,12 +6246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d37444b01d99c74f9c67e10015b7330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 593055689f7bf5243a5227336e778755, type: 2}
-  slider: {fileID: 0}
-  Exposer: SFX
-  soundCheck: 1
-  audioSource: {fileID: 0}
-  onSoundTest: {fileID: 8300000, guid: 1f39f14c7dfe406499bcb483609c631f, type: 3}
 --- !u!114 &1686190605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6328,9 +6307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478b36f49b3d8404abcae136bbb9a7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolutionDropdown: {fileID: 898135581}
-  MainCamera: {fileID: 24324489}
-  PlayScene: 1
 --- !u!114 &1691782317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6343,12 +6319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8863169541490469fc97e3075bb94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolutionDropdown: {fileID: 898135581}
-  playButton: {fileID: 0}
-  settingButton: {fileID: 0}
-  setting: {fileID: 0}
-  confirmation: {fileID: 0}
-  scene: 0
 --- !u!114 &1691782318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6428,7 +6398,7 @@ RectTransform:
   - {fileID: 276589931}
   - {fileID: 1646658406}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6837,8 +6807,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 407865557}
-        m_MethodName: PlayButton
+      - m_Target: {fileID: 1876235018}
+        m_MethodName: loadnextLV
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7760,6 +7730,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864990243}
   m_CullTransparentMesh: 0
+--- !u!114 &1876235018 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1430846202214790700, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 406503965}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8cbcdf69ca1344f9bc2e867c2985f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1913592923
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,9 +13,7 @@ public class staticDataHolder : MonoBehaviour
     private static int MechineLv = 1;
     private static int HangerLv = 1; 
     private static int PaperNumber = 1; //number of paper
-    private static bool Chem1 = false; //chemical free
-    private static bool Chem2 = false; //Fast chem
-    private static bool Chem3 = false; //Perfect
+    private static int Chemlv = 1; //chemical
     private static bool Tray = false; //6 Trays
 
     public static int currentIndex
@@ -111,6 +109,30 @@ public class staticDataHolder : MonoBehaviour
         set
         {
             HangerLv = value;
+        }
+    }
+
+    public static bool tray
+    {
+        get
+        {
+            return Tray;
+        }
+        set
+        {
+            Tray = value;
+        }
+    }
+
+    public static int chemlv
+    {
+        get
+        {
+            return Chemlv;
+        }
+        set
+        {
+            Chemlv = value;
         }
     }
 }

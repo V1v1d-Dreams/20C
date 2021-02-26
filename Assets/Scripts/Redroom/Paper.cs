@@ -120,11 +120,8 @@ public class Paper : MonoBehaviour
     {
         if (onhold == 0)
         {
-            int children = transform.childCount;
-            for (int i = 0; i < children; ++i)
-            {
-                transform.GetChild(i).GetComponent<Picpart>().setlayer(layer);
-            }
+            transform.GetComponent<Picpart>().setlayer(layer);
+            transform.GetComponent<SpriteRenderer>().sortingLayerName = "OnHold";
             onhold = 1;
         }
     }
@@ -132,6 +129,8 @@ public class Paper : MonoBehaviour
     void returelayer()
     {
         transform.GetComponent<Picpart>().returnlayer();
+        transform.GetComponent<SpriteRenderer>().sortingLayerName = "Dafault";
+        onhold = 0;
     }
 
     void Hold()

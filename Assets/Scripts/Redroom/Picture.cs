@@ -89,6 +89,7 @@ public class Picture : MonoBehaviour
             if (!locked)
             {
                 setlayer(200);
+                
                 transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
                 mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
@@ -365,6 +366,7 @@ public class Picture : MonoBehaviour
             for (int i = 0; i < children; ++i)
             {
                 transform.GetChild(i).GetComponent<Picpart>().setlayer(layer);
+                transform.GetChild(i).GetComponent<SpriteRenderer>().sortingLayerName = "OnHold";
             }
             onhold = 1;
         }
@@ -376,6 +378,7 @@ public class Picture : MonoBehaviour
         for (int i = 0; i < children; ++i)
         {
             transform.GetChild(i).GetComponent<Picpart>().returnlayer();
+            transform.GetChild(i).GetComponent<SpriteRenderer>().sortingLayerName = "Dafault";
         }
         onhold = 0;
     }

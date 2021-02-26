@@ -24,6 +24,13 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject Hanger1;
     [SerializeField] GameObject Hanger2;
     [SerializeField] GameObject Hanger3;
+    [SerializeField] GameObject TrayLv1;
+    [SerializeField] GameObject TrayLv2;
+    [SerializeField] GameObject ChemObj;
+    [SerializeField] Sprite Chem1;
+    [SerializeField] Sprite Chem2;
+    [SerializeField] Sprite Chem3;
+    [SerializeField] public int paperNum;
 
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
@@ -53,16 +60,13 @@ public class Game_handler : MonoBehaviour
         Magnifier_Lv = staticDataHolder.mechinelv;
         Hanger_Lv = staticDataHolder.hangerLv;
 
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.O))
-        {
-            Magnifier_Lv += 1;
-            staticDataHolder.mechinelv += 1;
-        }
+        UpdateLv();
 
         if (!overlay)
         {
@@ -391,6 +395,72 @@ public class Game_handler : MonoBehaviour
         //delay this
         GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2,2);
         staticDataHolder.currentTime++;
+    }
+
+    void UpdateLv()
+    {
+        if (Input.GetKeyUp(KeyCode.O))
+        {
+            Magnifier_Lv += 1;
+            Hanger_Lv += 1;
+            staticDataHolder.mechinelv += 1;
+            staticDataHolder.hangerLv += 1;
+            staticDataHolder.chemlv += 1;
+            staticDataHolder.tray = !staticDataHolder.tray;
+        }
+
+        switch (Hanger_Lv)
+        {
+            case 1:
+                Hanger1.SetActive(true);
+                //Hanger2.SetActive(true);
+                //Hanger3.SetActive(true);
+                break;
+            case 2:
+                Hanger1.SetActive(true);
+                Hanger2.SetActive(true);
+                //Hanger3.SetActive(true);
+                break;
+            case 3:
+                Hanger1.SetActive(true);
+                Hanger2.SetActive(true);
+                Hanger3.SetActive(true);
+                break;
+            default:
+                Hanger1.SetActive(true);
+                Hanger2.SetActive(true);
+                Hanger3.SetActive(true);
+                break;
+        }
+
+        switch (staticDataHolder.tray)
+        {
+            case false:
+                TrayLv1.SetActive(true);
+                TrayLv2.SetActive(false);
+                break;
+            case true:
+                TrayLv1.SetActive(false);
+                TrayLv2.SetActive(true);
+                break;
+        }
+
+        switch (staticDataHolder.chemlv)
+        {
+            case 1:
+                ChemObj.GetComponent<SpriteRenderer>().sprite = Chem1;
+                break;
+            case 2:
+                ChemObj.GetComponent<SpriteRenderer>().sprite = Chem2;
+                break;
+            case 3:
+                ChemObj.GetComponent<SpriteRenderer>().sprite = Chem3;
+                break;
+            default:
+                ChemObj.GetComponent<SpriteRenderer>().sprite = Chem3;
+                break;
+        }
+
     }
 
 }

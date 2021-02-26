@@ -71,6 +71,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: InFrontOfDefault
+    uniqueID: 4014840753
+    locked: 0
+  - name: OnHold
+    uniqueID: 441317035
+    locked: 0
   - name: UI
     uniqueID: 3241914245
     locked: 0

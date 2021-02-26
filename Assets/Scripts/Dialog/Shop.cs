@@ -5,103 +5,54 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
-    [Header("Mechine")]
-    [SerializeField] Sprite mechinelv1;
-    [SerializeField] Sprite mechinelv2;
-    [SerializeField] Sprite mechinelv3;
-    [SerializeField] string text1;
-    [SerializeField] string text2;
-    [SerializeField] string text3;
-    [SerializeField] Text TextUI1;
-    [SerializeField] Image Image1;
-    [SerializeField] int mechinelv;
-    [SerializeField] int mechine_price1;
-    [SerializeField] int mechine_price2;
+    [Header("Price")]
+    public int Mechine1;
+    public int Mechine2;
+    public int Paper;
+    public int Chem1;
+    public int Chem2;
+    public int Chem3;
+    public int Tray;
+    public int Hanger;
 
-    [Header("Hanger")]
-    [SerializeField] Sprite hangerlv1;
-    [SerializeField] Sprite hangerlv2;
-    [SerializeField] Sprite hangerlv3;
-    [SerializeField] string text4;
-    [SerializeField] string text5;
-    [SerializeField] string text6;
-    [SerializeField] Text TextUI2;
-    [SerializeField] Image Image2;
-    [SerializeField] int HangerLv;
-    [SerializeField] int Hanger_price1;
-    [SerializeField] int Hanger_price2;
-
-
-
-
-    void Start()
+    public void Upgrade(string Name)
     {
-        mechinelv = staticDataHolder.mechinelv;
-        TextUI1.text = text1;
+        switch (Name)
+        {
+            case "Tray":
+                staticDataHolder.tray = true;
+                Debug.Log("Tray : " + staticDataHolder.tray);
+                break;
+            case "M1":
+                staticDataHolder.mechinelv = 2;
+                Debug.Log(staticDataHolder.mechinelv);
+                break;
+            case "M2":
+                staticDataHolder.mechinelv = 3;
+                Debug.Log(staticDataHolder.mechinelv);
+                break;
+            case "Paper":
+                //WIP
+                Debug.Log("Paper + 1");
+                break;
+            case "Chem1":
+                staticDataHolder.chemlv = 1;
+                Debug.Log(staticDataHolder.chemlv);
+                break;
+            case "Chem2":
+                staticDataHolder.chemlv = 2;
+                Debug.Log(staticDataHolder.chemlv);
+                break;
+            case "Chem3":
+                staticDataHolder.chemlv = 3;
+                Debug.Log(staticDataHolder.chemlv);
+                break;
+            case "Hanger":
+                staticDataHolder.hangerLv +=1;
+                Debug.Log(staticDataHolder.hangerLv);
+                break;
+}
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        mechinelv = staticDataHolder.mechinelv;
-        switch (mechinelv)
-        {
 
-            case 1:
-                TextUI1.text = text1;
-                Image1.sprite = mechinelv1;
-                break;
-
-            case 2:
-                TextUI1.text = text2;
-                Image1.sprite = mechinelv2;
-                break;
-
-            case 3:
-                TextUI1.text = text3;
-                Image1.sprite = mechinelv3;
-                break;
-
-
-        }
-
-        HangerLv = staticDataHolder.hangerLv;
-        switch (HangerLv)
-        {
-
-            case 1:
-                TextUI2.text = text4;
-                Image2.sprite = hangerlv1;
-                break;
-
-            case 2:
-                TextUI2.text = text5;
-                Image2.sprite = hangerlv2;
-                break;
-
-            case 3:
-                TextUI2.text = text6;
-                Image2.sprite = hangerlv3;
-                break;
-
-
-        }
-
-    }
-
-    public void upgradeLv()
-    {
-        if (mechinelv<3)
-        {
-            staticDataHolder.mechinelv += 1;
-        }
-    }
-
-    public void UpgradeLvHanger()
-    {
-        if (HangerLv < 3)
-        {
-            staticDataHolder.hangerLv += 1;
-        }
-    }
 }

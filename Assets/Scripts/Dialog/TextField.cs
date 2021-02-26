@@ -70,7 +70,7 @@ public class TextField : MonoBehaviour
         }
         else
         {
-            Debug.Log("foundNews");
+            //Debug.Log("foundNews");
             NewsOverlay.enabled = true;
             news = true;
             NewsOverlay.sprite = News;

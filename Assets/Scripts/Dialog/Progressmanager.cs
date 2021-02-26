@@ -44,6 +44,7 @@ public class Progressmanager : MonoBehaviour
 
 	public void End()
     {
+		Debug.Log("End");
 		//print(staticDataHolder.currentTime);
 		TimeInnDex[staticDataHolder.currentIndex].SetActive(false);
 		staticDataHolder.currentIndex++;

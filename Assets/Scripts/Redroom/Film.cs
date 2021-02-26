@@ -126,12 +126,16 @@ public class Film : MonoBehaviour
         if (onhold == 0)
         {
             GetComponent<Picpart>().setlayer(layer);
+            transform.GetComponent<SpriteRenderer>().sortingLayerName = "OnHold";
+            onhold = 1;
         }
     }
 
     void returelayer()
     {
         transform.GetComponent<Picpart>().returnlayer();
+        transform.GetComponent<SpriteRenderer>().sortingLayerName = "Dafault";
+        onhold = 0;
     }
 
     void Hold()

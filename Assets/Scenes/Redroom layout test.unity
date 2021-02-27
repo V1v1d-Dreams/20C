@@ -739,6 +739,7 @@ MonoBehaviour:
   bar: {fileID: 1802725725}
   value: 0
   BarNumber: 2
+  TimeWindow: 0
 --- !u!212 &82616602
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2911,6 +2912,7 @@ MonoBehaviour:
   bar: {fileID: 759946252}
   value: 0
   BarNumber: 1
+  TimeWindow: 0
 --- !u!212 &305262740
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3882,6 +3884,7 @@ MonoBehaviour:
   bar: {fileID: 1576992214}
   value: 0
   BarNumber: 3
+  TimeWindow: 0
 --- !u!212 &468175656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7065,6 +7068,8 @@ MonoBehaviour:
   Times: 180
   currenttime: 0
   textsss: {fileID: 0}
+  PicDevDuration: 5
+  PicTimeWindows: 5
   overlay: 0
 --- !u!4 &883475801
 Transform:
@@ -8130,6 +8135,7 @@ MonoBehaviour:
   bar: {fileID: 1754190}
   value: 0
   BarNumber: 2
+  TimeWindow: 0
 --- !u!212 &1113095593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9590,6 +9596,7 @@ MonoBehaviour:
   bar: {fileID: 429903936}
   value: 0
   BarNumber: 3
+  TimeWindow: 0
 --- !u!212 &1359638025
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13495,6 +13502,7 @@ MonoBehaviour:
   bar: {fileID: 547777073}
   value: 0
   BarNumber: 2
+  TimeWindow: 0
 --- !u!212 &1950089276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14103,6 +14111,7 @@ MonoBehaviour:
   bar: {fileID: 881614577}
   value: 0
   BarNumber: 1
+  TimeWindow: 0
 --- !u!212 &2049110439
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14202,6 +14211,7 @@ MonoBehaviour:
   bar: {fileID: 1863125322}
   value: 0
   BarNumber: 3
+  TimeWindow: 0
 --- !u!212 &2056654605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14687,6 +14697,7 @@ MonoBehaviour:
   bar: {fileID: 133374248}
   value: 0
   BarNumber: 1
+  TimeWindow: 0
 --- !u!212 &2146924685
 SpriteRenderer:
   m_ObjectHideFlags: 0

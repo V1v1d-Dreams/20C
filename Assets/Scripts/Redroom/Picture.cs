@@ -14,8 +14,8 @@ public class Picture : MonoBehaviour
     [Tooltip("THE GAME IS ALREADY BROKEN")]
     [SerializeField] public float Timer;
     //[Range(0, 10)]
-    int time = 5;
-    int time2 = 5;
+    float time = 5;
+    float time2 = 5;
     [SerializeField] public double percent1;
     [SerializeField] public double percent2;
     [SerializeField] public double percent3;
@@ -67,7 +67,7 @@ public class Picture : MonoBehaviour
         gaemhander =  GameObject.Find("Event controller");
         invent = GameObject.Find("Photo-inv");
         imagepre = GameObject.Find("ImagePreview");
-
+        time = gaemhander.GetComponent<Game_handler>().PicDevDuration;
     }
 
 

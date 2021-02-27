@@ -44,6 +44,8 @@ public class Game_handler : MonoBehaviour
     [SerializeField] public float Times;
     [SerializeField] public float currenttime;
     [SerializeField] public Text textsss;
+    [SerializeField] public float PicDevDuration;
+    [SerializeField] public float PicTimeWindows;
 
     //[Header("campos")]
     //[SerializeField] public int[] CamPosittion;
@@ -59,8 +61,6 @@ public class Game_handler : MonoBehaviour
         //cam_follow_pos = cam.transform.position;
         Magnifier_Lv = staticDataHolder.mechinelv;
         Hanger_Lv = staticDataHolder.hangerLv;
-
-
     }
 
     // Update is called once per frame

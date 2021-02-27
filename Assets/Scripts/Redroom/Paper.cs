@@ -135,26 +135,29 @@ public class Paper : MonoBehaviour
 
     void Hold()
     {
-        if (isholding)
+        if (staticDataHolder.papernumber-1 >0)
         {
-            Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
-            if (!locked)
+            if (isholding)
             {
-                setlayer(200);
-                //transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
-                mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
-                GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
-                if (!FindObjectOfType<Mechine>().paperin)
+                Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
+                if (!locked)
                 {
-                    FindObjectOfType<Navigator>().Enable("Paper", true);
-                    FindObjectOfType<Mechine>().holdingitem = true;
+                    setlayer(200);
+                    //transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
+                    mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
+                    GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+                    if (!FindObjectOfType<Mechine>().paperin)
+                    {
+                        FindObjectOfType<Navigator>().Enable("Paper", true);
+                        FindObjectOfType<Mechine>().holdingitem = true;
+                    }
                 }
             }
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().color = new Color32(0, 0, 0, 0);
+            else
+            {
+                GetComponent<SpriteRenderer>().color = new Color32(0, 0, 0, 0);
+            }
         }
     }
 }

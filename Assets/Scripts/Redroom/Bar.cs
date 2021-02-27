@@ -11,7 +11,12 @@ public class Bar : MonoBehaviour
     [SerializeField] public GameObject bar;
     [SerializeField] double value;
     [SerializeField] int BarNumber;
+    [SerializeField] float TimeWindow;
 
+    void Start()
+    {
+        TimeWindow = GameObject.FindObjectOfType<Game_handler>().GetComponent<Game_handler>().PicTimeWindows + 100;
+    }
 
     // Update is called once per frame
     void Update()
@@ -56,12 +61,12 @@ public class Bar : MonoBehaviour
 
             if (type == Type.Tray)
             {
-                if (value > 100 && value < 130 && GetComponent<SpriteRenderer>().color.g > 0)
+                if (value > 100 && value < TimeWindow && GetComponent<SpriteRenderer>().color.g > 0)
                 {
                     float temp = GetComponent<SpriteRenderer>().color.g - 0.002f;
                     GetComponent<SpriteRenderer>().color = new Color(1, temp, 0);
                 }
-                else if (value > 130)
+                else if (value > TimeWindow)
                 {
                     //Destroy(Slot.ObjectIN);
                     Slot.ObjectIN.GetComponent<Picture>().Trash = true;

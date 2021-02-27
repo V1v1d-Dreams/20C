@@ -12,7 +12,7 @@ public class staticDataHolder : MonoBehaviour
     private static SaveData save_;
     private static int MechineLv = 1;
     private static int HangerLv = 1; 
-    private static int PaperNumber = 1; //number of paper
+    private static int PaperNumber = 10; //number of paper
     private static int Chemlv = 1; //chemical
     private static bool Tray = false; //6 Trays
 
@@ -133,6 +133,18 @@ public class staticDataHolder : MonoBehaviour
         set
         {
             Chemlv = value;
+        }
+    }
+
+    public static int papernumber
+    {
+        get
+        {
+            return PaperNumber;
+        }
+        set
+        {
+            PaperNumber = value;
         }
     }
 }

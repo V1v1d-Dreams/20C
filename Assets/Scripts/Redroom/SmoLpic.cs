@@ -75,6 +75,7 @@ public class SmoLpic : MonoBehaviour
         {
             print("instantiate");
             Instantiate(pic[picnumber], spawnpt);
+            staticDataHolder.papernumber -= 1;
             Overlay.SetActive(false);
             gameObject.SetActive(false);
             GameObject.Find("mechine").GetComponent<Mechine>().Opened = false;

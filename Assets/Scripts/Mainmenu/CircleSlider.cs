@@ -21,10 +21,11 @@ public class CircleSlider : MonoBehaviour
         {
             Quaternion r = Quaternion.AngleAxis(angle + 135f, Vector3.forward);
             handle.rotation = r;
-            angle = ((angle >= 360) ? (angle - 360) : angle) + 45;
+            //angle = ((angle >= 360) ? (angle - 360) : angle) + 45;
             fill.fillAmount = 0.75f - (angle / 360f);
             valTxt.text = Mathf.Round ((fill.fillAmount * 100) / 0.75f).ToString();
         }
+        
     }
 
 }

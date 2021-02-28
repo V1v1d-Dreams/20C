@@ -543,14 +543,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8bd43b9b5fc06842b1699d7ab27de64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mechine1: 0
-  Mechine2: 0
-  Paper: 0
-  Chem1: 0
-  Chem2: 0
-  Chem3: 0
-  Tray: 0
-  Hanger: 0
+  Mechine1: 50
+  Mechine2: 100
+  Paper: 20
+  Chem1: 20
+  Chem2: 30
+  Chem3: 40
+  Tray: 20
+  Hanger: 20
   SoldChem1: {fileID: 21300000, guid: 402aa6c31a2296444bf7950d3976c348, type: 3}
   SoldChem2: {fileID: 21300000, guid: a45f988624758d84bb8af89fb54dc1b9, type: 3}
   SoldChem3: {fileID: 21300000, guid: 30ffa11dbe33d9248a93ac283bc6aeda, type: 3}

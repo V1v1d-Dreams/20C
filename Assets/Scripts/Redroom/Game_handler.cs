@@ -17,10 +17,6 @@ public class Game_handler : MonoBehaviour
     [SerializeField] public GameObject SoundManager;
     [SerializeField] public int Magnifier_Lv = 1;
     [SerializeField] public int Hanger_Lv = 1;
-    [SerializeField] Transform[] countingArray;
-    [SerializeField] List<Transform> Piclist;
-    [SerializeField] GameObject ResultOverlay;
-    [SerializeField] Text ResiltText;
     [SerializeField] GameObject Hanger1;
     [SerializeField] GameObject Hanger2;
     [SerializeField] GameObject Hanger3;
@@ -339,63 +335,6 @@ public class Game_handler : MonoBehaviour
         }
     }
     */
-
-    public void RedRoomexit()
-    {
-        GameObject.Find("exit_Button").SetActive(false);
-
-        double result = 0;
-        GameObject photoinv = GameObject.Find("Photo-inv");
-        foreach (Transform GameOBJ in photoinv.transform)
-        {
-            if(GameOBJ.gameObject.TryGetComponent(out Picture Pic) )
-            {
-                if (Pic.PhotoID != 0)
-                {
-                    Piclist.Add(GameOBJ);
-                }
-            }
-        }
-        countingArray = Piclist.ToArray();
-
-
-        for (int j = 0; j < countingArray.Length; j++)
-        {
-            for (int k = 0; k < countingArray.Length; k++)
-            {
-                if (j != k)
-                {
-                    if (countingArray[j].gameObject.GetComponent<Picture>().PhotoID == countingArray[k].gameObject.GetComponent<Picture>().PhotoID)
-                    {
-                        if (countingArray[j].gameObject.GetComponent<Picture>().value > countingArray[k].gameObject.GetComponent<Picture>().value)
-                        {
-                            countingArray[k].gameObject.GetComponent<Picture>().value = 0;
-                        }
-                        else
-                        {
-                            countingArray[j].gameObject.GetComponent<Picture>().value = 0;
-                        }
-                    }
-                }
-            }
-        }
-
-        for (int j = 0; j < countingArray.Length; j++)
-        {
-            result += countingArray[j].gameObject.GetComponent<Picture>().value;
-        }
-
-        result = result / GameObject.Find("Film (1)").GetComponent<Film>().Picnumber;
-
-        print(result);
-
-        ResultOverlay.SetActive(true);
-        ResiltText.text = result.ToString();
-
-        //delay this
-        GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2,2);
-        staticDataHolder.currentTime++;
-    }
 
     void UpdateLv()
     {

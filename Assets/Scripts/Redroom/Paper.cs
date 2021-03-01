@@ -79,7 +79,7 @@ public class Paper : MonoBehaviour
         returelayer();
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
 
-        if (mouseOnPaper)
+        if (mouseOnPaper && ((staticDataHolder.papernumber - 1) >= 0))
         {
             //transform.position = new Vector2(targetpos1.position.x, targetpos1.position.y);
             //innitialpos = transform.position;
@@ -135,29 +135,27 @@ public class Paper : MonoBehaviour
 
     void Hold()
     {
-        if (staticDataHolder.papernumber-1 >0)
+        if (isholding && ((staticDataHolder.papernumber - 1) >= 0))
         {
-            if (isholding)
+            Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
+            if (!locked)
             {
-                Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
-                if (!locked)
+                setlayer(200);
+                //transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
+                mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
+                GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+                if (!FindObjectOfType<Mechine>().paperin)
                 {
-                    setlayer(200);
-                    //transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
-                    mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
-                    GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
-                    if (!FindObjectOfType<Mechine>().paperin)
-                    {
-                        FindObjectOfType<Navigator>().Enable("Paper", true);
-                        FindObjectOfType<Mechine>().holdingitem = true;
-                    }
+                    FindObjectOfType<Navigator>().Enable("Paper", true);
+                    FindObjectOfType<Mechine>().holdingitem = true;
                 }
             }
-            else
-            {
-                GetComponent<SpriteRenderer>().color = new Color32(0, 0, 0, 0);
-            }
         }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = new Color32(0, 0, 0, 0);
+        }
+
     }
 }

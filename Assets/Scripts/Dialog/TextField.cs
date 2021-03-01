@@ -10,7 +10,8 @@ public class TextField : MonoBehaviour
     [SerializeField] string[] Names;
     [SerializeField] Sprite[] character;
     [SerializeField] bool ShopAfterThis = false;
-    [SerializeField] bool Satisfied;
+    [SerializeField] public bool Satisfied;
+    [TextArea(2, 3)]
     [SerializeField] string[] DialogUnsat;
     [SerializeField] string[] NameUnsat;
     [SerializeField] Sprite[] characterUnsat;
@@ -39,6 +40,7 @@ public class TextField : MonoBehaviour
     bool news = false;
     bool wave = false;
     bool chrome = false;
+    bool red = false;
     bool finish = true;
 
     RaycastHit2D[] Click;
@@ -86,6 +88,10 @@ public class TextField : MonoBehaviour
         else if(chrome)
         {
             textmanager.GetComponent<Textmanager>().effect = Textmanager.Effects.chromatic;
+        }
+        else if (red)
+        {
+            textmanager.GetComponent<Textmanager>().effect = Textmanager.Effects.red;
         }
         else
         {
@@ -182,6 +188,12 @@ public class TextField : MonoBehaviour
                         iNdex += 1;
                         yield return wait;
                     }
+                    else if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'r')
+                    {
+                        red = !red;
+                        iNdex += 1;
+                        yield return wait;
+                    }
                     else
                     {
                         if (iNdex + 1 < Chararray.Length)
@@ -265,6 +277,12 @@ public class TextField : MonoBehaviour
                     else if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'c')
                     {
                         chrome = !chrome;
+                        iNdex += 1;
+                        yield return wait;
+                    }
+                    else if (Chararray[iNdex] == compare1 && Chararray[iNdex + 1] == 'r')
+                    {
+                        red = !red;
                         iNdex += 1;
                         yield return wait;
                     }

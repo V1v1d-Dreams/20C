@@ -19,8 +19,9 @@ public class Textmanager : MonoBehaviour
     [SerializeField] public float NewtextPos;
     [SerializeField] Color32 Textcolor;
     [SerializeField] Color32 Namecolor;
+    [SerializeField] TMPro.TextMeshProUGUI Money;
 
-    public enum Effects { None, Wave, chromatic }
+    public enum Effects { None, Wave, chromatic, red }
 
     public Effects effect;
 
@@ -30,6 +31,11 @@ public class Textmanager : MonoBehaviour
         GetspriteWidths();
         char[] space = " ".ToCharArray();
         chardata.Add(space[0], new Chardata(15, SpaceBar));
+    }
+
+    void Update()
+    {
+        Money.text = "Current money: " + staticDataHolder.money.ToString();
     }
 
     /*public void GetSubSprites()
@@ -189,17 +195,20 @@ public class Textmanager : MonoBehaviour
 
     void texteffect(GameObject Obj)
     {
-        if (effect == Effects.Wave)
+        switch (effect)
         {
-            Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.Wave;
-        }
-        else if (effect == Effects.chromatic)
-        {
-            Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.chromatic;
-        }
-        else
-        {
-            Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.None;
+            case Effects.Wave:
+                Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.Wave;
+                break;
+            case Effects.chromatic:
+                Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.chromatic;
+                break;
+            case Effects.red:
+                Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.Red;
+                break;
+            default:
+                Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.None;
+                break;
         }
     }
 

@@ -95,20 +95,34 @@ public class ResultManager : MonoBehaviour
 
         result = result / GameObject.Find("Film (1)").GetComponent<Film>().Picnumber;
 
-        if (result < 74)
+        if (result < 60)
         {
             Result.text = "BAD";
+            MoneyEarned.text = "50";
+            staticDataHolder.money += 50;
+            staticDataHolder.customerValue = 1;
+        }
+        else if (result >= 60 && result < 74)
+        {
+            Result.text = "OK";
+            MoneyEarned.text = "150";
+            staticDataHolder.money += 100;
         }
         else if (result>=74 && result < 85)
         {
-            Result.text = "OK";
+            Result.text = "GOOD";
+            MoneyEarned.text = "$150";
+            staticDataHolder.money += 150;
         }
         else if (result >= 85)
         {
             Result.text = "GREAT";
+            MoneyEarned.text = "$200";
+            staticDataHolder.money += 200;
         }
 
-        MoneyEarned.text = "$" + ((ok * 10) + (good * 20)).ToString();
+        //MoneyEarned.text = "$" + ((ok * 10) + (good * 20)).ToString();
+        //staticDataHolder.money += (ok * 10) + (good * 20);
 
         ResultOverlay.SetActive(true);
 

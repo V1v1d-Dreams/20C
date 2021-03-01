@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TextEffect : MonoBehaviour
 {
-    public enum Effects { None, Wave, chromatic }
+    public enum Effects { None, Wave, chromatic, Red}
 
     public Effects effect;
 
@@ -29,28 +29,33 @@ public class TextEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (effect == Effects.Wave)
+        switch (effect)
         {
-            x += WaveFrequency;
-            float y = Mathf.Sin(x) * WaveAmplitude;
-            transform.position = new Vector3(Originalpos.position.x, Originalpos.position.y + y, Originalpos.position.z);
+            case Effects.Wave:
+                x += WaveFrequency;
+                float y = Mathf.Sin(x) * WaveAmplitude;
+                transform.position = new Vector3(Originalpos.position.x, Originalpos.position.y + y, Originalpos.position.z);
+                break;
+
+            case Effects.chromatic:
+                timesincechange += Time.deltaTime;
+                if (timesincechange >= ColorTimer)
+                {
+                    Color newcolor = new Color(
+                    Random.value,
+                    Random.value,
+                    Random.value
+                    );
+
+                    SpriteRen.color = Color.Lerp(SpriteRen.color, Random.ColorHSV(0, 1, 1, 1, 1, 1), ColorChangeTime);
+                    timesincechange = 0;
+                }
+                break;
+            case Effects.Red:
+                SpriteRen.color = Color.red;
+                break;
+
         }
-        else if (effect == Effects.chromatic)
-        {
-            timesincechange += Time.deltaTime;
-            if (timesincechange>= ColorTimer)
-            {
-                Color newcolor = new Color(
-                Random.value,
-                Random.value,
-                Random.value
-                );
 
-                SpriteRen.color = Color.Lerp(SpriteRen.color, Random.ColorHSV(0,1,1,1,1,1), ColorChangeTime);
-                timesincechange = 0;
-            }
-
-
-        }
     }
 }

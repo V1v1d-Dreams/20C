@@ -39,7 +39,17 @@ public class Progressmanager : MonoBehaviour
 
 	public void start()
     {
-		TimeInnDex[staticDataHolder.currentIndex].SetActive(true);
+		if (staticDataHolder.customerValue == 1)
+        {
+			TimeInnDex[staticDataHolder.currentIndex].SetActive(true);
+			TimeInnDex[staticDataHolder.currentIndex].GetComponent<TextField>().Satisfied = false;
+			staticDataHolder.customerValue = 0;
+		}
+		else
+        {
+			TimeInnDex[staticDataHolder.currentIndex].SetActive(true);
+			TimeInnDex[staticDataHolder.currentIndex].GetComponent<TextField>().Satisfied = true;
+		}
     }
 
 	public void End()

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Game_handler : MonoBehaviour
 {
+    [SerializeField] TMPro.TextMeshProUGUI paperNumBa;
     [SerializeField] public Camera cam;
     [SerializeField] GameObject film;
     [SerializeField] GameObject paper;
@@ -62,6 +63,8 @@ public class Game_handler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        paperNumBa.text = staticDataHolder.papernumber.ToString();
+
         UpdateLv();
 
         if (!overlay)
@@ -268,7 +271,7 @@ public class Game_handler : MonoBehaviour
             else if (raycast[i].collider.gameObject.CompareTag("paperhere"))
             {
                 Click[0].collider.gameObject.GetComponent<Paper>().mouseOnPaper = true;
-                if (Input.GetMouseButtonUp(0))
+                if (Input.GetMouseButtonUp(0) && ((staticDataHolder.papernumber - 1) >= 0))
                 {
                     GameObject.Find("mechine").GetComponent<Mechine>().paperin = true;
                 }
@@ -388,15 +391,23 @@ public class Game_handler : MonoBehaviour
         {
             case 1:
                 ChemObj.GetComponent<SpriteRenderer>().sprite = Chem1;
+                PicDevDuration = 8;
+                PicTimeWindows = 15;
                 break;
             case 2:
                 ChemObj.GetComponent<SpriteRenderer>().sprite = Chem2;
+                PicDevDuration = 5;
+                PicTimeWindows = 15;
                 break;
             case 3:
                 ChemObj.GetComponent<SpriteRenderer>().sprite = Chem3;
+                PicDevDuration = 6;
+                PicTimeWindows = 30;
                 break;
             default:
                 ChemObj.GetComponent<SpriteRenderer>().sprite = Chem3;
+                PicDevDuration = 6;
+                PicTimeWindows = 30;
                 break;
         }
 

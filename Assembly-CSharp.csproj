@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Mainmenu\Menudisable.cs" />
     <Compile Include="Assets\Scripts\Mainmenu\ResponsiveMenu.cs" />
     <Compile Include="Assets\Scripts\Mainmenu\SaveInfoLoader.cs" />
+    <Compile Include="Assets\Scripts\Nextday.cs" />
     <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\PixelatedFont.cs" />
     <Compile Include="Assets\Scripts\Redroom\Bar.cs" />

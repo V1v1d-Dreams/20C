@@ -73,7 +73,7 @@ public class ResultManager : MonoBehaviour
 
         for (int j = 0; j < countingArray.Length; j++)
         {
-            //result += countingArray[j].gameObject.GetComponent<Picture>().value;
+            result += countingArray[j].gameObject.GetComponent<Picture>().value;
             if((countingArray[j].gameObject.GetComponent<Picture>().value != 0) && (countingArray[j].gameObject.GetComponent<Picture>().value < 60))
             {
                 bad += 1;
@@ -93,7 +93,11 @@ public class ResultManager : MonoBehaviour
         Bad.text = bad.ToString();
         Ok.text = ok.ToString();
 
+
+
         result = result / GameObject.Find("Film (1)").GetComponent<Film>().Picnumber;
+
+        Debug.Log(result);
 
         if (result < 60)
         {

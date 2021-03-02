@@ -926,7 +926,7 @@ MonoBehaviour:
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -1042,7 +1042,7 @@ MonoBehaviour:
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -1401,7 +1401,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -2033,7 +2033,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: a17d9f99b0b82594d886d7b092a6c009, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -2398,7 +2398,7 @@ MonoBehaviour:
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -2941,7 +2941,7 @@ RectTransform:
   m_GameObject: {fileID: 679305727}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.02086, y: 0.02086, z: 0.02086}
+  m_LocalScale: {x: 0.29963, y: 0.29963, z: 0.29963}
   m_Children: []
   m_Father: {fileID: 1311761130}
   m_RootOrder: 1
@@ -3075,7 +3075,7 @@ RectTransform:
   m_GameObject: {fileID: 696445019}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.02086, y: 0.02086, z: 0.02086}
+  m_LocalScale: {x: 0.29963, y: 0.29963, z: 0.29963}
   m_Children: []
   m_Father: {fileID: 335148829}
   m_RootOrder: 1
@@ -4040,7 +4040,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -4776,7 +4776,7 @@ MonoBehaviour:
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -4821,7 +4821,7 @@ RectTransform:
   m_GameObject: {fileID: 1004974263}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.02086, y: 0.02086, z: 0.02086}
+  m_LocalScale: {x: 0.29963, y: 0.29963, z: 0.29963}
   m_Children: []
   m_Father: {fileID: 33821462}
   m_RootOrder: 1
@@ -6073,7 +6073,7 @@ MonoBehaviour:
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -7121,7 +7121,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -7196,7 +7196,7 @@ MonoBehaviour:
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -7589,7 +7589,7 @@ RectTransform:
   m_GameObject: {fileID: 1654700468}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.02086, y: 0.02086, z: 0.02086}
+  m_LocalScale: {x: 0.29963, y: 0.29963, z: 0.29963}
   m_Children: []
   m_Father: {fileID: 1012603161}
   m_RootOrder: 1
@@ -8085,7 +8085,7 @@ MonoBehaviour:
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -9198,7 +9198,7 @@ MonoBehaviour:
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
-  shopOverlay: {fileID: 1810533109}
+  shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -9572,7 +9572,7 @@ RectTransform:
   m_GameObject: {fileID: 2062033119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.02086, y: 0.02086, z: 0.02086}
+  m_LocalScale: {x: 0.29963, y: 0.29963, z: 0.29963}
   m_Children: []
   m_Father: {fileID: 532484320}
   m_RootOrder: 1
@@ -9706,7 +9706,7 @@ RectTransform:
   m_GameObject: {fileID: 2094555430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.02086, y: 0.02086, z: 0.02086}
+  m_LocalScale: {x: 0.29963, y: 0.29963, z: 0.29963}
   m_Children: []
   m_Father: {fileID: 509180533}
   m_RootOrder: 1

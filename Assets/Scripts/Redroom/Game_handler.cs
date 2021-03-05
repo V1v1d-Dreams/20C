@@ -51,6 +51,23 @@ public class Game_handler : MonoBehaviour
     [Header("Bool")]
     [SerializeField] public bool overlay = false;
 
+    [Header("Tutorial")]
+    [SerializeField] TMPro.TextMeshProUGUI Text1;
+    [SerializeField] GameObject exitbutton;
+    [SerializeField] GameObject overlayy;
+    [SerializeField] Image img;
+    [SerializeField] GameObject Mechine;
+    [SerializeField] GameObject Hanger;
+    [SerializeField] GameObject paperItem;
+    [SerializeField] GameObject filmItem;
+    [SerializeField] GameObject Tray1Item;
+    [SerializeField] GameObject Tray2Item;
+    [SerializeField] GameObject Tray3Item;
+    [SerializeField] GameObject Trash;
+    [TextArea(2, 3)]
+    [SerializeField] string[] strings;
+    int stringIndex = 0;
+
     RaycastHit2D[] raycast;
     RaycastHit2D[] Click;
     void Start()
@@ -58,11 +75,94 @@ public class Game_handler : MonoBehaviour
         //cam_follow_pos = cam.transform.position;
         Magnifier_Lv = staticDataHolder.mechinelv;
         Hanger_Lv = staticDataHolder.hangerLv;
+
+        if (!staticDataHolder.finishedtutorial)
+        {
+            exitbutton.SetActive(false);
+            Text1.enabled = true;
+            overlayy.SetActive(true);
+            img.enabled = true;
+            overlay = true;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (!staticDataHolder.finishedtutorial)
+        {
+            if (stringIndex < strings.Length)
+            {
+                if (Input.GetMouseButtonUp(0))
+                {
+                    stringIndex++;
+                    Text1.text = strings[stringIndex];
+                }
+            }
+            else
+            {
+                exitbutton.SetActive(true);
+                Text1.enabled = false;
+                overlayy.SetActive(false);
+                img.enabled = false;
+                overlay = false;
+            }
+
+
+            if (stringIndex ==1 || stringIndex == 2 || stringIndex ==3)
+            {
+                Mechine.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                Mechine.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            }
+            else
+            {
+                Mechine.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                Mechine.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            }
+            if (stringIndex == 4 || stringIndex == 5 || stringIndex == 6)
+            {
+                Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                Hanger.GetComponent<SpriteRenderer>().sortingOrder = 501;
+                paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                paperItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
+                filmItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                filmItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
+                Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+                Tray2Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                Tray2Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+                Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+                Trash.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                Trash.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            }
+            else
+            {
+                Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                Hanger.GetComponent<SpriteRenderer>().sortingOrder = -1;
+
+                paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                paperItem.GetComponent<SpriteRenderer>().sortingOrder = 2;
+
+                filmItem.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
+                filmItem.GetComponent<SpriteRenderer>().sortingOrder = 3;
+
+                Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                Tray2Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                Tray2Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                Trash.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                Trash.GetComponent<SpriteRenderer>().sortingOrder = -1;
+            }
+
+        }
+
         paperNumBa.text = staticDataHolder.papernumber.ToString();
 
         UpdateLv();

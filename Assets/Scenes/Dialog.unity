@@ -974,7 +974,7 @@ Transform:
   - {fileID: 988154388}
   - {fileID: 583720422}
   m_Father: {fileID: 1653975225}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &195314203
 GameObject:
@@ -1043,7 +1043,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 0}
+  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1135,7 +1135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239171115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.31, y: 0.804, z: 0}
+  m_LocalPosition: {x: 0.31, y: 0.76, z: 0}
   m_LocalScale: {x: 7.0048504, y: 7.0048504, z: 7.0048504}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1367,40 +1367,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - "Ummm... You didn\u2019t see anything weird in my pictures, right?"
   - ' . . . . . .'
-  - "I\u2019ll take that as a no then. Here is your money plus some extra."
+  - Yo bro! What took ya so long.
+  - ' . . . . . .'
+  - Ya cool with my photos?
+  - ' . . . . . .'
+  - Heh heh boi! Here the money for ya.
+  - ' . . . . . .'
   Names:
-  - A man in a blue suit
   - You
-  - A man in a blue suit
+  - Good looking African guy
+  - You
+  - Good looking African guy
+  - You
+  - Good looking African guy
+  - You
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
-  - What the .... I came here to get some photo\ndevelped and you can't even do this\n\rstuff!?\r
-  - ' . . . . . .'
-  - You are lucky that you are the only one\nphoto shop in this area!
-  - ' . . . . . .'
-  - Here take it\nand don't make me disappoint next time!
+  - \wYoooo bro!\w What are thoseeee!
+  - "Man, I know that you could do better than this. Try harder man. Well, this is
+    for your effort.\r"
   - ' . . . . . .'
   NameUnsat:
-  - A man in a blue suit
-  - You
-  - A man in a blue suit
-  - You
-  - A man in a blue suit
+  - Good looking African guy
+  - Good looking African guy
   - You
   characterUnsat:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -1993,23 +1997,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hello, \wthis\w old \cman\c wants his pictures \ndeveloped.
-  - \c . . . . . .\c
-  - "You\u2019re quite a \\cquiet\\c person, aren\u2019t you?"
+  - Sup bro! I would like to . . .\nOh! Ya new in town??
+  - That old man got tired of this crap or \nsomething?
+  - Nevermind, I need some pictures from ya.
+  - Here is da roll.
   - ' . . . . . .'
-  - Nevermind. Just do the job.
   Names:
-  - A man in a blue suit
+  - Good looking African guy
+  - Good looking African guy
+  - Good looking African guy
+  - Good looking African guy
   - You
-  - A man in a blue suit
-  - You
-  - A man in a blue suit
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
@@ -2034,7 +2038,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: a17d9f99b0b82594d886d7b092a6c009, type: 3}
+  News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2596,6 +2600,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1082321458}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &609704444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2778,8 +2793,116 @@ Transform:
   - {fileID: 2001304457}
   - {fileID: 1464030927}
   m_Father: {fileID: 1653975225}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &655960777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655960778}
+  - component: {fileID: 655960779}
+  m_Layer: 0
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &655960778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655960777}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1653975225}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &655960779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655960777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Oh, hey there \cmy boy!\c \nYou have finally come!
+  - Did you read the manual that I gave \nwhen we last met?
+  - ' . . . . . .'
+  - Oh well. . . I will take that as a yes then.
+  - Anyway, let me remind you one last time \nbefore I take my leave.
+  - 'Just think of it as a farewell gift.\nFirstly, get inside the room! '
+  - ' . . . . . .'
+  Names:
+  - Previous Owner
+  - Previous Owner
+  - You
+  - Previous Owner
+  - Previous Owner
+  - Previous Owner
+  - You
+  character:
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - What the .... I came here to get some photo\ndevelped and you can't even do this\n\rstuff!?\r
+  - ' . . . . . .'
+  - You are lucky that you are the only one\nphoto shop in this area!
+  - ' . . . . . .'
+  - Here take it\nand don't make me disappoint next time!
+  - ' . . . . . .'
+  NameUnsat:
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 1
+  Film: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &657389934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3510,6 +3633,140 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &786438274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786438275}
+  - component: {fileID: 786438277}
+  - component: {fileID: 786438276}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &786438275
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786438274}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.29963, y: 0.29963, z: 0.29963}
+  m_Children: []
+  m_Father: {fileID: 1082321459}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -24.5, y: -45.5}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &786438276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786438274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: $150
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
+  m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 8.294296, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &786438277
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786438274}
+  m_CullTransparentMesh: 0
 --- !u!1 &787235252
 GameObject:
   m_ObjectHideFlags: 0
@@ -4777,7 +5034,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 0}
+  News: {fileID: 21300000, guid: fe50ed4b56c510a47bff83f4324b129e, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -5511,6 +5768,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60f17787a2e09294282267228267dba6, type: 3}
+--- !u!1 &1082321458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082321459}
+  - component: {fileID: 1082321461}
+  - component: {fileID: 1082321460}
+  m_Layer: 5
+  m_Name: Enlarged_Kart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1082321459
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082321458}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7.5183, y: 7.5183, z: 7.5183}
+  m_Children:
+  - {fileID: 1429251297}
+  - {fileID: 786438275}
+  m_Father: {fileID: 2053008126}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 119, y: 108}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1082321460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082321458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0839f8c785c15d146ab162c7abb3406e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1082321461
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082321458}
+  m_CullTransparentMesh: 0
 --- !u!1 &1090597435
 GameObject:
   m_ObjectHideFlags: 0
@@ -6074,7 +6407,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 0}
+  News: {fileID: 21300000, guid: 90e825d8baf3d3c4a8976a2cc9ea1f88, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -7011,6 +7344,157 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1429251296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429251297}
+  - component: {fileID: 1429251300}
+  - component: {fileID: 1429251299}
+  - component: {fileID: 1429251298}
+  m_Layer: 5
+  m_Name: Enlarged_Buy8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1429251297
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429251296}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1082321459}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 39.399994, y: -45.410004}
+  m_SizeDelta: {x: 36, y: 13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1429251298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429251296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1429251299}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 110584105}
+        m_MethodName: Upgrade
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Tray
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 609704441}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1082321458}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1429251299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429251296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d3c842ebc1b579b489050a3d516257a5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1429251300
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429251296}
+  m_CullTransparentMesh: 0
 --- !u!1 &1440315482
 GameObject:
   m_ObjectHideFlags: 0
@@ -7041,7 +7525,7 @@ Transform:
   - {fileID: 195314204}
   - {fileID: 1747420579}
   m_Father: {fileID: 1653975225}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1464030926
 GameObject:
@@ -7197,7 +7681,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 0}
+  News: {fileID: 21300000, guid: 6f7b7f54e2dac0f458ea4604ac6a9341, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -7518,6 +8002,103 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1637842613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637842614}
+  - component: {fileID: 1637842615}
+  m_Layer: 0
+  m_Name: Tutorial2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1637842614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637842613}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1653975225}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1637842615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637842613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - You done? Oh well, even a toddler could \ndo that.
+  - "Remember one last thing, don\u2019t mind \\nthe pictures and they won\u2019t
+    mind you."
+  - Anyway! It's time for me to go now.\nGot a bus to catch! Good luck my boy
+  Names:
+  - Previous Owner
+  - Previous Owner
+  - Previous Owner
+  character:
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - What the .... I came here to get some photo\ndevelped and you can't even do this\n\rstuff!?\r
+  - ' . . . . . .'
+  - You are lucky that you are the only one\nphoto shop in this area!
+  - ' . . . . . .'
+  - Here take it\nand don't make me disappoint next time!
+  - ' . . . . . .'
+  NameUnsat:
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 1
+  Film: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1649056152 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8784627397028384936, guid: 60f17787a2e09294282267228267dba6,
@@ -7551,6 +8132,8 @@ Transform:
   m_LocalPosition: {x: -0.39914337, y: 0.9274367, z: -2.0679817}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 655960778}
+  - {fileID: 1637842614}
   - {fileID: 1859802839}
   - {fileID: 650843771}
   - {fileID: 1965056372}
@@ -7932,7 +8515,7 @@ Transform:
   m_LocalScale: {x: 6.988623, y: 6.988623, z: 6.988623}
   m_Children: []
   m_Father: {fileID: 1653975225}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1746374330
 GameObject:
@@ -8510,7 +9093,7 @@ Transform:
   - {fileID: 1229584271}
   - {fileID: 158550253}
   m_Father: {fileID: 1653975225}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1810533109
 GameObject:
@@ -8541,7 +9124,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1653975225}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1810533111
 MonoBehaviour:
@@ -8823,7 +9406,7 @@ Transform:
   - {fileID: 526366033}
   - {fileID: 345508225}
   m_Father: {fileID: 1653975225}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1895306208
 GameObject:
@@ -9127,7 +9710,7 @@ Transform:
   - {fileID: 1479490537}
   - {fileID: 866101740}
   m_Father: {fileID: 1653975225}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2001304456
 GameObject:
@@ -9199,7 +9782,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 0}
+  News: {fileID: 21300000, guid: 2de60545fcb1ab54b98e78944e9f502c, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -9487,6 +10070,8 @@ MonoBehaviour:
     - {fileID: 195314203}
     - {fileID: 1747420577}
   TimeIndex: 0
+  tutorial: {fileID: 655960777}
+  tutorial2: {fileID: 1637842613}
 --- !u!4 &2046586562
 Transform:
   m_ObjectHideFlags: 0
@@ -9537,6 +10122,7 @@ RectTransform:
   - {fileID: 1311761130}
   - {fileID: 509180533}
   - {fileID: 532484320}
+  - {fileID: 1082321459}
   m_Father: {fileID: 110584104}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

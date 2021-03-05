@@ -7,6 +7,8 @@ public class Progressmanager : MonoBehaviour
     [SerializeField] public Day[] Days;
 	[SerializeField] public int TimeIndex = 0;
 	Dictionary<int, GameObject> TimeInnDex;
+	[SerializeField] GameObject tutorial;
+	[SerializeField] GameObject tutorial2;
 
 	void Start()
     {
@@ -39,30 +41,53 @@ public class Progressmanager : MonoBehaviour
 
 	public void start()
     {
-		if (staticDataHolder.customerValue == 1)
+		if (staticDataHolder.finishedtutorial)
         {
-			TimeInnDex[staticDataHolder.currentIndex].SetActive(true);
-			TimeInnDex[staticDataHolder.currentIndex].GetComponent<TextField>().Satisfied = false;
-			staticDataHolder.customerValue = 0;
+			if (staticDataHolder.customerValue == 1)
+			{
+				TimeInnDex[staticDataHolder.currentIndex].SetActive(true);
+				TimeInnDex[staticDataHolder.currentIndex].GetComponent<TextField>().Satisfied = false;
+				staticDataHolder.customerValue = 0;
+			}
+			else
+			{
+				TimeInnDex[staticDataHolder.currentIndex].SetActive(true);
+				TimeInnDex[staticDataHolder.currentIndex].GetComponent<TextField>().Satisfied = true;
+			}
 		}
-		else
+		else if (!staticDataHolder.finishedtutorial&&staticDataHolder.currentTime==0)
         {
-			TimeInnDex[staticDataHolder.currentIndex].SetActive(true);
-			TimeInnDex[staticDataHolder.currentIndex].GetComponent<TextField>().Satisfied = true;
+			tutorial.SetActive(true);
 		}
+		else if (!staticDataHolder.finishedtutorial && staticDataHolder.currentTime == 2)
+        {
+			tutorial2.SetActive(true);
+        }
     }
 
 	public void End()
     {
-		Debug.Log("End");
-		//print(staticDataHolder.currentTime);
-		TimeInnDex[staticDataHolder.currentIndex].SetActive(false);
-		staticDataHolder.currentIndex++;
-		if (staticDataHolder.currentTime == 0)
+		if (staticDataHolder.finishedtutorial)
+        {
+			Debug.Log("End");
+			//print(staticDataHolder.currentTime);
+			TimeInnDex[staticDataHolder.currentIndex].SetActive(false);
+			staticDataHolder.currentIndex++;
+			if (staticDataHolder.currentTime == 0)
+			{
+				GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(3);
+				staticDataHolder.currentTime++;
+			}//sometimes staticDataHolder.currentTime == 3 idk why (prob from redroom exit button spam)
+			else
+			{
+				GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(4);
+			}
+		}
+		else if (!staticDataHolder.finishedtutorial && staticDataHolder.currentTime == 0)
         {
 			GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(3);
 			staticDataHolder.currentTime++;
-		}//sometimes staticDataHolder.currentTime == 3 idk why (prob from redroom exit button spam)
+		}
 		else
         {
 			GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(4);

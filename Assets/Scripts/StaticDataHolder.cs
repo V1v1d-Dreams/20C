@@ -15,7 +15,8 @@ public class staticDataHolder : MonoBehaviour
     private static int PaperNumber = 10; //number of paper
     private static int Chemlv = 1; //chemical
     private static bool Tray = false; //6 Trays
-    private static int Money = 100;
+    private static int Money = 100;  //money
+    private static bool FinishedTutorial = false;
 
     public static int currentIndex
     {
@@ -158,6 +159,18 @@ public class staticDataHolder : MonoBehaviour
         set
         {
             Money = value;
+        }
+    }
+
+    public static bool finishedtutorial
+    {
+        get
+        {
+            return FinishedTutorial;
+        }
+        set
+        {
+            FinishedTutorial = value;
         }
     }
 }

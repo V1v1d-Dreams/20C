@@ -20,10 +20,24 @@ public class Nextday : MonoBehaviour
 
     IEnumerator ChangeDay(float waitTime)
     {
-        Day.text = "day " + (staticDataHolder.daynumber).ToString();
-        yield return new WaitForSeconds(waitTime);
-        Day.text = "day " + (staticDataHolder.daynumber + 1).ToString();
-        yield return new WaitForSeconds(waitTime);
-        GameObject.Find("levelLoader").GetComponent<Levelloader>().newday();
+        if (staticDataHolder.finishedtutorial)
+        {
+            Day.text = "day " + (staticDataHolder.daynumber).ToString();
+            yield return new WaitForSeconds(waitTime);
+            Day.text = "day " + (staticDataHolder.daynumber + 1).ToString();
+            yield return new WaitForSeconds(waitTime);
+            GameObject.Find("levelLoader").GetComponent<Levelloader>().newday();
+        }
+        else
+        {
+            Day.text = "day " + (0).ToString();
+            yield return new WaitForSeconds(waitTime);
+            Day.text = "day " + (1).ToString();
+            yield return new WaitForSeconds(waitTime);
+            staticDataHolder.finishedtutorial = true;
+            staticDataHolder.currentTime = 0;
+            GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(2);
+        }
+
     }
 }

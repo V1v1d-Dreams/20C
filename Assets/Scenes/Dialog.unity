@@ -1538,8 +1538,8 @@ MonoBehaviour:
   Satisfied: 1
   DialogUnsat:
   - \wYoooo bro!\w What are thoseeee!
-  - "Man, I know that you could do better than this. Try harder man. Well, this is
-    for your effort.\r"
+  - Man, I know that you could do better than this. Try harder man. Well, this is
+    for your effort.
   - ' . . . . . .'
   NameUnsat:
   - Good looking African guy
@@ -8293,7 +8293,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  ShopAfterThis: 0
+  ShopAfterThis: 1
   Satisfied: 1
   DialogUnsat:
   - What the .... I came here to get some photo\ndevelped and you can't even do this\n\rstuff!?\r

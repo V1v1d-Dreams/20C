@@ -943,6 +943,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 4
   Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &184500556
 GameObject:
@@ -1059,6 +1061,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 6
   Film: {fileID: 9127718114185621459, guid: 5f603092210ad0d4294824feba87ab1a, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &239171115
 GameObject:
@@ -1422,6 +1426,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 1
   Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &346357242
 GameObject:
@@ -2054,6 +2060,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 1
   Film: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &532484319
 GameObject:
@@ -2419,6 +2427,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 5
   Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &609704441
 GameObject:
@@ -2902,6 +2912,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 1
   Film: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &657389934
 GameObject:
@@ -4314,6 +4326,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 3
   Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &879530825
 GameObject:
@@ -5050,6 +5064,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 5
   Film: {fileID: 9127718114185621459, guid: 6b35574dcad24d74b93cd0e958bc818c, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1004974263
 GameObject:
@@ -6423,6 +6439,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 4
   Film: {fileID: 9127718114185621459, guid: f895f926c87f4ec43a6cda9eac62bca3, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1267531685
 GameObject:
@@ -7622,6 +7640,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 2
   Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1479490536
 GameObject:
@@ -7697,6 +7717,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 3
   Film: {fileID: 9127718114185621459, guid: 8476f38f7f2b6a449a59e532f9c7e602, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1487627579
 GameObject:
@@ -8098,6 +8120,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 1
   Film: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1649056152 stripped
 GameObject:
@@ -8685,6 +8709,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 6
   Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!4 &1747420579
 Transform:
@@ -9169,6 +9195,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 6
   Film: {fileID: 9127718114185621459, guid: 5f603092210ad0d4294824feba87ab1a, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 0}
 --- !u!1 &1820509907
 GameObject:
@@ -9798,6 +9826,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 2
   Film: {fileID: 9127718114185621459, guid: b71a9b3896031f342a74cecffbb0834f, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &2008898042
 GameObject:

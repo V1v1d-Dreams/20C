@@ -134,8 +134,11 @@ public class ResultManager : MonoBehaviour
 
             anim.SetTrigger("GOOOO");
 
-            //delay this
-            GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2, 10);
+            staticDataHolder.Todaysfilm = null;
+            staticDataHolder.Todaysfilm2 = null;
+            staticDataHolder.Todaysfilm3= null;
+
+            GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2, 10); //EXIT DELAY, CHANGE SECOND VALUE
             staticDataHolder.currentTime++;
         }
         else

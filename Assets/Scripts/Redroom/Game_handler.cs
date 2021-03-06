@@ -8,6 +8,8 @@ public class Game_handler : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI paperNumBa;
     [SerializeField] public Camera cam;
     [SerializeField] GameObject film;
+    [SerializeField] GameObject film2;
+    [SerializeField] GameObject film3;
     [SerializeField] GameObject paper;
     [SerializeField] Transform filmpos;
     [SerializeField] Transform paperpos;
@@ -75,6 +77,19 @@ public class Game_handler : MonoBehaviour
         //cam_follow_pos = cam.transform.position;
         Magnifier_Lv = staticDataHolder.mechinelv;
         Hanger_Lv = staticDataHolder.hangerLv;
+
+        if (staticDataHolder.Todaysfilm == null)
+        {
+            film.SetActive(false);
+        }
+        if (staticDataHolder.Todaysfilm2 == null)
+        {
+            film2.SetActive(false);
+        }
+        if (staticDataHolder.Todaysfilm3 == null)
+        {
+            film3.SetActive(false);
+        }
 
         if (!staticDataHolder.finishedtutorial)
         {

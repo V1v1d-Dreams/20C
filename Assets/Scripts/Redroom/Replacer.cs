@@ -4,14 +4,38 @@ using UnityEngine;
 
 public class Replacer : MonoBehaviour
 {
+    public enum FilmNumber { One, Two, Three}
+    public FilmNumber filmnum;
+
+
     // Start is called before the first frame update
     void Awake()
     {
-        if (staticDataHolder.Todaysfilm.TryGetComponent(out Film films))
+        if (filmnum == Replacer.FilmNumber.One)
         {
-            GetComponent<Film>().picturearray = films.picturearray;
-
+            if (staticDataHolder.Todaysfilm.TryGetComponent(out Film films))
+            {
+                GetComponent<Film>().picturearray = films.picturearray;
+                GetComponent<Film>().FilmFilmnum = filmnum;
+            }
         }
+        else if (filmnum == Replacer.FilmNumber.Two)
+        {
+            if (staticDataHolder.Todaysfilm2.TryGetComponent(out Film films))
+            {
+                GetComponent<Film>().picturearray = films.picturearray;
+                GetComponent<Film>().FilmFilmnum = filmnum;
+            }
+        }
+        else if (filmnum == Replacer.FilmNumber.Three)
+        {
+            if (staticDataHolder.Todaysfilm3.TryGetComponent(out Film films))
+            {
+                GetComponent<Film>().picturearray = films.picturearray;
+                GetComponent<Film>().FilmFilmnum = filmnum;
+            }
+        }
+
 
 
         //GetComponent<Film>().picturearray = staticDataHolder.Todaysfilm.GetComponent<Film>().picturearray;

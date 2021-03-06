@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Film : MonoBehaviour
 {
+    public Replacer.FilmNumber FilmFilmnum;
+
     [SerializeField] public int Picnumber;
     [SerializeField] public Sprite FilmSprite;
 
@@ -18,15 +20,9 @@ public class Film : MonoBehaviour
     private Vector2 mouseposition;
     private float deltaX, deltaY;
 
-    [SerializeField] private GameObject gaemhander;
-    [SerializeField] private GameObject invent;
-    bool oninv;
-
     [SerializeField] public GameObject[] picturearray;
     [SerializeField] public Sprite[] BlurArray;
 
-    RaycastHit2D[] raycast;
-    private Camera cam;
     [SerializeField] public bool mouseOnfilm;
 
     [SerializeField] public bool isholding = false;
@@ -39,10 +35,7 @@ public class Film : MonoBehaviour
     {
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
         innitialpos = transform.position;
-        gaemhander =  GameObject.Find("Event controller");
-        invent = GameObject.Find("Photo-inv");
         //targetpos1 = GameObject.Find("filmhere").transform;
-        cam = GameObject.Find("Event controller").GetComponent<Game_handler>().cam;
     }
 
 
@@ -90,6 +83,7 @@ public class Film : MonoBehaviour
         {
             transform.position = new Vector2(innitialpos.x, innitialpos.y);
             GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
+            GameObject.Find("mechine").GetComponent<Mechine>().MechineFilmIn = FilmFilmnum;
             //GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = picturearray;
             //GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().Smol = BlurArray;
         }/*

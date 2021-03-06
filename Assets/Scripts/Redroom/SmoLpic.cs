@@ -16,23 +16,6 @@ public class SmoLpic : MonoBehaviour
     
     void Awake()
     {
-        if (staticDataHolder.Todaysfilm.TryGetComponent(out Film Films))
-        {
-            if (staticDataHolder.mechinelv == 1)
-            {
-                gameObject.transform.Find("Photo preview").GetComponent<SpriteRenderer>().sprite = Films.FilmSprite;
-            }
-            else if (staticDataHolder.mechinelv == 2)
-            {
-                gameObject.transform.Find("Photo preview2").GetComponent<SpriteRenderer>().sprite = Films.FilmSprite;
-            }
-            else
-            {
-                gameObject.transform.Find("Photo preview3").GetComponent<SpriteRenderer>().sprite = Films.FilmSprite;
-            }
-
-            pic = Films.picturearray;
-        }
 
     }
 
@@ -40,6 +23,19 @@ public class SmoLpic : MonoBehaviour
     {
         CorrectPos = GameObject.Find("mechine").GetComponent<Mechine>().CanPress;
         double val = GameObject.Find("mechine").GetComponent<Mechine>().valuePercent;
+
+        switch (GameObject.Find("mechine").GetComponent<Mechine>().MechineFilmIn)
+        {
+            case Replacer.FilmNumber.One:
+                ChangeFilm(staticDataHolder.Todaysfilm.GetComponent<Film>());
+                break;
+            case Replacer.FilmNumber.Two:
+                ChangeFilm(staticDataHolder.Todaysfilm2.GetComponent<Film>());
+                break;
+            case Replacer.FilmNumber.Three:
+                ChangeFilm(staticDataHolder.Todaysfilm3.GetComponent<Film>());
+                break;
+        }
 
         if (val > 8.2 && val < 12.2)
         {
@@ -81,5 +77,23 @@ public class SmoLpic : MonoBehaviour
             GameObject.Find("mechine").GetComponent<Mechine>().Opened = false;
             GameObject.Find("Event controller").GetComponent<Game_handler>().overlay = false;
         }
+    }
+
+    public void ChangeFilm(Film Infilm)
+    {
+        if (staticDataHolder.mechinelv == 1)
+        {
+            gameObject.transform.Find("Photo preview").GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
+        }
+        else if (staticDataHolder.mechinelv == 2)
+        {
+            gameObject.transform.Find("Photo preview2").GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
+        }
+        else
+        {
+            gameObject.transform.Find("Photo preview3").GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
+        }
+
+        pic = Infilm.picturearray;
     }
 }

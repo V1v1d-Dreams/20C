@@ -36,6 +36,8 @@ public class TextField : MonoBehaviour
     [SerializeField] int Timeindex;
     [SerializeField] int WhatDayisToday;
     [SerializeField] GameObject Film;
+    [SerializeField] GameObject Film2;
+    [SerializeField] GameObject Film3;
     [SerializeField] SpriteRenderer NewsOverlay;
     bool news = false;
     bool wave = false;
@@ -216,11 +218,15 @@ public class TextField : MonoBehaviour
                 if (ShopAfterThis)
                 {
                     staticDataHolder.Todaysfilm = Film;
+                    staticDataHolder.Todaysfilm2 = Film2;
+                    staticDataHolder.Todaysfilm3 = Film3;
                     shopOverlay.SetActive(true);
                 }
                 else
                 {
                     staticDataHolder.Todaysfilm = Film;
+                    staticDataHolder.Todaysfilm2 = Film2;
+                    staticDataHolder.Todaysfilm3 = Film3;
                     GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
                 }
             }
@@ -307,11 +313,15 @@ public class TextField : MonoBehaviour
                 if (ShopAfterThis)
                 {
                     staticDataHolder.Todaysfilm = Film;
+                    staticDataHolder.Todaysfilm2 = Film2;
+                    staticDataHolder.Todaysfilm3 = Film3;
                     shopOverlay.SetActive(true);
                 }
                 else
                 {
                     staticDataHolder.Todaysfilm = Film;
+                    staticDataHolder.Todaysfilm2 = Film2;
+                    staticDataHolder.Todaysfilm3 = Film3;
                     GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
                 }
             }

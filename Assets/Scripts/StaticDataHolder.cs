@@ -9,6 +9,9 @@ public class staticDataHolder : MonoBehaviour
     private static int Daynumber = 0;
     private static float CustomerValue = 0;
     private static GameObject TodaysFilm;
+    private static GameObject TodaysFilm2;
+    private static GameObject TodaysFilm3;
+
     private static SaveData save_;
     private static int MechineLv = 1;
     private static int HangerLv = 1; 
@@ -16,7 +19,7 @@ public class staticDataHolder : MonoBehaviour
     private static int Chemlv = 1; //chemical
     private static bool Tray = false; //6 Trays
     private static int Money = 100;  //money
-    private static bool FinishedTutorial = false;
+    private static bool FinishedTutorial = true;
 
     public static int currentIndex
     {
@@ -77,6 +80,32 @@ public class staticDataHolder : MonoBehaviour
             TodaysFilm = value;
         }
     }
+
+    public static GameObject Todaysfilm2
+    {
+        get
+        {
+            return TodaysFilm2;
+        }
+        set
+        {
+            TodaysFilm2 = value;
+        }
+    }
+
+    public static GameObject Todaysfilm3
+    {
+        get
+        {
+            return TodaysFilm3;
+        }
+        set
+        {
+            TodaysFilm3 = value;
+        }
+    }
+
+
 
     public static SaveData Save_
     {

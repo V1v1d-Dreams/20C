@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Mechine : MonoBehaviour
 {
+    public Replacer.FilmNumber MechineFilmIn;
+
     [SerializeField] GameObject MechineUI1;
     [SerializeField] GameObject MechineUI2;
     [SerializeField] GameObject MechineUI3;

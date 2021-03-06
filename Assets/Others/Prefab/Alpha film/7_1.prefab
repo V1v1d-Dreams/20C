@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9127718114185621039}
   - component: {fileID: 9127718114185621036}
   m_Layer: 0
-  m_Name: FilmDayThree
+  m_Name: 7_1
   m_TagString: FilmItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1053053051
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 106
   m_Sprite: {fileID: 21300000, guid: 9b02ef456928ba44d9a8fd5b812bfc39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -122,20 +122,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b838d56ce9ab143996ef146dddeefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FilmFilmnum: 0
   Picnumber: 5
-  FilmSprite: {fileID: 21300000, guid: 3ef8f3173f42df74ba1019f0dab1a333, type: 3}
+  FilmSprite: {fileID: 21300000, guid: 9878305d7a6414046824e54ab1e3ef84, type: 3}
   Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
   Interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
   hold: {fileID: 2800000, guid: a088798552626754da252eb6dc0c73bf, type: 3}
   innitialpos: {x: 0, y: 0}
-  gaemhander: {fileID: 0}
-  invent: {fileID: 0}
   picturearray:
-  - {fileID: 8473226522318584135, guid: 9764472518fb80848aa1a5001c6b0c37, type: 3}
-  - {fileID: 8473226522318584135, guid: 76789d4e74e2f6747b62b8d550de38a1, type: 3}
-  - {fileID: 8473226522318584135, guid: ce22393506c60c34c8b8588c1ab161fe, type: 3}
-  - {fileID: 8473226522318584135, guid: 1554a492727f11d42a998bad6e8e88ac, type: 3}
-  - {fileID: 8473226522318584135, guid: 6d1284983a23817478f056370b6bb30b, type: 3}
+  - {fileID: 8473226522318584135, guid: 74874c0f60a37ca4eaaf487debfdbd7a, type: 3}
+  - {fileID: 8473226522318584135, guid: 7eb1ac588333519498925cff80cdaf27, type: 3}
+  - {fileID: 8473226522318584135, guid: c6694dc880b4acf4994776df10eb99cf, type: 3}
+  - {fileID: 8473226522318584135, guid: 7a28ae9662430dd48b6029d9e99e5476, type: 3}
+  - {fileID: 8473226522318584135, guid: fb83cfeeeea40cd47b41f8dbd4fecf8e, type: 3}
   BlurArray:
   - {fileID: 21300000, guid: fab45e1bbdffa244286ae2199b201576, type: 3}
   - {fileID: 21300000, guid: 013dc12bca7bb5c4db1537759d16eabc, type: 3}

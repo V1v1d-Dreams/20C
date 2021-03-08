@@ -978,7 +978,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  ShopAfterThis: 0
+  ShopAfterThis: 1
   Satisfied: 0
   DialogUnsat: []
   NameUnsat: []
@@ -1815,7 +1815,7 @@ MonoBehaviour:
   character:
   - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
   - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
-  ShopAfterThis: 0
+  ShopAfterThis: 1
   Satisfied: 0
   DialogUnsat: []
   NameUnsat: []
@@ -5282,9 +5282,7 @@ MonoBehaviour:
   - ' . . . . . .'
   - You are lucky that you are the only one\nphoto shop in this area!
   - ' . . . . . .'
-  - '
-
-    Here take it\nand don''t make me disappoint next time!'
+  - Here take it\nand don't make me disappoint next time!
   - ' . . . . . .'
   NameUnsat:
   - Asian man
@@ -6212,10 +6210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - 'H. . . hey. . . Here is what I want you to develop..
-
-    Please be extra careful
-    with them..'
+  - H. . . hey. . . Here is what I want you to develop..\nPlease be extra careful
+    with them..
   - . . . . . .
   Names:
   - A long hair guy
@@ -10088,7 +10084,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10201,7 +10197,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  ShopAfterThis: 0
+  ShopAfterThis: 1
   Satisfied: 0
   DialogUnsat: []
   NameUnsat: []
@@ -10347,7 +10343,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  ShopAfterThis: 0
+  ShopAfterThis: 1
   Satisfied: 0
   DialogUnsat: []
   NameUnsat: []
@@ -12122,6 +12118,24 @@ MonoBehaviour:
   - Time:
     - {fileID: 195314203}
     - {fileID: 1747420577}
+  - Time:
+    - {fileID: 543711822}
+    - {fileID: 939331361}
+  - Time:
+    - {fileID: 1439184348}
+    - {fileID: 1746164388}
+  - Time:
+    - {fileID: 521219769}
+    - {fileID: 2120010256}
+  - Time:
+    - {fileID: 373212234}
+    - {fileID: 362908905}
+  - Time:
+    - {fileID: 1824351991}
+    - {fileID: 1329852714}
+  - Time:
+    - {fileID: 146216890}
+    - {fileID: 476962961}
   TimeIndex: 0
   tutorial: {fileID: 655960777}
   tutorial2: {fileID: 1637842613}

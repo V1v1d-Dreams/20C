@@ -153,7 +153,7 @@ public class Film : MonoBehaviour
         }
         else
         {
-            GetComponent<SpriteRenderer>().color = new Color32(0, 0, 0, 0);
+            //GetComponent<SpriteRenderer>().color = new Color32(0, 0, 0, 0);
         }
     }
 }

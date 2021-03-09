@@ -66,6 +66,9 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject Tray2Item;
     [SerializeField] GameObject Tray3Item;
     [SerializeField] GameObject Trash;
+    //[SerializeField] SpriteRenderer Film1;
+    //[SerializeField] SpriteRenderer Film2;
+    //[SerializeField] SpriteRenderer Film3;
     [TextArea(2, 3)]
     [SerializeField] string[] strings;
     int stringIndex = 0;
@@ -81,14 +84,17 @@ public class Game_handler : MonoBehaviour
         if (staticDataHolder.Todaysfilm == null)
         {
             film.SetActive(false);
+            //Film1.enabled = false;
         }
         if (staticDataHolder.Todaysfilm2 == null)
         {
             film2.SetActive(false);
+            //Film2.enabled = false;
         }
         if (staticDataHolder.Todaysfilm3 == null)
         {
             film3.SetActive(false);
+            //Film3.enabled = false;
         }
 
         if (!staticDataHolder.finishedtutorial)

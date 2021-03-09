@@ -484,7 +484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &110584103
 GameObject:
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mechine1: 150
   Mechine2: 300
-  Paper: 5
+  Paper: 10
   Chem1: 0
   Chem2: 5
   Chem3: 15
@@ -743,7 +743,7 @@ Transform:
   - {fileID: 1531325351}
   - {fileID: 841974085}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &140505240
 GameObject:
@@ -1233,10 +1233,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This is the best chemical we ever got for you! A fine developing speed,
-    a bit slower than the second one. But with much more time before it\u2019s too
-    moist. A perfect balance, isn\u2019t it? It\u2019s the most expensive, but it\u2019s
-    for your best convenience!"
+  m_text: 'This chemical will make your life easier.
+
+
+    - Quick developtime.
+
+    -
+    Photo will get moist harder.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
   m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
@@ -1393,7 +1396,7 @@ Transform:
   m_LocalScale: {x: 7.0048504, y: 7.0048504, z: 7.0048504}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &268457739
 GameObject:
@@ -2563,9 +2566,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "If you don\u2019t like the first chemical, we got you this better version!
-    Pay a bit more and you get a very fast development with more space for you to
-    breathe before the photo gets too moist."
+  m_text: 'This chemical is suit for work that require less time to complete.
+
+
+    -
+    Quickest develop time.
+
+    - Photo will be easy to get moist.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
   m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
@@ -3142,7 +3149,7 @@ PrefabInstance:
     - target: {fileID: 1738467718807094851, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1790608366638744611, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
@@ -3591,12 +3598,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617905126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.5676155, y: 0.4506437, z: -129.34961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1316294841}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &617905130
 MonoBehaviour:
@@ -3629,6 +3636,87 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &621707020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621707021}
+  - component: {fileID: 621707022}
+  m_Layer: 0
+  m_Name: Button_Return
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &621707021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621707020}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -936.92, y: 1, z: -9720}
+  m_LocalScale: {x: 138.915, y: 28.774551, z: 108}
+  m_Children: []
+  m_Father: {fileID: 657389935}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &621707022
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621707020}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: eb156c8b7ce6c194d8c4ba9504f1101a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 1897e5fa6a089184382d1a788b49abd1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 2.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &644525405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3685,8 +3773,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Got too much photos to develop that your back is breaking from standing
-    for hours? Speed up your work with this pack of 3 trays! \n"
+  m_text: 'More trays = more line of work = less time to complete the job!
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
   m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
@@ -3934,13 +4023,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 621707021}
   m_Father: {fileID: 1962945994}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 854, y: 495}
+  m_AnchoredPosition: {x: 290, y: 519}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &657389936
@@ -3964,16 +4054,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Current money: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 493913acfe1a752438955506c53003d9, type: 2}
-  m_sharedMaterial: {fileID: 6439611215769365568, guid: 493913acfe1a752438955506c53003d9,
+  m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
+  m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291145893
-  m_fontColor: {r: 0.6458704, g: 0.69178087, b: 0.7735849, a: 1}
+    rgba: 4278203136
+  m_fontColor: {r: 0, g: 0.1981132, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3990,14 +4080,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 95.5
-  m_fontSizeBase: 95.5
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5192,7 +5282,7 @@ Transform:
   m_LocalScale: {x: 0.92757, y: 0.92757, z: 0.92757}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &857954450
 BoxCollider2D:
@@ -5525,9 +5615,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: We introduce you to this novelty enlarger! You will no longer have to scroll
-    through your film. Instead, just one button and you will get your desired photo
-    fit in the screen perfectly! The best quality of life!
+  m_text: 'The most advanced enlarger in the world!
+
+
+    Features
+
+    -Film auto
+    snapping'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
   m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
@@ -6770,7 +6864,7 @@ PrefabInstance:
     - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
@@ -7050,14 +7144,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Developed the photos too fast and you ran out of hanger to dry all of
-    your photos? Then let us help you with more lines of hanger to save your photos!
+  m_text: 'More hanger more space!
 
 
-    *You
-    can purchase this item 2 times*
+    - You can hang more photo
 
-'
+    - Can be
+    upgrade 2 times'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
   m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
@@ -8103,8 +8196,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1171938518}
+  - {fileID: 617905129}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1329852714
 GameObject:
@@ -9195,7 +9289,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1487627581
 MonoBehaviour:
@@ -9526,10 +9620,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Improve your quality of life with this new design of the enlarger. No need
-    to scroll and measure if the photo fits the screen or not. This enlarger will
-    help you with a fixed scrolling that will make sure your photo fits the screen
-    perfectly!
+  m_text: 'This enlarger will make your life easier!
+
+
+    Features
+
+    -flim easy
+    snapping'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
   m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
@@ -9756,7 +9853,7 @@ Transform:
   - {fileID: 1810533110}
   - {fileID: 1739425349}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654700468
 GameObject:
@@ -10662,7 +10759,7 @@ Transform:
   m_LocalScale: {x: 6.7814903, y: 6.7814903, z: 6.7814903}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769832380
 GameObject:
@@ -10801,10 +10898,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Keep your eyes on your paper. Are you running out of them? Come buy some
-    more with us for a pack of 10 papers!
+  m_text: 'Paper is necessary for photo developing. Don''t forget to buy it!
 
-'
+
+    -
+    1 Pack contain 5 pcs.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
   m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
@@ -11195,7 +11293,7 @@ Transform:
   - {fileID: 1901194570}
   - {fileID: 1769832381}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1824351991
 GameObject:
@@ -11678,10 +11776,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In case you want to save your money while you have photos to develop,
-    we have the cheapest chemical for you! \nIt takes quite long to develop a photo,
-    and you better be careful on that because your photo can get too moist easily!
-    Doesn\u2019t sound good to you? At least it saves you some money!"
+  m_text: 'This one is free!
+
+    because of its poor quality.
+
+
+    - long time
+    to develop.
+
+    - Photo will be easy to get moist.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
   m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
@@ -12151,7 +12254,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053008125
 GameObject:
@@ -12420,7 +12523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $5
+  m_text: $10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
   m_sharedMaterial: {fileID: 3687033152603094923, guid: be643548abab302439a4c3c1a236989f,
@@ -12823,7 +12926,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120010256
 GameObject:
@@ -13087,5 +13190,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

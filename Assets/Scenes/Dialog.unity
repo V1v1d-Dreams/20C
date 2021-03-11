@@ -968,21 +968,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
-  - Let's see here. Thanks, the money is on the table, keep the change..
+  - Let's see here. Thanks, the money is \non the table, keep the change.
   - . . . . . .
   Names:
-  - The Player
-  - Chubby Cigarette man
-  - The Player
+  - You
+  - Chubby cigarette man
+  - You
   character:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 1
-  Satisfied: 0
-  DialogUnsat: []
-  NameUnsat: []
-  characterUnsat: []
+  Satisfied: 1
+  DialogUnsat:
+  - Jesus, these images suck. . .
+  - . . . . . .
+  - Improve your skill if you still want \npeople to come here.
+  - . . . . . .
+  NameUnsat:
+  - Chubby cigarette man
+  - You
+  - Chubby cigarette man
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -1111,49 +1123,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - 'Oh hey handsome. You must be the new owner of this place, and you finally got
-    rid of that fat pig from this store! About that, I am looking for lands in this
-    part of. . . '
-  - . . .town for my new warehouse and your land catches my eyes. So! How about selling
-    this land to me right now?
+  - Oh hey \chandsome.\c
+  - You must be \wthe new owner\w of this \nplace, and you finally got rid of that
+    \r\ndigusting person\r from this store!
+  - About that, I am looking for lands in \nthis part of town for my \rnew warehouse\r
+    \nand your land catches my eyes.
+  - So! How about selling this land to me \n\wright now?\w
   - . . . . . .
-  - Well. . . you just opened this store not so long ago. The deal still stands,
-    I will give you some more time. If you change your mind, call me.
-  - '**leave**'
-  - Hmmm. . . Oh hey man, got some pictures that need to be taken care of.
+  - Well . . . you just opened this store \nnot so long ago.
+  - The deal still stands, I will give you \nsome more time.
+  - If you change your mind, \wcall me.\w
   - . . . . . .
-  - "Hmmm. That woman who just walked past me? It's hard for someone not to recognize
-    her, especially with that beauty, plus some top brand whatever store she owns.
-    You must be really new not to know that but don\u2019t worry, just read the.
-    . ."
-  - . . .newspaper everyday and you will see her there. Especially during this time,
-    some of her property got related to some cases but that is for you to read not
-    for me to explain. Now could you please take care of my god damn pictures!
+  - \wHmmmmmmmmm.\w Oh hey man, got some \npictures that need to be taken care of.
+  - . . . . . .
+  - Hmmm. That \rwoman\r who just walked past me?
+  - It's hard for someone not to recognize \nher, especially with that \rbeauty\r,
+    plus \nsome \rtop brand\r whatever store she owns.
+  - You must be really new not to know that \nbut don't worry, just read \rthe newspaper\r
+    \neveryday and you will see her there.
+  - Especially during this time, some of \nher property got related to some cases
+    \nbut that is for you to read not for me \nto explain.
+  - Now could you please take care of \nmy god damn pictures!
   - . . . . . .
   Names:
   - Rich-looking lady
   - Rich-looking lady
-  - The Player
   - Rich-looking lady
   - Rich-looking lady
+  - You
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - You
   - Black sunglasses man
-  - The Player
+  - You
   - Black sunglasses man
   - Black sunglasses man
-  - The Player
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
+  - You
   character:
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -1629,18 +1658,18 @@ MonoBehaviour:
   - . . . . . .
   - Yo bro! What took ya so long.
   - . . . . . .
-  - Ya cool with my photos?
+  - Ya cool with \rmy photos?\r
   - . . . . . .
-  - Heh heh boi! Here the money for ya.
+  - \cHeh heh boi!\c Here the money for ya.
   - . . . . . .
   Names:
-  - The Player
+  - You
   - Good looking African guy
-  - The Player
+  - You
   - Good looking African guy
-  - The Player
+  - You
   - Good looking African guy
-  - The Player
+  - You
   character:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
@@ -1648,13 +1677,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
-  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
-  - \wYoooo bro!\w What are thoseeee!
-  - Man, I know that you could do better than this. Try harder man. Well, this is
-    for your effort.
+  - \cYoooo bro!\c What are \wthoseeee!\w
+  - Man, I know that you could do better \nthan this. Try harder man. \nWell, this
+    is for your effort.
   - ' . . . . . .'
   NameUnsat:
   - Good looking African guy
@@ -1663,7 +1692,7 @@ MonoBehaviour:
   characterUnsat:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
-  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -1810,19 +1839,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
-  - "Hey sweetie, look like you\u2019re finished. Thank you for your work. I'll be
-    sure to spread the word around about your store."
+  - \cHey sweetie,\c look like you're finished.
+  - Thank you for your work.
+  - I'll be sure to spread the word around \nabout your store.
+  - . . . . . .
   Names:
-  - The Player
+  - You
   - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
   character:
   - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
   - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 1
-  Satisfied: 0
-  DialogUnsat: []
-  NameUnsat: []
-  characterUnsat: []
+  Satisfied: 1
+  DialogUnsat:
+  - \cHey sweetie,\c look like you're finished.
+  - Oh? . . . . . What with this quality?
+  - I expect you to do the film properly \nand this is what you give me?
+  - I tried to be nice to you and this is \nwhat I get?
+  - Don't expect me to come back to your \nstore again . . . . .
+  - . . . . . .
+  NameUnsat:
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -1887,18 +1942,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - "Oh hey sweetie, what a nice store you have there. Would you mind taking care
-    of my films? It would be a shame if these weren\u2019t done properly so please
-    take care of it. I will be back."
+  - Oh hey \csweetie,\c what a nice store you \nhave there.
+  - Would you mind taking care of my \nfilms?
+  - It would be a shame if these weren't \ndone properly so please take care of it.
+  - I will be back.
   - . . . . . .
   Names:
   - Beautiful woman
-  - The Player
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
   character:
   - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
   - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -2694,20 +2753,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hmmmmm, what a vintage looking store. You've got yourself quite a spot huh..
+  - \wHmmmmm,\w what a vintage looking store.
+  - ' You''ve got yourself quite a spot huh.'
   - . . . . . .
-  - Don't mind me, I'm just another customer for your service. Here is my roll..
+  - \cDon't mind me,\c I'm just another \ncustomer for your service.
+  - Here is my roll.
   - . . . . . .
-  - I'm just gonna take in the atmosphere around here. You know, vintage feeling.
-    No offense by the way.
+  - I'm just gonna take in the atmosphere \naround here.
+  - You know, old vintage feeling.
+  - ' No offense by the way.'
   - . . . . . .
   Names:
-  - Elliot
-  - The Player
-  - Elliot
-  - The Player
-  - Elliot
-  - The Player
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - A man with blue cap
+  - You
   character:
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
@@ -2715,8 +2781,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -2784,8 +2854,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Sup bro! I would like to . . .\nOh! Ya new in town??
-  - That old man got tired of this crap or \nsomething?
+  - \cSup bro!\c I would like to . . .\nOh! Ya new in town??
+  - That \rold man\r got tired of this crap or \nsomething?
   - Nevermind, I need some pictures from ya.
   - Here is da roll.
   - . . . . . .
@@ -2794,7 +2864,7 @@ MonoBehaviour:
   - Good looking African guy
   - Good looking African guy
   - Good looking African guy
-  - The Player
+  - You
   character:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
@@ -2965,16 +3035,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - S'up owner! Got a set of pictures that need to be developed for my boss..
+  - \wS'up\w owner! Got a set of pictures that \nneed to be developed for my \rboss\r.
   - . . . . . .
   Names:
-  - Harley
-  - The Player
+  - Tan-skinned woman
+  - You
   character:
   - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
   - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -3149,7 +3219,7 @@ PrefabInstance:
     - target: {fileID: 1738467718807094851, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1790608366638744611, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
@@ -3258,21 +3328,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
-  - O. . . oh, finally. Thank you.
+  - O . . . oh, finally. Thank you.
   - . . . . . .
   Names:
-  - The Player
+  - You
   - A long hair guy
-  - The Player
+  - You
   character:
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 0
-  Satisfied: 0
-  DialogUnsat: []
-  NameUnsat: []
-  characterUnsat: []
+  Satisfied: 1
+  DialogUnsat:
+  - Hey! The heck is wrong with these \npictures?
+  - Didn't I pay you to properly develop \nthem?
+  - . . . . . .
+  NameUnsat:
+  - A long hair guy
+  - A long hair guy
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -5355,39 +5434,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
-  - Hey you finished? Money is on the table.
+  - Hey you finished?
+  - ' Money is on the table.'
   - . . . . . .
   Names:
-  - The Player
-  - Hank
-  - The Player
+  - You
+  - Suspicious looking man
+  - Suspicious looking man
+  - You
   character:
   - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
-  - What the .... I came here to get some photo\ndevelped and you can't even do this\n\rstuff!?\r
-  - ' . . . . . .'
-  - You are lucky that you are the only one\nphoto shop in this area!
-  - ' . . . . . .'
-  - Here take it\nand don't make me disappoint next time!
-  - ' . . . . . .'
+  - What the hell?
+  - How can you open the shop with the \nskill you have?
+  - . . . . . .
   NameUnsat:
-  - Asian man
-  - You
-  - Asian man
-  - You
-  - Asian man
+  - Suspicious looking man
+  - Suspicious looking man
   - You
   characterUnsat:
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -5743,19 +5816,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Oh, took ya long enough but who am I to complain anyway.
+  - Oh, took ya long enough but who am I \nto complain anyway.
   - . . . . . .
   Names:
-  - Harley
-  - The Player
+  - Tan-skinned woman
+  - You
   character:
   - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
-  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 0
-  Satisfied: 0
-  DialogUnsat: []
-  NameUnsat: []
-  characterUnsat: []
+  Satisfied: 1
+  DialogUnsat:
+  - Damn! Seems like the previous one did \na better job than you.
+  - Really hope that \rthe boss\r will accept \nthis.
+  - . . . . . .
+  NameUnsat:
+  - Tan-skinned woman
+  - Tan-skinned woman
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -6304,17 +6386,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - H. . . hey. . . Here is what I want you to develop..\nPlease be extra careful
-    with them..
+  - H . . . hey. . . Here is what I want \nyou to develop.
+  - Please be extra careful with them..
   - . . . . . .
   Names:
   - A long hair guy
-  - The Player
+  - A long hair guy
+  - You
   character:
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -7770,22 +7854,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Good day, I would like you to develop my photos.
+  - Good day, I would like you to develop \nmy photos.
   - . . . . . .
-  - Have we met before? Your face looks familiar.
+  - Have we met before? Your face looks \nfamiliar.
   - . . . . . .
   Names:
-  - Chubby Cigarette man
-  - The Player
-  - Chubby Cigarette man
-  - The Player
+  - Chubby cigarette man
+  - You
+  - Chubby cigarette man
+  - You
   character:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -8245,24 +8329,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
-  - Ya cool?
+  - \wYa cool?\w
   - . . . . . .
-  - Heh heh boi! As usual, this will be a blast! Byeee.
+  - \cHeh heh boi!\c As usual, this will be a \nblast! Byeee!
+  - . . . . . .
   Names:
-  - The Player
-  - Good looking African guy
-  - The Player
-  - Good looking African guy
+  - You
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - You
   character:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 0
   Satisfied: 0
-  DialogUnsat: []
-  NameUnsat: []
-  characterUnsat: []
+  DialogUnsat:
+  - \wYoooo bro! What the helllllllll!\w
+  - What happens to you when I'm not here?
+  - Someone troubles you?
+  - 'You can just tell me and I will send \nsomeone to get rid of them. '
+  - Anyway, this is for your effort for the \nwork.
+  - . . . . . .
+  NameUnsat:
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -9009,8 +9114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hey, sir. I got a few films that need to be developed. Could you take care of
-    it??
+  - Hey, sir. I got a few films that need \nto be developed.
+  - Could you take care of it?
   - . . . . . .
   - Sir?
   - . . . . . .
@@ -9018,9 +9123,10 @@ MonoBehaviour:
     it.
   Names:
   - Moody looking man
-  - The Player
   - Moody looking man
-  - The Player
+  - You
+  - Moody looking man
+  - You
   - Moody looking man
   character:
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
@@ -9029,7 +9135,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   ShopAfterThis: 0
-  Satisfied: 0
+  Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
@@ -9129,40 +9235,133 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Ummm. . . You didn't see anything weird in my pictures, right?
+  - Ummm. . . You didn't see anything \n\rweird\r in my pictures, right?
   - ' . . . . . .'
-  - I'll take that as a no then. Here is your money plus some extra.
+  - I'll take that as a no then.
+  - Here is your money plus some extra.
+  - ' . . . . . .'
+  - \cHeh heh heh\c, seems like \rthe old man\r \nleft in a hurry, wondering why
+    he did that.
+  - At least I still got \ryou\r instead of his \nplace!
+  - ' . . . . . .'
+  - Oh! A silent type. \nDon't worry, I can read your thoughts.
+  - I'm no strange man, I'm just a simple \n\cbusiness man.\c
+  - You may call me \r"The Salesman"\r
+  - You might wonder why am I here.
+  - Worry not, because I got you covered!
+  - Everything from a \rfilm paper\r to \n\rnew equipment\r, I got it all!
+  - If you got a \rcredit\r that is.
+  - Here is an offer for you.
+  - You buy your \rsupply\r from me only and \nI'll give you a special discount!
+    \nDeal?
+  - ' . . . . . .'
+  - Good! I'll take that as a yes then!
+  - Here is a \cfree proposal\c for you.
+  - Take them and gain some money and \nI'll come back again to take yours \n\cheh
+    heh heh.\c
   Names:
   - A man in a blue suit
-  - The Player
+  - You
   - A man in a blue suit
+  - A man in a blue suit
+  - You
+  - A strange man
+  - A strange man
+  - You
+  - A strange man
+  - A strange man
+  - A strange man
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - You
+  - The Salesman
+  - The Salesman
+  - The Salesman
   character:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   ShopAfterThis: 1
   Satisfied: 1
   DialogUnsat:
-  - What the .... I came here to get some photo\ndevelped and you can't even do this\n\rstuff!?\r
+  - Ummmm, could be better but whatever.
   - ' . . . . . .'
-  - You are lucky that you are the only one\nphoto shop in this area!
+  - \cHeh heh heh\c, seems like \rthe old man\r \nleft in a hurry, wondering why
+    he did that.
+  - At least I still got \ryou\r instead of his \nplace!
   - ' . . . . . .'
-  - "\rHere take it\\nand don't make me disappoint next time!"
+  - Oh! A silent type. \nDon't worry, I can read your thoughts.
+  - I'm no strange man, I'm just a simple \n\cbusiness man.\c
+  - You may call me \r"The Salesman"\r
+  - You might wonder why am I here.
+  - Worry not, because I got you covered!
+  - Everything from a \rfilm paper\r to \n\rnew equipment\r, I got it all!
+  - If you got a \rcredit\r that is.
+  - You buy your \rsupply\r from me only and \nI'll give you a special discount!
+    \nDeal?
   - ' . . . . . .'
+  - Good! I'll take that as a yes then!
+  - Here is a \cfree proposal\c for you.
+  - Take them and gain some money and \nI'll come back again to take yours \n\cheh
+    heh heh.\c
   NameUnsat:
-  - Chubby Cigarette man
+  - A man in a blue suit
   - You
-  - Chubby Cigarette man
+  - A strange man
+  - A strange man
   - You
-  - Chubby Cigarette man
+  - A strange man
+  - A strange man
+  - A strange man
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
   - You
+  - The Salesman
+  - The Salesman
+  - The Salesman
   characterUnsat:
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -9227,12 +9426,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hey you, yeah you, the shop keeper. Develop this set of pictures. I'll be waiting.
+  - Hey \ryou\r, yeah \ryou\r, the shop keeper.
+  - Develop this set of pictures.
+  - ' I''ll be waiting.'
   - . . . . . .
   Names:
-  - Hank
-  - The Player
+  - Suspicious looking man
+  - Suspicious looking man
+  - Suspicious looking man
+  - You
   character:
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   ShopAfterThis: 0
@@ -10271,34 +10476,71 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Oh! Looks like I just came in at the right moment. It looks like you just finished
-    with my films. Oh, it looks like it's almost evening already. One more thing,
-    sir. I suggest that you try to stay in the door at night during this time.
+  - Oh! Looks like I just came in at the \nright moment.
+  - It looks like you just finished with \nmy films.
+  - Oh, it looks like it's almost evening \nalready.
+  - One more thing, sir. I suggest that \nyou try to stay in the door at night \nduring
+    this time.
   - . . . . . .
-  - Don't get me wrong sir, I'm just warning you because you look like those quiet
-    types you know? My brother is a police officer and he told me that there have
-    been many people gone missing in this area recently.
+  - Don't get me wrong sir, I'm just \nwarning you because you look like \nthose
+    quiet types you know?
+  - My brother is a \rpolice officer\r and he \ntold me that there have been many
+    \n\rpeople gone missing\r  in this area \nrecently.
   - . . . . . .
-  - "Look, believe me or not. The officials haven't stated this event just yet, I
-    don\u2019t know why but just remember that I warned you. I will be going before
-    it gets dark now."
+  - Look, believe me or not.
+  - The officials haven't stated this event \njust yet, I don't know why but just
+    \nremember that I warned you.
+  - ' I will be going before it gets dark now.'
+  - . . . . . .
   Names:
   - Moody looking man
-  - The Player
   - Moody looking man
-  - The Player
   - Moody looking man
+  - Moody looking man
+  - You
+  - Moody looking man
+  - Moody looking man
+  - You
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
+  - You
   character:
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 1
-  Satisfied: 0
-  DialogUnsat: []
-  NameUnsat: []
-  characterUnsat: []
+  Satisfied: 1
+  DialogUnsat:
+  - Oh! Looks like I just came in at the \nright moment.
+  - It looks like you just finished with \nmy films.
+  - Well . . . I didn't expect the quality \nto be this bad.
+  - . . . . . .
+  - \rFUCK!\r
+  - . . . . . .
+  NameUnsat:
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
+  - You
+  - Moody looking man
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -10423,28 +10665,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hmmm. Finally! Eh? Some of the pictures are kinda messed up, could I get a refund?
+  - \cHmmmmmm.\c Finally! Eh? Some of \nthe pictures are kinda \rmessed up\r, \ncould
+    I get a refund?
   - . . . . . .
-  - At least half of the money.
+  - At least half of the money. . . . .?
   - . . . . . .
   - Ok, fine!
+  - . . . . . .
   Names:
   - Black sunglasses man
-  - The Player
+  - You
   - Black sunglasses man
-  - The Player
+  - You
   - Black sunglasses man
+  - You
   character:
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 1
-  Satisfied: 0
-  DialogUnsat: []
-  NameUnsat: []
-  characterUnsat: []
+  Satisfied: 1
+  DialogUnsat:
+  - \cHmmm.\c Finally! \wEhhh?\w The pictures are \nmessed up.
+  - Jesus, I want a refund. . . . .
+  - . . . . . .
+  NameUnsat:
+  - Black sunglasses man
+  - Black sunglasses man
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -11339,26 +11594,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - I'm back bitches!!!
+  - \wI'm back bitches!!!\w
   - . . . . . .
-  - Sup bro! It has been a while since we last met and ya must have seen the news
-    by now about what happened to me but enough about that it probably just a business
-    gone wrong and the customer is really angry about it.
+  - \cSup bro!\c It has been a while since we \nlast met and ya must have seen \rthe
+    news\r \nby now about what happened to me
+  - But enough about that it probably just \r\na business\r gone wrong and \rthe
+    customer\r \nis really angry about it.
   - . . . . . .
-  - "Hey, don\u2019t worry, I have a job for ya. You see, my fans are really worried
-    about me and we took a lot of pictures so here ya go. I'll be back later!"
+  - Hey, don't worry, I have a job for ya.
+  - You see, my fans are really worried \nabout me and we took a lot of pictures
+    \nso here ya go.
+  - I'll be back later!
+  - . . . . . .
   Names:
-  - Good looking African guy
-  - The Player
-  - Good looking African guy
-  - The Player
-  - Good looking African guy
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
   character:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 0
   Satisfied: 0
   DialogUnsat: []
@@ -11907,17 +12174,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
-  - Hello, this old man wants his pictures developed.
+  - Hello, this old man wants his \npictures developed.
   - . . . . . .
-  - "You're quite a quiet person, aren\u2019t you?"
+  - "You're quite \\ra quiet person\\r, aren\u2019t you?"
   - . . . . . .
   - Nevermind. Just do the job.
   Names:
-  - The Player
+  - You
   - A man in a blue suit
-  - The Player
+  - You
   - A man in a blue suit
-  - The Player
+  - You
   - A man in a blue suit
   character:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
@@ -12973,27 +13240,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
-  - Ohhh, such a magnificent place. Would be better with a body in it.
+  - \wOhhhhh,\w such a magnificent picture.
+  - Would be better with \ra body\r in it.
   - . . . . . .
-  - Huh! I'm just messing with you kid. Gotta bail while I can, bye!
+  - Huh! I'm just \cmessing\c with you.
+  - Gotta bail while I can, bye!
   - . . . . . .
   Names:
-  - The Player
-  - Elliot
-  - The Player
-  - Elliot
-  - The Player
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
   character:
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 0
-  Satisfied: 0
-  DialogUnsat: []
-  NameUnsat: []
-  characterUnsat: []
+  Satisfied: 1
+  DialogUnsat:
+  - Such a quality won't be accepted by me, \nif given a choice. . . . .
+  - . . . . . .
+  - I guess, you are not in need of my money.
+  - . . . . . .
+  NameUnsat:
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}

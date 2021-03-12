@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -421,14 +421,14 @@ RectTransform:
   m_GameObject: {fileID: 12718478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.1137557, y: 4.1137557, z: 4.1137557}
+  m_LocalScale: {x: 2.7650197, y: 2.7650197, z: 2.7650197}
   m_Children: []
   m_Father: {fileID: 658950198}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -737, y: 308}
+  m_AnchoredPosition: {x: -517, y: 426}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12718480
@@ -8196,44 +8196,30 @@ MonoBehaviour:
   Mechine: {fileID: 398187319}
   Hanger: {fileID: 1914115791}
   paperItem: {fileID: 2140529601}
-  filmItem: {fileID: 1218495738}
+  filmItem: {fileID: 1581941585}
+  filmItem2: {fileID: 77233397}
+  filmItem3: {fileID: 522415002}
   Tray1Item: {fileID: 1730658056}
   Tray2Item: {fileID: 1281124289}
   Tray3Item: {fileID: 1762671403}
-  Trash: {fileID: 1334460672}
+  photoTray: {fileID: 1357099944}
   strings:
   - This is where I spent most of my time doing whatever those freaks told me to
     do.Anyway, it is now yours.
-  - "Let\u2019s start with the equipment in the room from the left to the right.\r\nThe
-    big machine there is your new lover! You will spend most of your time looking
-    through her lovely hole. \r"
-  - "What? Don\u2019t look at me with that glance! What I said is true, well.. mostly.
-    Anyway, she\u2019s an \u201CEnlarger\u201D. Remember this, before you use her.
-    You will need to put a \u201Cfilm roll\u201D in the top part and then put a \u201Cphoto
-    paper\u201D in the bottom part."
-  - 'A light on the top part will lit up. That means you can use her to choose which
-    picture to develop into a paper roll. Click the button on the top part and then
-    manually scroll up and down to choose a picture, then press the button to develop
-    it.
-
-'
-  - "On the right of the \u201CEnlarger\u201D, you will see a paper roll on the top
-    and followed by a film roll. Ignore the rest of the stuff to the right, it is
-    just a garbage. Under a paper roll, these are trays where you pour some chemical
-    X on it. I don\u2019t know what it is, I just bought it from some creepy salesman
-    that comes by nearly every day."
-  - "Put your \u201Cdeveloped paper roll\u201D into it one at a time from the left
-    tray to right tray. Wait for a while, the picture will start to show itself little
-    by little. If you are not satisfied with the result, then just throw it at the
-    bin on the right side of the room but each roll costs your money y\u2019know."
-  - On the other hand, hang it in the hanger on the top of the room and wait until
-    it is dry and then boom! Job done!
-  - "Oh! You should have a try! I got spare films anyway. Feel free to use it to
-    your heart\u2019s content."
-  - "Remember! Put \u201Ca film roll\u201D and \u201Ca paper roll\u201D into the
-    \u201CEnlarger\u201D, choose pictures and press the button. Then you will get
-    a \u201Cdeveloped paper roll\u201D, put it in a tray from left to right one at
-    a time, then hang it on the Hanger and that\u2019s it for me.\r\n"
+  - Okay this is a photo enlarger where you create photos.
+  - Oh yes and not just film you need to put paper underneath it to transfer the
+    photo from film to the paper
+  - When you are done you will not see the photo on paper yet until you put it into
+    these 3 trays that have the processing chemical in it.
+  - Just remember not to put it in too long unless the paper will get too moist and
+    the photo is ruined.
+  - "Once you are done with these 3 trays remember to hang your photo, just to make
+    sure that it\u2019s dry "
+  - "After that put it into this tray where you gather all the done photos here.
+    \r"
+  - "Now let\u2019s give you a try, I\u2019ve got this film that contains the photo
+    that we took before, so I will let you work on this one and we\u2019ll see the
+    result."
 --- !u!4 &883475801
 Transform:
   m_ObjectHideFlags: 0
@@ -9747,7 +9733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1180147454
 Transform:
   m_ObjectHideFlags: 0
@@ -16073,7 +16059,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -54}
+  m_AnchoredPosition: {x: -385, y: 26}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1966928284
@@ -16124,15 +16110,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61.75
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -16160,7 +16146,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -354.1547, y: -488.39066, z: -833.97656, w: 291.32068}
+  m_margin: {x: 119.21375, y: -488.39066, z: -833.97656, w: 291.32068}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

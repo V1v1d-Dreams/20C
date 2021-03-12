@@ -100,7 +100,7 @@ public class TextField : MonoBehaviour
             textmanager.GetComponent<Textmanager>().effect = Textmanager.Effects.None;
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && !PauseScript.GameIsPause)
         {
             if (news)
             {
@@ -126,8 +126,10 @@ public class TextField : MonoBehaviour
         }
         else if(Input.GetKeyUp(KeyCode.Space) && !PauseScript.GameIsPause)
         {
-            //DialogS();
-            StartCoroutine(Typewritter(speed));
+            if (finish)
+            {
+                StartCoroutine(Typewritter(speed));
+            }
         }    
     }
 

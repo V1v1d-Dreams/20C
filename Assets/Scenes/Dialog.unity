@@ -3149,7 +3149,7 @@ PrefabInstance:
     - target: {fileID: 1738467718807094851, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1790608366638744611, guid: 4bed7e2d116fa7f4f97e0d5fc7bc56f3,
         type: 3}
@@ -3992,8 +3992,8 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 1
   Film: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
-  Film2: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
-  Film3: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &657389934
 GameObject:

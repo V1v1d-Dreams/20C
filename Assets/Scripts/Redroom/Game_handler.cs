@@ -62,12 +62,10 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject Hanger;
     [SerializeField] GameObject paperItem;
     [SerializeField] GameObject filmItem;
-    [SerializeField] GameObject filmItem2;
-    [SerializeField] GameObject filmItem3;
     [SerializeField] GameObject Tray1Item;
     [SerializeField] GameObject Tray2Item;
     [SerializeField] GameObject Tray3Item;
-    [SerializeField] GameObject photoTray;
+    [SerializeField] GameObject Trash;
     //[SerializeField] SpriteRenderer Film1;
     //[SerializeField] SpriteRenderer Film2;
     //[SerializeField] SpriteRenderer Film3;
@@ -133,7 +131,7 @@ public class Game_handler : MonoBehaviour
             }
 
 
-            if (stringIndex ==1)
+            if (stringIndex ==1 || stringIndex == 2 || stringIndex ==3)
             {
                 Mechine.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
                 Mechine.GetComponent<SpriteRenderer>().sortingOrder = 501;
@@ -143,41 +141,34 @@ public class Game_handler : MonoBehaviour
                 Mechine.GetComponent<SpriteRenderer>().sortingLayerName = "items";
                 Mechine.GetComponent<SpriteRenderer>().sortingOrder = 0;
             }
-
-            if (stringIndex == 2)
+            if (stringIndex == 4 || stringIndex == 5 || stringIndex == 6)
             {
+                Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                Hanger.GetComponent<SpriteRenderer>().sortingOrder = 501;
                 paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
                 paperItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
                 filmItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
                 filmItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
-                filmItem2.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                filmItem2.GetComponent<SpriteRenderer>().sortingOrder = 501;
-                filmItem3.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                filmItem3.GetComponent<SpriteRenderer>().sortingOrder = 501;
-            }
-            else
-            {
-                paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                paperItem.GetComponent<SpriteRenderer>().sortingOrder = 2;
-                filmItem.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
-                filmItem.GetComponent<SpriteRenderer>().sortingOrder = 3;
-                filmItem2.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
-                filmItem2.GetComponent<SpriteRenderer>().sortingOrder = 3;
-                filmItem3.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
-                filmItem3.GetComponent<SpriteRenderer>().sortingOrder = 3;
-            }
-
-            if (stringIndex == 3|| stringIndex == 4)
-            {
                 Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
                 Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
                 Tray2Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
                 Tray2Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
                 Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
                 Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+                Trash.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                Trash.GetComponent<SpriteRenderer>().sortingOrder = 501;
             }
             else
             {
+                Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                Hanger.GetComponent<SpriteRenderer>().sortingOrder = -1;
+
+                paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                paperItem.GetComponent<SpriteRenderer>().sortingOrder = 2;
+
+                filmItem.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
+                filmItem.GetComponent<SpriteRenderer>().sortingOrder = 3;
+
                 Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
                 Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
@@ -186,29 +177,11 @@ public class Game_handler : MonoBehaviour
 
                 Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
                 Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                Trash.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                Trash.GetComponent<SpriteRenderer>().sortingOrder = -1;
             }
 
-            if (stringIndex == 5)
-            {
-                Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                Hanger.GetComponent<SpriteRenderer>().sortingOrder = 501;
-            }
-            else
-            {
-                Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                Hanger.GetComponent<SpriteRenderer>().sortingOrder = -1;
-            }
-
-            if (stringIndex == 6)
-            {
-                photoTray.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                photoTray.GetComponent<SpriteRenderer>().sortingOrder = 501;
-            }
-            else
-            {
-                photoTray.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                photoTray.GetComponent<SpriteRenderer>().sortingOrder = 2;
-            }
         }
 
         paperNumBa.text = staticDataHolder.papernumber.ToString();

@@ -40,7 +40,5 @@ public class mechinebutton : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         mechine.GetComponent<Mechine>().ButtonP = false;
-
-
     }
 }

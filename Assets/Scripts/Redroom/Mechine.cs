@@ -25,6 +25,9 @@ public class Mechine : MonoBehaviour
     [SerializeField] public float delayed = 10;
     [HideInInspector] public bool holdingitem = false;
 
+    [SerializeField] GameObject EnlargerExit;
+    [SerializeField] GameObject RedRoomExit;
+
 
 
     void Start()
@@ -96,9 +99,14 @@ public class Mechine : MonoBehaviour
                 PhotoPreView = GameObject.Find("Photo preview3");
             }
 
+            EnlargerExit.SetActive(true);
+            RedRoomExit.SetActive(false);
+
+
             Opened = true;
             paperin = false;
             gaemhander.GetComponent<Game_handler>().overlay = true;
+            //THIS
         }
 
         PhotoPreView.transform.localPosition = new Vector3(PhotoPreView.transform.localPosition.x, value, 0);
@@ -121,5 +129,36 @@ public class Mechine : MonoBehaviour
             valuePercent = Random.Range(0f, 100f);
         }
         yield break;
+    }
+
+    public void ExitEnlarger()
+    {
+
+        if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 1)
+        {
+            GetComponent<SpriteRenderer>().sprite = mechinelv1;
+            MechineUI1.SetActive(false);
+            PhotoPreView = GameObject.Find("Photo preview");
+        }
+        else if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 2)
+        {
+            GetComponent<SpriteRenderer>().sprite = mechinelv2;
+            MechineUI2.SetActive(false);
+            PhotoPreView = GameObject.Find("Photo preview2");
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = mechinelv3;
+            MechineUI3.SetActive(false);
+            PhotoPreView = GameObject.Find("Photo preview3");
+        }
+
+        EnlargerExit.SetActive(false);
+        RedRoomExit.SetActive(true);
+
+
+        Opened = false;
+        paperin = true;
+        gaemhander.GetComponent<Game_handler>().overlay = false;
     }
 }

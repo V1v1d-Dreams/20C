@@ -904,7 +904,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
+  News: {fileID: 0}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -994,7 +994,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -1962,7 +1962,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
+  News: {fileID: 21300000, guid: 471b25a3007dc1340aeabb59cbb6ea96, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2791,7 +2791,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
+  News: {fileID: 21300000, guid: f0b4d8bfa267df54ab4426f5a24341e3, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -3049,7 +3049,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
+  News: {fileID: 21300000, guid: 4f9ad4dfbab03d4498d2cd69082c3773, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -5460,7 +5460,7 @@ MonoBehaviour:
   characterUnsat:
   - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   Textstart: {fileID: 1531325351}
@@ -9140,7 +9140,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
+  News: {fileID: 21300000, guid: 17bc7871bfcba6b498ac6b541eddfeab, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -11632,7 +11632,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
+  News: {fileID: 21300000, guid: e3ee565f25b40d24ab5a3cdce4ffb444, type: 3}
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}

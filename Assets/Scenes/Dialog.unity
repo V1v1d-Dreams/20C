@@ -1136,7 +1136,7 @@ MonoBehaviour:
   - . . . . . .
   - \wHmmmmmmmmm.\w Oh hey man, got some \npictures that need to be taken care of.
   - . . . . . .
-  - Hmmm. That \rwoman\r who just walked past me?
+  - Hmmm. That \rwoman\r who just walked past \nme?
   - It's hard for someone not to recognize \nher, especially with that \rbeauty\r,
     plus \nsome \rtop brand\r whatever store she owns.
   - You must be really new not to know that \nbut don't worry, just read \rthe newspaper\r
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
   - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}

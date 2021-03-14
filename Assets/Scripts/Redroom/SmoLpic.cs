@@ -13,6 +13,8 @@ public class SmoLpic : MonoBehaviour
     [SerializeField] public bool Press = false;
     [SerializeField] int picnumber = 0;
     [SerializeField] GameObject Light;
+    [SerializeField] GameObject ExitBTN;
+    [SerializeField] GameObject ExitEnlarger;
     
     void Awake()
     {
@@ -76,6 +78,10 @@ public class SmoLpic : MonoBehaviour
             gameObject.SetActive(false);
             GameObject.Find("mechine").GetComponent<Mechine>().Opened = false;
             GameObject.Find("Event controller").GetComponent<Game_handler>().overlay = false;
+            ExitBTN.SetActive(true);
+
+            //THis
+            ExitEnlarger.SetActive(false);
         }
     }
 

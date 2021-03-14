@@ -125,7 +125,7 @@ public class Game_handler : MonoBehaviour
             }
             else
             {
-                exitbutton.SetActive(true);
+                //exitbutton.SetActive(true);
                 Text1.enabled = false;
                 overlayy.SetActive(false);
                 img.enabled = false;

@@ -484,7 +484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &110584103
 GameObject:
@@ -1893,7 +1893,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 10
   Film: {fileID: 0}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
@@ -1976,7 +1976,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 10
   Film: {fileID: 9127718114185621459, guid: 29589960ba3654546b0f94232fd73484, type: 3}
   Film2: {fileID: 9127718114185621459, guid: d544f7fdc8d2ba640b350a9340598632, type: 3}
   Film3: {fileID: 0}
@@ -2805,7 +2805,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 9
   Film: {fileID: 9127718114185621459, guid: 43180d267e3a28546a32b9dd391439ca, type: 3}
   Film2: {fileID: 9127718114185621459, guid: f36a946df61ccb74d90741c85dd5972b, type: 3}
   Film3: {fileID: 0}
@@ -3063,7 +3063,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 7
   Film: {fileID: 9127718114185621459, guid: 9e91aef6585834b4db0d64427b7fc08b, type: 3}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
@@ -4477,6 +4477,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696445019}
   m_CullTransparentMesh: 0
+--- !u!1001 &720733136
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1011038012727953013, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350286306186648993, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: clips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350286306186648993, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: songname.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860932, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_Name
+      value: MusicPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.007406
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.62289596
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.06175232
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896173536343860937, guid: 6432621d330ddf441ac6a0c03663ff58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6432621d330ddf441ac6a0c03663ff58, type: 3}
 --- !u!1 &759233004
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,7 +5937,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 7
   Film: {fileID: 0}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
@@ -6948,7 +7032,7 @@ PrefabInstance:
     - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
@@ -8383,7 +8467,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 11
   Film: {fileID: 0}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
@@ -9154,7 +9238,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 8
   Film: {fileID: 9127718114185621459, guid: 7503a73748e4c234280573c5fd7cee86, type: 3}
   Film2: {fileID: 9127718114185621459, guid: 8bf68c46b4d6a7c458f05503f3435795, type: 3}
   Film3: {fileID: 0}
@@ -9830,7 +9914,7 @@ MonoBehaviour:
 
     Features
 
-    -flim easy
+    -film easy
     snapping'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be643548abab302439a4c3c1a236989f, type: 2}
@@ -10556,7 +10640,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 8
   Film: {fileID: 0}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
@@ -11014,7 +11098,7 @@ Transform:
   m_LocalScale: {x: 6.7814903, y: 6.7814903, z: 6.7814903}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769832380
 GameObject:
@@ -11646,7 +11730,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 11
   Film: {fileID: 9127718114185621459, guid: e4be93bd12065b84298da8b66bb5a748, type: 3}
   Film2: {fileID: 9127718114185621459, guid: 024549c5306234d4b94b38a7e2dcfca5, type: 3}
   Film3: {fileID: 0}
@@ -13294,7 +13378,7 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 6
+  WhatDayisToday: 9
   Film: {fileID: 0}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
@@ -13475,5 +13559,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -27,7 +27,7 @@ public class MP3Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        clips = new AudioClip[6];
+        clips = new AudioClip[3];
         source = GetComponent<AudioSource>();
         //StartCoroutine(Latestart(0.35f));
     }
@@ -89,11 +89,11 @@ public class MP3Player : MonoBehaviour
         {
             if (staticDataHolder.daynumber != prevday)
             {
-                clips = new AudioClip[6];
+                clips = new AudioClip[3];
                 source = GetComponent<AudioSource>();
                 prevday = staticDataHolder.daynumber;
 
-                for (i = 0; i < 6; i++)
+                for (i = 0; i < 3; i++)
                 {
                     clips[i] = GetComponent<Dailyplaylist>().Datdaysong[i];
                 }

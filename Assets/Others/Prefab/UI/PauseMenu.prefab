@@ -606,7 +606,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8395333612588950447}
   - component: {fileID: 8395333612588950449}
-  - component: {fileID: 8395333612588950446}
   m_Layer: 5
   m_Name: BGM_Slider
   m_TagString: Untagged
@@ -680,15 +679,15 @@ MonoBehaviour:
   m_FillRect: {fileID: 8395333611836338576}
   m_HandleRect: {fileID: 8395333612949302664}
   m_Direction: 2
-  m_MinValue: 0.0001
+  m_MinValue: -80
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8395333612588950446}
-        m_MethodName: SetVolume
+      - m_Target: {fileID: 2654964765733272298}
+        m_MethodName: SetvolBGM
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -698,24 +697,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8395333612588950446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8395333612588950444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d37444b01d99c74f9c67e10015b7330, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: c7a003f132b279a45a5de79567c5ff22, type: 2}
-  slider: {fileID: 8395333612588950449}
-  Exposer: BGM
-  soundCheck: 0
-  audioSource: {fileID: 0}
-  onSoundTest: {fileID: 0}
 --- !u!1 &8395333612596654038
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +751,8 @@ MonoBehaviour:
   onClick: {fileID: 8300000, guid: 1f39f14c7dfe406499bcb483609c631f, type: 3}
   onPause: {fileID: 8300000, guid: 1f39f14c7dfe406499bcb483609c631f, type: 3}
   menu: 0
+  RayTraceBlocker: {fileID: 0}
+  Debugger: {fileID: 0}
 --- !u!1 &8395333612759198197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,6 +1439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8395333613468755104}
+  - component: {fileID: 2654964765733272298}
   m_Layer: 0
   m_Name: Settings
   m_TagString: Untagged
@@ -1480,6 +1464,20 @@ Transform:
   m_Father: {fileID: 8395333613624078397}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2654964765733272298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8395333613468755105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0baa92a5d95b1284bad751a3f3334dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGM: {fileID: 24100000, guid: c7a003f132b279a45a5de79567c5ff22, type: 2}
+  SFX: {fileID: 24100000, guid: 593055689f7bf5243a5227336e778755, type: 2}
 --- !u!1 &8395333613472778949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1488,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8395333613472778948}
   - component: {fileID: 8395333613472778953}
-  - component: {fileID: 8395333613472778950}
   - component: {fileID: 8395333613472778951}
   m_Layer: 5
   m_Name: SFX_Slider
@@ -1565,15 +1562,15 @@ MonoBehaviour:
   m_FillRect: {fileID: 8395333612759198196}
   m_HandleRect: {fileID: 8395333611816878246}
   m_Direction: 2
-  m_MinValue: 0.0001
+  m_MinValue: -80
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8395333613472778950}
-        m_MethodName: SetVolume
+      - m_Target: {fileID: 2654964765733272298}
+        m_MethodName: SetvolSFX
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1583,24 +1580,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8395333613472778950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8395333613472778949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d37444b01d99c74f9c67e10015b7330, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 593055689f7bf5243a5227336e778755, type: 2}
-  slider: {fileID: 8395333613472778953}
-  Exposer: SFX
-  soundCheck: 1
-  audioSource: {fileID: 0}
-  onSoundTest: {fileID: 8300000, guid: 1f39f14c7dfe406499bcb483609c631f, type: 3}
 --- !u!114 &8395333613472778951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1618,7 +1597,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 8395333613472778950}
+        - m_Target: {fileID: 0}
           m_MethodName: PlayEffectOnce
           m_Mode: 1
           m_Arguments:

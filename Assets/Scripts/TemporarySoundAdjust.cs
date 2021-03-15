@@ -21,10 +21,10 @@ public class TemporarySoundAdjust : MonoBehaviour
 
     public void SetvolBGM(float volume)
     {
-        BGM.SetFloat("BGM", volume);
+        BGM.SetFloat("BGM", Mathf.Log10(volume) * 20);
     }
     public void SetvolSFX(float volume)
     {
-        SFX.SetFloat("SFX", volume);
+        SFX.SetFloat("SFX", Mathf.Log10(volume) * 20);
     }
 }

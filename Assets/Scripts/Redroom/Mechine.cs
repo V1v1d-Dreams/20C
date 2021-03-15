@@ -138,19 +138,19 @@ public class Mechine : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = mechinelv1;
             MechineUI1.SetActive(false);
-            PhotoPreView = GameObject.Find("Photo preview");
+            //PhotoPreView = GameObject.Find("Photo preview");
         }
         else if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 2)
         {
             GetComponent<SpriteRenderer>().sprite = mechinelv2;
             MechineUI2.SetActive(false);
-            PhotoPreView = GameObject.Find("Photo preview2");
+            //PhotoPreView = GameObject.Find("Photo preview2");
         }
         else
         {
             GetComponent<SpriteRenderer>().sprite = mechinelv3;
             MechineUI3.SetActive(false);
-            PhotoPreView = GameObject.Find("Photo preview3");
+            //PhotoPreView = GameObject.Find("Photo preview3");
         }
 
         EnlargerExit.SetActive(false);

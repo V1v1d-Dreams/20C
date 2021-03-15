@@ -127,6 +127,19 @@ public class Levelloader : MonoBehaviour
         staticDataHolder.currentIndex = 11;
     }
 
+    public void LoadDay(int index)
+    {
+        StartCoroutine(loadlevel(2));
+        staticDataHolder.currentTime = 0;
+        staticDataHolder.currentIndex = index;
+    }
+
+    public void Skiptuto()
+    {
+        StartCoroutine(loadlevel(2));
+        staticDataHolder.finishedtutorial = true;
+    }
+
     public void LoadGame(int slot)
     {
 

@@ -141,14 +141,14 @@ public class Shop : MonoBehaviour
                     TrayBTN.targetGraphic.GetComponent<Image>().sprite = SoldTray;
                     TrayBTN.enabled = false;
                     SoldTrayLebel.SetActive(true);
-                    Debug.Log("Tray : " + staticDataHolder.tray);
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log("Tray : " + staticDataHolder.tray);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 else
                 {
                     //Do something
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
 
@@ -160,14 +160,14 @@ public class Shop : MonoBehaviour
                     EnlargerBTN1.targetGraphic.GetComponent<Image>().sprite = SoldEnlarger1;
                     EnlargerBTN1.enabled = false;
                     SoldEnlargerLebel1.SetActive(true);
-                    Debug.Log(staticDataHolder.mechinelv);
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.mechinelv);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 else
                 {
                     //Do something
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
             case "M2":
@@ -181,14 +181,14 @@ public class Shop : MonoBehaviour
                     EnlargerBTN2.targetGraphic.GetComponent<Image>().sprite = SoldEnlarger2;
                     EnlargerBTN2.enabled = false;
                     SoldEnlargerLebel2.SetActive(true);
-                    Debug.Log(staticDataHolder.mechinelv);
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.mechinelv);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 else
                 {
                     //Do something
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
             case "Paper":
@@ -196,13 +196,13 @@ public class Shop : MonoBehaviour
                 {
                     staticDataHolder.money -= Paper;
                     staticDataHolder.papernumber += 5;
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 else
                 {
                     //Do something
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 //----------------------------------------------------------------
@@ -221,14 +221,14 @@ public class Shop : MonoBehaviour
                     SoldChemLebel3.SetActive(true);
                     //------------------------------------------
                     staticDataHolder.chemlv = 1;
-                    Debug.Log(staticDataHolder.chemlv);
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.chemlv);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 else
                 {
                     //Do something
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 //----------------------------------------------------------------
@@ -247,14 +247,14 @@ public class Shop : MonoBehaviour
                     SoldChemLebel3.SetActive(true);
                     //------------------------------------------
                     staticDataHolder.chemlv = 2;
-                    Debug.Log(staticDataHolder.chemlv);
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.chemlv);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 else
                 {
                     //Do something
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 //----------------------------------------------------------------
@@ -273,14 +273,14 @@ public class Shop : MonoBehaviour
                     SoldChemLebel3.SetActive(true);
                     //------------------------------------------
                     staticDataHolder.chemlv = 3;
-                    Debug.Log(staticDataHolder.chemlv);
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.chemlv);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 else
                 {
                     //Do something
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 //----------------------------------------------------------------
@@ -295,14 +295,14 @@ public class Shop : MonoBehaviour
                         HangerBTN.enabled = false;
                         SoldHangerLebel.SetActive(true);
                     }
-                    Debug.Log(staticDataHolder.hangerLv);
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.hangerLv);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
                 else
                 {
                     //Do something
-                    Debug.Log(staticDataHolder.money);
+                    //Debug.Log(staticDataHolder.money);
                     break;
                 }
 

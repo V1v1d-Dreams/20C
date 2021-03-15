@@ -30,6 +30,9 @@ public class Game_handler : MonoBehaviour
     [SerializeField] Sprite Chem2;
     [SerializeField] Sprite Chem3;
     [SerializeField] public int paperNum;
+    [SerializeField] GameObject photopreview1;
+    [SerializeField] GameObject photopreview2;
+    [SerializeField] GameObject photopreview3;
 
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
@@ -218,6 +221,22 @@ public class Game_handler : MonoBehaviour
         paperNumBa.text = staticDataHolder.papernumber.ToString();
 
         UpdateLv();
+
+        //Debug.Log(staticDataHolder.Todaysfilm.name);
+        //Debug.Log(staticDataHolder.Todaysfilm2.name);
+
+        switch (GameObject.Find("mechine").GetComponent<Mechine>().MechineFilmIn)
+        {
+            case Replacer.FilmNumber.One:
+                ChangeFilm(staticDataHolder.Todaysfilm.GetComponent<Film>());
+                break;
+            case Replacer.FilmNumber.Two:
+                ChangeFilm(staticDataHolder.Todaysfilm2.GetComponent<Film>());
+                break;
+            case Replacer.FilmNumber.Three:
+                ChangeFilm(staticDataHolder.Todaysfilm3.GetComponent<Film>());
+                break;
+        }
 
         if (!overlay)
         {
@@ -431,14 +450,21 @@ public class Game_handler : MonoBehaviour
             }
             else if (raycast[i].collider.gameObject.CompareTag("Film"))
             {
-                Click[0].collider.gameObject.GetComponent<Film>().mouseOnfilm = true;
+                if (Click[0].collider.gameObject.TryGetComponent(out Film film))
+                {
+                    film.mouseOnfilm = true;
+                    Debug.Log("Gamehander :" + film.mouseOnfilm);
+                }
+
+
                 if (Input.GetMouseButtonUp(0))
                 {
                     //transform.position = new Vector2(innitialpos.x, innitialpos.y);
-                    GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
+                    //GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
                     //GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = Click[0].collider.gameObject.GetComponent<Film>().picturearray;
                     //GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().Smol = Click[0].collider.gameObject.GetComponent<Film>().BlurArray;
-                    SoundManager.GetComponent<SoundManager>().PlayFX(1);
+                    
+                    //SoundManager.GetComponent<SoundManager>().PlayFX(1);
                 }
                 break;
             }
@@ -565,4 +591,21 @@ public class Game_handler : MonoBehaviour
 
     }
 
+    public void ChangeFilm(Film Infilm)
+    {
+        if (staticDataHolder.mechinelv == 1)
+        {
+            photopreview1.GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
+        }
+        else if (staticDataHolder.mechinelv == 2)
+        {
+            photopreview2.GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
+        }
+        else
+        {
+            photopreview3.GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
+        }
+
+        //pic = Infilm.picturearray;
+    }
 }

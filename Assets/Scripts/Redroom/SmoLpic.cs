@@ -87,19 +87,20 @@ public class SmoLpic : MonoBehaviour
 
     public void ChangeFilm(Film Infilm)
     {
+        /*
         if (staticDataHolder.mechinelv == 1)
         {
-            gameObject.transform.Find("Photo preview").GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
+            photopreview1.GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
         }
         else if (staticDataHolder.mechinelv == 2)
         {
-            gameObject.transform.Find("Photo preview2").GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
+            photopreview2.GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
         }
         else
         {
-            gameObject.transform.Find("Photo preview3").GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
+            photopreview3.GetComponent<SpriteRenderer>().sprite = Infilm.FilmSprite;
         }
-
+        */
         pic = Infilm.picturearray;
     }
 }

@@ -3087,6 +3087,21 @@ PrefabInstance:
       propertyPath: Filmslot
       value: 
       objectReference: {fileID: 219628691}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: photopreview1
+      value: 
+      objectReference: {fileID: 1770421255}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: photopreview2
+      value: 
+      objectReference: {fileID: 265431648}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: photopreview3
+      value: 
+      objectReference: {fileID: 586161186}
     - target: {fileID: 6955669494799684889, guid: 816ac0e062ccdf042890c7ba647b6929,
         type: 3}
       propertyPath: m_Name
@@ -6768,6 +6783,21 @@ PrefabInstance:
       propertyPath: Filmslot
       value: 
       objectReference: {fileID: 1730259446}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: photopreview1
+      value: 
+      objectReference: {fileID: 1770421255}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: photopreview2
+      value: 
+      objectReference: {fileID: 265431648}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: photopreview3
+      value: 
+      objectReference: {fileID: 586161186}
     - target: {fileID: 6955669494799684889, guid: 816ac0e062ccdf042890c7ba647b6929,
         type: 3}
       propertyPath: m_Name
@@ -8314,6 +8344,9 @@ MonoBehaviour:
   Chem2: {fileID: 21300000, guid: 5b732ae862eea564aa7cc3a76e21bad7, type: 3}
   Chem3: {fileID: 21300000, guid: 36ebeb5ca48a38b4da6258a9090d288c, type: 3}
   paperNum: 0
+  photopreview1: {fileID: 1770421255}
+  photopreview2: {fileID: 265431648}
+  photopreview3: {fileID: 586161186}
   currentmouseon: {fileID: 0}
   mouseonINV: 0
   mouseontoolINV: 0
@@ -17605,6 +17638,21 @@ PrefabInstance:
       propertyPath: Filmslot
       value: 
       objectReference: {fileID: 378968452}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: photopreview1
+      value: 
+      objectReference: {fileID: 1770421255}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: photopreview2
+      value: 
+      objectReference: {fileID: 265431648}
+    - target: {fileID: 6955669494799684837, guid: 816ac0e062ccdf042890c7ba647b6929,
+        type: 3}
+      propertyPath: photopreview3
+      value: 
+      objectReference: {fileID: 586161186}
     - target: {fileID: 6955669494799684889, guid: 816ac0e062ccdf042890c7ba647b6929,
         type: 3}
       propertyPath: m_Name

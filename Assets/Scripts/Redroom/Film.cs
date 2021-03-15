@@ -78,12 +78,18 @@ public class Film : MonoBehaviour
 
         returelayer();
         Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
-
+        Debug.Log("film :"+mouseOnfilm);
         if (mouseOnfilm)
         {
+            Debug.Log("before" + FindObjectOfType<SoundManager>().name);
+            FindObjectOfType<SoundManager>().GetComponent<SoundManager>().PlayFX(1);
+            Debug.Log("after" + FindObjectOfType<SoundManager>().name);
+
             transform.position = new Vector2(innitialpos.x, innitialpos.y);
             GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
             GameObject.Find("mechine").GetComponent<Mechine>().MechineFilmIn = FilmFilmnum;
+
+            mouseOnfilm = false;
             //GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = picturearray;
             //GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().Smol = BlurArray;
         }/*
@@ -112,7 +118,7 @@ public class Film : MonoBehaviour
 
         //oninv = gaemhander.GetComponent<Game_handler>().mouseonINV;
 
-        mouseOnfilm = false;
+        //mouseOnfilm = false;
     }
 
     void setlayer(int layer)

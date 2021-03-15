@@ -17,6 +17,7 @@ public class Replacer : MonoBehaviour
             {
                 GetComponent<Film>().picturearray = films.picturearray;
                 GetComponent<Film>().FilmFilmnum = filmnum;
+                GetComponent<Film>().Picnumber = films.Picnumber;
             }
         }
         else if (filmnum == Replacer.FilmNumber.Two)

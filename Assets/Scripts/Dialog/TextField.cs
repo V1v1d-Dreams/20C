@@ -130,7 +130,18 @@ public class TextField : MonoBehaviour
             {
                 StartCoroutine(Typewritter(speed));
             }
-        }    
+        }
+        else if(Input.GetKeyUp(KeyCode.F10) && !PauseScript.GameIsPause)
+        {
+            staticDataHolder.Todaysfilm = Film;
+            staticDataHolder.Todaysfilm2 = Film2;
+            staticDataHolder.Todaysfilm3 = Film3;
+            GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+        }
+        else if (Input.GetKeyUp(KeyCode.F11) && !PauseScript.GameIsPause)
+        {
+            staticDataHolder.money += 100;
+        }
     }
 
     IEnumerator Typewritter(float TypewriterSpeed)

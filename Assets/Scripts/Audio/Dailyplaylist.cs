@@ -26,7 +26,7 @@ public class Dailyplaylist : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         //Loaded = false;
         //StartCoroutine(Latestarts(0.30f));
     }

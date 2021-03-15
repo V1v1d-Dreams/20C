@@ -33,6 +33,7 @@ public class MP3Player : MonoBehaviour
     }
     public void listconvert()
     {
+        prevday = staticDataHolder.daynumber;
         songname.Clear();
         songlistdrop.value = 0;
 
@@ -91,13 +92,14 @@ public class MP3Player : MonoBehaviour
             {
                 clips = new AudioClip[3];
                 source = GetComponent<AudioSource>();
-                prevday = staticDataHolder.daynumber;
+                
 
                 for (i = 0; i < 3; i++)
                 {
                     clips[i] = GetComponent<Dailyplaylist>().Datdaysong[i];
                 }
                 listconvert();
+                
             }
             timer += Time.deltaTime;
 

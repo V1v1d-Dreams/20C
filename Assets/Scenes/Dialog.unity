@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1966,6 +1966,9 @@ MonoBehaviour:
   - Beautiful woman
   - You
   character:
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
   - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
   - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
   ShopAfterThis: 0

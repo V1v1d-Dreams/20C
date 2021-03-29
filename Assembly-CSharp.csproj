@@ -75,13 +75,10 @@
     <Compile Include="Assets\Scripts\Dialog\TextField.cs" />
     <Compile Include="Assets\Scripts\Dialog\Textmanager.cs" />
     <Compile Include="Assets\Scripts\Levelloader.cs" />
-    <Compile Include="Assets\Scripts\Mainmenu\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\Mainmenu\ButtonManager1.cs" />
     <Compile Include="Assets\Scripts\Mainmenu\CircleSlider.cs" />
     <Compile Include="Assets\Scripts\Mainmenu\Menudisable.cs" />
-    <Compile Include="Assets\Scripts\Mainmenu\ResponsiveMenu.cs" />
     <Compile Include="Assets\Scripts\Mainmenu\SaveInfoLoader.cs" />
-    <Compile Include="Assets\Scripts\Mainmenu\Windowmanager.cs" />
     <Compile Include="Assets\Scripts\Nextday.cs" />
     <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\PixelatedFont.cs" />

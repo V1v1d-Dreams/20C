@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 [DisallowMultipleComponent]
 
@@ -14,6 +15,8 @@ public class ButtonManager1 : MonoBehaviour
     [Tooltip("Put dropdown in here")]
     [SerializeField]
     Dropdown resolutionDropdown;
+    [SerializeField]
+    TMP_Dropdown TMPResolutionDropdown;
     Resolution[] resolutions;
 
     [Header("Animator")]
@@ -28,7 +31,8 @@ public class ButtonManager1 : MonoBehaviour
 
     private void Awake()
     {
-        dropDownCurrentStartResolution();
+        //dropDownCurrentStartResolution();
+        TMPDropDownCurrentStartResolution();
     }
     public void Start()
     {
@@ -79,6 +83,27 @@ public class ButtonManager1 : MonoBehaviour
                         if (x == y)
                         {
                             resolutionDropdown.value = x;
+                            return;
+                        }
+                        return;
+                    }
+                }
+            }
+        }
+    }
+    void TMPDropDownCurrentStartResolution()
+    {
+        for (int x = 0; x < widths.Count; x++)
+        {
+            if (Screen.width == widths[x])
+            {
+                for (int y = 0; y < heights.Count; y++)
+                {
+                    if (Screen.height == heights[y])
+                    {
+                        if (x == y)
+                        {
+                            TMPResolutionDropdown.value = x;
                             return;
                         }
                         return;

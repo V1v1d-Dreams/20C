@@ -36,7 +36,7 @@ public class ButtonManager1 : MonoBehaviour
     }
     public void Start()
     {
-        MainCamera.SetFloat("AnimationNumber", 0);
+        //MainCamera.SetFloat("AnimationNumber", 0);
 
         //resolutionAll();
     }
@@ -56,9 +56,17 @@ public class ButtonManager1 : MonoBehaviour
     {
         MainCamera.SetInteger("AnimationNumber", 1);
     }
+    public void Credits()
+    {
+        MainCamera.SetInteger("AnimationNumber", 2);
+    }
     public void Settings_To_Main()
     {
         MainCamera.SetInteger("AnimationNumber", 11);
+    }
+    public void Credits_To_Main()
+    {
+        MainCamera.SetInteger("AnimationNumber", 22);
     }
     public void Exit()
     {

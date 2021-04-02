@@ -29,9 +29,15 @@ public class VolumeMixer : MonoBehaviour
     public AudioClip onSoundTest;
 
     Toggle audioToggle;
+    [Header("For BGM Toggle mute setting")]
+    public bool isBGM = false;
     void Awake()
     {
         soundForce = this;
+        if (isBGM == true)
+        {
+            audioSource.ignoreListenerVolume = true;
+        }
     }
 
     void Start()
@@ -44,6 +50,10 @@ public class VolumeMixer : MonoBehaviour
         {
             audioToggle.isOn = false;
         }
+        else
+        {
+            audioToggle.isOn = true;
+        }
         //print(audioMixer.name + slider.value);
         if (slider != null)
         {
@@ -51,6 +61,8 @@ public class VolumeMixer : MonoBehaviour
             SetVolume(slider.value);
         }
         //print(audioMixer.name + slider.value);
+
+        
     }
     public void SetVolume (float sliderValue)
     {  
@@ -74,6 +86,18 @@ public class VolumeMixer : MonoBehaviour
         else
         {
             AudioListener.volume = 0;
+        }
+    }
+
+    public void toggleSourceOnvalueChange(bool musicIn)
+    {
+        if (musicIn)
+        {
+            audioSource.mute = false;
+        }
+        else
+        {
+            audioSource.mute = true;
         }
     }
 }

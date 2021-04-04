@@ -65,7 +65,7 @@ public class Progressmanager : MonoBehaviour
         }
     }
 
-	public void End()
+	public void End(bool Endday)
     {
 		if (staticDataHolder.finishedtutorial)
         {
@@ -73,14 +73,14 @@ public class Progressmanager : MonoBehaviour
 			//print(staticDataHolder.currentTime);
 			TimeInnDex[staticDataHolder.currentIndex].SetActive(false);
 			staticDataHolder.currentIndex++;
-			if (staticDataHolder.currentTime == 0)
+			if (!Endday)
 			{
 				GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(3);
 				staticDataHolder.currentTime++;
 			}//sometimes staticDataHolder.currentTime == 3 idk why (prob from redroom exit button spam)
-			else
+			else 
 			{
-				GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(4);
+				GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(4); // end day
 			}
 		}
 		else if (!staticDataHolder.finishedtutorial && staticDataHolder.currentTime == 0)

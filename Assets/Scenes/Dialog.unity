@@ -979,6 +979,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1151,6 +1152,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1342,6 +1344,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2461,6 +2464,7 @@ MonoBehaviour:
   - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2473,7 +2477,7 @@ MonoBehaviour:
   nextline: 0.4
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
-  Timeindex: 0
+  Timeindex: 2
   WhatDayisToday: 1
   Film: {fileID: 0}
   Film2: {fileID: 0}
@@ -2652,6 +2656,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2738,6 +2743,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 471b25a3007dc1340aeabb59cbb6ea96, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -3161,6 +3167,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -3963,6 +3970,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: f0b4d8bfa267df54ab4426f5a24341e3, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -4067,6 +4075,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -4221,6 +4230,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 4f9ad4dfbab03d4498d2cd69082c3773, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -4617,6 +4627,7 @@ MonoBehaviour:
   - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -5319,6 +5330,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -6726,6 +6738,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -7273,6 +7286,7 @@ MonoBehaviour:
   - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -7911,6 +7925,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: fe50ed4b56c510a47bff83f4324b129e, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -9888,6 +9903,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 90e825d8baf3d3c4a8976a2cc9ea1f88, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -10383,6 +10399,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -11302,6 +11319,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 17bc7871bfcba6b498ac6b541eddfeab, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -11525,6 +11543,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -11774,6 +11793,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 6f7b7f54e2dac0f458ea4604ac6a9341, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -12551,6 +12571,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -13208,6 +13229,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -13373,6 +13395,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -13997,6 +14020,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 0}
   News: {fileID: 0}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -14171,14 +14195,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2046586561}
         m_MethodName: End
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1822687812
 GameObject:
@@ -14304,6 +14328,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: e3ee565f25b40d24ab5a3cdce4ffb444, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -15267,6 +15292,7 @@ MonoBehaviour:
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 2de60545fcb1ab54b98e78944e9f502c, type: 3}
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -16656,6 +16682,7 @@ MonoBehaviour:
   - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
+  endday: 1
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}

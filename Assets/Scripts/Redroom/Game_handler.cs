@@ -33,6 +33,9 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject photopreview1;
     [SerializeField] GameObject photopreview2;
     [SerializeField] GameObject photopreview3;
+    [SerializeField] GameObject List;
+    [SerializeField] GameObject Guidebook;
+    [SerializeField] PhotoinfilmCheck photoFCheck;
 
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
@@ -305,7 +308,20 @@ public class Game_handler : MonoBehaviour
                     Click[0].collider.gameObject.GetComponent<Film>().isholding = false;
                     Click[0].collider.gameObject.GetComponent<Film>().transform.position = new Vector2(Click[0].collider.gameObject.GetComponent<Film>().innitialpos.x, Click[0].collider.gameObject.GetComponent<Film>().innitialpos.y);
                 }
+                else if (Click[0].collider.gameObject.name == "list")
+                {
+                    photoFCheck.Checkphoto();
+                    List.SetActive(true);
+                    overlay = true;
+                }
+                else if (Click[0].collider.gameObject.name == "book")
+                {
+                    Guidebook.SetActive(true);
+                    overlay = true;
+                }
                 
+
+
             }
         }
 
@@ -607,5 +623,17 @@ public class Game_handler : MonoBehaviour
         }
 
         //pic = Infilm.picturearray;
+    }
+
+    public void ExitList()
+    {
+        overlay = false;
+        List.SetActive(false);
+    }
+
+    public void ExitGuide()
+    {
+        overlay = false;
+        Guidebook.SetActive(false);
     }
 }

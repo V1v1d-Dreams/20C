@@ -7,6 +7,11 @@ public class Film : MonoBehaviour
     public Replacer.FilmNumber FilmFilmnum;
 
     [SerializeField] public int Picnumber;
+
+    [SerializeField] public int PicInFilm1;
+    [SerializeField] public int PicInFilm2;
+    [SerializeField] public int PicInFilm3;
+
     [SerializeField] public Sprite FilmSprite;
 
     public Texture2D Normal;

@@ -8,6 +8,7 @@ public class Picture : MonoBehaviour
     [Tooltip("Doesn't do anything. Just comments shown in inspector")]
     public string Notes = "FILL IN THIS SHIT";
     [SerializeField] public int PhotoID = 0;
+    [SerializeField] public int PhotoInFilm = 0;
     [SerializeField] Sprite Fullpic;
 
     [Header("Value")]

@@ -17,6 +17,7 @@ public class TextField : MonoBehaviour
     [SerializeField] Sprite[] characterUnsat;
     [SerializeField] GameObject shopOverlay;
     [SerializeField] Sprite News;
+    [SerializeField] bool endday = false;
     char[] Chararray;
     [Header("System Data")]
     float speed;
@@ -136,7 +137,7 @@ public class TextField : MonoBehaviour
             staticDataHolder.Todaysfilm = Film;
             staticDataHolder.Todaysfilm2 = Film2;
             staticDataHolder.Todaysfilm3 = Film3;
-            GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+            GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End(endday);
         }
         else if (Input.GetKeyUp(KeyCode.F11) && !PauseScript.GameIsPause)
         {
@@ -240,7 +241,7 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm = Film;
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
-                    GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+                    GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End(endday);
                 }
             }
         }
@@ -335,7 +336,7 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm = Film;
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
-                    GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End();
+                    GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End(endday);
                 }
             }
         }

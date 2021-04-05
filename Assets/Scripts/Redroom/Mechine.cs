@@ -20,7 +20,7 @@ public class Mechine : MonoBehaviour
     [SerializeField] public GameObject PhotoPreView;
     [SerializeField] public float value;
     [Range(0f,100f)]
-    [SerializeField] public float valuePercent;
+    [SerializeField] public float valuePercent = 0;
     [SerializeField] public bool CanPress;
     [SerializeField] public float delayed = 10;
     [HideInInspector] public bool holdingitem = false;
@@ -78,7 +78,7 @@ public class Mechine : MonoBehaviour
         if (filmin&&paperin&&!Opened&&ButtonP)
         {
             //smolpic.GetComponent<SmoLpic>().nextclicktime = Time.time + smolpic.GetComponent<SmoLpic>().timer;
-            StartCoroutine(Randomize());
+            //StartCoroutine(Randomize());
 
             if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 1)
             {

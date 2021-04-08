@@ -198,6 +198,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33821461}
   m_CullTransparentMesh: 0
+--- !u!1 &59518604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 59518605}
+  - component: {fileID: 59518606}
+  m_Layer: 0
+  m_Name: Tutorial2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &59518605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59518604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &59518606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59518604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - You done? Oh well, even a toddler could \ndo that.
+  - "Remember one last thing, don\u2019t mind \\nthe pictures and they won\u2019t
+    mind you."
+  - Anyway! It's time for me to go now.\nGot a bus to catch! Good luck my boy
+  Names:
+  - Previous Owner
+  - Previous Owner
+  - Previous Owner
+  character:
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - What the .... I came here to get some photo\ndevelped and you can't even do this\n\rstuff!?\r
+  - ' . . . . . .'
+  - You are lucky that you are the only one\nphoto shop in this area!
+  - ' . . . . . .'
+  - Here take it\nand don't make me disappoint next time!
+  - ' . . . . . .'
+  NameUnsat:
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 1
+  Film: {fileID: 9127718114185621459, guid: a1b70e4f59ff9194bb5ef9f547ef72ec, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &68682597
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +556,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &84486706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84486707}
+  m_Layer: 0
+  m_Name: Day4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &84486707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84486706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2130656008}
+  - {fileID: 1068155378}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &84716726
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +690,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &110584103
 GameObject:
@@ -819,6 +951,87 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &136947614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 136947615}
+  - component: {fileID: 136947616}
+  m_Layer: 0
+  m_Name: NewsOverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &136947615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136947614}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4, y: -0.94, z: 2.0679817}
+  m_LocalScale: {x: 6.988623, y: 6.988623, z: 6.988623}
+  m_Children: []
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &136947616
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136947614}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a17d9f99b0b82594d886d7b092a6c009, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.56, y: 1.44}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &140505240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1285,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148446829}
   m_CullTransparentMesh: 0
+--- !u!1 &153422864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 153422865}
+  m_Layer: 0
+  m_Name: Day7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &153422865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153422864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 950162055}
+  - {fileID: 176422100}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &158550252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,7 +1328,7 @@ GameObject:
   - component: {fileID: 158550253}
   - component: {fileID: 158550254}
   m_Layer: 0
-  m_Name: Evening
+  m_Name: Morning (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1116,40 +1361,224 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
+  - Oh! Looks like I just came in at the \nright moment.
+  - It looks like you just finished with \nmy films.
+  - Oh, it looks like it's almost evening \nalready.
+  - One more thing, sir. I suggest that \nyou try to stay in the door at night \nduring
+    this time.
   - . . . . . .
-  - Let's see here. Thanks, the money is \non the table, keep the change.
+  - Don't get me wrong sir, I'm just \nwarning you because you look like \nthose
+    quiet types you know?
+  - My brother is a \rpolice officer\r and he \ntold me that there have been many
+    \n\rpeople gone missing\r  in this area \nrecently.
   - . . . . . .
-  - Welcome!
+  - Look, believe me or not.
+  - The officials haven't stated this event \njust yet, I don't know why but just
+    \nremember that I warned you.
+  - ' I will be going before it gets dark now.'
+  - . . . . . .
+  - . . . . . .
+  - \wHmmmmm,\w what a vintage looking store.
+  - ' You''ve got yourself quite a spot huh.'
+  - . . . . . .
+  - \cDon't mind me,\c I'm just another \ncustomer for your service.
+  - Here is my roll.
+  - . . . . . .
+  - I'm just gonna take in the atmosphere \naround here.
+  - You know, old vintage feeling.
+  - ' No offense by the way.'
+  - . . . . . .
   Names:
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
   - You
-  - Chubby cigarette man
+  - Moody looking man
+  - Moody looking man
   - You
-  - The Salesman
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
+  - You
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - A man with blue cap
+  - You
   character:
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 0}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  ShopAfterThis: 1
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
-  - Jesus, these images suck. . .
+  - Oh! Looks like I just came in at the \nright moment.
+  - It looks like you just finished with \nmy films.
+  - Well . . . I didn't expect the quality \nto be this bad.
   - . . . . . .
-  - Improve your skill if you still want \npeople to come here.
+  - \rFUCK!\r
   - . . . . . .
-  - Welcome!
+  - . . . . . .
+  - \wHmmmmm,\w what a vintage looking store.
+  - ' You''ve got yourself quite a spot huh.'
+  - . . . . . .
+  - \cDon't mind me,\c I'm just another \ncustomer for your service.
+  - Here is my roll.
+  - . . . . . .
+  - I'm just gonna take in the atmosphere \naround here.
+  - You know, old vintage feeling.
+  - ' No offense by the way.'
+  - . . . . . .
   NameUnsat:
-  - Chubby cigarette man
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
   - You
-  - Chubby cigarette man
+  - Moody looking man
   - You
-  - The Salesman
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - A man with blue cap
+  - You
   characterUnsat:
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 4
+  Film: {fileID: 9127718114185621459, guid: 43180d267e3a28546a32b9dd391439ca, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: f36a946df61ccb74d90741c85dd5972b, type: 3}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
+--- !u!1 &176422099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 176422100}
+  - component: {fileID: 176422101}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &176422100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176422099}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 153422865}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &176422101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176422099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Oh, took ya long enough but who am I \nto complain anyway.
+  - . . . . . .
+  Names:
+  - Tan-skinned woman
+  - You
+  character:
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 0}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - Damn! Seems like the previous one did \na better job than you.
+  - Really hope that \rthe boss\r will accept \nthis.
+  - . . . . . .
+  NameUnsat:
+  - Tan-skinned woman
+  - Tan-skinned woman
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 0}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
@@ -1166,11 +1595,11 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 4
+  WhatDayisToday: 7
   Film: {fileID: 0}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
-  NewsOverlay: {fileID: 1739425348}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &183864557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1661,8 @@ Transform:
   m_Children:
   - {fileID: 988154388}
   - {fileID: 583720422}
+  - {fileID: 354130300}
+  - {fileID: 1494523580}
   m_Father: {fileID: 1653975225}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1246,7 +1677,7 @@ GameObject:
   - component: {fileID: 195314204}
   - component: {fileID: 195314205}
   m_Layer: 0
-  m_Name: morning
+  m_Name: Morning (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1279,71 +1710,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Oh hey \chandsome.\c
-  - You must be \wthe new owner\w of this \nplace, and you finally got rid of that
-    \r\ndigusting person\r from this store!
-  - About that, I am looking for lands in \nthis part of town for my \rnew warehouse\r
-    \nand your land catches my eyes.
-  - So! How about selling this land to me \n\wright now?\w
-  - . . . . . .
-  - Well . . . you just opened this store \nnot so long ago.
-  - The deal still stands, I will give you \nsome more time.
-  - If you change your mind, \wcall me.\w
-  - . . . . . .
-  - \wHmmmmmmmmm.\w Oh hey man, got some \npictures that need to be taken care of.
-  - . . . . . .
-  - Hmmm. That \rwoman\r who just walked past \nme?
-  - It's hard for someone not to recognize \nher, especially with that \rbeauty\r,
-    plus \nsome \rtop brand\r whatever store she owns.
-  - You must be really new not to know that \nbut don't worry, just read \rthe newspaper\r
-    \neveryday and you will see her there.
-  - Especially during this time, some of \nher property got related to some cases
-    \nbut that is for you to read not for me \nto explain.
-  - Now could you please take care of \nmy god damn pictures!
+  - \cSup!\c
+  - Same deal, a set of pictures for \n\rmy boss.\r
+  - Here is the film.
   - . . . . . .
   Names:
-  - Rich-looking lady
-  - Rich-looking lady
-  - Rich-looking lady
-  - Rich-looking lady
-  - You
-  - Rich-looking lady
-  - Rich-looking lady
-  - Rich-looking lady
-  - You
-  - Black sunglasses man
-  - You
-  - Black sunglasses man
-  - Black sunglasses man
-  - Black sunglasses man
-  - Black sunglasses man
-  - Black sunglasses man
+  - Tan-skinned woman
+  - Tan-skinned woman
+  - Tan-skinned woman
   - You
   character:
-  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
+  News: {fileID: 21300000, guid: 471b25a3007dc1340aeabb59cbb6ea96, type: 3}
   endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -1359,8 +1746,8 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 6
-  Film: {fileID: 9127718114185621459, guid: e935d14c069be424bb1952d2ecdcaf14, type: 3}
-  Film2: {fileID: 0}
+  Film: {fileID: 9127718114185621459, guid: e4be93bd12065b84298da8b66bb5a748, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 024549c5306234d4b94b38a7e2dcfca5, type: 3}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &213064793
@@ -1858,7 +2245,7 @@ Transform:
   m_LocalScale: {x: 7.0048504, y: 7.0048504, z: 7.0048504}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &247433273
 GameObject:
@@ -2380,6 +2767,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335148828}
   m_CullTransparentMesh: 0
+--- !u!1 &340880986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 340880987}
+  m_Layer: 0
+  m_Name: Day11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &340880987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340880986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1303237351}
+  - {fileID: 961778265}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &345508224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,7 +2810,7 @@ GameObject:
   - component: {fileID: 345508225}
   - component: {fileID: 345508226}
   m_Layer: 0
-  m_Name: Evening
+  m_Name: Morning (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2431,6 +2850,12 @@ MonoBehaviour:
   - . . . . . .
   - \cHeh heh boi!\c Here the money for ya.
   - . . . . . .
+  - . . . . . .
+  - Hello, this old man wants his \npictures developed.
+  - . . . . . .
+  - "You're quite \\ra quiet person\\r, aren\u2019t you?"
+  - . . . . . .
+  - . . . . . .
   Names:
   - You
   - Good looking African guy
@@ -2439,6 +2864,12 @@ MonoBehaviour:
   - You
   - Good looking African guy
   - You
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
   character:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
@@ -2447,6 +2878,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
@@ -2454,17 +2891,35 @@ MonoBehaviour:
   - Man, I know that you could do better \nthan this. Try harder man. \nWell, this
     is for your effort.
   - ' . . . . . .'
+  - ' . . . . . .'
+  - Hello, this old man wants his \npictures developed.
+  - ' . . . . . .'
+  - "You're quite \\ra quiet person\\r, aren\u2019t you?"
+  - ' . . . . . .'
+  - Nevermind. Just do the job.
   NameUnsat:
   - Good looking African guy
   - Good looking African guy
   - You
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
   characterUnsat:
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
-  endday: 1
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2479,7 +2934,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 2
   WhatDayisToday: 1
-  Film: {fileID: 0}
+  Film: {fileID: 9127718114185621459, guid: 050941a2fb4a6fd4dbfb661ec6d25620, type: 3}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
@@ -2564,6 +3019,180 @@ Transform:
   m_Father: {fileID: 1822687813}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &354130299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 354130300}
+  - component: {fileID: 354130301}
+  m_Layer: 0
+  m_Name: Morning (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &354130300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354130299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 184500557}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &354130301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354130299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Is it done?
+  - Yeah, and with no witnesses.
+  - Good, as we've agreed, you will get \n\rthe money\r later this week, Joseph.
+  - Don't forget about \rour agreement\r, Merle.
+  - I'll take 30 percent of the cut.
+  - \wDon't worry\w, I won't forget it.
+  - . . . . . .
+  - Ah! Look like you are done with the work.
+  - Let's see here. . .
+  - Thanks again, the money is on the table.
+  - I will be going now.
+  - Remember Merle, \r30 percent\r.
+  - . . . . . .
+  - . . . . . .
+  - Oh hello again!
+  - ' This old man will be in your \ncare again.'
+  - Here is the film.
+  Names:
+  - A man in a blue suit
+  - Chubby cigarette man
+  - A man in a blue suit
+  - Joseph
+  - Joseph
+  - Merle
+  - You
+  - Joseph
+  - Joseph
+  - Joseph
+  - Joseph
+  - Joseph
+  - Merle
+  - You
+  - Merle
+  - Merle
+  - Merle
+  character:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - Is it done?
+  - Yeah, and with no witnesses.
+  - Good, as we've agreed, you will get \n\rthe money\r later this week, Joseph.
+  - Don't forget about \rour agreement\r, Merle.
+  - I'll take 30 percent of the cut.
+  - \wDon't worry\w, I won't forget it.
+  - . . . . . .
+  - Ah! Look like you are done with the work.
+  - Let's see here. . .
+  - Thanks again, the money is on the table.
+  - I will be going now.
+  - Remember Merle, \r30 percent\r.
+  - . . . . . .
+  - . . . . . .
+  - Oh hello again!
+  - ' This old man will be in your \ncare again.'
+  - Here is the film.
+  NameUnsat:
+  - A man in a blue suit
+  - Chubby cigarette man
+  - A man in a blue suit
+  - Joseph
+  - Joseph
+  - Merle
+  - You
+  - Joseph
+  - Joseph
+  - Joseph
+  - Joseph
+  - Joseph
+  - Merle
+  - You
+  - Merle
+  - Merle
+  - Merle
+  characterUnsat:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 5
+  Film: {fileID: 9127718114185621459, guid: e4be93bd12065b84298da8b66bb5a748, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 024549c5306234d4b94b38a7e2dcfca5, type: 3}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &362908905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,6 +3391,119 @@ MonoBehaviour:
   Film2: {fileID: 9127718114185621459, guid: d544f7fdc8d2ba640b350a9340598632, type: 3}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
+--- !u!1 &375419359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375419360}
+  m_Layer: 0
+  m_Name: Day2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &375419360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375419359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 854755492}
+  - {fileID: 589982910}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &377969212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377969213}
+  - component: {fileID: 377969214}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &377969213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377969212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2143979415}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377969214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377969212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - H . . . hey. . . Here is what I want \nyou to develop.
+  - Please be extra careful with them..
+  - . . . . . .
+  Names:
+  - A long hair guy
+  - A long hair guy
+  - You
+  character:
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: fe50ed4b56c510a47bff83f4324b129e, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 5
+  Film: {fileID: 9127718114185621459, guid: 8230e9eae0348434e9ce70910023d173, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &406644724
 GameObject:
   m_ObjectHideFlags: 0
@@ -4000,7 +4742,7 @@ GameObject:
   - component: {fileID: 526366033}
   - component: {fileID: 526366034}
   m_Layer: 0
-  m_Name: morning
+  m_Name: Morning (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4445,6 +5187,198 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &549805964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 549805965}
+  - component: {fileID: 549805966}
+  m_Layer: 0
+  m_Name: Evening (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &549805965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549805964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1859802839}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &549805966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549805964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Ummm. . . You didn't see anything \n\rweird\r in my pictures, right?
+  - ' . . . . . .'
+  - I'll take that as a no then.
+  - Here is your money plus some extra.
+  - ' . . . . . .'
+  - \cHeh heh heh\c, seems like \rthe old man\r \nleft in a hurry, wondering why
+    he did that.
+  - At least I still got \ryou\r instead of his \nplace!
+  - ' . . . . . .'
+  - Oh! A silent type. \nDon't worry, I can read your thoughts.
+  - I'm no strange man, I'm just a simple \n\cbusiness man.\c
+  - You may call me \r"The Salesman"\r
+  - You might wonder why am I here.
+  - Worry not, because I got you covered!
+  - Everything from a \rfilm paper\r to \n\rnew equipment\r, I got it all!
+  - If you got a \rcredit\r that is.
+  - Here is an offer for you.
+  - You buy your \rsupply\r from me only and \nI'll give you a special discount!
+    \nDeal?
+  - ' . . . . . .'
+  - Good! I'll take that as a yes then!
+  - Here is a \cfree proposal\c for you.
+  - Take them and gain some money and \nI'll come back again to take yours \n\cheh
+    heh heh.\c
+  Names:
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - A man in a blue suit
+  - You
+  - A strange man
+  - A strange man
+  - You
+  - A strange man
+  - A strange man
+  - A strange man
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - You
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - Ummmm, could be better but whatever.
+  - ' . . . . . .'
+  - \cHeh heh heh\c, seems like \rthe old man\r \nleft in a hurry, wondering why
+    he did that.
+  - At least I still got \ryou\r instead of his \nplace!
+  - ' . . . . . .'
+  - Oh! A silent type. \nDon't worry, I can read your thoughts.
+  - I'm no strange man, I'm just a simple \n\cbusiness man.\c
+  - You may call me \r"The Salesman"\r
+  - You might wonder why am I here.
+  - Worry not, because I got you covered!
+  - Everything from a \rfilm paper\r to \n\rnew equipment\r, I got it all!
+  - If you got a \rcredit\r that is.
+  - You buy your \rsupply\r from me only and \nI'll give you a special discount!
+    \nDeal?
+  - ' . . . . . .'
+  - Good! I'll take that as a yes then!
+  - Here is a \cfree proposal\c for you.
+  - Take them and gain some money and \nI'll come back again to take yours \n\cheh
+    heh heh.\c
+  NameUnsat:
+  - A man in a blue suit
+  - You
+  - A strange man
+  - A strange man
+  - You
+  - A strange man
+  - A strange man
+  - A strange man
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - You
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 1
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &564156307
 GameObject:
   m_ObjectHideFlags: 0
@@ -4567,7 +5501,7 @@ GameObject:
   - component: {fileID: 583720422}
   - component: {fileID: 583720423}
   m_Layer: 0
-  m_Name: Evening
+  m_Name: Morning (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4601,30 +5535,273 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
-  - O . . . oh, finally. Thank you.
+  - \wYa cool?\w
+  - . . . . . .
+  - \cHeh heh boi!\c As usual, this will be a \nblast! Byeee!
+  - . . . . . .
+  - . . . . . .
+  - Good day, I will be in your care \nagain today.
+  - . . . . . .
+  - I swear that your face looks \rfamiliar\r.
+  - "We must have met before.\r"
   - . . . . . .
   Names:
   - You
-  - A long hair guy
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - You
+  - You
+  - Chubby cigarette man
+  - You
+  - Chubby cigarette man
+  - Chubby cigarette man
   - You
   character:
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
-  - Hey! The heck is wrong with these \npictures?
-  - Didn't I pay you to properly develop \nthem?
+  - \wYoooo bro! What the helllllllll!\w
+  - What happens to you when I'm not here?
+  - Someone troubles you?
+  - 'You can just tell me and I will send \nsomeone to get rid of them. '
+  - Anyway, this is for your effort for the \nwork.
+  - . . . . . .
+  - . . . . . .
+  - Good day, I will be in your care \nagain today.
+  - . . . . . .
+  - I swear that your face looks \rfamiliar\r.
+  - "We must have met before.\r"
   - . . . . . .
   NameUnsat:
-  - A long hair guy
-  - A long hair guy
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
+  - You
+  - Chubby cigarette man
+  - You
+  - Chubby cigarette man
+  - Chubby cigarette man
   - You
   characterUnsat:
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 5
+  Film: {fileID: 9127718114185621459, guid: e4be93bd12065b84298da8b66bb5a748, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 024549c5306234d4b94b38a7e2dcfca5, type: 3}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
+--- !u!1 &589982909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589982910}
+  - component: {fileID: 589982911}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &589982910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589982909}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 375419360}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &589982911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589982909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Ummm. . . You didn't see anything \n\rweird\r in my pictures, right?
+  - ' . . . . . .'
+  - I'll take that as a no then.
+  - Here is your money plus some extra.
+  - ' . . . . . .'
+  - \cHeh heh heh\c, seems like \rthe old man\r \nleft in a hurry, wondering why
+    he did that.
+  - At least I still got \ryou\r instead of his \nplace!
+  - ' . . . . . .'
+  - Oh! A silent type. \nDon't worry, I can read your thoughts.
+  - I'm no strange man, I'm just a simple \n\cbusiness man.\c
+  - You may call me \r"The Salesman"\r
+  - You might wonder why am I here.
+  - Worry not, because I got you covered!
+  - Everything from a \rfilm paper\r to \n\rnew equipment\r, I got it all!
+  - If you got a \rcredit\r that is.
+  - Here is an offer for you.
+  - You buy your \rsupply\r from me only and \nI'll give you a special discount!
+    \nDeal?
+  - ' . . . . . .'
+  - Good! I'll take that as a yes then!
+  - Here is a \cfree proposal\c for you.
+  - Take them and gain some money and \nI'll come back again to take yours \n\cheh
+    heh heh.\c
+  Names:
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - A man in a blue suit
+  - You
+  - A strange man
+  - A strange man
+  - You
+  - A strange man
+  - A strange man
+  - A strange man
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - You
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - Ummmm, could be better but whatever.
+  - ' . . . . . .'
+  - \cHeh heh heh\c, seems like \rthe old man\r \nleft in a hurry, wondering why
+    he did that.
+  - At least I still got \ryou\r instead of his \nplace!
+  - ' . . . . . .'
+  - Oh! A silent type. \nDon't worry, I can read your thoughts.
+  - I'm no strange man, I'm just a simple \n\cbusiness man.\c
+  - You may call me \r"The Salesman"\r
+  - You might wonder why am I here.
+  - Worry not, because I got you covered!
+  - Everything from a \rfilm paper\r to \n\rnew equipment\r, I got it all!
+  - If you got a \rcredit\r that is.
+  - You buy your \rsupply\r from me only and \nI'll give you a special discount!
+    \nDeal?
+  - ' . . . . . .'
+  - Good! I'll take that as a yes then!
+  - Here is a \cfree proposal\c for you.
+  - Take them and gain some money and \nI'll come back again to take yours \n\cheh
+    heh heh.\c
+  NameUnsat:
+  - A man in a blue suit
+  - You
+  - A strange man
+  - A strange man
+  - You
+  - A strange man
+  - A strange man
+  - A strange man
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  - You
+  - The Salesman
+  - The Salesman
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
@@ -4641,11 +5818,11 @@ MonoBehaviour:
   textmanager: {fileID: 0}
   Pic: {fileID: 0}
   Timeindex: 0
-  WhatDayisToday: 5
+  WhatDayisToday: 2
   Film: {fileID: 0}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
-  NewsOverlay: {fileID: 1739425348}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &609704441
 GameObject:
   m_ObjectHideFlags: 0
@@ -4874,6 +6051,93 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609704441}
   m_CullTransparentMesh: 0
+--- !u!1 &617091665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617091666}
+  - component: {fileID: 617091667}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &617091666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617091665}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1232744538}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &617091667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617091665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Oh hey \csweetie,\c what a nice store you \nhave there.
+  - Would you mind taking care of my \nfilms?
+  - It would be a shame if these weren't \ndone properly so please take care of it.
+  - I will be back.
+  - . . . . . .
+  Names:
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
+  character:
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: 471b25a3007dc1340aeabb59cbb6ea96, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 10
+  Film: {fileID: 9127718114185621459, guid: 29589960ba3654546b0f94232fd73484, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: d544f7fdc8d2ba640b350a9340598632, type: 3}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &617905126
 GameObject:
   m_ObjectHideFlags: 0
@@ -5070,6 +6334,258 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &629422534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629422535}
+  - component: {fileID: 629422536}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &629422535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629422534}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1232744538}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629422536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629422534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - \cHey sweetie,\c look like you're finished.
+  - Thank you for your work.
+  - I'll be sure to spread the word around \nabout your store.
+  - . . . . . .
+  - Got some items for you, boy!
+  Names:
+  - You
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - \cHey sweetie,\c look like you're finished.
+  - Oh? . . . . . What with this quality?
+  - I expect you to do the film properly \nand this is what you give me?
+  - I tried to be nice to you and this is \nwhat I get?
+  - Don't expect me to come back to your \nstore again . . . . .
+  - . . . . . .
+  - Got some items for you, boy!
+  NameUnsat:
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 10
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
+--- !u!1 &640684582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640684583}
+  - component: {fileID: 640684584}
+  m_Layer: 0
+  m_Name: Morning (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &640684583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640684582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794753942}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &640684584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640684582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - \wOhhhhh,\w such a magnificent picture.
+  - Would be better with \ra body\r in it.
+  - . . . . . .
+  - Huh! I'm just \cmessing\c with you.
+  - Gotta bail while I can, bye!
+  - . . . . . .
+  - . . . . . .
+  - Oh hey \csweetie,\c what a nice store you \nhave there.
+  - Would you mind taking care of my \nfilms?
+  - It would be a shame if these weren't \ndone properly so please take care of it.
+  - I will be back.
+  - . . . . . .
+  Names:
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - You
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
+  character:
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 0}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - Such a quality won't be accepted by me, \nif given a choice. . . . .
+  - . . . . . .
+  - I guess, you are not in need of my money.
+  - . . . . . .
+  - . . . . . .
+  - Oh hey \csweetie,\c what a nice store you \nhave there.
+  - Would you mind taking care of my \nfilms?
+  - It would be a shame if these weren't \ndone properly so please take care of it.
+  - I will be back.
+  - . . . . . .
+  NameUnsat:
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  - You
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 0}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 4
+  Film: {fileID: 9127718114185621459, guid: 29589960ba3654546b0f94232fd73484, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: d544f7fdc8d2ba640b350a9340598632, type: 3}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &644525405
 GameObject:
   m_ObjectHideFlags: 0
@@ -5235,6 +6751,7 @@ Transform:
   m_Children:
   - {fileID: 2001304457}
   - {fileID: 1464030927}
+  - {fileID: 1896560748}
   m_Father: {fileID: 1653975225}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5752,6 +7269,123 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696445019}
   m_CullTransparentMesh: 0
+--- !u!1 &753617249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753617250}
+  - component: {fileID: 753617251}
+  m_Layer: 0
+  m_Name: Evening (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &753617250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753617249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794753942}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753617251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753617249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - \cHey sweetie,\c look like you're finished.
+  - Thank you for your work.
+  - I'll be sure to spread the word around \nabout your store.
+  - . . . . . .
+  - . . . . . .
+  - Got some items for you, boy!
+  Names:
+  - You
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
+  - You
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - \cHey sweetie,\c look like you're finished.
+  - Oh? . . . . . What with this quality?
+  - I expect you to do the film properly \nand this is what you give me?
+  - I tried to be nice to you and this is \nwhat I get?
+  - Don't expect me to come back to your \nstore again . . . . .
+  - . . . . . .
+  - . . . . . .
+  - Got some items for you, boy!
+  NameUnsat:
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - You
+  - You
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 4
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &759233004
 GameObject:
   m_ObjectHideFlags: 0
@@ -6080,6 +7714,38 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &786231115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786231116}
+  m_Layer: 0
+  m_Name: Day12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786231116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786231115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1774606753}
+  - {fileID: 1580275831}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &786438274
 GameObject:
   m_ObjectHideFlags: 0
@@ -6452,6 +8118,111 @@ Transform:
   m_Father: {fileID: 120615825}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &854131196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 854131197}
+  - component: {fileID: 854131198}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &854131197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854131196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1451110922}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &854131198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854131196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - \wOhhhhh,\w such a magnificent picture.
+  - Would be better with \ra body\r in it.
+  - . . . . . .
+  - Huh! I'm just \cmessing\c with you.
+  - Gotta bail while I can, bye!
+  - . . . . . .
+  Names:
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  character:
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 0}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - Such a quality won't be accepted by me, \nif given a choice. . . . .
+  - . . . . . .
+  - I guess, you are not in need of my money.
+  - . . . . . .
+  NameUnsat:
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 0}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 9
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &854358643
 GameObject:
   m_ObjectHideFlags: 0
@@ -6556,6 +8327,96 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!1 &854755491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 854755492}
+  - component: {fileID: 854755493}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &854755492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854755491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 375419360}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &854755493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854755491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - Hello, this old man wants his \npictures developed.
+  - . . . . . .
+  - "You're quite \\ra quiet person\\r, aren\u2019t you?"
+  - . . . . . .
+  - Nevermind. Just do the job.
+  Names:
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  character:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: 2de60545fcb1ab54b98e78944e9f502c, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 2
+  Film: {fileID: 9127718114185621459, guid: 050941a2fb4a6fd4dbfb661ec6d25620, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &857954447
 GameObject:
   m_ObjectHideFlags: 0
@@ -6675,7 +8536,7 @@ GameObject:
   - component: {fileID: 866101740}
   - component: {fileID: 866101741}
   m_Layer: 0
-  m_Name: Evening
+  m_Name: Morning (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6709,36 +8570,151 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
-  - Hey you finished?
-  - ' Money is on the table.'
+  - O . . . oh, finally. Thank you.
+  - . . . . . .
+  - . . . . . .
+  - Oh hey \chandsome.\c
+  - You must be \wthe new owner\w of this \nplace, and you finally got rid of that
+    \r\ndigusting person\r from this store!
+  - About that, I am looking for lands in \nthis part of town for my \rnew warehouse\r
+    \nand your land catches my eyes.
+  - So! How about selling this land to me \n\wright now?\w
+  - . . . . . .
+  - Well . . . you just opened this store \nnot so long ago.
+  - The deal still stands, I will give you \nsome more time.
+  - If you change your mind, \wcall me.\w
+  - . . . . . .
+  - \wHmmmmmmmmm.\w Oh hey man, got some \npictures that need to be taken care of.
+  - . . . . . .
+  - Hmmm. That \rwoman\r who just walked past \nme?
+  - It's hard for someone not to recognize \nher, especially with that \rbeauty\r,
+    plus \nsome \rtop brand\r whatever store she owns.
+  - You must be really new not to know that \nbut don't worry, just read \rthe newspaper\r
+    \neveryday and you will see her there.
+  - Especially during this time, some of \nher property got related to some cases
+    \nbut that is for you to read not for me \nto explain.
+  - Now could you please take care of \nmy god damn pictures!
   - . . . . . .
   Names:
   - You
-  - Suspicious looking man
-  - Suspicious looking man
+  - A long hair guy
+  - You
+  - You
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - You
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - You
+  - Black sunglasses man
+  - You
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
   - You
   character:
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
-  - What the hell?
-  - How can you open the shop with the \nskill you have?
+  - Hey! The heck is wrong with these \npictures?
+  - Didn't I pay you to properly develop \nthem?
+  - . . . . . .
+  - . . . . . .
+  - Oh hey \chandsome.\c
+  - You must be \wthe new owner\w of this \nplace, and you finally got rid of that
+    \r\ndigusting person\r from this store!
+  - About that, I am looking for lands in \nthis part of town for my \rnew warehouse\r
+    \nand your land catches my eyes.
+  - So! How about selling this land to me \n\wright now?\w
+  - . . . . . .
+  - Well . . . you just opened this store \nnot so long ago.
+  - The deal still stands, I will give you \nsome more time.
+  - If you change your mind, \wcall me.\w
+  - . . . . . .
+  - \wHmmmmmmmmm.\w Oh hey man, got some \npictures that need to be taken care of.
+  - . . . . . .
+  - Hmmm. That \rwoman\r who just walked past \nme?
+  - It's hard for someone not to recognize \nher, especially with that \rbeauty\r,
+    plus \nsome \rtop brand\r whatever store she owns.
+  - You must be really new not to know that \nbut don't worry, just read \rthe newspaper\r
+    \neveryday and you will see her there.
+  - Especially during this time, some of \nher property got related to some cases
+    \nbut that is for you to read not for me \nto explain.
+  - Now could you please take care of \nmy god damn pictures!
   - . . . . . .
   NameUnsat:
-  - Suspicious looking man
-  - Suspicious looking man
+  - A long hair guy
+  - A long hair guy
+  - You
+  - You
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - You
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - You
+  - Black sunglasses man
+  - You
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
   - You
   characterUnsat:
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
-  endday: 1
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -6753,7 +8729,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 3
-  Film: {fileID: 0}
+  Film: {fileID: 9127718114185621459, guid: e935d14c069be424bb1952d2ecdcaf14, type: 3}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
@@ -6849,6 +8825,128 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &870353727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 870353728}
+  - component: {fileID: 870353729}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &870353728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870353727}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2143979415}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &870353729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870353727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - O . . . oh, finally. Thank you.
+  - . . . . . .
+  Names:
+  - You
+  - A long hair guy
+  - You
+  character:
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 0}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - Hey! The heck is wrong with these \npictures?
+  - Didn't I pay you to properly develop \nthem?
+  - . . . . . .
+  NameUnsat:
+  - A long hair guy
+  - A long hair guy
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 0}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 5
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
+--- !u!1 &873632193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 873632194}
+  m_Layer: 0
+  m_Name: Day6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &873632194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873632193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2091016094}
+  - {fileID: 1775649353}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &879530825
 GameObject:
   m_ObjectHideFlags: 0
@@ -7078,6 +9176,124 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894456481}
   m_CullTransparentMesh: 0
+--- !u!1 &913745953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 913745954}
+  - component: {fileID: 913745955}
+  m_Layer: 0
+  m_Name: Morning (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &913745954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913745953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1965056372}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913745955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913745953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - \cHmmmmmm.\c Finally! Eh? Some of \nthe pictures are kinda \rmessed up\r, \ncould
+    I get a refund?
+  - . . . . . .
+  - At least half of the money. . . . .?
+  - . . . . . .
+  - Ok, fine!
+  - . . . . . .
+  - . . . . . .
+  - \wS'up\w owner! Got a set of pictures that \nneed to be developed for my \rboss\r.
+  - . . . . . .
+  Names:
+  - Black sunglasses man
+  - You
+  - Black sunglasses man
+  - You
+  - Black sunglasses man
+  - You
+  - You
+  - Tan-skinned woman
+  - You
+  character:
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - \cHmmm.\c Finally! \wEhhh?\w The pictures are \nmessed up.
+  - Jesus, I want a refund. . . . .
+  - . . . . . .
+  - . . . . . .
+  - \wS'up\w owner! Got a set of pictures that \nneed to be developed for my \rboss\r.
+  - . . . . . .
+  NameUnsat:
+  - Black sunglasses man
+  - Black sunglasses man
+  - You
+  - You
+  - Tan-skinned woman
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 3
+  Film: {fileID: 9127718114185621459, guid: 9e91aef6585834b4db0d64427b7fc08b, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &919249206
 GameObject:
   m_ObjectHideFlags: 0
@@ -7218,6 +9434,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919249206}
   m_CullTransparentMesh: 0
+--- !u!1 &921761325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921761326}
+  m_Layer: 0
+  m_Name: dialogData_backup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &921761326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921761325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.39914337, y: 0.9274367, z: -2.0679817}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1766506831}
+  - {fileID: 59518605}
+  - {fileID: 1299451329}
+  - {fileID: 375419360}
+  - {fileID: 1212402188}
+  - {fileID: 84486707}
+  - {fileID: 2143979415}
+  - {fileID: 873632194}
+  - {fileID: 153422865}
+  - {fileID: 1634823495}
+  - {fileID: 1451110922}
+  - {fileID: 1232744538}
+  - {fileID: 340880987}
+  - {fileID: 786231116}
+  - {fileID: 2082906762}
+  - {fileID: 136947615}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &939331361
 GameObject:
   m_ObjectHideFlags: 0
@@ -7483,6 +9745,84 @@ RectTransform:
   m_AnchoredPosition: {x: -792.8, y: -80}
   m_SizeDelta: {x: 27, y: 19}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &950162054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950162055}
+  - component: {fileID: 950162056}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &950162055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950162054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 153422865}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &950162056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950162054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - \wS'up\w owner! Got a set of pictures that \nneed to be developed for my \rboss\r.
+  - . . . . . .
+  Names:
+  - Tan-skinned woman
+  - You
+  character:
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: 4f9ad4dfbab03d4498d2cd69082c3773, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 7
+  Film: {fileID: 9127718114185621459, guid: 9e91aef6585834b4db0d64427b7fc08b, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &950418903
 GameObject:
   m_ObjectHideFlags: 0
@@ -7708,6 +10048,111 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &961778264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961778265}
+  - component: {fileID: 961778266}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &961778265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961778264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 340880987}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &961778266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961778264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - \wYa cool?\w
+  - . . . . . .
+  - \cHeh heh boi!\c As usual, this will be a \nblast! Byeee!
+  - . . . . . .
+  Names:
+  - You
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - You
+  character:
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
+  ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat:
+  - \wYoooo bro! What the helllllllll!\w
+  - What happens to you when I'm not here?
+  - Someone troubles you?
+  - 'You can just tell me and I will send \nsomeone to get rid of them. '
+  - Anyway, this is for your effort for the \nwork.
+  - . . . . . .
+  NameUnsat:
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 11
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &973404477
 GameObject:
   m_ObjectHideFlags: 0
@@ -7874,7 +10319,7 @@ GameObject:
   - component: {fileID: 988154388}
   - component: {fileID: 988154389}
   m_Layer: 0
-  m_Name: morning
+  m_Name: Morning (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7907,24 +10352,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - H . . . hey. . . Here is what I want \nyou to develop.
-  - Please be extra careful with them..
+  - \wI'm back bitches!!!\w
+  - . . . . . .
+  - \cSup bro!\c It has been a while since we \nlast met and ya must have seen \rthe
+    news\r \nby now about what happened to me
+  - But enough about that it probably just \r\na business\r gone wrong and \rthe
+    customer\r \nis really angry about it.
+  - . . . . . .
+  - Hey, don't worry, I have a job for ya.
+  - You see, my fans are really worried \nabout me and we took a lot of pictures
+    \nso here ya go.
+  - I'll be back later!
   - . . . . . .
   Names:
-  - A long hair guy
-  - A long hair guy
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
   - You
   character:
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
-  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: fe50ed4b56c510a47bff83f4324b129e, type: 3}
+  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
   endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -7940,8 +10406,8 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 5
-  Film: {fileID: 9127718114185621459, guid: 8230e9eae0348434e9ce70910023d173, type: 3}
-  Film2: {fileID: 0}
+  Film: {fileID: 9127718114185621459, guid: e4be93bd12065b84298da8b66bb5a748, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 024549c5306234d4b94b38a7e2dcfca5, type: 3}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &990471831
@@ -8530,7 +10996,7 @@ PrefabInstance:
     - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 710740156514736770, guid: 60f17787a2e09294282267228267dba6,
         type: 3}
@@ -9174,6 +11640,105 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060201676}
   m_CullTransparentMesh: 0
+--- !u!1 &1068155377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1068155378}
+  - component: {fileID: 1068155379}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1068155378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068155377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 84486707}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1068155379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068155377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - Let's see here. Thanks, the money is \non the table, keep the change.
+  - . . . . . .
+  - Welcome!
+  Names:
+  - You
+  - Chubby cigarette man
+  - You
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - Jesus, these images suck. . .
+  - . . . . . .
+  - Improve your skill if you still want \npeople to come here.
+  - . . . . . .
+  - Welcome!
+  NameUnsat:
+  - Chubby cigarette man
+  - You
+  - Chubby cigarette man
+  - You
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 4
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1076738583
 GameObject:
   m_ObjectHideFlags: 0
@@ -9248,6 +11813,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076738583}
   m_CullTransparentMesh: 0
+--- !u!1 &1078543368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078543369}
+  - component: {fileID: 1078543370}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1078543369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078543368}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212402188}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1078543370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078543368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - Hey you finished?
+  - ' Money is on the table.'
+  - . . . . . .
+  Names:
+  - You
+  - Suspicious looking man
+  - Suspicious looking man
+  - You
+  character:
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 0}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - What the hell?
+  - How can you open the shop with the \nskill you have?
+  - . . . . . .
+  NameUnsat:
+  - Suspicious looking man
+  - Suspicious looking man
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 3
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1082321458
 GameObject:
   m_ObjectHideFlags: 0
@@ -9559,6 +12217,108 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1149371222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1149371223}
+  - component: {fileID: 1149371224}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1149371223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149371222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1451110922}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1149371224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149371222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - \wHmmmmm,\w what a vintage looking store.
+  - ' You''ve got yourself quite a spot huh.'
+  - . . . . . .
+  - \cDon't mind me,\c I'm just another \ncustomer for your service.
+  - Here is my roll.
+  - . . . . . .
+  - I'm just gonna take in the atmosphere \naround here.
+  - You know, old vintage feeling.
+  - ' No offense by the way.'
+  - . . . . . .
+  Names:
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  character:
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: f0b4d8bfa267df54ab4426f5a24341e3, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 9
+  Film: {fileID: 9127718114185621459, guid: 43180d267e3a28546a32b9dd391439ca, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: f36a946df61ccb74d90741c85dd5972b, type: 3}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1171938517
 GameObject:
   m_ObjectHideFlags: 0
@@ -9687,6 +12447,38 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1212402187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1212402188}
+  m_Layer: 0
+  m_Name: Day3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1212402188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212402187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1317169171}
+  - {fileID: 1078543369}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223867337
 GameObject:
   m_ObjectHideFlags: 0
@@ -9849,7 +12641,7 @@ GameObject:
   - component: {fileID: 1229584271}
   - component: {fileID: 1229584272}
   m_Layer: 0
-  m_Name: morning
+  m_Name: Morning (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9882,27 +12674,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Good day, I would like you to develop \nmy photos.
+  - Hey, sir. I got a few films that need \nto be developed.
+  - Could you take care of it?
   - . . . . . .
-  - Have we met before? Your face looks \nfamiliar.
+  - Sir?
   - . . . . . .
+  - Well. . . Whatever, I will come back\nin a few hours, just sure to complete it.
   Names:
-  - Chubby cigarette man
+  - Moody looking man
+  - Moody looking man
   - You
-  - Chubby cigarette man
+  - Moody looking man
   - You
+  - Moody looking man
   character:
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 90e825d8baf3d3c4a8976a2cc9ea1f88, type: 3}
+  News: {fileID: 21300000, guid: fe50ed4b56c510a47bff83f4324b129e, type: 3}
   endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -9918,10 +12716,42 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 4
-  Film: {fileID: 9127718114185621459, guid: 7ed82f8b27a3f1d45981f2a8d1c0cdcb, type: 3}
-  Film2: {fileID: 0}
+  Film: {fileID: 9127718114185621459, guid: 7503a73748e4c234280573c5fd7cee86, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 8bf68c46b4d6a7c458f05503f3435795, type: 3}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
+--- !u!1 &1232744537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232744538}
+  m_Layer: 0
+  m_Name: Day10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1232744538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232744537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 617091666}
+  - {fileID: 629422535}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1267531685
 GameObject:
   m_ObjectHideFlags: 0
@@ -10204,6 +13034,140 @@ RectTransform:
   m_AnchoredPosition: {x: 501.2, y: 295.7}
   m_SizeDelta: {x: 27, y: 19}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1299451328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1299451329}
+  m_Layer: 0
+  m_Name: Day1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1299451329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299451328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1647933047}
+  - {fileID: 1823945406}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1303237350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1303237351}
+  - component: {fileID: 1303237352}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1303237351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303237350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 340880987}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1303237352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303237350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - \wI'm back bitches!!!\w
+  - . . . . . .
+  - \cSup bro!\c It has been a while since we \nlast met and ya must have seen \rthe
+    news\r \nby now about what happened to me
+  - But enough about that it probably just \r\na business\r gone wrong and \rthe
+    customer\r \nis really angry about it.
+  - . . . . . .
+  - Hey, don't worry, I have a job for ya.
+  - You see, my fans are really worried \nabout me and we took a lot of pictures
+    \nso here ya go.
+  - I'll be back later!
+  - . . . . . .
+  Names:
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
+  character:
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
+  ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: e3ee565f25b40d24ab5a3cdce4ffb444, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 11
+  Film: {fileID: 9127718114185621459, guid: e4be93bd12065b84298da8b66bb5a748, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 024549c5306234d4b94b38a7e2dcfca5, type: 3}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1311761129
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,6 +13245,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311761129}
   m_CullTransparentMesh: 0
+--- !u!1 &1314873690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1314873691}
+  - component: {fileID: 1314873692}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1314873691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314873690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1634823495}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1314873692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314873690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Oh! Looks like I just came in at the \nright moment.
+  - It looks like you just finished with \nmy films.
+  - Oh, it looks like it's almost evening \nalready.
+  - One more thing, sir. I suggest that \nyou try to stay in the door at night \nduring
+    this time.
+  - . . . . . .
+  - Don't get me wrong sir, I'm just \nwarning you because you look like \nthose
+    quiet types you know?
+  - My brother is a \rpolice officer\r and he \ntold me that there have been many
+    \n\rpeople gone missing\r  in this area \nrecently.
+  - . . . . . .
+  - Look, believe me or not.
+  - The officials haven't stated this event \njust yet, I don't know why but just
+    \nremember that I warned you.
+  - ' I will be going before it gets dark now.'
+  - . . . . . .
+  - What're ya buyin, boy?
+  Names:
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
+  - You
+  - Moody looking man
+  - Moody looking man
+  - You
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
+  - You
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - Oh! Looks like I just came in at the \nright moment.
+  - It looks like you just finished with \nmy films.
+  - Well . . . I didn't expect the quality \nto be this bad.
+  - . . . . . .
+  - \rFUCK!\r
+  - . . . . . .
+  - What're ya buyin, boy?
+  NameUnsat:
+  - Moody looking man
+  - Moody looking man
+  - Moody looking man
+  - You
+  - Moody looking man
+  - You
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 8
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1316294840
 GameObject:
   m_ObjectHideFlags: 0
@@ -10313,6 +13413,90 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1317169170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317169171}
+  - component: {fileID: 1317169172}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1317169171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317169170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212402188}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1317169172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317169170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Hey \ryou\r, yeah \ryou\r, the shop keeper.
+  - Develop this set of pictures.
+  - ' I''ll be waiting.'
+  - . . . . . .
+  Names:
+  - Suspicious looking man
+  - Suspicious looking man
+  - Suspicious looking man
+  - You
+  character:
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: 6f7b7f54e2dac0f458ea4604ac6a9341, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 3
+  Film: {fileID: 9127718114185621459, guid: b11cae0f1a45c7b4ea783e2834362b7e, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1329852714
 GameObject:
   m_ObjectHideFlags: 0
@@ -11023,6 +14207,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420643910}
   m_CullTransparentMesh: 0
+--- !u!1 &1422746730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422746731}
+  - component: {fileID: 1422746732}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1422746731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422746730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1634823495}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1422746732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422746730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Hey, sir. I got a few films that need \nto be developed.
+  - Could you take care of it?
+  - . . . . . .
+  - Sir?
+  - . . . . . .
+  - Well. . . Whatever, I will come back\nin a few hours, just sure to complete it.
+  Names:
+  - Moody looking man
+  - Moody looking man
+  - You
+  - Moody looking man
+  - You
+  - Moody looking man
+  character:
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: 17bc7871bfcba6b498ac6b541eddfeab, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 8
+  Film: {fileID: 9127718114185621459, guid: 7503a73748e4c234280573c5fd7cee86, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 8bf68c46b4d6a7c458f05503f3435795, type: 3}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1429251296
 GameObject:
   m_ObjectHideFlags: 0
@@ -11367,8 +14641,41 @@ Transform:
   m_Children:
   - {fileID: 195314204}
   - {fileID: 1747420579}
+  - {fileID: 1839853390}
   m_Father: {fileID: 1653975225}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1451110921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451110922}
+  m_Layer: 0
+  m_Name: Day9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1451110922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451110921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1149371223}
+  - {fileID: 854131197}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1464030926
 GameObject:
@@ -11381,7 +14688,7 @@ GameObject:
   - component: {fileID: 1464030927}
   - component: {fileID: 1464030928}
   m_Layer: 0
-  m_Name: Evening
+  m_Name: Morning (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11414,136 +14721,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Ummm. . . You didn't see anything \n\rweird\r in my pictures, right?
-  - ' . . . . . .'
-  - I'll take that as a no then.
-  - Here is your money plus some extra.
-  - ' . . . . . .'
-  - \cHeh heh heh\c, seems like \rthe old man\r \nleft in a hurry, wondering why
-    he did that.
-  - At least I still got \ryou\r instead of his \nplace!
-  - ' . . . . . .'
-  - Oh! A silent type. \nDon't worry, I can read your thoughts.
-  - I'm no strange man, I'm just a simple \n\cbusiness man.\c
-  - You may call me \r"The Salesman"\r
-  - You might wonder why am I here.
-  - Worry not, because I got you covered!
-  - Everything from a \rfilm paper\r to \n\rnew equipment\r, I got it all!
-  - If you got a \rcredit\r that is.
-  - Here is an offer for you.
-  - You buy your \rsupply\r from me only and \nI'll give you a special discount!
-    \nDeal?
-  - ' . . . . . .'
-  - Good! I'll take that as a yes then!
-  - Here is a \cfree proposal\c for you.
-  - Take them and gain some money and \nI'll come back again to take yours \n\cheh
-    heh heh.\c
+  - . . . . . .
+  - Hey you finished?
+  - ' Money is on the table.'
+  - . . . . . .
+  - . . . . . .
+  - Good day, I would like you to develop \nmy photos.
+  - . . . . . .
+  - Have we met before? Your face looks \nfamiliar.
+  - . . . . . .
   Names:
-  - A man in a blue suit
   - You
-  - A man in a blue suit
-  - A man in a blue suit
+  - Suspicious looking man
+  - Suspicious looking man
   - You
-  - A strange man
-  - A strange man
   - You
-  - A strange man
-  - A strange man
-  - A strange man
-  - The Salesman
-  - The Salesman
-  - The Salesman
-  - The Salesman
-  - The Salesman
-  - The Salesman
+  - Chubby cigarette man
   - You
-  - The Salesman
-  - The Salesman
-  - The Salesman
+  - Chubby cigarette man
+  - You
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   - {fileID: 0}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  ShopAfterThis: 1
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
-  - Ummmm, could be better but whatever.
-  - ' . . . . . .'
-  - \cHeh heh heh\c, seems like \rthe old man\r \nleft in a hurry, wondering why
-    he did that.
-  - At least I still got \ryou\r instead of his \nplace!
-  - ' . . . . . .'
-  - Oh! A silent type. \nDon't worry, I can read your thoughts.
-  - I'm no strange man, I'm just a simple \n\cbusiness man.\c
-  - You may call me \r"The Salesman"\r
-  - You might wonder why am I here.
-  - Worry not, because I got you covered!
-  - Everything from a \rfilm paper\r to \n\rnew equipment\r, I got it all!
-  - If you got a \rcredit\r that is.
-  - You buy your \rsupply\r from me only and \nI'll give you a special discount!
-    \nDeal?
-  - ' . . . . . .'
-  - Good! I'll take that as a yes then!
-  - Here is a \cfree proposal\c for you.
-  - Take them and gain some money and \nI'll come back again to take yours \n\cheh
-    heh heh.\c
+  - What the hell?
+  - How can you open the shop with the \nskill you have?
+  - . . . . . .
+  - . . . . . .
+  - Good day, I would like you to develop \nmy photos.
+  - . . . . . .
+  - Have we met before? Your face looks \nfamiliar.
+  - . . . . . .
   NameUnsat:
-  - A man in a blue suit
+  - Suspicious looking man
+  - Suspicious looking man
   - You
-  - A strange man
-  - A strange man
   - You
-  - A strange man
-  - A strange man
-  - A strange man
-  - The Salesman
-  - The Salesman
-  - The Salesman
-  - The Salesman
-  - The Salesman
+  - Chubby cigarette man
   - You
-  - The Salesman
-  - The Salesman
-  - The Salesman
+  - Chubby cigarette man
+  - You
   characterUnsat:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   - {fileID: 0}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
-  endday: 1
+  endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -11558,7 +14796,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 2
-  Film: {fileID: 0}
+  Film: {fileID: 9127718114185621459, guid: 7ed82f8b27a3f1d45981f2a8d1c0cdcb, type: 3}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
@@ -11739,7 +14977,7 @@ GameObject:
   - component: {fileID: 1479490537}
   - component: {fileID: 1479490538}
   m_Layer: 0
-  m_Name: morning
+  m_Name: Morning (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11772,27 +15010,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hey \ryou\r, yeah \ryou\r, the shop keeper.
-  - Develop this set of pictures.
-  - ' I''ll be waiting.'
+  - H . . . hey. . . Here is what I want \nyou to develop.
+  - Please be extra careful with them..
   - . . . . . .
   Names:
-  - Suspicious looking man
-  - Suspicious looking man
-  - Suspicious looking man
+  - A long hair guy
+  - A long hair guy
   - You
   character:
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
-  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 6f7b7f54e2dac0f458ea4604ac6a9341, type: 3}
+  News: {fileID: 21300000, guid: 90e825d8baf3d3c4a8976a2cc9ea1f88, type: 3}
   endday: 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
@@ -11808,7 +15043,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 3
-  Film: {fileID: 9127718114185621459, guid: b11cae0f1a45c7b4ea783e2834362b7e, type: 3}
+  Film: {fileID: 9127718114185621459, guid: 8230e9eae0348434e9ce70910023d173, type: 3}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
@@ -11841,7 +15076,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1487627581
 MonoBehaviour:
@@ -11857,6 +15092,124 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Manager: {fileID: 0}
   MucikPlayer: {fileID: 0}
+--- !u!1 &1494523579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1494523580}
+  - component: {fileID: 1494523581}
+  m_Layer: 0
+  m_Name: Evening (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1494523580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494523579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 184500557}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1494523581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494523579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - Ummm. . . . .
+  - That is faster than I expected, \ndon't mind the pictures, they're just \npictures
+    from the crime scene.
+  - . . . . . .
+  - Here is your money. Thanks.
+  - . . . . . .
+  - . . . . . .
+  - Got something that might interest \nyou, boy!
+  Names:
+  - You
+  - Merle
+  - Merle
+  - You
+  - Merle
+  - You
+  - The Salesman
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - . . . . . .
+  - \rUmmm. . . . .\r
+  - That is faster than I expected, \nit could be better but whatever.
+  - Here is your money.
+  - . . . . . .
+  - . . . . . .
+  - Got something that might interest \nyou, boy!
+  NameUnsat:
+  - You
+  - Merle
+  - Merle
+  - Merle
+  - You
+  - The Salesman
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 5
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1516389322
 GameObject:
   m_ObjectHideFlags: 0
@@ -12272,6 +15625,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570333301}
   m_CullTransparentMesh: 0
+--- !u!1 &1580275830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580275831}
+  - component: {fileID: 1580275832}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1580275831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580275830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 786231116}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580275832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580275830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - End of Game for Now
+  Names:
+  - Developer
+  character:
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 6
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1583945565
 GameObject:
   m_ObjectHideFlags: 0
@@ -12490,6 +15918,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593793360}
   m_CullTransparentMesh: 0
+--- !u!1 &1634823494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1634823495}
+  m_Layer: 0
+  m_Name: Day8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1634823495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634823494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1422746731}
+  - {fileID: 1314873691}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1637842613
 GameObject:
   m_ObjectHideFlags: 0
@@ -12590,6 +16050,111 @@ MonoBehaviour:
   Film2: {fileID: 0}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
+--- !u!1 &1647933046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1647933047}
+  - component: {fileID: 1647933048}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1647933047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647933046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1299451329}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1647933048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647933046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - \cSup bro!\c I would like to . . .\nOh! Ya new in town??
+  - That \rold man\r got tired of this crap or \nsomething?
+  - Nevermind, I need some pictures from ya.
+  - Here is da roll.
+  - . . . . . .
+  Names:
+  - Good looking African guy
+  - Good looking African guy
+  - Good looking African guy
+  - Good looking African guy
+  - You
+  character:
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - What the .... I came here to get some photo\ndevelped and you can't even do this\n\rstuff!?\r
+  - ' . . . . . .'
+  - You are lucky that you are the only one\nphoto shop in this area!
+  - ' . . . . . .'
+  - Here take it\nand don't make me disappoint next time!
+  - ' . . . . . .'
+  NameUnsat:
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 1
+  Film: {fileID: 9127718114185621459, guid: b87742c6f81d60141992ae0de94b70da, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1649056152 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8784627397028384936, guid: 60f17787a2e09294282267228267dba6,
@@ -13031,6 +16596,105 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1731527222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1731527223}
+  - component: {fileID: 1731527224}
+  m_Layer: 0
+  m_Name: Evening (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1731527223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731527222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1965056372}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1731527224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731527222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Oh, took ya long enough but who am I \nto complain anyway.
+  - . . . . . .
+  - . . . . . .
+  - What're ya buyin, boy?
+  Names:
+  - Tan-skinned woman
+  - You
+  - You
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - Damn! Seems like the previous one did \na better job than you.
+  - Really hope that \rthe boss\r will accept \nthis.
+  - . . . . . .
+  - . . . . . .
+  - What're ya buyin, boy?
+  NameUnsat:
+  - Tan-skinned woman
+  - Tan-skinned woman
+  - You
+  - You
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 3
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1739425347
 GameObject:
   m_ObjectHideFlags: 0
@@ -13333,7 +16997,7 @@ GameObject:
   - component: {fileID: 1747420579}
   - component: {fileID: 1747420578}
   m_Layer: 0
-  m_Name: Evening
+  m_Name: Morning (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13352,47 +17016,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - \cHmmmmmm.\c Finally! Eh? Some of \nthe pictures are kinda \rmessed up\r, \ncould
-    I get a refund?
+  - Oh, \wneat!\w
+  - This will be on \rthe headlines\r \nfor sure!
   - . . . . . .
-  - At least half of the money. . . . .?
+  - It's for the public so it is good, \n\cright?\c
   - . . . . . .
-  - Ok, fine!
-  - . . . . . .
-  - What're ya buyin, boy?
+  - \wTHE END FOR CURRENT BUILD\w
+  - Please press \rESC\r and exit the room
   Names:
-  - Black sunglasses man
+  - Tan-skinned woman
+  - Tan-skinned woman
   - You
-  - Black sunglasses man
+  - Tan-skinned woman
   - You
-  - Black sunglasses man
-  - You
-  - The Salesman
+  - Azizi the Developer
+  - Azizi the Developer
   character:
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
   - {fileID: 0}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
-  ShopAfterThis: 1
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
-  - \cHmmm.\c Finally! \wEhhh?\w The pictures are \nmessed up.
-  - Jesus, I want a refund. . . . .
+  - Oh, neat!
+  - Wait, no. . . . .
+  - Ah jezz, hope that \rthe boss\r will \naccept this.
   - . . . . . .
-  - What're ya buyin, boy?
+  - \wTHE END FOR CURRENT BUILD\w
+  - Please press \rESC\r and exit the room
   NameUnsat:
-  - Black sunglasses man
-  - Black sunglasses man
+  - Tan-skinned woman
+  - Tan-skinned woman
+  - Tan-skinned woman
   - You
-  - The Salesman
+  - Azizi the Developer
+  - Azizi the Developer
   characterUnsat:
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
-  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
   - {fileID: 0}
-  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
@@ -13410,8 +17079,8 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 6
-  Film: {fileID: 0}
-  Film2: {fileID: 0}
+  Film: {fileID: 9127718114185621459, guid: 7503a73748e4c234280573c5fd7cee86, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 8bf68c46b4d6a7c458f05503f3435795, type: 3}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!4 &1747420579
@@ -13602,6 +17271,117 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8cbcdf69ca1344f9bc2e867c2985f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1766506830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766506831}
+  - component: {fileID: 1766506832}
+  m_Layer: 0
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1766506831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766506830}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1766506832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766506830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Oh, hey there \cmy boy!\c \nYou have finally come!
+  - Did you read the manual that I gave \nwhen we last met?
+  - ' . . . . . .'
+  - Oh well. . . I will take that as a yes then.
+  - Anyway, let me remind you one last time \nbefore I take my leave.
+  - 'Just think of it as a farewell gift.\nFirstly, get inside the room! '
+  - ' . . . . . .'
+  Names:
+  - Previous Owner
+  - Previous Owner
+  - You
+  - Previous Owner
+  - Previous Owner
+  - Previous Owner
+  - You
+  character:
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  - {fileID: 21300000, guid: 3b2860a58d2f2cc4bbc7d6d0de948a8a, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - What the .... I came here to get some photo\ndevelped and you can't even do this\n\rstuff!?\r
+  - ' . . . . . .'
+  - You are lucky that you are the only one\nphoto shop in this area!
+  - ' . . . . . .'
+  - Here take it\nand don't make me disappoint next time!
+  - ' . . . . . .'
+  NameUnsat:
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  - A man in a blue suit
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 1
+  Film: {fileID: 9127718114185621459, guid: b53eee9a64e88db45a10d9ff00d74579, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: b53eee9a64e88db45a10d9ff00d74579, type: 3}
+  Film3: {fileID: 9127718114185621459, guid: b53eee9a64e88db45a10d9ff00d74579, type: 3}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1766595206
 GameObject:
   m_ObjectHideFlags: 0
@@ -13708,7 +17488,7 @@ Transform:
   m_LocalScale: {x: 6.7814903, y: 6.7814903, z: 6.7814903}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769832380
 GameObject:
@@ -13791,6 +17571,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1774606752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1774606753}
+  - component: {fileID: 1774606754}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1774606753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774606752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 786231116}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1774606754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774606752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - End of Game for Now
+  Names:
+  - 'Developer '
+  character:
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 6
+  Film: {fileID: 9127718114185621459, guid: 5f603092210ad0d4294824feba87ab1a, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1774882815
 GameObject:
   m_ObjectHideFlags: 0
@@ -13929,6 +17784,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774882815}
   m_CullTransparentMesh: 0
+--- !u!1 &1775649352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775649353}
+  - component: {fileID: 1775649354}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1775649353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775649352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 873632194}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1775649354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775649352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - \cHmmmmmm.\c Finally! Eh? Some of \nthe pictures are kinda \rmessed up\r, \ncould
+    I get a refund?
+  - . . . . . .
+  - At least half of the money. . . . .?
+  - . . . . . .
+  - Ok, fine!
+  - . . . . . .
+  - What're ya buyin, boy?
+  Names:
+  - Black sunglasses man
+  - You
+  - Black sunglasses man
+  - You
+  - Black sunglasses man
+  - You
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - \cHmmm.\c Finally! \wEhhh?\w The pictures are \nmessed up.
+  - Jesus, I want a refund. . . . .
+  - . . . . . .
+  - What're ya buyin, boy?
+  NameUnsat:
+  - Black sunglasses man
+  - Black sunglasses man
+  - You
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 6
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1794753941
 GameObject:
   m_ObjectHideFlags: 0
@@ -13958,6 +17919,8 @@ Transform:
   m_Children:
   - {fileID: 1229584271}
   - {fileID: 158550253}
+  - {fileID: 640684583}
+  - {fileID: 753617250}
   m_Father: {fileID: 1653975225}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14245,6 +18208,109 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1823945405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1823945406}
+  - component: {fileID: 1823945407}
+  m_Layer: 0
+  m_Name: Evening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1823945406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823945405}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1299451329}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1823945407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823945405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - Yo bro! What took ya so long.
+  - . . . . . .
+  - Ya cool with \rmy photos?\r
+  - . . . . . .
+  - \cHeh heh boi!\c Here the money for ya.
+  - . . . . . .
+  Names:
+  - You
+  - Good looking African guy
+  - You
+  - Good looking African guy
+  - You
+  - Good looking African guy
+  - You
+  character:
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - \cYoooo bro!\c What are \wthoseeee!\w
+  - Man, I know that you could do better \nthan this. Try harder man. \nWell, this
+    is for your effort.
+  - ' . . . . . .'
+  NameUnsat:
+  - Good looking African guy
+  - Good looking African guy
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 2
+  WhatDayisToday: 1
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &1824351991
 GameObject:
   m_ObjectHideFlags: 0
@@ -14345,6 +18411,84 @@ MonoBehaviour:
   WhatDayisToday: 11
   Film: {fileID: 9127718114185621459, guid: e4be93bd12065b84298da8b66bb5a748, type: 3}
   Film2: {fileID: 9127718114185621459, guid: 024549c5306234d4b94b38a7e2dcfca5, type: 3}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
+--- !u!1 &1839853389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839853390}
+  - component: {fileID: 1839853391}
+  m_Layer: 0
+  m_Name: Evening (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1839853390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839853389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1440315483}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1839853391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839853389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  Names:
+  - You
+  character:
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - . . . . . .
+  NameUnsat:
+  - Azizi
+  characterUnsat:
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 6
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1859645336
@@ -14454,6 +18598,7 @@ Transform:
   m_Children:
   - {fileID: 526366033}
   - {fileID: 345508225}
+  - {fileID: 549805965}
   m_Father: {fileID: 1653975225}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14704,6 +18849,111 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1896560747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1896560748}
+  - component: {fileID: 1896560749}
+  m_Layer: 0
+  m_Name: Evening (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1896560748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896560747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 650843771}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1896560749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896560747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - Let's see here. Thanks, the money is \non the table, keep the change.
+  - . . . . . .
+  - . . . . . .
+  - Welcome!
+  Names:
+  - You
+  - Chubby cigarette man
+  - You
+  - You
+  - The Salesman
+  character:
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - Jesus, these images suck. . .
+  - . . . . . .
+  - Improve your skill if you still want \npeople to come here.
+  - . . . . . .
+  - . . . . . .
+  - Welcome!
+  NameUnsat:
+  - Chubby cigarette man
+  - You
+  - Chubby cigarette man
+  - You
+  - You
+  - The Salesman
+  characterUnsat:
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 2
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1901194569
 GameObject:
   m_ObjectHideFlags: 0
@@ -15002,6 +19252,8 @@ Transform:
   m_Children:
   - {fileID: 1479490537}
   - {fileID: 866101740}
+  - {fileID: 913745954}
+  - {fileID: 1731527223}
   m_Father: {fileID: 1653975225}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15232,7 +19484,7 @@ GameObject:
   - component: {fileID: 2001304457}
   - component: {fileID: 2001304458}
   m_Layer: 0
-  m_Name: morning
+  m_Name: Morning (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15265,26 +19517,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
+  - Hey \ryou\r, yeah \ryou\r, the shop keeper.
+  - Develop this set of pictures.
+  - ' I''ll be waiting.'
   - . . . . . .
-  - Hello, this old man wants his \npictures developed.
-  - . . . . . .
-  - "You're quite \\ra quiet person\\r, aren\u2019t you?"
-  - . . . . . .
-  - Nevermind. Just do the job.
   Names:
+  - Suspicious looking man
+  - Suspicious looking man
+  - Suspicious looking man
   - You
-  - A man in a blue suit
-  - You
-  - A man in a blue suit
-  - You
-  - A man in a blue suit
   character:
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
-  - {fileID: 21300000, guid: 2a77c07fe41884d41a9c7e78f56c39b5, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
+  - {fileID: 21300000, guid: c420362eed67a064d8840f70683c571c, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat: []
@@ -15307,7 +19553,7 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 2
-  Film: {fileID: 9127718114185621459, guid: 050941a2fb4a6fd4dbfb661ec6d25620, type: 3}
+  Film: {fileID: 9127718114185621459, guid: b11cae0f1a45c7b4ea783e2834362b7e, type: 3}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
@@ -15722,21 +19968,30 @@ MonoBehaviour:
   - Time:
     - {fileID: 526366032}
     - {fileID: 345508224}
+    - {fileID: 549805964}
   - Time:
     - {fileID: 2001304456}
     - {fileID: 1464030926}
+    - {fileID: 1896560747}
   - Time:
     - {fileID: 1479490536}
     - {fileID: 866101739}
+    - {fileID: 913745953}
+    - {fileID: 1731527222}
   - Time:
     - {fileID: 1229584270}
     - {fileID: 158550252}
+    - {fileID: 640684582}
+    - {fileID: 753617249}
   - Time:
     - {fileID: 988154387}
     - {fileID: 583720421}
+    - {fileID: 354130299}
+    - {fileID: 1494523579}
   - Time:
     - {fileID: 195314203}
     - {fileID: 1747420577}
+    - {fileID: 1839853389}
   - Time:
     - {fileID: 543711822}
     - {fileID: 939331361}
@@ -15770,7 +20025,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053008125
 GameObject:
@@ -16061,6 +20316,212 @@ Transform:
   m_Father: {fileID: 1653975225}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2082906761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2082906762}
+  - component: {fileID: 2082906763}
+  m_Layer: 0
+  m_Name: Shop
+  m_TagString: bin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2082906762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082906761}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2082906763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082906761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Whats up
+  - Wanna buy something?
+  Names:
+  - Saleman
+  - Saleman
+  character:
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 0
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 0}
+  News: {fileID: 0}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.3
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 6
+  Film: {fileID: 9127718114185621459, guid: 5f603092210ad0d4294824feba87ab1a, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 0}
+--- !u!1 &2091016093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091016094}
+  - component: {fileID: 2091016095}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2091016094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091016093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 873632194}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2091016095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091016093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Oh hey \chandsome.\c
+  - You must be \wthe new owner\w of this \nplace, and you finally got rid of that
+    \r\ndigusting person\r from this store!
+  - About that, I am looking for lands in \nthis part of town for my \rnew warehouse\r
+    \nand your land catches my eyes.
+  - So! How about selling this land to me \n\wright now?\w
+  - . . . . . .
+  - Well . . . you just opened this store \nnot so long ago.
+  - The deal still stands, I will give you \nsome more time.
+  - If you change your mind, \wcall me.\w
+  - . . . . . .
+  - \wHmmmmmmmmm.\w Oh hey man, got some \npictures that need to be taken care of.
+  - . . . . . .
+  - Hmmm. That \rwoman\r who just walked past \nme?
+  - It's hard for someone not to recognize \nher, especially with that \rbeauty\r,
+    plus \nsome \rtop brand\r whatever store she owns.
+  - You must be really new not to know that \nbut don't worry, just read \rthe newspaper\r
+    \neveryday and you will see her there.
+  - Especially during this time, some of \nher property got related to some cases
+    \nbut that is for you to read not for me \nto explain.
+  - Now could you please take care of \nmy god damn pictures!
+  - . . . . . .
+  Names:
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - You
+  - Rich-looking lady
+  - Rich-looking lady
+  - Rich-looking lady
+  - You
+  - Black sunglasses man
+  - You
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
+  - Black sunglasses man
+  - You
+  character:
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 21300000, guid: e4b8e46a807ea8b4eac1fd7e4722e1b5, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 6
+  Film: {fileID: 9127718114185621459, guid: e935d14c069be424bb1952d2ecdcaf14, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
 --- !u!1 &2094555430
 GameObject:
   m_ObjectHideFlags: 0
@@ -16594,7 +21055,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120010256
 GameObject:
@@ -16849,6 +21310,122 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125548093}
   m_CullTransparentMesh: 0
+--- !u!1 &2130656007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2130656008}
+  - component: {fileID: 2130656009}
+  m_Layer: 0
+  m_Name: morning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2130656008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130656007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 84486707}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2130656009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130656007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Good day, I would like you to develop \nmy photos.
+  - . . . . . .
+  - Have we met before? Your face looks \nfamiliar.
+  - . . . . . .
+  Names:
+  - Chubby cigarette man
+  - You
+  - Chubby cigarette man
+  - You
+  character:
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat: []
+  NameUnsat: []
+  characterUnsat: []
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 21300000, guid: 90e825d8baf3d3c4a8976a2cc9ea1f88, type: 3}
+  endday: 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 4
+  Film: {fileID: 9127718114185621459, guid: 7ed82f8b27a3f1d45981f2a8d1c0cdcb, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 136947616}
+--- !u!1 &2143979414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2143979415}
+  m_Layer: 0
+  m_Name: Day5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2143979415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143979414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 377969213}
+  - {fileID: 870353728}
+  m_Father: {fileID: 921761326}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2145397051
 GameObject:
   m_ObjectHideFlags: 0
@@ -16877,5 +21454,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

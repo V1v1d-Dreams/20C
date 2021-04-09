@@ -79,6 +79,7 @@ public class Mechine : MonoBehaviour
         {
             //smolpic.GetComponent<SmoLpic>().nextclicktime = Time.time + smolpic.GetComponent<SmoLpic>().timer;
             //StartCoroutine(Randomize());
+            valuePercent = 0;
 
             if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 1)
             {

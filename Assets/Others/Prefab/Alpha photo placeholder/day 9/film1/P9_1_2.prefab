@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Notes: FILL IN THIS SHIT
   PhotoID: 37
+  PhotoInFilm: 1
   Fullpic: {fileID: 21300000, guid: 265546f79e5717b4ba0d005b1c687448, type: 3}
   Timer: 0
   percent1: 0

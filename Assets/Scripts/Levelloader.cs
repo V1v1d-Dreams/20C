@@ -174,5 +174,10 @@ public class Levelloader : MonoBehaviour
         StartCoroutine(delayedLoad(buildindex,delayedtime));
     }
 
+    public void HandAnimation(Animator animatoR)
+    {
+        animatoR.SetTrigger("HandStart");
+    }
+
 }
 

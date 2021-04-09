@@ -297,6 +297,14 @@ public class Game_handler : MonoBehaviour
                 {
 
                 }
+                else if (Click[0].collider.gameObject.TryGetComponent(out mechinebutton matbut))
+                {
+                    if (Input.GetMouseButtonUp(0))
+                    {
+                        matbut.StartButtonpress();
+                    }
+
+                }
                 else if (Click[0].collider.gameObject.CompareTag("Paper"))
                 {
                     Click[0].collider.gameObject.GetComponent<Paper>().isholding = false;

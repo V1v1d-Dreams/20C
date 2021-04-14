@@ -18,6 +18,7 @@ public class TextField : MonoBehaviour
     [SerializeField] GameObject shopOverlay;
     [SerializeField] Sprite News;
     [SerializeField] bool endday = false;
+    [SerializeField] public int เหมาจ่าย;
     char[] Chararray;
     [Header("System Data")]
     float speed;
@@ -329,6 +330,7 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm = Film;
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
+                    เหมาจ่าย = staticDataHolder.lumpsum;
                     shopOverlay.SetActive(true);
                 }
                 else
@@ -336,6 +338,7 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm = Film;
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
+                    เหมาจ่าย = staticDataHolder.lumpsum;
                     GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End(endday);
                 }
             }

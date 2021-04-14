@@ -10,6 +10,7 @@ public class Picture : MonoBehaviour
     [SerializeField] public int PhotoID = 0;
     [SerializeField] public int PhotoInFilm = 0;
     [SerializeField] Sprite Fullpic;
+    [SerializeField] Sprite Ruinedpic;
 
     [Header("Value")]
     [Tooltip("THE GAME IS ALREADY BROKEN")]
@@ -303,8 +304,8 @@ public class Picture : MonoBehaviour
 
         if (Trash)
         {
-            animator.SetFloat("progress", 1);
-            transform.Find("75134282_p0_master1200_2").GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
+            //animator.SetFloat("progress", 1);
+            transform.Find("75134282_p0_master1200_2").GetComponent<SpriteRenderer>().sprite = Ruinedpic;
         }
 
         /*

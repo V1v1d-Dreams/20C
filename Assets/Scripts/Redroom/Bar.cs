@@ -8,10 +8,11 @@ public class Bar : MonoBehaviour
 
     public Type type;
     [SerializeField] public GameObject tray;
-    [SerializeField] public GameObject bar;
+    [SerializeField] public GameObject icon;
     [SerializeField] double value;
     [SerializeField] int BarNumber;
     [SerializeField] float TimeWindow;
+    [SerializeField] Animator BarAnim;
 
     void Start()
     {
@@ -25,7 +26,8 @@ public class Bar : MonoBehaviour
         {
             if (Slot.Locked)
             {
-                bar.GetComponent<SpriteRenderer>().enabled = true;
+                BarAnim.SetBool("Icon", true);
+                //bar.GetComponent<SpriteRenderer>().enabled = true;
                 GetComponent<SpriteRenderer>().enabled = true;
 
                 switch (BarNumber)
@@ -46,35 +48,33 @@ public class Bar : MonoBehaviour
 
                 }
 
-                float scale;
-                if (value <= 100)
-                {
-                    scale = (float)(value / 100 * 0.31);
-                    transform.localScale = new Vector3(scale, transform.localScale.y, transform.localScale.z);
-                }
+                BarAnim.SetFloat("Value", (float)value);
             }
             else
             {
-                bar.GetComponent<SpriteRenderer>().enabled = false;
+                BarAnim.SetBool("Icon", false);
                 GetComponent<SpriteRenderer>().enabled = false;
             }
 
             if (type == Type.Tray)
             {
+                /*
                 if (value > 100 && value < TimeWindow && GetComponent<SpriteRenderer>().color.g > 0)
                 {
                     float temp = GetComponent<SpriteRenderer>().color.g - 0.002f;
                     GetComponent<SpriteRenderer>().color = new Color(1, temp, 0);
-                }
-                else if (value > TimeWindow)
+                }*/
+                if (value > 150) //Value > timewindow
                 {
                     //Destroy(Slot.ObjectIN);
                     Slot.ObjectIN.GetComponent<Picture>().Trash = true;
                 }
+                /*
                 else if (value < 100)
                 {
                     GetComponent<SpriteRenderer>().color = new Color(1, 0.739108f, 0);
                 }
+                */
             }
         }
     }

@@ -33,6 +33,9 @@ public class ResultManager : MonoBehaviour
         if (staticDataHolder.finishedtutorial)
         {
             GameObject.Find("exit_Button").SetActive(false);
+            GameObject.Find("paperNum").SetActive(false);
+            GameObject.Find("paperNum_x").SetActive(false);
+
 
             double result = 0; //TOTAL %-------------------------------------------------------------------------------------------------------------------
             foreach (Transform GameOBJ in photoinv.transform)
@@ -100,32 +103,37 @@ public class ResultManager : MonoBehaviour
             result = result / GameObject.Find("Film (1)").GetComponent<Film>().Picnumber;
 
             Debug.Log(result);
+            int Moneyearn = 0;
 
             if (result < 60)
             {
                 Result.text = "BAD";
-                MoneyEarned.text = "50";
+                Moneyearn = 50 + staticDataHolder.lumpsum;
                 staticDataHolder.money += 50;
                 staticDataHolder.customerValue = 1;
             }
             else if (result >= 60 && result < 74)
             {
                 Result.text = "OK";
-                MoneyEarned.text = "150";
+                Moneyearn = 150 + staticDataHolder.lumpsum;
                 staticDataHolder.money += 100;
             }
             else if (result >= 74 && result < 85)
             {
                 Result.text = "GOOD";
-                MoneyEarned.text = "$150";
+                Moneyearn = 150 + staticDataHolder.lumpsum;
                 staticDataHolder.money += 150;
             }
             else if (result >= 85)
             {
                 Result.text = "GREAT";
-                MoneyEarned.text = "$200";
+                Moneyearn = 200 + staticDataHolder.lumpsum;
                 staticDataHolder.money += 200;
             }
+
+            MoneyEarned.text = "$" + Moneyearn.ToString();
+
+            staticDataHolder.money += staticDataHolder.lumpsum;
 
             //MoneyEarned.text = "$" + ((ok * 10) + (good * 20)).ToString();
             //staticDataHolder.money += (ok * 10) + (good * 20);

@@ -19,6 +19,7 @@ public class staticDataHolder : MonoBehaviour
     private static int Chemlv = 1; //chemical
     private static bool Tray = false; //6 Trays
     private static int Money = 100;  //money
+    private static int LumpSum = 0;
     private static bool FinishedTutorial = false;
 
     public static int currentIndex
@@ -200,6 +201,18 @@ public class staticDataHolder : MonoBehaviour
         set
         {
             FinishedTutorial = value;
+        }
+    }
+
+    public static int lumpsum
+    {
+        get
+        {
+            return LumpSum;
+        }
+        set
+        {
+            LumpSum = value;
         }
     }
 }

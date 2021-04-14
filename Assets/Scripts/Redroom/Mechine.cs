@@ -27,6 +27,8 @@ public class Mechine : MonoBehaviour
 
     [SerializeField] GameObject EnlargerExit;
     [SerializeField] GameObject RedRoomExit;
+    [SerializeField] GameObject Papernum;
+    [SerializeField] GameObject paperX;
 
 
 
@@ -102,6 +104,9 @@ public class Mechine : MonoBehaviour
 
             EnlargerExit.SetActive(true);
             RedRoomExit.SetActive(false);
+            Papernum.SetActive(false);
+            paperX.SetActive(false);
+
 
 
             Opened = true;

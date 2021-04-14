@@ -100,6 +100,7 @@ MonoBehaviour:
   PhotoID: 2
   PhotoInFilm: 1
   Fullpic: {fileID: 21300000, guid: 9289107cc3b67324e990a549d0c6ae81, type: 3}
+  Ruinedpic: {fileID: 21300000, guid: 8473377a8864ddd4bbafcac498355ab6, type: 3}
   Timer: 0
   percent1: 0
   percent2: 0

@@ -5390,7 +5390,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 10
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}

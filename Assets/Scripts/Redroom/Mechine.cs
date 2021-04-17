@@ -161,6 +161,9 @@ public class Mechine : MonoBehaviour
 
         EnlargerExit.SetActive(false);
         RedRoomExit.SetActive(true);
+        Papernum.SetActive(true);
+        paperX.SetActive(true);
+
 
 
         Opened = false;

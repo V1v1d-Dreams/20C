@@ -11,6 +11,7 @@ public class Picture : MonoBehaviour
     [SerializeField] public int PhotoInFilm = 0;
     [SerializeField] Sprite Fullpic;
     [SerializeField] Sprite Ruinedpic;
+    [SerializeField] GameObject waterdrop;
 
     [Header("Value")]
     [Tooltip("THE GAME IS ALREADY BROKEN")]
@@ -209,7 +210,8 @@ public class Picture : MonoBehaviour
                 }
                 else if (hangable && gaemhander.GetComponent<Game_handler>().placable && gaemhander.GetComponent<Game_handler>().currentmouseon.CompareTag("Hanger")) //Hanger
                 {
-
+                    Instantiate(waterdrop,transform.position,new Quaternion(),transform);
+                    print("something");
                     if (PastPos.TryGetComponent(out Item_with_slot Tray))
                     {
                         Tray.Locked = false;

@@ -53,6 +53,8 @@ public class PhotoinfilmCheck : MonoBehaviour
         {
             Text3.gameObject.SetActive(false);
         }
+
+        Checkphoto();
     }
 
     public void Checkphoto()

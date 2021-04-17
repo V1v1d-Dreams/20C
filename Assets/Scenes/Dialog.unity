@@ -280,6 +280,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1193,6 +1194,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1495,6 +1497,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1582,6 +1585,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1732,6 +1736,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 471b25a3007dc1340aeabb59cbb6ea96, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2920,6 +2925,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -3175,6 +3181,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -3286,6 +3293,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -3373,6 +3381,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 471b25a3007dc1340aeabb59cbb6ea96, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -3486,6 +3495,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: fe50ed4b56c510a47bff83f4324b129e, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -3910,6 +3920,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -4673,7 +4684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - \wHmmmmm,\w what a vintage looking store.
+  - '***START HERE FOR MASTER VERSION***'
   - ' You''ve got yourself quite a spot huh.'
   - . . . . . .
   - \cDon't mind me,\c I'm just another \ncustomer for your service.
@@ -4713,6 +4724,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: f0b4d8bfa267df54ab4426f5a24341e3, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -4818,6 +4830,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -4924,7 +4937,7 @@ GameObject:
   - component: {fileID: 543711823}
   - component: {fileID: 543711824}
   m_Layer: 0
-  m_Name: morning
+  m_Name: Morning (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4957,22 +4970,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - \wS'up\w owner! Got a set of pictures that \nneed to be developed for my \rboss\r.
+  - Hmmmmm, quite a nice day isn't it?
   - . . . . . .
+  - The end is nigh. Your \rsecret\r shall be \nrevealed when the time comes.
+  - . . . . . .
+  - Oh don't mind that, it's just an old \nquote.
+  - . . . . . .
+  - Anyway, here is the film for the day.
   Names:
-  - Tan-skinned woman
+  - A man with blue cap
   - You
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  - A man with blue cap
   character:
-  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
-  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 4f9ad4dfbab03d4498d2cd69082c3773, type: 3}
+  News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -5361,6 +5390,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -5408,6 +5438,8 @@ Transform:
   m_Children:
   - {fileID: 543711823}
   - {fileID: 939331362}
+  - {fileID: 1563532650}
+  - {fileID: 1487213504}
   m_Father: {fileID: 1653975225}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5613,6 +5645,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -5805,6 +5838,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -6120,6 +6154,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 471b25a3007dc1340aeabb59cbb6ea96, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -6427,6 +6462,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -6568,6 +6604,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -6848,6 +6885,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -7368,6 +7406,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -8205,6 +8244,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -8399,6 +8439,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 2de60545fcb1ab54b98e78944e9f502c, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -8715,6 +8756,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -8897,6 +8939,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -9276,6 +9319,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -9491,7 +9535,7 @@ GameObject:
   - component: {fileID: 939331362}
   - component: {fileID: 939331363}
   m_Layer: 0
-  m_Name: Evening
+  m_Name: Morning (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9524,31 +9568,131 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Oh, took ya long enough but who am I \nto complain anyway.
+  - Finally, such a \rfine art\r isn't it?
+  - . . . . . .
+  - \rYou\r and \rme\r, \cwe are the same\c,\n aren't we?
+  - . . . . . .
+  - \rI know what you did at night.\r
+  - . . . . . .
+  - \rIf you're trying to mess with me, \nthen worry not, this will be well \nspread.\r
+  - . . . . . .
+  - \wWhat with that face of your?\w
+  - I'm just kidding, \wahahaha.\w
+  - I'll be going now.
+  - Hope that we won't \rneed to see each \r\n\rother again.\r
+  - . . . . . .
+  - . . . . . .
+  - \cHey sweetie\c, another day, another \ncustomer right?
+  - Would you mind taking care of another \nfilm for me again?
+  - I really need them so please take \ncare of it.
   - . . . . . .
   Names:
-  - Tan-skinned woman
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
   - You
   character:
-  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
-  - Damn! Seems like the previous one did \na better job than you.
-  - Really hope that \rthe boss\r will accept \nthis.
+  - Finally, eh?
+  - . . . . . .
+  - What a waste of a talented man like\n you. . . . .
+  - . . . . . .
+  - \rYou\r and \rme\r, \cwe are the same\c,\n aren't we?
+  - . . . . . .
+  - \rI know what you did at night.\r
+  - . . . . . .
+  - \rIf you're trying to mess with me, \nthen worry not, this will be well \nspread.\r
+  - . . . . . .
+  - \wWhat with that face of your?\w
+  - I'm just kidding, \wahahaha.\w
+  - I'll be going now.
+  - Hope that we won't \rneed to see each \r\n\rother again.\r
+  - . . . . . .
+  - . . . . . .
+  - \cHey sweetie\c, another day, another \ncustomer right?
+  - Would you mind taking care of another \nfilm for me again?
+  - I really need them so please take \ncare of it.
   - . . . . . .
   NameUnsat:
-  - Tan-skinned woman
-  - Tan-skinned woman
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - You
+  - A man with blue cap
+  - A man with blue cap
+  - A man with blue cap
+  - A man with blue cap
+  - You
+  - You
+  - Beautiful woman
+  - Beautiful woman
+  - Beautiful woman
   - You
   characterUnsat:
-  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
-  - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
+  - {fileID: 21300000, guid: 1b31409f6350e4a45920a802173d4b75, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
-  endday: 1
+  endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -9805,6 +9949,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 4f9ad4dfbab03d4498d2cd69082c3773, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -10135,6 +10280,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -10392,6 +10538,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -11836,6 +11983,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -12003,6 +12151,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -12416,6 +12565,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: f0b4d8bfa267df54ab4426f5a24341e3, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -12817,6 +12967,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: fe50ed4b56c510a47bff83f4324b129e, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -13265,6 +13416,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: e3ee565f25b40d24ab5a3cdce4ffb444, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -13478,6 +13630,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -13594,6 +13747,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 6f7b7f54e2dac0f458ea4604ac6a9341, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -13699,6 +13853,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -14394,6 +14549,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 17bc7871bfcba6b498ac6b541eddfeab, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -14648,7 +14804,7 @@ GameObject:
   - component: {fileID: 1439184349}
   - component: {fileID: 1439184350}
   m_Layer: 0
-  m_Name: morning
+  m_Name: Morning (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14681,34 +14837,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Hey, sir. I got a few films that need \nto be developed.
-  - Could you take care of it?
+  - H. . .hey man. Here is the film. \nAs always, please be careful with them.
   - . . . . . .
-  - Sir?
-  - . . . . . .
-  - Well. . . Whatever, I will come back\nin a few hours, just sure to complete it.
   Names:
-  - Moody looking man
-  - Moody looking man
+  - A long hair guy
   - You
-  - Moody looking man
-  - You
-  - Moody looking man
   character:
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat: []
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: 17bc7871bfcba6b498ac6b541eddfeab, type: 3}
+  News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -14897,6 +15042,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -15144,6 +15290,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 90e825d8baf3d3c4a8976a2cc9ea1f88, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -15159,6 +15306,116 @@ MonoBehaviour:
   Timeindex: 0
   WhatDayisToday: 3
   Film: {fileID: 9127718114185621459, guid: 8230e9eae0348434e9ce70910023d173, type: 3}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
+--- !u!1 &1487213503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1487213504}
+  - component: {fileID: 1487213505}
+  m_Layer: 0
+  m_Name: Evening (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1487213504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487213503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 564156308}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1487213505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487213503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - \cHmmm.\c This went better than expected, \nthought this will \rmess up\r just
+    like \nlast time.
+  - . . . . . .
+  - Anyway, this is fine.
+  - . . . . . .
+  - What're ya buyin, boy?
+  - . . . . . .
+  Names:
+  - Chris
+  - You
+  - Chris
+  - You
+  - The Salesman
+  - You
+  character:
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  ShopAfterThis: 1
+  Satisfied: 1
+  DialogUnsat:
+  - Hmmm. This is unexpected, it's just \nlike the last time.
+  - . . . . . .
+  - Anyway, this is fine.
+  - . . . . . .
+  - What're ya buyin, boy?
+  - . . . . . .
+  NameUnsat:
+  - Chris
+  - You
+  - Chris
+  - You
+  - The Salesman
+  - You
+  characterUnsat:
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 7
+  Film: {fileID: 0}
   Film2: {fileID: 0}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
@@ -15307,6 +15564,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -15662,6 +15920,215 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1563532649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1563532650}
+  - component: {fileID: 1563532651}
+  m_Layer: 0
+  m_Name: Morning (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1563532650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563532649}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 564156308}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1563532651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563532649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d71599ee338949bb71f971e691783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialog:
+  - . . . . . .
+  - Long time no see, Chris.
+  - Didn't you just walk past me the last \ntime we met, Elle?
+  - Oh really? I didn't notice that it \nwas you.
+  - What are you doing here anyway?
+  - What do you think? To play basketball?
+  - . . . . . .
+  - Hey hey, no need to be so sarcastic, \nI'm your sister, okay?
+  - Right, about \rthe money\r, do you have it?
+  - Yep, I have it.
+  - The amount we got from \rthe insurance\r \nis quite a lot.
+  - What about the \r"accident"\r?
+  - Don't worry, I paid a good amount \nof it. \rThe cop\r and \rthe detective\r
+    \nwon't spill a bean.
+  - \cGood, good, very good.\c
+  - It looks like your film is done, Elle.
+  - Oh my, I didn't even notice you, \nI'm so sorry.
+  - . . . . . .
+  - Thanks for the photo, I'll be going \nnow. See you later, Chris.
+  - . . . . . .
+  - . . . . . .
+  - Hey man, sorry for keeping you \nwaiting, here is the film that I want \nyou
+    to take care of.
+  - . . . . . .
+  Names:
+  - You
+  - Beautiful woman
+  - Chris
+  - Elle
+  - Elle
+  - Chris
+  - You
+  - Elle
+  - Elle
+  - Chris
+  - Chris
+  - Elle
+  - Chris
+  - Elle
+  - Chris
+  - Elle
+  - You
+  - Elle
+  - Chris
+  - You
+  - Chris
+  - You
+  character:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  ShopAfterThis: 0
+  Satisfied: 1
+  DialogUnsat:
+  - . . . . . .
+  - Long time no see, Chris.
+  - Didn't you just walk past me the last \ntime we met, Elle?
+  - Oh really? I didn't notice that it \nwas you.
+  - What are you doing here anyway?
+  - What do you think? To play basketball?
+  - . . . . . .
+  - Hey hey, no need to be so sarcastic, \nI'm your sister, okay?
+  - Right, about \rthe money\r, do you have it?
+  - Yep, I have it.
+  - The amount we got from \rthe insurance\r \nis quite a lot.
+  - What about the \r"accident"\r?
+  - Don't worry, I paid a good amount \nof it. \rThe cop\r and \rthe detective\r
+    \nwon't spill a bean.
+  - \cGood, good, very good.\c
+  - It looks like your film is done, Elle.
+  - Oh my, I didn't even notice you, \nI'm so sorry.
+  - . . . . . .
+  - Thanks for the photo, I'll be going \nnow. See you later, Chris.
+  - . . . . . .
+  - . . . . . .
+  - Hey man, sorry for keeping you \nwaiting, here is the film that I want \nyou
+    to take care of.
+  - . . . . . .
+  NameUnsat:
+  - You
+  - Beautiful woman
+  - Chris
+  - Elle
+  - Elle
+  - Chris
+  - You
+  - Elle
+  - Elle
+  - Chris
+  - Chris
+  - Elle
+  - Chris
+  - Elle
+  - Chris
+  - Elle
+  - You
+  - Elle
+  - Chris
+  - You
+  - Chris
+  - You
+  characterUnsat:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: 297c8b2f3c6e74342b4a393716df0e27, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  - {fileID: 21300000, guid: c8644f836f07d2b4fada55523a3c0e35, type: 3}
+  shopOverlay: {fileID: 110584103}
+  News: {fileID: 0}
+  endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  Textstart: {fileID: 1531325351}
+  textlocation: {fileID: 841974085}
+  Namestart: {fileID: 547265520}
+  Namelocation: {fileID: 268457740}
+  Char: {fileID: 6980441667402523711, guid: fe89f2d2f3f49de4495160640b6659c7, type: 3}
+  Name: {fileID: 8807598909682204921, guid: 7fe3c47dc29a1374a8e915adbfb1aeac, type: 3}
+  i: 0
+  CharsObj: []
+  compare1: 92
+  nextline: 0.4
+  textmanager: {fileID: 0}
+  Pic: {fileID: 0}
+  Timeindex: 0
+  WhatDayisToday: 7
+  Film: {fileID: 0}
+  Film2: {fileID: 0}
+  Film3: {fileID: 0}
+  NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1570333301
 GameObject:
   m_ObjectHideFlags: 0
@@ -15797,6 +16264,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -16147,6 +16615,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -16252,6 +16721,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -16792,6 +17262,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -16902,7 +17373,7 @@ GameObject:
   - component: {fileID: 1746164389}
   - component: {fileID: 1746164390}
   m_Layer: 0
-  m_Name: Evening
+  m_Name: Evening (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16935,80 +17406,145 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - Oh! Looks like I just came in at the \nright moment.
-  - It looks like you just finished with \nmy films.
-  - Oh, it looks like it's almost evening \nalready.
-  - One more thing, sir. I suggest that \nyou try to stay in the door at night \nduring
-    this time.
+  - Ummm, look's good to me.
+  - Thanks
   - . . . . . .
-  - Don't get me wrong sir, I'm just \nwarning you because you look like \nthose
-    quiet types you know?
-  - My brother is a \rpolice officer\r and he \ntold me that there have been many
-    \n\rpeople gone missing\r  in this area \nrecently.
-  - . . . . . .
-  - Look, believe me or not.
-  - The officials haven't stated this event \njust yet, I don't know why but just
-    \nremember that I warned you.
-  - ' I will be going before it gets dark now.'
-  - . . . . . .
-  - What're ya buyin, boy?
+  - Daryl?!
+  - Hey Joe, where do you think you are \ngoing?
+  - What's wrong?
+  - I know that you did it.
+  - Did what?
+  - Don't pretend that you didn't do it.
+  - \rYou killed her! The girl!\r
+  - I . . . I told you before right?\n That I didn't do it.
+  - It's . . it's . . . it's \rthem!\r\n They did it!
+  - Those \rsiblings\r are the one.
+  - Either you have a proof of that or \nI'll take you to \rJoseph\r or \rMerle\r
+    \nmyself.
+  - Wait! You have to trust me.
+  - Those \rguys\r are in this too!
+  - Come with me right now or else \nI'll need to use \ranother method\r.
+  - ok ok! I am coming.
+  - . . . . . . . . . . . . . . . . . . . . . . . .
+  - Got something that might interest \nyou, boy!
+  - . . . . . . . . . . . . . . . . . . . . . . . .
   Names:
-  - Moody looking man
-  - Moody looking man
-  - Moody looking man
-  - Moody looking man
+  - A long hair guy
+  - A long hair guy
   - You
-  - Moody looking man
-  - Moody looking man
-  - You
-  - Moody looking man
-  - Moody looking man
-  - Moody looking man
+  - A long hair guy
+  - Daryl
+  - Joe
+  - Daryl
+  - Joe
+  - Daryl
+  - Daryl
+  - Joe
+  - Joe
+  - Joe
+  - Daryl
+  - Joe
+  - Joe
+  - Daryl
+  - Joe
   - You
   - The Salesman
+  - You
   character:
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   ShopAfterThis: 1
   Satisfied: 1
   DialogUnsat:
-  - Oh! Looks like I just came in at the \nright moment.
-  - It looks like you just finished with \nmy films.
-  - Well . . . I didn't expect the quality \nto be this bad.
+  - Ummm, look's bad.
+  - Anyway. . . . .
   - . . . . . .
-  - \rFUCK!\r
-  - . . . . . .
-  - What're ya buyin, boy?
+  - Daryl?!
+  - Hey Joe, where do you think you are \ngoing?
+  - What's wrong?
+  - I know that you did it.
+  - Did what?
+  - Don't pretend that you didn't do it.
+  - \rYou killed her! The girl!\r
+  - I . . . I told you before right?\n That I didn't do it.
+  - It's . . it's . . . it's \rthem!\r\n They did it!
+  - Those \rsiblings\r are the one.
+  - Either you have a proof of that or \nI'll take you to \rJoseph\r or \rMerle\r
+    \nmyself.
+  - Wait! You have to trust me.
+  - Those \rguys\r are in this too!
+  - Come with me right now or else \nI'll need to use \ranother method\r.
+  - ok ok! I am coming.
+  - . . . . . . . . . . . . . . . . . . . . . . . .
+  - Got something that might interest \nyou, boy!
+  - . . . . . . . . . . . . . . . . . . . . . . . .
   NameUnsat:
-  - Moody looking man
-  - Moody looking man
-  - Moody looking man
+  - A long hair guy
+  - A long hair guy
   - You
-  - Moody looking man
+  - A long hair guy
+  - Daryl
+  - Joe
+  - Daryl
+  - Joe
+  - Daryl
+  - Daryl
+  - Joe
+  - Joe
+  - Joe
+  - Daryl
+  - Joe
+  - Joe
+  - Daryl
+  - Joe
   - You
   - The Salesman
+  - You
   characterUnsat:
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
-  - {fileID: 21300000, guid: d9081ac3fbaecbc458f681f3be68a1a4, type: 3}
+  - {fileID: 21300000, guid: 05e8ffaf7a548bd4a9cc38888cfb7aeb, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -17136,16 +17672,32 @@ MonoBehaviour:
   - . . . . . .
   - It's for the public so it is good, \n\cright?\c
   - . . . . . .
-  - \wTHE END FOR CURRENT BUILD\w
-  - Please press \rESC\r and exit the room
+  - . . . . . .
+  - S'up bro . . .
+  - . . . . . .
+  - Yeah yeah, I know that I just came here \nrecently but things just got very \n\rweird\r
+    around me recently.
+  - I think that someone is \rstalking\r me.
+  - I just wanna let you know that \nif \rsomething happens\r to me, give \nthe police
+    \rthis film\r, this might be \na clue.
+  - . . . . . .
+  - I need to go now, take care, buddy.
+  - . . . . . .
   Names:
   - Tan-skinned woman
   - Tan-skinned woman
   - You
   - Tan-skinned woman
   - You
-  - Azizi the Developer
-  - Azizi the Developer
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - Mr.Azizi
+  - Mr.Azizi
+  - You
+  - Mr.Azizi
+  - You
   character:
   - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
   - {fileID: 21300000, guid: 50f4910a832d8ec43908e827307db575, type: 3}
@@ -17154,6 +17706,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
   - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
   ShopAfterThis: 0
   Satisfied: 1
   DialogUnsat:
@@ -17180,6 +17739,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -17479,6 +18039,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -17743,6 +18304,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -17987,6 +18549,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -18099,6 +18662,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 0}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -18408,6 +18972,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -18510,6 +19075,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: e3ee565f25b40d24ab5a3cdce4ffb444, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -18573,21 +19139,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog:
   - . . . . . .
+  - Welcome!
+  - . . . . . .
   Names:
   - You
+  - The Salesman
+  - You
   character:
-  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   ShopAfterThis: 1
   Satisfied: 1
   DialogUnsat:
   - . . . . . .
+  - Welcome!
+  - . . . . . .
   NameUnsat:
-  - Azizi
+  - You
+  - The Salesman
+  - You
   characterUnsat:
-  - {fileID: 21300000, guid: 7a9937be609fa3142a1816e59fbd501e, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -19051,6 +19630,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -19654,6 +20234,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 2de60545fcb1ab54b98e78944e9f502c, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -20110,6 +20691,8 @@ MonoBehaviour:
   - Time:
     - {fileID: 543711822}
     - {fileID: 939331361}
+    - {fileID: 1563532649}
+    - {fileID: 1487213503}
   - Time:
     - {fileID: 1439184348}
     - {fileID: 1746164388}
@@ -20491,6 +21074,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 0}
   News: {fileID: 0}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -20619,6 +21203,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -21259,6 +21844,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -21491,6 +22077,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 90e825d8baf3d3c4a8976a2cc9ea1f88, type: 3}
   endday: 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}

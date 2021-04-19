@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class MP3Player : MonoBehaviour
 {
     public Dropdown songlistdrop;
 
     public AudioClip clips;
+    public AudioSource MusicBox;
     public List<string> songname;
     int curtrack;
     int prevtrack = -1;
@@ -30,6 +32,7 @@ public class MP3Player : MonoBehaviour
         //clips = new AudioClip[3];
         source = GetComponent<AudioSource>();
         //StartCoroutine(Latestart(0.35f));
+
     }
     /*public void listconvert()
     {
@@ -79,16 +82,18 @@ public class MP3Player : MonoBehaviour
         print("started");
         if (!source.isPlaying)
         {
-            
+
             timer = 0;
             source.PlayOneShot(clips);
             newclip = clips.length;
-            
+
         }
     }
     // Update is called once per frame
     void Update()
     {
+
+
         if (Input.GetKeyDown(KeyCode.F11))
         {
             for (i = 0; i < songname.Count; i++)
@@ -99,27 +104,27 @@ public class MP3Player : MonoBehaviour
 
         if (GetComponent<Dailyplaylist>().Loaded)
         {
-               
+
             if (staticDataHolder.daynumber != prevday)
-             {
+            {
                 timer = newclip - 2;
                 prevday = staticDataHolder.daynumber;
 
                 source = GetComponent<AudioSource>();
-                    /* clips = new AudioClip[3];
+                /* clips = new AudioClip[3];
 
 
 
-                    for (i = 0; i < 3; i++)
-                    {
-                        clips[i] = GetComponent<Dailyplaylist>().Datdaysong[i];
-                    }
-                    listconvert();
-                    */
-                    clips = GetComponent<Dailyplaylist>().Datdaysong[staticDataHolder.daynumber - 1];
+                for (i = 0; i < 3; i++)
+                {
+                    clips[i] = GetComponent<Dailyplaylist>().Datdaysong[i];
+                }
+                listconvert();
+                */
+                clips = GetComponent<Dailyplaylist>().Datdaysong[staticDataHolder.daynumber - 1];
 
-                    newsongplus();
-                
+                newsongplus();
+
             }
             else
             {
@@ -132,17 +137,19 @@ public class MP3Player : MonoBehaviour
             {
                 source.volume -= Time.deltaTime;
                 //prevtrack = curtrack;
-                
-            } else if (timer >= newclip + 1)
+
+            }
+            else if (timer >= newclip + 1)
             {
                 print("timedout");
                 source.Stop();
                 newsongplus();
                 timer = 0;
-            } if (timer <= newclip - (newclip - 2))
+            }
+            if (timer <= newclip - (newclip - 2))
             {
                 source.volume += Time.deltaTime;
-                if(source.volume >= 1)
+                if (source.volume >= 1)
                 {
                     source.volume = 1;
                 }
@@ -150,97 +157,127 @@ public class MP3Player : MonoBehaviour
 
             print(source.volume);
         }
-            /*void newsong()
-            {
-                clipNum = Random.Range(0, clips.Length);
-                if (clipNum != prevtrack)
-                {
-                    if (!source.isPlaying)
-                    {
-                        nextsong = false;
-                        source.loop = true;
-                        source.PlayOneShot(clips[clipNum]);
-                        curtrack = clipNum;
-                        songlistdrop.value = clipNum;
-                    }
-
-                    newclip = clips[clipNum].length;
-                }
-                else
-                {
-                    newsong();
-                }
-                //print("curtrack =" + curtrack);
-                //print("prevtrack =" + prevtrack);
-                //print("--------------");
-
-            }
-
-            void prevsong()
+    }
+    /*void newsong()
+    {
+        clipNum = Random.Range(0, clips.Length);
+        if (clipNum != prevtrack)
+        {
+            if (!source.isPlaying)
             {
                 nextsong = false;
-                source.PlayOneShot(clips[prevtrack]);
-                newclip = clips[prevtrack].length;
-                curtrack = prevtrack;
-                songlistdrop.value = prevtrack;
+                source.loop = true;
+                source.PlayOneShot(clips[clipNum]);
+                curtrack = clipNum;
+                songlistdrop.value = clipNum;
             }
 
-            void pauseandplay()
-            {
-                if (pausing)
-                {
-                    //print("timer = " + timer);
-                    source.Pause();
-                    stopti = timer;
-                    pausing = false;
+            newclip = clips[clipNum].length;
+        }
+        else
+        {
+            newsong();
+        }
+        //print("curtrack =" + curtrack);
+        //print("prevtrack =" + prevtrack);
+        //print("--------------");
 
+    }
+
+    void prevsong()
+    {
+        nextsong = false;
+        source.PlayOneShot(clips[prevtrack]);
+        newclip = clips[prevtrack].length;
+        curtrack = prevtrack;
+        songlistdrop.value = prevtrack;
+    }
+
+    */
+    public void pauseandplay()
+    {
+        print("pause&play is running u idiot!");
+        if (pausing)
+        {
+            //print("timer = " + timer);
+
+
+            source.volume -= Time.deltaTime;
+            if (source.volume <= 0)
+            {
+                source.volume = 0;
+                stopti = timer;
+                pausing = false;
+                source.Pause();
+                MusicBox.Play();
+                MusicBox.volume += Time.deltaTime;
+                if (MusicBox.volume >= 1)
+                {
+                    MusicBox.volume = 1;
                 }
-                else if (!pausing)
-                {
-                    source.UnPause();
-                    timer = stopti;     
-                    pausing = true;
-                   // print("stoptimer = " + stopti);
-                }
+
             }
 
-
-            public void play()
-            {
-                pauseandplay();
-            }
-
-            public void next()
-            {
-                source.Stop();
-                prevtrack = curtrack;
-                nextsong = true;
-                newsong();
-                timer = 0;
-            }
-
-            public void prev()
-            {
-                if(prevtrack < 0)
-                {
-                    prevtrack = clipNum;
-                    source.Stop();
-                    prevsong();
-                    timer = 0;
-                }
-                else
-                {
-                    source.Stop();
-                    prevsong();
-                    timer = 0;
-                }*/
 
         }
-
-        IEnumerator Latestart(float waitTime)
+        else if (!pausing)
         {
-            yield return new WaitForSeconds(waitTime);
+            MusicBox.volume -= Time.deltaTime;
+            if (MusicBox.volume <= 0)
+            {
+                MusicBox.volume = 0;
+                source.UnPause();
+                timer = stopti;
+                pausing = true;
+                source.volume += Time.deltaTime;
+                if (source.volume >= 1)
+                {
+                    source.volume = 1;
+                }
+            }
 
+
+            // print("stoptimer = " + stopti);
         }
     }
+
+    /*
+    public void play()
+    {
+        pauseandplay();
+    }
+
+    public void next()
+    {
+        source.Stop();
+        prevtrack = curtrack;
+        nextsong = true;
+        newsong();
+        timer = 0;
+    }
+
+    public void prev()
+    {
+        if(prevtrack < 0)
+        {
+            prevtrack = clipNum;
+            source.Stop();
+            prevsong();
+            timer = 0;
+        }
+        else
+        {
+            source.Stop();
+            prevsong();
+            timer = 0;
+        }*/
+
+
+
+    IEnumerator Latestart(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+
+    }
+}
 

@@ -146,11 +146,15 @@ public class ResultManager : MonoBehaviour
             staticDataHolder.Todaysfilm2 = null;
             staticDataHolder.Todaysfilm3= null;
 
+            //pause & play on this
+
             GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2, 10); //EXIT DELAY, CHANGE SECOND VALUE
             staticDataHolder.currentTime++;
         }
         else
         {
+            //pause & play on this
+
             GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2, 0);
             staticDataHolder.currentTime++;
         }

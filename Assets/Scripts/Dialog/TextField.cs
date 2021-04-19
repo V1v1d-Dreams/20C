@@ -331,6 +331,9 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
                     เหมาจ่าย = staticDataHolder.lumpsum;
+
+                    //pause & play on this
+
                     shopOverlay.SetActive(true);
                 }
                 else
@@ -339,6 +342,9 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
                     เหมาจ่าย = staticDataHolder.lumpsum;
+
+                    //pause & play on this
+
                     GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End(endday);
                 }
             }

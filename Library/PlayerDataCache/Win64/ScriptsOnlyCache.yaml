@@ -217,7 +217,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16548}
     - Class: 114
-      Script: {instanceID: 24530}
+      Script: {instanceID: 33714}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -225,6 +225,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -689,7 +693,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16548}
     - Class: 114
-      Script: {instanceID: 24530}
+      Script: {instanceID: 33714}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1487,7 +1491,7 @@ ScriptsOnlyBuild:
     className: TMP_ExampleScript_01
   - hash:
       serializedVersion: 2
-      Hash: 6b60cdc987d9523104386679ed73685a
+      Hash: 1fb4f9f4e2bcd1c756690956c293c9e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MP3Player
@@ -1511,7 +1515,7 @@ ScriptsOnlyBuild:
     className: Shop
   - hash:
       serializedVersion: 2
-      Hash: 5e503b83094e63d4b957db149be90028
+      Hash: 3988f57816593f123bbf0171ce7409e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Picture
@@ -2158,4 +2162,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Dialog.unity
   - Assets/Scenes/Redroom layout test.unity
   - Assets/Scenes/NextDay.unity
-  playerPath: C:/Users/yeen/Desktop/[0.5.8.2]/20C.exe
+  playerPath: C:/Users/USER/Desktop/20C [0.5.9]/20C.exe

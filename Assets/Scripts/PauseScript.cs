@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PauseScript : MonoBehaviour
 {
@@ -10,9 +11,10 @@ public class PauseScript : MonoBehaviour
     //public GameObject ingameCursor;
     [Header("Canvas")]
     public GameObject pauseMenuUI;
+    public GameObject settingMenuUI;
     public GameObject menuPause;
-    public GameObject Setting;
     public GameObject ReturnConfirmation;
+    public GameObject background;
     //public GameObject ForSceneChanger;
    
     [Header("Sound")]
@@ -32,14 +34,25 @@ public class PauseScript : MonoBehaviour
 
     GameObject player;
     //bool IsGamePaused = false;
+
+    [SerializeField] TMP_Dropdown TMPResolutionDropdown;
+    Resolution[] resolutions;
+    List<int> widths = new List<int>() { 640, 800, 854, 1280, 1366, 1600, 1920, 2560, 3200, 3840 };
+    List<int> heights = new List<int>() { 360, 450, 480, 720, 768, 900, 1080, 1440, 1800, 2160 };
+
+    private void Awake()
+    {
+        
+    }
     void Start()
     {
         Time.timeScale = 1.0f;
         //ingameCursor = GameObject.Find("cursor");
         pauseMenuUI.SetActive(false);
-        Setting.SetActive(false);
+        settingMenuUI.SetActive(false);
         ReturnConfirmation.SetActive(false);
-
+        background.SetActive(false);
+        TMPDropDownCurrentStartResolution();
     }
     void Update()
     {
@@ -76,24 +89,27 @@ public class PauseScript : MonoBehaviour
 
     public void mainPauseMenu()
     {
+        background.SetActive(true);
         menuPause.gameObject.SetActive(true);
-        Setting.gameObject.SetActive(false);
+        settingMenuUI.gameObject.SetActive(false);
         ReturnConfirmation.gameObject.SetActive(false);
     }
     public void options()
     {
         menuPause.gameObject.SetActive(false);
-        Setting.gameObject.SetActive(true);
+        settingMenuUI.gameObject.SetActive(true);
         ReturnConfirmation.gameObject.SetActive(false);
+        background.SetActive(false);
     }
     public void Returntomenu()
     {
         menuPause.gameObject.SetActive(false);
-        Setting.gameObject.SetActive(false);
+        settingMenuUI.gameObject.SetActive(false);
         ReturnConfirmation.gameObject.SetActive(true);
     }
     public void Resume()
     {
+        background.SetActive(false);
         BGMSource.UnPause();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
@@ -104,6 +120,7 @@ public class PauseScript : MonoBehaviour
     }
     void Pause()
     {
+        background.SetActive(true);
         BGMSource.Pause();
         SFXSource.PlayOneShot(onPause);
         pauseMenuUI.SetActive(true);
@@ -128,6 +145,28 @@ public class PauseScript : MonoBehaviour
     {
         GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(menu);
         //SceneManager.LoadScene(menu);
+    }
+
+    void TMPDropDownCurrentStartResolution()
+    {
+        for (int x = 0; x < widths.Count; x++)
+        {
+            if (Screen.width == widths[x])
+            {
+                for (int y = 0; y < heights.Count; y++)
+                {
+                    if (Screen.height == heights[y])
+                    {
+                        if (x == y)
+                        {
+                            TMPResolutionDropdown.value = x;
+                            return;
+                        }
+                        return;
+                    }
+                }
+            }
+        }
     }
 
 

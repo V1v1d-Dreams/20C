@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -918,6 +918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 81988935}
   - component: {fileID: 81988936}
+  - component: {fileID: 81988938}
   - component: {fileID: 81988937}
   m_Layer: 0
   m_Name: book
@@ -1016,6 +1017,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.24, y: 0.22}
   m_EdgeRadius: 0
+--- !u!114 &81988938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81988934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d86d1da948947243b388e959abb65fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
+  interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
 --- !u!1 &89324464
 GameObject:
   m_ObjectHideFlags: 0
@@ -6667,7 +6682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &390563363
 Transform:
   m_ObjectHideFlags: 0
@@ -7294,6 +7309,8 @@ MonoBehaviour:
   BarNumber: 1
   TimeWindow: 0
   BarAnim: {fileID: 430920655}
+  Warningsign: {fileID: 21300000, guid: 8a3d1298cb385e84d9a0043852bd2cb5, type: 3}
+  click: {fileID: 21300000, guid: 579fef65b3d7fb540afff0339a732e40, type: 3}
 --- !u!212 &430920657
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9130,6 +9147,8 @@ MonoBehaviour:
   BarNumber: 2
   TimeWindow: 0
   BarAnim: {fileID: 529594743}
+  Warningsign: {fileID: 21300000, guid: 8a3d1298cb385e84d9a0043852bd2cb5, type: 3}
+  click: {fileID: 21300000, guid: 579fef65b3d7fb540afff0339a732e40, type: 3}
 --- !u!212 &529594745
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15139,6 +15158,8 @@ MonoBehaviour:
   BarNumber: 3
   TimeWindow: 0
   BarAnim: {fileID: 864066242}
+  Warningsign: {fileID: 21300000, guid: 8a3d1298cb385e84d9a0043852bd2cb5, type: 3}
+  click: {fileID: 21300000, guid: 579fef65b3d7fb540afff0339a732e40, type: 3}
 --- !u!212 &864066244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15861,20 +15882,23 @@ MonoBehaviour:
   strings:
   - This is where I spent most of my time doing whatever those freaks told me to
     do.Anyway, it is now yours.
-  - Okay this is a photo enlarger where you create photos.
-  - Oh yes and not just film you need to put paper underneath it to transfer the
-    photo from film to the paper
+  - "Okay this is a photo enlarger where you create photos. So now let\u2019s drag
+    a film into it."
+  - Oh yes and not just film you need to put photo paper underneath it to transfer
+    the photo from film to the paper.
+  - "Next let\u2019s look into its sight and transfer the photo in the film that
+    I gave you into paper."
   - When you are done you will not see the photo on paper yet until you put it into
     these 3 trays that have the processing chemical in it.
-  - Just remember not to put it in too long unless the paper will get too moist and
-    the photo is ruined.
+  - Just remember not to put it in too long or else the paper will get too moist
+    and the photo is ruined. Okay you may continue.
   - "Once you are done with these 3 trays remember to hang your photo, just to make
     sure that it\u2019s dry "
-  - "After that put it into this tray where you gather all the done photos here.
-    \r"
-  - "Now let\u2019s give you a try, I\u2019ve got this film that contains the photo
-    that we took before, so I will let you work on this one and we\u2019ll see the
-    result."
+  - After that put it into this tray where you gather all the finished photos here.
+  - That's easy right? As you work on you will get it more.
+  - "And remember don\u2019t forget to write down the order of the customer, I already
+    got the place here for you to put your order paper in."
+  - Lastly this is the guide book of how to process the photo, just in case you forgot.
 --- !u!4 &883475801
 Transform:
   m_ObjectHideFlags: 0
@@ -19191,6 +19215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1114054249}
   - component: {fileID: 1114054250}
+  - component: {fileID: 1114054252}
   - component: {fileID: 1114054251}
   m_Layer: 0
   m_Name: list
@@ -19289,6 +19314,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28, y: 0.22}
   m_EdgeRadius: 0
+--- !u!114 &1114054252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114054248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d86d1da948947243b388e959abb65fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
+  interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
 --- !u!1 &1114940698
 GameObject:
   m_ObjectHideFlags: 0
@@ -21813,6 +21852,8 @@ MonoBehaviour:
   BarNumber: 3
   TimeWindow: 0
   BarAnim: {fileID: 1293435818}
+  Warningsign: {fileID: 21300000, guid: 8a3d1298cb385e84d9a0043852bd2cb5, type: 3}
+  click: {fileID: 21300000, guid: 579fef65b3d7fb540afff0339a732e40, type: 3}
 --- !u!212 &1293435820
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22012,6 +22053,8 @@ MonoBehaviour:
   BarNumber: 2
   TimeWindow: 0
   BarAnim: {fileID: 1328481227}
+  Warningsign: {fileID: 21300000, guid: 8a3d1298cb385e84d9a0043852bd2cb5, type: 3}
+  click: {fileID: 21300000, guid: 579fef65b3d7fb540afff0339a732e40, type: 3}
 --- !u!212 &1328481229
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26373,6 +26416,8 @@ MonoBehaviour:
   BarNumber: 2
   TimeWindow: 0
   BarAnim: {fileID: 1622674940}
+  Warningsign: {fileID: 21300000, guid: 8a3d1298cb385e84d9a0043852bd2cb5, type: 3}
+  click: {fileID: 21300000, guid: 579fef65b3d7fb540afff0339a732e40, type: 3}
 --- !u!212 &1622674942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28804,7 +28849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1768743798
 Transform:
   m_ObjectHideFlags: 0
@@ -29058,6 +29103,8 @@ MonoBehaviour:
   BarNumber: 3
   TimeWindow: 0
   BarAnim: {fileID: 1780662109}
+  Warningsign: {fileID: 21300000, guid: 8a3d1298cb385e84d9a0043852bd2cb5, type: 3}
+  click: {fileID: 21300000, guid: 579fef65b3d7fb540afff0339a732e40, type: 3}
 --- !u!212 &1780662111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32688,6 +32735,8 @@ MonoBehaviour:
   BarNumber: 1
   TimeWindow: 0
   BarAnim: {fileID: 2054256033}
+  Warningsign: {fileID: 21300000, guid: 8a3d1298cb385e84d9a0043852bd2cb5, type: 3}
+  click: {fileID: 21300000, guid: 579fef65b3d7fb540afff0339a732e40, type: 3}
 --- !u!212 &2054256035
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34035,6 +34084,8 @@ MonoBehaviour:
   BarNumber: 1
   TimeWindow: 0
   BarAnim: {fileID: 2146924686}
+  Warningsign: {fileID: 21300000, guid: 8a3d1298cb385e84d9a0043852bd2cb5, type: 3}
+  click: {fileID: 21300000, guid: 579fef65b3d7fb540afff0339a732e40, type: 3}
 --- !u!212 &2146924685
 SpriteRenderer:
   m_ObjectHideFlags: 0

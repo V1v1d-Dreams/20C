@@ -13,6 +13,8 @@ public class Bar : MonoBehaviour
     [SerializeField] int BarNumber;
     [SerializeField] float TimeWindow;
     [SerializeField] Animator BarAnim;
+    [SerializeField] Sprite Warningsign;
+    [SerializeField] Sprite click;
 
     void Start()
     {
@@ -46,6 +48,15 @@ public class Bar : MonoBehaviour
                         break;
 
 
+                }
+
+                if (value <= 130)
+                {
+                    icon.GetComponent<SpriteRenderer>().sprite = click;
+                }
+                else if (value > 130)
+                {
+                    icon.GetComponent<SpriteRenderer>().sprite = Warningsign;
                 }
 
                 BarAnim.SetFloat("Value", (float)value);

@@ -108,27 +108,27 @@ public class ResultManager : MonoBehaviour
             if (result < 60)
             {
                 Result.text = "BAD";
-                Moneyearn = 50 + staticDataHolder.lumpsum;
-                staticDataHolder.money += 50;
+                Moneyearn = 0;
+                staticDataHolder.money += 0;
                 staticDataHolder.customerValue = 1;
             }
             else if (result >= 60 && result < 74)
             {
                 Result.text = "OK";
-                Moneyearn = 150 + staticDataHolder.lumpsum;
-                staticDataHolder.money += 100;
+                Moneyearn = staticDataHolder.lumpsum;
+                staticDataHolder.money += staticDataHolder.lumpsum;
             }
             else if (result >= 74 && result < 85)
             {
                 Result.text = "GOOD";
-                Moneyearn = 150 + staticDataHolder.lumpsum;
-                staticDataHolder.money += 150;
+                Moneyearn = (staticDataHolder.lumpsum / 4) + staticDataHolder.lumpsum;
+                staticDataHolder.money += (staticDataHolder.lumpsum / 4) + staticDataHolder.lumpsum;
             }
             else if (result >= 85)
             {
                 Result.text = "GREAT";
-                Moneyearn = 200 + staticDataHolder.lumpsum;
-                staticDataHolder.money += 200;
+                Moneyearn = (staticDataHolder.lumpsum / 2) + staticDataHolder.lumpsum;
+                staticDataHolder.money += (staticDataHolder.lumpsum / 2) + staticDataHolder.lumpsum;
             }
 
             MoneyEarned.text = "$" + Moneyearn.ToString();

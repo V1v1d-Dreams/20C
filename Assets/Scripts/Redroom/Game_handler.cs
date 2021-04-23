@@ -122,9 +122,107 @@ public class Game_handler : MonoBehaviour
         {
             staticDataHolder.papernumber += 5;
         }
-
+        
         if (!staticDataHolder.finishedtutorial)
         {
+            
+            //if (stringIndex < strings.Length)
+            //{
+            //    switch (stringIndex)
+            //    {
+            //        case 0:
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0))
+            //            {
+            //                stringIndex++;
+            //            }
+            //            break;
+            //        case 1: 
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0)/*Film In enlarger*/)
+            //            {
+            //                stringIndex++;
+            //            }
+            //            break;
+            //        case 2:
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0)/*Paper In enlarger*/)
+            //            {
+            //                stringIndex++;
+            //            }
+            //            break;
+            //        case 3:
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0)/*Click Enlarger*/)
+            //            {
+            //                stringIndex++;
+            //            }
+            //            break;
+            //        case 4:
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0)/*Drag photo into tray*/)
+            //            {
+            //                stringIndex++; // wait untill tray 1 reach green
+            //            }
+            //            break;
+            //        case 5: //EVERY TRAY WILL STOP AT GREEN
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0))
+            //            {
+            //                stringIndex++; /*time stop at tray 3 once it reach green stage*/
+            //            }
+            //            break;
+            //        case 6: 
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0)) /*Hang Photo*/
+            //            {
+            //                stringIndex++;  //photo dried
+            //            }
+            //            break;
+            //        case 7: //highlight
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0))
+            //            {
+            //                stringIndex++;
+            //            }
+            //            break;
+            //        case 8:
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0))
+            //            {
+            //                stringIndex++;
+            //            }
+            //            break;
+            //        case 9: //highlight
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0))
+            //            {
+            //                stringIndex++;
+            //            }
+            //            break;
+            //        case 10: //highlight
+            //            Text1.text = strings[stringIndex];
+            //            if (Input.GetMouseButtonUp(0))
+            //            {
+            //                stringIndex++;
+            //            }
+            //            break;
+            //    }
+
+
+
+            //}
+            //else
+            //{
+            //    //exitbutton.SetActive(true);
+            //    Text1.enabled = false;
+            //    overlayy.SetActive(false);
+            //    img.enabled = false;
+            //    overlay = false;
+            //}
+            
+
+            
             if (stringIndex < strings.Length)
             {
                 if (Input.GetMouseButtonUp(0))
@@ -219,6 +317,7 @@ public class Game_handler : MonoBehaviour
                 photoTray.GetComponent<SpriteRenderer>().sortingLayerName = "items";
                 photoTray.GetComponent<SpriteRenderer>().sortingOrder = 2;
             }
+            
         }
 
         paperNumBa.text = staticDataHolder.papernumber.ToString();

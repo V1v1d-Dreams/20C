@@ -1537,7 +1537,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 30
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -1776,7 +1776,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 471b25a3007dc1340aeabb59cbb6ea96, type: 3}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 30
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -2965,7 +2965,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -3221,7 +3221,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -4904,7 +4904,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -5075,7 +5075,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -5719,7 +5719,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -6678,7 +6678,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 30
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -8876,7 +8876,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -9439,7 +9439,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -9812,7 +9812,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -10658,7 +10658,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 53ee690fbc9df2c4ca5f015c22a6a37e, type: 3}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 30
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -12479,7 +12479,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: fe50ed4b56c510a47bff83f4324b129e, type: 3}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 30
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -14365,7 +14365,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 30
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -14554,7 +14554,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -14802,7 +14802,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 90e825d8baf3d3c4a8976a2cc9ea1f88, type: 3}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -15622,7 +15622,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 30
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -17529,7 +17529,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 30
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -20024,7 +20024,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 2de60545fcb1ab54b98e78944e9f502c, type: 3}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 20
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -22828,7 +22828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 127.30002, y: -103.5}
+  m_AnchoredPosition: {x: 127.29999, y: -103.5}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1750802263037601771
@@ -22981,7 +22981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 127.30002, y: -52.5}
+  m_AnchoredPosition: {x: 127.29999, y: -52.5}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2182179338861344796
@@ -23036,7 +23036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 127.30002, y: -79.1}
+  m_AnchoredPosition: {x: 127.29999, y: -79.1}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2532646907653187706
@@ -24343,7 +24343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 127.30002, y: 0}
+  m_AnchoredPosition: {x: 127.29999, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6064502493041350683
@@ -25115,7 +25115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 127.30002, y: -124.8}
+  m_AnchoredPosition: {x: 127.29999, y: -124.8}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8035053070535068841

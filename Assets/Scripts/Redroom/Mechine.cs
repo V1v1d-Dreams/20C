@@ -83,6 +83,12 @@ public class Mechine : MonoBehaviour
             //StartCoroutine(Randomize());
             valuePercent = 0;
 
+            if (!staticDataHolder.finishedtutorial)
+            {
+                GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                GetComponent<SpriteRenderer>().sortingOrder = 0;
+            }
+
             if (gaemhander.GetComponent<Game_handler>().Magnifier_Lv == 1)
             {
                 GetComponent<SpriteRenderer>().sprite = mechinelv1;

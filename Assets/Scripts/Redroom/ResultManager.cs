@@ -102,7 +102,7 @@ public class ResultManager : MonoBehaviour
 
             result = result / GameObject.Find("Film (1)").GetComponent<Film>().Picnumber;
 
-            Debug.Log(result);
+            //Debug.Log(result);
             int Moneyearn = 0;
 
             if (result < 60)
@@ -130,6 +130,8 @@ public class ResultManager : MonoBehaviour
                 Moneyearn = (staticDataHolder.lumpsum / 2) + staticDataHolder.lumpsum;
                 staticDataHolder.money += (staticDataHolder.lumpsum / 2) + staticDataHolder.lumpsum;
             }
+
+            print("lumpsum : "+ staticDataHolder.lumpsum);
 
             MoneyEarned.text = "$" + Moneyearn.ToString();
 

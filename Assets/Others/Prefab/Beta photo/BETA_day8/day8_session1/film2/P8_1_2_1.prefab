@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adf5bb91e5878840977b16470f5b27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Notes: FILL IN THIS SHIT
+  Notes: Please fill in the data below
   PhotoID: 105
   PhotoInFilm: 2
   Fullpic: {fileID: 21300000, guid: 1bc6f34b1d084d64a9b7c839eb7ae724, type: 3}

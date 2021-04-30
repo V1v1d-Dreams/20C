@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adf5bb91e5878840977b16470f5b27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Notes: FILL IN THIS SHIT
+  Notes: FILL IN THESE
   PhotoID: 2
   PhotoInFilm: 1
   Fullpic: {fileID: 21300000, guid: 9289107cc3b67324e990a549d0c6ae81, type: 3}

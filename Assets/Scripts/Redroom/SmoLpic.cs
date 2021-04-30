@@ -84,6 +84,12 @@ public class SmoLpic : MonoBehaviour
             Papernum.SetActive(true);
             paperX.SetActive(true);
 
+            if (!staticDataHolder.finishedtutorial)
+            {
+                FindObjectOfType<Game_handler>().PhotoProcessed = true;
+                print("Processed");
+            }
+
             //THis
             ExitEnlarger.SetActive(false);
             

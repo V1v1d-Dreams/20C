@@ -67,6 +67,7 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject Mechine;
     [SerializeField] GameObject Hanger;
     [SerializeField] GameObject paperItem;
+    [SerializeField] GameObject PaperDrag;
     [SerializeField] GameObject filmItem;
     [SerializeField] GameObject filmItem2;
     [SerializeField] GameObject filmItem3;
@@ -74,6 +75,19 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject Tray2Item;
     [SerializeField] GameObject Tray3Item;
     [SerializeField] GameObject photoTray;
+    [SerializeField] GameObject ListItem;
+    [SerializeField] GameObject GuideItem;
+
+
+
+    [Header("Tutorial Bool")]
+    [SerializeField] public bool FilmInEnlarger = false;
+    [SerializeField] public bool PaperInEnlarger = false;
+    [SerializeField] public bool PhotoProcessed = false;
+    [SerializeField] public bool Tray1Click = false;
+    [SerializeField] public bool Tray3Click = false;
+    [SerializeField] public bool PhotoDried = false;
+
     //[SerializeField] SpriteRenderer Film1;
     //[SerializeField] SpriteRenderer Film2;
     //[SerializeField] SpriteRenderer Film3;
@@ -111,7 +125,7 @@ public class Game_handler : MonoBehaviour
             Text1.enabled = true;
             overlayy.SetActive(true);
             img.enabled = true;
-            overlay = true;
+            //overlay = true;
         }
     }
 
@@ -126,91 +140,193 @@ public class Game_handler : MonoBehaviour
         if (!staticDataHolder.finishedtutorial)
         {
             
+            if (stringIndex < strings.Length)
+            {
+                switch (stringIndex)
+                {
+                    case 0:
+                        Text1.text = strings[stringIndex];
+                        if (Input.GetMouseButtonUp(0))
+                        {
+                            stringIndex++;
+                        }
+                        break;
+                    case 1: 
+                        Text1.text = strings[stringIndex]; //let’s drag a film into it.                                      Highlight mechine and All film
+
+                        Mechine.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                        Mechine.GetComponent<SpriteRenderer>().sortingOrder = 501;
+
+                        Film[] FiLm = FindObjectsOfType<Film>();
+                        for (int i = FiLm.Length - 1; i >= 0; i--)
+                        {
+                            FiLm[i].setlayer(502, "UI");
+                        }
+
+                        if (FilmInEnlarger) // trigger when Film In
+                        {
+                            stringIndex++;
+                        }
+                        break;
+                    case 2:
+                        Text1.text = strings[stringIndex]; //photo paper underneath it                                       Highlight Paper
+
+                        Film[] FiLM = FindObjectsOfType<Film>();
+                        for (int i = FiLM.Length - 1; i >= 0; i--)
+                        {
+                            FiLM[i].returelayer();
+                        }
+
+                        paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                        paperItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
+
+                        PaperDrag.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                        PaperDrag.GetComponent<SpriteRenderer>().sortingOrder = 501;
+
+                        if (PaperInEnlarger) // trigger when Paper in
+                        {
+                            stringIndex++;
+                        }
+                        break;
+                    case 3:
+                        Text1.text = strings[stringIndex]; // look into its sight and transfer Photo                         Highlight Nothing
+
+                        paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                        paperItem.GetComponent<SpriteRenderer>().sortingOrder = 2;
+
+                        PaperDrag.GetComponent<SpriteRenderer>().sortingLayerName = "Layer1";
+                        PaperDrag.GetComponent<SpriteRenderer>().sortingOrder = 106;
+
+                        if (PhotoProcessed) // trigger when Pic Processed
+                        {
+                            stringIndex++;
+                        }
+                        break;
+                    case 4: //EVERY TRAY WILL STOP AT GREEN
+                        Text1.text = strings[stringIndex]; //put it into these 3 trays                                       Highlight Trays + EveryPic
+
+                        Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                        Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+                        Tray2Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                        Tray2Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+                        Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                        Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+
+                        Picture[] pIx = FindObjectsOfType<Picture>();
+                        for (int i = pIx.Length - 1; i >= 0; i--)
+                        {
+                            pIx[i].setlayer(502, "UI");
+                        }
+
+                        if (Tray1Click) // trigger when tray1 at green
+                        {
+                            stringIndex++;
+                        }
+                        break;
+                    case 5: 
+                        Text1.text = strings[stringIndex]; //too long unless the paper will get too moist                    Highlight Trays + EveryPic
+                        if (Tray3Click) // trigger when Tray3 Green 
+                        {
+                            stringIndex++; 
+                        }
+                        break;
+                    case 6: 
+                        Text1.text = strings[stringIndex]; //hang your photo                                                 Highlight Hanger + EveryPic
+
+                        Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                        Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                        Tray2Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                        Tray2Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                        Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                        Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                        if (PhotoDried) // trigger when Photo dried
+                        {
+                            stringIndex++; 
+                        }
+                        break;
+                    case 7: 
+                        Text1.text = strings[stringIndex]; // Put it into this tray                                          Highlight FinishTray + EveryPic
+
+                        photoTray.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                        photoTray.GetComponent<SpriteRenderer>().sortingOrder = 501;
+
+                        if (Input.GetMouseButtonUp(0))
+                        {
+                            stringIndex++;
+                        }
+                        break;
+                    case 8:
+                        Text1.text = strings[stringIndex]; //That’s easy right                                               Highlight Nothing
+
+                        photoTray.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                        photoTray.GetComponent<SpriteRenderer>().sortingOrder = 2;
+
+                        Picture[] pIX = FindObjectsOfType<Picture>();
+                        for (int i = pIX.Length - 1; i >= 0; i--)
+                        {
+                            pIX[i].returelayer();
+                        }
+
+                        if (Input.GetMouseButtonUp(0))
+                        {
+                            stringIndex++;
+                        }
+                        break;
+                    case 9: 
+                        Text1.text = strings[stringIndex]; //don’t forget to write down the order                            Highlight List
+
+                        ListItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                        ListItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
+
+                        if (Input.GetMouseButtonUp(0))
+                        {
+                            stringIndex++;
+                        }
+                        break;
+                    case 10: 
+                        Text1.text = strings[stringIndex]; // this is the guide book                                         Highlight Guide
+
+                        GuideItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+                        GuideItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
+
+                        ListItem.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                        ListItem.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                        if (Input.GetMouseButtonUp(0))
+                        {
+                            stringIndex++;
+
+                            GuideItem.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+                            GuideItem.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                        }
+                        break;
+                }
+
+
+
+            }
+            else
+            {
+                //exitbutton.SetActive(true);
+
+                Text1.enabled = false;
+                overlayy.SetActive(false);
+                img.enabled = false;
+                //overlay = false;
+            }
+            
+
+            
             //if (stringIndex < strings.Length)
             //{
-            //    switch (stringIndex)
+            //    if (Input.GetMouseButtonUp(0))
             //    {
-            //        case 0:
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0))
-            //            {
-            //                stringIndex++;
-            //            }
-            //            break;
-            //        case 1: 
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0)/*Film In enlarger*/)
-            //            {
-            //                stringIndex++;
-            //            }
-            //            break;
-            //        case 2:
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0)/*Paper In enlarger*/)
-            //            {
-            //                stringIndex++;
-            //            }
-            //            break;
-            //        case 3:
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0)/*Click Enlarger*/)
-            //            {
-            //                stringIndex++;
-            //            }
-            //            break;
-            //        case 4:
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0)/*Drag photo into tray*/)
-            //            {
-            //                stringIndex++; // wait untill tray 1 reach green
-            //            }
-            //            break;
-            //        case 5: //EVERY TRAY WILL STOP AT GREEN
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0))
-            //            {
-            //                stringIndex++; /*time stop at tray 3 once it reach green stage*/
-            //            }
-            //            break;
-            //        case 6: 
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0)) /*Hang Photo*/
-            //            {
-            //                stringIndex++;  //photo dried
-            //            }
-            //            break;
-            //        case 7: //highlight
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0))
-            //            {
-            //                stringIndex++;
-            //            }
-            //            break;
-            //        case 8:
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0))
-            //            {
-            //                stringIndex++;
-            //            }
-            //            break;
-            //        case 9: //highlight
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0))
-            //            {
-            //                stringIndex++;
-            //            }
-            //            break;
-            //        case 10: //highlight
-            //            Text1.text = strings[stringIndex];
-            //            if (Input.GetMouseButtonUp(0))
-            //            {
-            //                stringIndex++;
-            //            }
-            //            break;
+            //        stringIndex++;
+            //        Text1.text = strings[stringIndex];
             //    }
-
-
-
             //}
             //else
             //{
@@ -220,103 +336,84 @@ public class Game_handler : MonoBehaviour
             //    img.enabled = false;
             //    overlay = false;
             //}
-            
-
-            
-            if (stringIndex < strings.Length)
-            {
-                if (Input.GetMouseButtonUp(0))
-                {
-                    stringIndex++;
-                    Text1.text = strings[stringIndex];
-                }
-            }
-            else
-            {
-                //exitbutton.SetActive(true);
-                Text1.enabled = false;
-                overlayy.SetActive(false);
-                img.enabled = false;
-                overlay = false;
-            }
 
 
-            if (stringIndex ==1)
-            {
-                Mechine.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                Mechine.GetComponent<SpriteRenderer>().sortingOrder = 501;
-            }
-            else
-            {
-                Mechine.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                Mechine.GetComponent<SpriteRenderer>().sortingOrder = 0;
-            }
+            //if (stringIndex ==1)
+            //{
+            //    Mechine.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    Mechine.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //}
+            //else
+            //{
+            //    Mechine.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+            //    Mechine.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            //}
 
-            if (stringIndex == 2)
-            {
-                paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                paperItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
-                filmItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                filmItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
-                filmItem2.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                filmItem2.GetComponent<SpriteRenderer>().sortingOrder = 501;
-                filmItem3.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                filmItem3.GetComponent<SpriteRenderer>().sortingOrder = 501;
-            }
-            else
-            {
-                paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                paperItem.GetComponent<SpriteRenderer>().sortingOrder = 2;
-                filmItem.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
-                filmItem.GetComponent<SpriteRenderer>().sortingOrder = 3;
-                filmItem2.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
-                filmItem2.GetComponent<SpriteRenderer>().sortingOrder = 3;
-                filmItem3.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
-                filmItem3.GetComponent<SpriteRenderer>().sortingOrder = 3;
-            }
+            //if (stringIndex == 2)
+            //{
+            //    paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    paperItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //    filmItem.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    filmItem.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //    filmItem2.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    filmItem2.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //    filmItem3.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    filmItem3.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //}
+            //else
+            //{
+            //    paperItem.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+            //    paperItem.GetComponent<SpriteRenderer>().sortingOrder = 2;
+            //    filmItem.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
+            //    filmItem.GetComponent<SpriteRenderer>().sortingOrder = 3;
+            //    filmItem2.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
+            //    filmItem2.GetComponent<SpriteRenderer>().sortingOrder = 3;
+            //    filmItem3.GetComponent<SpriteRenderer>().sortingLayerName = "items2";
+            //    filmItem3.GetComponent<SpriteRenderer>().sortingOrder = 3;
+            //}
 
-            if (stringIndex == 3|| stringIndex == 4)
-            {
-                Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
-                Tray2Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                Tray2Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
-                Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
-            }
-            else
-            {
-                Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            //if (stringIndex == 3|| stringIndex == 4)
+            //{
+            //    Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //    Tray2Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    Tray2Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //    Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //}
+            //else
+            //{
+            //    Tray1Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+            //    Tray1Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
-                Tray2Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                Tray2Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            //    Tray2Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+            //    Tray2Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
-                Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
-            }
+            //    Tray3Item.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+            //    Tray3Item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            //}
 
-            if (stringIndex == 5)
-            {
-                Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                Hanger.GetComponent<SpriteRenderer>().sortingOrder = 501;
-            }
-            else
-            {
-                Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                Hanger.GetComponent<SpriteRenderer>().sortingOrder = -1;
-            }
+            //if (stringIndex == 5)
+            //{
+            //    Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    Hanger.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //}
+            //else
+            //{
+            //    Hanger.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+            //    Hanger.GetComponent<SpriteRenderer>().sortingOrder = -1;
+            //}
 
-            if (stringIndex == 6)
-            {
-                photoTray.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
-                photoTray.GetComponent<SpriteRenderer>().sortingOrder = 501;
-            }
-            else
-            {
-                photoTray.GetComponent<SpriteRenderer>().sortingLayerName = "items";
-                photoTray.GetComponent<SpriteRenderer>().sortingOrder = 2;
-            }
+            //if (stringIndex == 6)
+            //{
+            //    photoTray.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
+            //    photoTray.GetComponent<SpriteRenderer>().sortingOrder = 501;
+            //}
+            //else
+            //{
+            //    photoTray.GetComponent<SpriteRenderer>().sortingLayerName = "items";
+            //    photoTray.GetComponent<SpriteRenderer>().sortingOrder = 2;
+            //}
             
         }
 
@@ -377,6 +474,12 @@ public class Game_handler : MonoBehaviour
                             Click[1].collider.gameObject.GetComponent<Picture>().isholding = true;
                         }
                     }
+                    else if (Click[1].collider.gameObject.CompareTag("Paper"))
+                    {
+                        Click[1].collider.gameObject.GetComponent<Paper>().isholding = true;
+                        print(Click[1].collider.gameObject.name);
+                    }
+
                     print(Click[0].collider.gameObject.name);
                 }
             }
@@ -564,19 +667,40 @@ public class Game_handler : MonoBehaviour
             }
             else if (raycast[i].collider.gameObject.CompareTag("paperhere"))
             {
-                Click[0].collider.gameObject.GetComponent<Paper>().mouseOnPaper = true;
-                if (Input.GetMouseButtonUp(0) && ((staticDataHolder.papernumber - 1) >= 0))
+                Click = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
+                if (Click[0])
                 {
-                    GameObject.Find("mechine").GetComponent<Mechine>().paperin = true;
+                    Click[0].collider.gameObject.GetComponent<Paper>().mouseOnPaper = true;
+                    if (Input.GetMouseButtonUp(0) && ((staticDataHolder.papernumber - 1) >= 0))
+                    {
+                        GameObject.Find("mechine").GetComponent<Mechine>().paperin = true;
+                        if (!staticDataHolder.finishedtutorial)
+                        {
+                            FindObjectOfType<Game_handler>().PaperInEnlarger = true;
+                            print("PaperIntuto");
+                        }
+                    }
                 }
                 break;
             }
             else if (raycast[i].collider.gameObject.CompareTag("Film"))
             {
-                if (Click[0].collider.gameObject.TryGetComponent(out Film film))
+                //print("mouse Onfilm");
+                Click = Physics2D.RaycastAll(cam.ScreenToWorldPoint(Input.mousePosition), transform.forward);
+                if (Click[0])
                 {
-                    film.mouseOnfilm = true;
-                    Debug.Log("Gamehander :" + film.mouseOnfilm);
+                    if (Click[0].collider.gameObject.TryGetComponent(out Film film))
+                    {
+                        film.mouseOnfilm = true;
+                        Debug.Log("Gamehander :" + film.mouseOnfilm);
+                    }
+                    /*
+                    else if (Click[1].collider.gameObject.TryGetComponent(out Film fIlm))
+                    {
+                        fIlm.mouseOnfilm = true;
+                        Debug.Log("Gamehander :" + fIlm.mouseOnfilm);
+                    }
+                    */
                 }
 
 
@@ -591,6 +715,8 @@ public class Game_handler : MonoBehaviour
                 }
                 break;
             }
+
+
             //Change to switch
         }
     }

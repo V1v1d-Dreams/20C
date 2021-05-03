@@ -138,6 +138,8 @@ public class TextField : MonoBehaviour
             staticDataHolder.Todaysfilm = Film;
             staticDataHolder.Todaysfilm2 = Film2;
             staticDataHolder.Todaysfilm3 = Film3;
+            staticDataHolder.lumpsum = เหมาจ่าย;
+            print("lumbSubPredark : " + staticDataHolder.lumpsum);
             GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End(endday);
         }
         else if (Input.GetKeyUp(KeyCode.F11) && !PauseScript.GameIsPause)
@@ -235,6 +237,8 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm = Film;
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
+                    staticDataHolder.lumpsum = เหมาจ่าย;
+                    print("lumbSubPredark : " + staticDataHolder.lumpsum);
                     shopOverlay.SetActive(true);
                 }
                 else
@@ -242,6 +246,8 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm = Film;
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
+                    staticDataHolder.lumpsum = เหมาจ่าย;
+                    print("lumbSubPredark : " + staticDataHolder.lumpsum);
                     GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End(endday);
                 }
             }
@@ -330,7 +336,8 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm = Film;
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
-                    เหมาจ่าย = staticDataHolder.lumpsum;
+                    staticDataHolder.lumpsum = เหมาจ่าย;
+                    print("lumbSubPredark : " + staticDataHolder.lumpsum);
 
                     //pause & play on this
 
@@ -341,8 +348,8 @@ public class TextField : MonoBehaviour
                     staticDataHolder.Todaysfilm = Film;
                     staticDataHolder.Todaysfilm2 = Film2;
                     staticDataHolder.Todaysfilm3 = Film3;
-                    เหมาจ่าย = staticDataHolder.lumpsum;
-
+                    staticDataHolder.lumpsum = เหมาจ่าย;
+                    print("lumbSubPredark : " + staticDataHolder.lumpsum);
                     //pause & play on this
 
                     GameObject.Find("GameProgressManager").GetComponent<Progressmanager>().End(endday);

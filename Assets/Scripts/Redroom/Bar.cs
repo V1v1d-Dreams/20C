@@ -28,7 +28,10 @@ public class Bar : MonoBehaviour
         {
             if (Slot.Locked)
             {
-                BarAnim.SetBool("Icon", true);
+                if (type == Type.Tray)
+                {
+                    BarAnim.SetBool("Icon", true);
+                }
                 //bar.GetComponent<SpriteRenderer>().enabled = true;
                 GetComponent<SpriteRenderer>().enabled = true;
 
@@ -58,12 +61,17 @@ public class Bar : MonoBehaviour
                 {
                     icon.GetComponent<SpriteRenderer>().sprite = Warningsign;
                 }
-
-                BarAnim.SetFloat("Value", (float)value);
+                if (type == Type.Tray)
+                {
+                    BarAnim.SetFloat("Value", (float)value);
+                }
             }
             else
             {
-                BarAnim.SetBool("Icon", false);
+                if (type == Type.Tray)
+                {
+                    BarAnim.SetBool("Icon", false);
+                }
                 GetComponent<SpriteRenderer>().enabled = false;
             }
 

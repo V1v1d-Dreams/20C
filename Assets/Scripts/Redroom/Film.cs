@@ -56,7 +56,7 @@ public class Film : MonoBehaviour
 
     void OnMouseDrag()
     {
-        setlayer(200);
+        setlayer(502);
         transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
         Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
         if (!locked)
@@ -93,6 +93,12 @@ public class Film : MonoBehaviour
             transform.position = new Vector2(innitialpos.x, innitialpos.y);
             GameObject.Find("mechine").GetComponent<Mechine>().filmin = true;
             GameObject.Find("mechine").GetComponent<Mechine>().MechineFilmIn = FilmFilmnum;
+
+            if (!staticDataHolder.finishedtutorial)
+            {
+                FindObjectOfType<Game_handler>().FilmInEnlarger = true;
+                print("filmIntuto");
+            }
 
             mouseOnfilm = false;
             //GameObject.Find("mechine").GetComponent<Mechine>().smolpic.GetComponent<SmoLpic>().pic = picturearray;
@@ -136,7 +142,13 @@ public class Film : MonoBehaviour
         }
     }
 
-    void returelayer()
+    public void setlayer(int layer, string Layer)
+    {
+        transform.GetComponent<Picpart>().setlayer(layer);
+        transform.GetComponent<SpriteRenderer>().sortingLayerName = Layer;
+    }
+
+    public void returelayer()
     {
         transform.GetComponent<Picpart>().returnlayer();
         transform.GetComponent<SpriteRenderer>().sortingLayerName = "Dafault";
@@ -150,7 +162,7 @@ public class Film : MonoBehaviour
             Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
             if (!locked)
             {
-                setlayer(200);
+                setlayer(502);
                 //transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
                 mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);

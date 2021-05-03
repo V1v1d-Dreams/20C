@@ -88,14 +88,16 @@ public class Picture : MonoBehaviour
     {
         if (isholding)
         {
-            Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
+            print("ISholding");
+            Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware); 
             if (!locked)
             {
-                setlayer(200);
+                setlayer(502);
                 
                 transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
                 mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
+                print("ISholding");
 
                 FindObjectOfType<Mechine>().holdingitem = true;
 
@@ -142,7 +144,7 @@ public class Picture : MonoBehaviour
 
     void OnMouseUp()
     {
-        if (!locked)
+        if (!locked )
         {
             isholding = false;
             Cursor.SetCursor(Normal, Vector2.zero, CursorMode.ForceSoftware);
@@ -365,25 +367,57 @@ public class Picture : MonoBehaviour
 
     void setlayer(int layer)
     {
-        if (onhold == 0)
+        if (isholding)
         {
             int children = transform.childCount;
             for (int i = 0; i < children; ++i)
             {
-                transform.GetChild(i).GetComponent<Picpart>().setlayer(layer);
-                transform.GetChild(i).GetComponent<SpriteRenderer>().sortingLayerName = "OnHold";
+                if (transform.GetChild(i).name == "Particle_WaterDroplet1(Clone)")
+                {
+
+                }
+                else
+                {
+                    transform.GetChild(i).GetComponent<Picpart>().setlayer(layer);
+                    transform.GetChild(i).GetComponent<SpriteRenderer>().sortingLayerName = "OnHold";
+                }
             }
-            onhold = 1;
+            //onhold = 1;
         }
     }
 
-    void returelayer()
+    public void setlayer(int layer,string Layer)
     {
         int children = transform.childCount;
         for (int i = 0; i < children; ++i)
         {
-            transform.GetChild(i).GetComponent<Picpart>().returnlayer();
-            transform.GetChild(i).GetComponent<SpriteRenderer>().sortingLayerName = "Dafault";
+            if (transform.GetChild(i).name == "Particle_WaterDroplet1(Clone)")
+            {
+
+            }
+            else
+            {
+                transform.GetChild(i).GetComponent<Picpart>().setlayer(layer);
+                transform.GetChild(i).GetComponent<SpriteRenderer>().sortingLayerName = Layer;
+            }
+        }
+    }
+
+    public void returelayer()
+    {
+        int children = transform.childCount;
+        for (int i = 0; i < children; ++i)
+        {
+            if (transform.GetChild(i).name == "Particle_WaterDroplet1(Clone)")
+            {
+
+            }
+            else
+            {
+                transform.GetChild(i).GetComponent<Picpart>().returnlayer();
+                transform.GetChild(i).GetComponent<SpriteRenderer>().sortingLayerName = "Dafault";
+            }
+
         }
         onhold = 0;
     }
@@ -398,17 +432,41 @@ public class Picture : MonoBehaviour
             if (thirdtray)
             {
                 Timer += Time.deltaTime;
-                percent3 = (seconds / time) * 100;
+                if (!staticDataHolder.finishedtutorial && percent3 > 100)
+                {
+                    FindObjectOfType<Game_handler>().Tray3Click = true;
+                    print("Tray3Tuto");
+                }
+                else
+                {
+                    percent3 = (seconds / time) * 100;
+                }
             }
             else if (secondtray)
             {
                 Timer += Time.deltaTime;
-                percent2 = (seconds / time) * 100;
+                if (!staticDataHolder.finishedtutorial && percent2 > 100)
+                {
+                    
+                }
+                else
+                {
+                    percent2 = (seconds / time) * 100;
+                }
+                    
             }
             else if (FirstTray)
             {
                 Timer += Time.deltaTime;
-                percent1 = (seconds / time)*100;
+                if (!staticDataHolder.finishedtutorial && percent1 > 100)
+                {
+                    FindObjectOfType<Game_handler>().Tray1Click = true;
+                    print("Tray1Tuto");
+                }
+                else
+                {
+                    percent1 = (seconds / time) * 100;
+                }
             }
 
         }
@@ -416,13 +474,18 @@ public class Picture : MonoBehaviour
         {
             float seconds = Timer % 60;
             Timer += Time.deltaTime;
-            percent4 = (seconds / time2) * 100;
             if (percent4 < 100)
             {
                 locked = true;
+                percent4 = (seconds / time2) * 100;
             }
             else
             {
+                if (!staticDataHolder.finishedtutorial)
+                {
+                    FindObjectOfType<Game_handler>().PhotoDried = true;
+                    print("PhotoDrytuto");
+                }
                 locked = false;
             }
         }

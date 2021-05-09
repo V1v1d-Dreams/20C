@@ -495,6 +495,7 @@ public class Game_handler : MonoBehaviour
                     if (raycast[i].collider.gameObject.CompareTag("bin") && Click[0].collider.CompareTag("Photo"))
                     {
                         Destroy(Click[0].collider.gameObject);
+                        GameObject.FindObjectOfType<RedroomNsoundmanager>().Bin();
                     }
                 }
 

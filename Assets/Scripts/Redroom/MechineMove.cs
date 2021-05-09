@@ -28,10 +28,14 @@ public class MechineMove : MonoBehaviour
                 if (hit.collider.transform.gameObject.name == "Down Arrow")
                 {
                     mechine.GetComponent<Mechine>().valuePercent -= 0.1f;
+
+                    GameObject.FindObjectOfType<RedroomNsoundmanager>().Scroll12();
                 }
                 else if (hit.collider.transform.gameObject.name == "Up arrow")
                 {
                     mechine.GetComponent<Mechine>().valuePercent += 0.1f;
+
+                    GameObject.FindObjectOfType<RedroomNsoundmanager>().Scroll12();
                 }
             }
 
@@ -44,6 +48,8 @@ public class MechineMove : MonoBehaviour
             else if (hit.collider.transform.gameObject.name == "Up arrow2" && Input.GetMouseButtonUp(0))
             {
                 mechine.GetComponent<Mechine>().valuePercent += 5f;
+
+                GameObject.FindObjectOfType<RedroomNsoundmanager>().Scroll12();
 
                 float val = mechine.GetComponent<Mechine>().valuePercent;
                 if (val > 8.2 && val < 12.2)
@@ -73,6 +79,8 @@ public class MechineMove : MonoBehaviour
             {
                 mechine.GetComponent<Mechine>().valuePercent -= 5f;
 
+                GameObject.FindObjectOfType<RedroomNsoundmanager>().Scroll12();
+
                 float val = mechine.GetComponent<Mechine>().valuePercent;
                 if (val > 8.2 && val < 12.2)
                 {
@@ -98,6 +106,8 @@ public class MechineMove : MonoBehaviour
             }
             else if (hit.collider.transform.gameObject.name == "Down Arrow3" && Input.GetMouseButtonUp(0))
             {
+
+                GameObject.FindObjectOfType<RedroomNsoundmanager>().Scroll3();
                 float val = mechine.GetComponent<Mechine>().valuePercent;
                 if ( val >= 0f && val < 10.2f)
                 {
@@ -123,6 +133,8 @@ public class MechineMove : MonoBehaviour
             }
             else if (hit.collider.transform.gameObject.name == "Up arrow3" && Input.GetMouseButtonUp(0))
             {
+
+                GameObject.FindObjectOfType<RedroomNsoundmanager>().Scroll3();
                 float val = mechine.GetComponent<Mechine>().valuePercent;
                 if (val <= 100f && val > 87.2f)
                 {

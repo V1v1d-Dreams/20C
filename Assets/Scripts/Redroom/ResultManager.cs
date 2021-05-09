@@ -135,6 +135,8 @@ public class ResultManager : MonoBehaviour
 
             MoneyEarned.text = "$" + Moneyearn.ToString();
 
+            GameObject.FindObjectOfType<RedroomNsoundmanager>().Cashearn();
+
             staticDataHolder.money += staticDataHolder.lumpsum;
 
             //MoneyEarned.text = "$" + ((ok * 10) + (good * 20)).ToString();

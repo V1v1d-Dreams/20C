@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Audio\Dailyplaylist.cs" />
     <Compile Include="Assets\Scripts\Audio\MP3Player.cs" />
     <Compile Include="Assets\Scripts\Audio\MusicPlayer.cs" />
+    <Compile Include="Assets\Scripts\Audio\RedroomNsoundmanager.cs" />
     <Compile Include="Assets\Scripts\Audio\VolumeMixer.cs" />
     <Compile Include="Assets\Scripts\ClassScript.cs" />
     <Compile Include="Assets\Scripts\Dialog\DialogStarter.cs" />

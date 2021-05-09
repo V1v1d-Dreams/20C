@@ -75,6 +75,9 @@ public class SmoLpic : MonoBehaviour
         {
             print("instantiate");
             Instantiate(pic[picnumber], spawnpt);
+
+            GameObject.FindObjectOfType<RedroomNsoundmanager>().Picselect();
+
             staticDataHolder.papernumber -= 1;
             Overlay.SetActive(false);
             gameObject.SetActive(false);

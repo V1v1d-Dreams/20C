@@ -46,6 +46,7 @@ public class TextField : MonoBehaviour
     bool chrome = false;
     bool red = false;
     bool finish = true;
+    int DialogCount = 0;
 
     RaycastHit2D[] Click;
     Camera cam;
@@ -85,6 +86,13 @@ public class TextField : MonoBehaviour
 
     void Update()
     {
+        if (DialogCount>3)
+        {
+            DialogCount = 0;
+            textmanager.GetComponent<Textmanager>().Playtxtsound();
+        }
+
+
         if (wave)
         {
             textmanager.GetComponent<Textmanager>().effect = Textmanager.Effects.Wave;
@@ -218,10 +226,12 @@ public class TextField : MonoBehaviour
                         if (iNdex + 1 < Chararray.Length)
                         {
                             textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex + 1]), textlocation.position.y, textlocation.position.z);
+                            DialogCount += 1;
                         }
                         else
                         {
                             textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
+                            DialogCount += 1;
                         }
                         yield return wait;
                     }
@@ -318,10 +328,12 @@ public class TextField : MonoBehaviour
                         if (iNdex + 1 < Chararray.Length)
                         {
                             textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char, Chararray[iNdex + 1]), textlocation.position.y, textlocation.position.z);
+                            DialogCount += 1;
                         }
                         else
                         {
                             textlocation.position = new Vector3(textmanager.GetComponent<Textmanager>().DisplayDialog(Chararray[iNdex], textlocation, Char), textlocation.position.y, textlocation.position.z);
+                            DialogCount += 1;
                         }
                         yield return wait;
                     }

@@ -20,6 +20,7 @@ public class Textmanager : MonoBehaviour
     [SerializeField] Color32 Textcolor;
     [SerializeField] Color32 Namecolor;
     [SerializeField] TMPro.TextMeshProUGUI Money;
+    [SerializeField] AudioClip Txtsound;
 
     public enum Effects { None, Wave, chromatic, red }
 
@@ -210,6 +211,11 @@ public class Textmanager : MonoBehaviour
                 Obj.GetComponent<TextEffect>().effect = TextEffect.Effects.None;
                 break;
         }
+    }
+
+    public void Playtxtsound()
+    {
+        //play txtsound
     }
 
     /*

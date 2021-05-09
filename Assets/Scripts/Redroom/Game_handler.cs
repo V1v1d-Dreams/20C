@@ -36,6 +36,9 @@ public class Game_handler : MonoBehaviour
     [SerializeField] GameObject List;
     [SerializeField] GameObject Guidebook;
     [SerializeField] PhotoinfilmCheck photoFCheck;
+    [SerializeField] Sprite[] Guildsprites;
+    [SerializeField] int GuideIndex;
+    [SerializeField] Image guildpic;
 
     [Header("MouseOnSomething")]
     [SerializeField] public GameObject currentmouseon;
@@ -868,5 +871,27 @@ public class Game_handler : MonoBehaviour
     {
         overlay = false;
         Guidebook.SetActive(false);
+    }
+
+    public void Guildchnagesprite(bool Leftpage)
+    {
+        if (Leftpage)
+        {
+            if (GuideIndex > 0) 
+            {
+                GuideIndex -= 1;
+                guildpic.sprite = Guildsprites[GuideIndex];
+            }
+            //guildpic
+             
+        }
+        else
+        {
+            if (GuideIndex < Guildsprites.Length)
+            {
+                GuideIndex += 1;
+                guildpic.sprite = Guildsprites[GuideIndex];
+            }
+        }
     }
 }

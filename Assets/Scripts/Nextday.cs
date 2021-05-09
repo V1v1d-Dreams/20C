@@ -25,6 +25,7 @@ public class Nextday : MonoBehaviour
             Day.text = "day " + (staticDataHolder.daynumber).ToString();
             yield return new WaitForSeconds(waitTime);
             Day.text = "day " + (staticDataHolder.daynumber + 1).ToString();
+            staticDataHolder.chemlv = 1;
             yield return new WaitForSeconds(waitTime);
             GameObject.Find("levelLoader").GetComponent<Levelloader>().newday();
         }

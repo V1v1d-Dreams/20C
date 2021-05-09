@@ -127,7 +127,7 @@ MonoBehaviour:
   PicInFilm1: 5
   PicInFilm2: 2
   PicInFilm3: 0
-  FilmSprite: {fileID: 21300000, guid: cf18abe1df895d64997d8298dc3bdcea, type: 3}
+  FilmSprite: {fileID: 21300000, guid: f5a555831f3bc224895f3f0359279af8, type: 3}
   Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
   Interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
   hold: {fileID: 2800000, guid: a088798552626754da252eb6dc0c73bf, type: 3}

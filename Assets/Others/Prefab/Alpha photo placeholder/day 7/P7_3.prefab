@@ -99,7 +99,7 @@ MonoBehaviour:
   Notes: FILL IN THIS SHIT
   PhotoID: 26
   PhotoInFilm: 1
-  Fullpic: {fileID: 21300000, guid: c25d43fab5865874db4edd196c11b312, type: 3}
+  Fullpic: {fileID: 21300000, guid: 54dc6d097826c2546a55d3fc58a665c5, type: 3}
   Ruinedpic: {fileID: 21300000, guid: 4f3b3ddf9ba8c424fa36306812f83c92, type: 3}
   waterdrop: {fileID: 4372614554965838844, guid: 60fd8c8cb5b5adc47abff57a42155cfd,
     type: 3}
@@ -388,7 +388,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 3bac3b55eaea2b449b27a71f65352cb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1aa4d049c2a330048bd502f482a2671f, type: 3}
   m_Color: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
   m_FlipX: 0
   m_FlipY: 0

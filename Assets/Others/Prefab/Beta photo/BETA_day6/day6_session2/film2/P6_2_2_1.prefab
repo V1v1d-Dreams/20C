@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8473226522318584138}
   - component: {fileID: 8473226522318584139}
   m_Layer: 0
-  m_Name: P6_2_1_5
+  m_Name: P6_2_2_1
   m_TagString: Photo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   Notes: FILL IN THIS SHIT
   PhotoID: 81
   PhotoInFilm: 2
-  Fullpic: {fileID: 21300000, guid: 3c5181bc80dd0484f8cdccb839596f02, type: 3}
+  Fullpic: {fileID: 21300000, guid: 768a73a9678f44b438ddb1c2ac4fc06c, type: 3}
   Ruinedpic: {fileID: 21300000, guid: 4f3b3ddf9ba8c424fa36306812f83c92, type: 3}
   waterdrop: {fileID: 4372614554965838844, guid: 60fd8c8cb5b5adc47abff57a42155cfd,
     type: 3}
@@ -388,7 +388,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 8177af440f0abb14d84cb2e8a3ce44e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6f48504c0b650b4790f73892ce61f7f, type: 3}
   m_Color: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
   m_FlipX: 0
   m_FlipY: 0

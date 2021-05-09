@@ -124,16 +124,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FilmFilmnum: 0
   Picnumber: 5
-  FilmSprite: {fileID: 21300000, guid: 6d652e056ee867547af893047c3e608e, type: 3}
+  PicInFilm1: 0
+  PicInFilm2: 0
+  PicInFilm3: 0
+  FilmSprite: {fileID: 21300000, guid: 6005a594173b88040a4eec5b3e868c34, type: 3}
   Normal: {fileID: 2800000, guid: dc91c0ca9db2a6844b1c6d0e2baac637, type: 3}
   Interactable: {fileID: 2800000, guid: 0340b18ce967c9d409df5766d35636e8, type: 3}
   hold: {fileID: 2800000, guid: a088798552626754da252eb6dc0c73bf, type: 3}
   innitialpos: {x: 0, y: 0}
   picturearray:
-  - {fileID: 8473226522318584135, guid: db40a67c07a0d074399c02a7a03b19d9, type: 3}
-  - {fileID: 8473226522318584135, guid: d45df7e4765ed2946b8e0e696e942d4c, type: 3}
   - {fileID: 8473226522318584135, guid: 68055a711829aa049af28b1279343c84, type: 3}
+  - {fileID: 8473226522318584135, guid: d45df7e4765ed2946b8e0e696e942d4c, type: 3}
   - {fileID: 8473226522318584135, guid: b488eef142833cf4a818f13b5b53e6b8, type: 3}
+  - {fileID: 8473226522318584135, guid: 4370741ceb091564ea2829de703db2c6, type: 3}
   - {fileID: 8473226522318584135, guid: 4370741ceb091564ea2829de703db2c6, type: 3}
   BlurArray:
   - {fileID: 21300000, guid: fab45e1bbdffa244286ae2199b201576, type: 3}

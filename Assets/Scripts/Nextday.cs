@@ -28,6 +28,21 @@ public class Nextday : MonoBehaviour
             staticDataHolder.chemlv = 1;
             yield return new WaitForSeconds(waitTime);
             GameObject.Find("levelLoader").GetComponent<Levelloader>().newday();
+
+            staticDataHolder.Save_.CurrentTime = staticDataHolder.currentTime;
+            staticDataHolder.Save_.Daynumber = staticDataHolder.daynumber;
+
+            staticDataHolder.Save_.Day = staticDataHolder.daynumber + 1;
+
+            staticDataHolder.Save_.MechineLv = staticDataHolder.mechinelv;
+            staticDataHolder.Save_.HangerLv = staticDataHolder.hangerLv;
+            staticDataHolder.Save_.PaperNumber = staticDataHolder.papernumber ;
+            staticDataHolder.Save_.Chemlv = staticDataHolder.chemlv;
+            staticDataHolder.Save_.Tray = staticDataHolder.tray;
+            staticDataHolder.Save_.money = staticDataHolder.money;
+            staticDataHolder.Save_.LumpSum = staticDataHolder.lumpsum;
+            staticDataHolder.Save_.FinishedTutorial = staticDataHolder.finishedtutorial;
+            staticDataHolder.Save_.SaveIntoJson(staticDataHolder.Save_);
         }
         else
         {

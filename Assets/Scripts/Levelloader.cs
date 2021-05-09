@@ -148,6 +148,21 @@ public class Levelloader : MonoBehaviour
             string jsonstring = File.ReadAllText(Application.persistentDataPath + "/Savedata_" + slot + ".json");
             SaveData save = JsonUtility.FromJson<SaveData>(jsonstring);
             staticDataHolder.Save_ = save;
+
+            staticDataHolder.currentTime = save.CurrentTime;
+            staticDataHolder.daynumber = save.Daynumber;
+
+            staticDataHolder.mechinelv = save.MechineLv;
+            staticDataHolder.hangerLv = save.HangerLv;
+            staticDataHolder.papernumber = save.PaperNumber; //number of paper
+            staticDataHolder.chemlv = save.Chemlv; //chemical
+            staticDataHolder.tray = save.Tray; //6 Trays
+            staticDataHolder.money = save.Money;  //money
+            staticDataHolder.lumpsum = save.LumpSum;
+            staticDataHolder.finishedtutorial = save.FinishedTutorial;
+
+            staticDataHolder.Save_.SaveIntoJson(staticDataHolder.Save_);
+
             Debug.Log("load " + "Savedata_" + slot);
             loadLV(2);
         }

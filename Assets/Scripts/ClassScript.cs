@@ -12,8 +12,20 @@ using System;
         public int conversationNo;
         public int SaveNo;
 
+        public int CurrentTime = 0;
+        public int Daynumber = 0;
 
-        public SaveData(int Money, int day, int ConversationNo, int saveno)
+        public int MechineLv = 1;
+        public int HangerLv = 1;
+        public int PaperNumber = 10; //number of paper
+        public int Chemlv = 1; //chemical
+        public bool Tray = false; //6 Trays
+        public int Money = 100;  //money
+        public int LumpSum = 0;
+        public bool FinishedTutorial = false;
+
+
+    public SaveData(int Money, int day, int ConversationNo, int saveno)
         {
             money = Money;
             Day = day;

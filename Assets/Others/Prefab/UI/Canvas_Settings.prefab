@@ -189,6 +189,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   onSoundTest: {fileID: 8300000, guid: 17926ccb2c9684a48ababb3004ba4203, type: 3}
   isBGM: 0
+  locateMusicPlayer: 0
+  checkMark: {fileID: 4030231099815860219}
 --- !u!1 &4030231099778870418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,6 +1805,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   onSoundTest: {fileID: 0}
   isBGM: 1
+  locateMusicPlayer: 0
+  checkMark: {fileID: 4030231099991433447}
 --- !u!1 &4030231100374152161
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,12 +31,20 @@ public class VolumeMixer : MonoBehaviour
     Toggle audioToggle;
     [Header("For BGM Toggle mute setting")]
     public bool isBGM = false;
+    [SerializeField] private bool locateMusicPlayer = false;
+    [SerializeField] GameObject checkMark;
+
     void Awake()
     {
         soundForce = this;
         if (isBGM == true)
         {
             audioSource.ignoreListenerVolume = true;
+        }
+        if (locateMusicPlayer)
+        {
+            GameObject musicPlayer = GameObject.FindGameObjectWithTag("musicplayer");
+            audioSource = musicPlayer.GetComponent<AudioSource>();
         }
     }
 
@@ -94,10 +102,12 @@ public class VolumeMixer : MonoBehaviour
         if (musicIn)
         {
             audioSource.mute = false;
+            checkMark.SetActive(true);
         }
         else
         {
             audioSource.mute = true;
+            checkMark.SetActive(false);
         }
     }
 }

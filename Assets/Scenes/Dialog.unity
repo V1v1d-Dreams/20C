@@ -2518,6 +2518,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &263531373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4030231099991433447, guid: 971a08f5d0666b9419da823192d4c1bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1582562198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &268457739
 GameObject:
   m_ObjectHideFlags: 0
@@ -3978,8 +3984,8 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 10
-  Film: {fileID: 9127718114185621459, guid: 29589960ba3654546b0f94232fd73484, type: 3}
-  Film2: {fileID: 9127718114185621459, guid: d544f7fdc8d2ba640b350a9340598632, type: 3}
+  Film: {fileID: 9127718114185621459, guid: b265ce9d20424ed4ab959871b8236269, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 805c14c77e1556044837152581b493ae, type: 3}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &375419359
@@ -5528,8 +5534,8 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 9
-  Film: {fileID: 9127718114185621459, guid: 43180d267e3a28546a32b9dd391439ca, type: 3}
-  Film2: {fileID: 9127718114185621459, guid: f36a946df61ccb74d90741c85dd5972b, type: 3}
+  Film: {fileID: 9127718114185621459, guid: 41aafde844b22ba47a137a15c374e4dc, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 630126d14fe4698438d13dd2b98275e4, type: 3}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &526366032
@@ -14540,7 +14546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialog:
-  - . . . . . .
+  - \r. . . . . .\r
   - \rLet's get to work. . . . .\r
   Names:
   - You
@@ -17213,11 +17219,56 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1576639929}
+    - target: {fileID: 4030231099723362613, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: checkMark
+      value: 
+      objectReference: {fileID: 1987413785}
+    - target: {fileID: 4030231099723362614, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: m_IsOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030231099815860219, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030231099991433447, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030231100360493824, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030231100360493824, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: m_IsOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030231100360493824, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030231100360493887, guid: 971a08f5d0666b9419da823192d4c1bb,
         type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1781897848}
+    - target: {fileID: 4030231100360493887, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: locateMusicPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030231100360493887, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: checkMark
+      value: 
+      objectReference: {fileID: 263531373}
     - target: {fileID: 4030231100389571711, guid: 971a08f5d0666b9419da823192d4c1bb,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -17431,6 +17482,11 @@ PrefabInstance:
     - target: {fileID: 4030231101292321099, guid: 971a08f5d0666b9419da823192d4c1bb,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030231101482395225, guid: 971a08f5d0666b9419da823192d4c1bb,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4030231101663625618, guid: 971a08f5d0666b9419da823192d4c1bb,
@@ -20467,9 +20523,9 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 11
-  Film: {fileID: 9127718114185621459, guid: e4be93bd12065b84298da8b66bb5a748, type: 3}
-  Film2: {fileID: 9127718114185621459, guid: 024549c5306234d4b94b38a7e2dcfca5, type: 3}
-  Film3: {fileID: 0}
+  Film: {fileID: 9127718114185621459, guid: 17f318acfb72fa94d9fb546be0e6109e, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: 783f0cfaf833f084aaaa6bba9be422ec, type: 3}
+  Film3: {fileID: 9127718114185621459, guid: c481a4ad79ace0a4ca2f4859307744e2, type: 3}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &1839853389
 GameObject:
@@ -21465,6 +21521,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978227512}
   m_CullTransparentMesh: 0
+--- !u!1 &1987413785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4030231099815860219, guid: 971a08f5d0666b9419da823192d4c1bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1582562198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1994559784
 GameObject:
   m_ObjectHideFlags: 0
@@ -23257,8 +23319,8 @@ MonoBehaviour:
   Pic: {fileID: 0}
   Timeindex: 0
   WhatDayisToday: 9
-  Film: {fileID: 0}
-  Film2: {fileID: 0}
+  Film: {fileID: 9127718114185621459, guid: bdf91138048271e47ac97698a173f830, type: 3}
+  Film2: {fileID: 9127718114185621459, guid: f2f974c6cfb4e6144a82c20196c337bf, type: 3}
   Film3: {fileID: 0}
   NewsOverlay: {fileID: 1739425348}
 --- !u!1 &2124042959

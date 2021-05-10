@@ -143,6 +143,8 @@ public class PauseScript : MonoBehaviour
 
     public void menuLoad()
     {
+        player = GameObject.FindGameObjectWithTag("musicplayer");
+        player.GetComponent<MP3Player>().backtomenu();
         GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(menu);
         //SceneManager.LoadScene(menu);
     }

@@ -107,6 +107,9 @@ public class MP3Player : MonoBehaviour
 
             if (staticDataHolder.daynumber != prevday)
             {
+                print("song change" + staticDataHolder.daynumber);
+                
+                print("prevday =" + prevday);
                 timer = newclip - 2;
                 prevday = staticDataHolder.daynumber;
 
@@ -128,7 +131,9 @@ public class MP3Player : MonoBehaviour
             }
             else
             {
-                clips = GetComponent<Dailyplaylist>().Datdaysong[0];
+                print("song cannot change" + staticDataHolder.daynumber);
+                print("prevday =" + prevday);
+                clips = GetComponent<Dailyplaylist>().Datdaysong[prevday - 1];
                 newsongplus();
             }
             timer += Time.deltaTime;
@@ -155,7 +160,7 @@ public class MP3Player : MonoBehaviour
                 }
             }
 
-            print(source.volume);
+            //print(source.volume);
         }
     }
     /*void newsong()
@@ -278,6 +283,13 @@ public class MP3Player : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
 
+    }
+
+    public void backtomenu()
+    {
+        print("destroy enter");
+        Destroy(this.gameObject);
+        
     }
 }
 

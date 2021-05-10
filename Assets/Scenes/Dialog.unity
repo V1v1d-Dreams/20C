@@ -1119,7 +1119,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 127.600006, y: -211.3}
+  m_AnchoredPosition: {x: 127.60004, y: -211.3}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &117923962
@@ -4295,7 +4295,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 17bc7871bfcba6b498ac6b541eddfeab, type: 3}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 40
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -4463,7 +4463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 127.600006, y: -234.30002}
+  m_AnchoredPosition: {x: 127.60004, y: -234.30002}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &400334780
@@ -6015,7 +6015,7 @@ MonoBehaviour:
   shopOverlay: {fileID: 110584103}
   News: {fileID: 21300000, guid: 4f9ad4dfbab03d4498d2cd69082c3773, type: 3}
   endday: 0
-  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
+  "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 40
   Textstart: {fileID: 1531325351}
   textlocation: {fileID: 841974085}
   Namestart: {fileID: 547265520}
@@ -21978,7 +21978,7 @@ MonoBehaviour:
   NameUnsat: []
   characterUnsat: []
   shopOverlay: {fileID: 110584103}
-  News: {fileID: 21300000, guid: e3ee565f25b40d24ab5a3cdce4ffb444, type: 3}
+  News: {fileID: 0}
   endday: 0
   "\u0E40\u0E2B\u0E21\u0E32\u0E08\u0E48\u0E32\u0E22": 0
   Textstart: {fileID: 1531325351}

@@ -152,6 +152,8 @@ public class Levelloader : MonoBehaviour
             staticDataHolder.currentTime = save.CurrentTime;
             staticDataHolder.daynumber = save.Daynumber;
 
+            staticDataHolder.currentIndex = save.conversationNo;
+
             staticDataHolder.mechinelv = save.MechineLv;
             staticDataHolder.hangerLv = save.HangerLv;
             staticDataHolder.papernumber = save.PaperNumber; //number of paper

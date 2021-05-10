@@ -15,6 +15,8 @@ public class ResultManager : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI Bad;
     [SerializeField] TMPro.TextMeshProUGUI Result;
     [SerializeField] TMPro.TextMeshProUGUI MoneyEarned;
+    bool exit = false;
+    int clcik = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,16 @@ public class ResultManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonUp(0) && exit)
+        {
+            clcik += 1;
+        }
+
+        if (clcik > 1)
+        {
+            GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2, 0);
+            staticDataHolder.currentTime++;
+        }
     }
 
     public void RedRoomexit()
@@ -137,7 +148,7 @@ public class ResultManager : MonoBehaviour
 
             GameObject.FindObjectOfType<RedroomNsoundmanager>().Cashearn();
 
-            staticDataHolder.money += staticDataHolder.lumpsum;
+            //staticDataHolder.money += staticDataHolder.lumpsum;
 
             //MoneyEarned.text = "$" + ((ok * 10) + (good * 20)).ToString();
             //staticDataHolder.money += (ok * 10) + (good * 20);
@@ -151,14 +162,14 @@ public class ResultManager : MonoBehaviour
             staticDataHolder.Todaysfilm3= null;
 
             //pause & play on this
-
+            exit = true;
             GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2, 10); //EXIT DELAY, CHANGE SECOND VALUE
             staticDataHolder.currentTime++;
         }
         else
         {
             //pause & play on this
-
+            exit = true;
             GameObject.Find("levelLoader").GetComponent<Levelloader>().DelayedLoad(2, 0);
             staticDataHolder.currentTime++;
         }

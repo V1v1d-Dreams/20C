@@ -33,6 +33,7 @@ public class Nextday : MonoBehaviour
             staticDataHolder.Save_.Daynumber = staticDataHolder.daynumber;
 
             staticDataHolder.Save_.Day = staticDataHolder.daynumber + 1;
+            staticDataHolder.Save_.conversationNo = staticDataHolder.currentIndex;
 
             staticDataHolder.Save_.MechineLv = staticDataHolder.mechinelv;
             staticDataHolder.Save_.HangerLv = staticDataHolder.hangerLv;
@@ -42,6 +43,7 @@ public class Nextday : MonoBehaviour
             staticDataHolder.Save_.money = staticDataHolder.money;
             staticDataHolder.Save_.LumpSum = staticDataHolder.lumpsum;
             staticDataHolder.Save_.FinishedTutorial = staticDataHolder.finishedtutorial;
+
             staticDataHolder.Save_.SaveIntoJson(staticDataHolder.Save_);
         }
         else

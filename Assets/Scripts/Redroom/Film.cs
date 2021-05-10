@@ -55,14 +55,17 @@ public class Film : MonoBehaviour
     }
 
     void OnMouseDrag()
-    {
-        setlayer(502);
-        transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
-        Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
-        if (!locked)
+    {   
+        if (!PauseScript.GameIsPause)
         {
-            mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
+            setlayer(502);
+            transform.SetParent(GameObject.Find("Bunch of pics").transform, true);
+            Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
+            if (!locked)
+            {
+                mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                transform.position = new Vector2(mouseposition.x - deltaX, mouseposition.y - deltaY);
+            }
         }
     }
 
@@ -123,13 +126,16 @@ public class Film : MonoBehaviour
     }
     void Update()
     {
-        Hold();
+        if (!PauseScript.GameIsPause)
+        {
+            Hold();
 
-        innitialpos = Filmslot.transform.position;
+            innitialpos = Filmslot.transform.position;
 
-        //oninv = gaemhander.GetComponent<Game_handler>().mouseonINV;
+            //oninv = gaemhander.GetComponent<Game_handler>().mouseonINV;
 
-        //mouseOnfilm = false;
+            //mouseOnfilm = false;
+        }
     }
 
     void setlayer(int layer)
@@ -157,7 +163,7 @@ public class Film : MonoBehaviour
 
     void Hold()
     {
-        if (isholding)
+        if (isholding )
         {
             Cursor.SetCursor(hold, Vector2.zero, CursorMode.ForceSoftware);
             if (!locked)

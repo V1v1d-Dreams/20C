@@ -139,6 +139,15 @@ public class Game_handler : MonoBehaviour
         {
             staticDataHolder.papernumber += 5;
         }
+
+        if (PauseScript.GameIsPause)
+        {
+            overlay = true;
+        }
+        else
+        {
+            overlay = false;
+        }
         
         if (!staticDataHolder.finishedtutorial)
         {
@@ -539,7 +548,10 @@ public class Game_handler : MonoBehaviour
             }
         }
 
-        raycasting();
+        if (!overlay)
+        {
+            raycasting();
+        }
 
     }
     /*

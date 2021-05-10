@@ -934,7 +934,7 @@ GameObject:
   - component: {fileID: 6521050360615091683}
   m_Layer: 0
   m_Name: MusicPlayer
-  m_TagString: Untagged
+  m_TagString: musicplayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1088,18 +1088,32 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 37411966628c3a14999b8ce7c53e9684, type: 3}
   - {fileID: 8300000, guid: dbad19a391927934c81f46a854cac6fe, type: 3}
   - {fileID: 8300000, guid: 3e4ddc4e937c9814b8f9aff3b15e5e41, type: 3}
-  - {fileID: 8300000, guid: 309377ba440d7ff47a67c08b069f7349, type: 3}
-  - {fileID: 8300000, guid: d99ef6e87670213469679e3af6d8c1c8, type: 3}
+  - {fileID: 8300000, guid: 581da7239b313b548909f52f92b5d227, type: 3}
   - {fileID: 8300000, guid: ff828fb07f6ab584fa3274c2633ff9cb, type: 3}
-  - {fileID: 8300000, guid: 779361f0b961ea34f91330c50de1cb65, type: 3}
-  - {fileID: 8300000, guid: 72143ba1ce63c674d830a423c4ffdb7a, type: 3}
   - {fileID: 8300000, guid: b89ae7fa72082fc498ca7c47e78a2d9c, type: 3}
+  - {fileID: 8300000, guid: 54d7df4eff490ac488b546a542e8ca72, type: 3}
+  - {fileID: 8300000, guid: 232abe186b74a6e409c13f8cac64d498, type: 3}
+  - {fileID: 8300000, guid: 2b8ec9f05cf05834aa8b6a5c57b761c6, type: 3}
   - {fileID: 8300000, guid: 581da7239b313b548909f52f92b5d227, type: 3}
   - {fileID: 8300000, guid: 54d7df4eff490ac488b546a542e8ca72, type: 3}
   - {fileID: 8300000, guid: 2b8ec9f05cf05834aa8b6a5c57b761c6, type: 3}
   - {fileID: 8300000, guid: 232abe186b74a6e409c13f8cac64d498, type: 3}
   - {fileID: 8300000, guid: 526db01852b8340468befeea197a5f38, type: 3}
   Datdaysong:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

@@ -1075,6 +1075,8 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278234879
   Money: {fileID: 657389936}
+  b4: {fileID: 8300000, guid: 1ebfc3b861d37a2459faef12b4ad65cc, type: 3}
+  aud: {fileID: 1171938519}
   effect: 0
 --- !u!4 &120615825
 Transform:

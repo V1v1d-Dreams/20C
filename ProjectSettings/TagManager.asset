@@ -19,6 +19,7 @@ TagManager:
   - FilmItem
   - Ignore
   - bin
+  - musicplayer
   layers:
   - Default
   - TransparentFX

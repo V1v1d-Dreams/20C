@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Textmanager : MonoBehaviour
 {
@@ -20,7 +21,9 @@ public class Textmanager : MonoBehaviour
     [SerializeField] Color32 Textcolor;
     [SerializeField] Color32 Namecolor;
     [SerializeField] TMPro.TextMeshProUGUI Money;
-    [SerializeField] AudioClip Txtsound;
+    [SerializeField] AudioClip b4;
+    [SerializeField] AudioSource aud;
+
 
     public enum Effects { None, Wave, chromatic, red }
 
@@ -215,7 +218,14 @@ public class Textmanager : MonoBehaviour
 
     public void Playtxtsound()
     {
-        //play txtsound
+        if (!aud.isPlaying)
+        {
+            aud.pitch = Random.Range(0.8f, 1.1f);
+            aud.PlayOneShot(b4);
+            
+        }
+        
+
     }
 
     /*

@@ -22,29 +22,38 @@ public class Nextday : MonoBehaviour
     {
         if (staticDataHolder.finishedtutorial)
         {
-            Day.text = "day " + (staticDataHolder.daynumber).ToString();
-            yield return new WaitForSeconds(waitTime);
-            Day.text = "day " + (staticDataHolder.daynumber + 1).ToString();
-            staticDataHolder.chemlv = 1;
-            yield return new WaitForSeconds(waitTime);
-            GameObject.Find("levelLoader").GetComponent<Levelloader>().newday();
+            if (staticDataHolder.daynumber + 1 != 12)
+            {
+                Day.text = "day " + (staticDataHolder.daynumber).ToString();
+                yield return new WaitForSeconds(waitTime);
+                Day.text = "day " + (staticDataHolder.daynumber + 1).ToString();
+                staticDataHolder.chemlv = 1;
+                yield return new WaitForSeconds(waitTime);
+                GameObject.Find("levelLoader").GetComponent<Levelloader>().newday();
 
-            staticDataHolder.Save_.CurrentTime = staticDataHolder.currentTime;
-            staticDataHolder.Save_.Daynumber = staticDataHolder.daynumber;
+                staticDataHolder.Save_.CurrentTime = staticDataHolder.currentTime;
+                staticDataHolder.Save_.Daynumber = staticDataHolder.daynumber;
 
-            staticDataHolder.Save_.Day = staticDataHolder.daynumber + 1;
-            staticDataHolder.Save_.conversationNo = staticDataHolder.currentIndex;
+                staticDataHolder.Save_.Day = staticDataHolder.daynumber + 1;
+                staticDataHolder.Save_.conversationNo = staticDataHolder.currentIndex;
 
-            staticDataHolder.Save_.MechineLv = staticDataHolder.mechinelv;
-            staticDataHolder.Save_.HangerLv = staticDataHolder.hangerLv;
-            staticDataHolder.Save_.PaperNumber = staticDataHolder.papernumber ;
-            staticDataHolder.Save_.Chemlv = staticDataHolder.chemlv;
-            staticDataHolder.Save_.Tray = staticDataHolder.tray;
-            staticDataHolder.Save_.money = staticDataHolder.money;
-            staticDataHolder.Save_.LumpSum = staticDataHolder.lumpsum;
-            staticDataHolder.Save_.FinishedTutorial = staticDataHolder.finishedtutorial;
+                staticDataHolder.Save_.MechineLv = staticDataHolder.mechinelv;
+                staticDataHolder.Save_.HangerLv = staticDataHolder.hangerLv;
+                staticDataHolder.Save_.PaperNumber = staticDataHolder.papernumber;
+                staticDataHolder.Save_.Chemlv = staticDataHolder.chemlv;
+                staticDataHolder.Save_.Tray = staticDataHolder.tray;
+                staticDataHolder.Save_.money = staticDataHolder.money;
+                staticDataHolder.Save_.LumpSum = staticDataHolder.lumpsum;
+                staticDataHolder.Save_.FinishedTutorial = staticDataHolder.finishedtutorial;
 
-            staticDataHolder.Save_.SaveIntoJson(staticDataHolder.Save_);
+                staticDataHolder.Save_.SaveIntoJson(staticDataHolder.Save_);
+            }
+            else
+            {
+                Day.text = "The End";
+                yield return new WaitForSeconds(waitTime*1.5f);
+                GameObject.Find("levelLoader").GetComponent<Levelloader>().loadLV(0);
+            }
         }
         else
         {

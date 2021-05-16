@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4121,6 +4121,8 @@ MonoBehaviour:
   - She is my acquaintance and passed by.
   - Let's see here. Thanks again.
   - . . . . . .
+  - Got something for you, boy!
+  - . . . . . .
   Names:
   - Female voice
   - Female voice
@@ -4135,6 +4137,8 @@ MonoBehaviour:
   - Joseph
   - Joseph
   - Joseph
+  - You
+  - The Salesman
   - You
   character:
   - {fileID: 0}
@@ -4151,6 +4155,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   ShopAfterThis: 1
   Satisfied: 1
   DialogUnsat:
@@ -4168,6 +4174,8 @@ MonoBehaviour:
   - She is my acquaintance and passed by.
   - Let's see here. what the hell is this \nquality? Don't you want my money?
   - . . . . . .
+  - Got something for you, boy!
+  - . . . . . .
   NameUnsat:
   - Female voice
   - Female voice
@@ -4183,6 +4191,8 @@ MonoBehaviour:
   - Joseph
   - Joseph
   - You
+  - The Salesman
+  - You
   characterUnsat:
   - {fileID: 0}
   - {fileID: 0}
@@ -4197,7 +4207,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
   - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
-  - {fileID: 21300000, guid: c9e6fe78ff83be945a6487f88d5ee1cf, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
+  - {fileID: 21300000, guid: c9c5c720e1460144b888875581283373, type: 3}
   shopOverlay: {fileID: 110584103}
   News: {fileID: 0}
   endday: 1
@@ -6967,7 +6979,7 @@ MonoBehaviour:
   - Good day, I will be in your care \nagain today.
   - . . . . . .
   - I swear that your face looks \rfamiliar\r.
-  - "We must have met before.\r"
+  - We must have met before.
   - . . . . . .
   Names:
   - You
